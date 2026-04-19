@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# production
+dist/
+
+# misc
+.DS_Store
+*.local
+.env
+
+# temp files
+*.txt
+*.py
+_data_part*.json
+extract_docx.py
+generate_data*.py
+merge_data.py
+bai_*_content.txt
