@@ -1,0 +1,714 @@
+import React, { useState } from 'react';
+
+// --- Hàm Tiện Ích Trộn Mảng (Fisher-Yates Shuffle) ---
+const shuffleArray = (array) => {
+  const newArr = [...array];
+  for (let i = newArr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
+  }
+  return newArr;
+};
+
+// Hàm chuẩn bị dữ liệu: Trộn câu hỏi và trộn các đáp án bên trong
+const prepareQuizData = (data) => {
+  const shuffledQuestions = shuffleArray(data);
+
+  return shuffledQuestions.map(q => {
+    const newQ = { ...q };
+    if (newQ.options) {
+      newQ.options = shuffleArray(newQ.options);
+    }
+    if (newQ.subQuestions) {
+      newQ.subQuestions = newQ.subQuestions.map(subQ => ({
+        ...subQ,
+        options: shuffleArray(subQ.options)
+      }));
+    }
+    if (newQ.items) {
+      newQ.items = shuffleArray(newQ.items);
+    }
+    return newQ;
+  });
+};
+
+// --- Components Căn bản ---
+const Divider = () => <div className="border-t border-dashed border-gray-400 w-full my-4"></div>;
+
+// Nút Radio cho dạng 1 lựa chọn hoặc Đúng/Sai
+const RadioOption = ({ id, name, label, checked, onChange, reviewMode, status }) => {
+  let containerClass = "flex items-center px-4 py-3 border rounded mb-2 transition-all duration-200 ";
+  let ringClass = "appearance-none w-6 h-6 border-2 rounded-full focus:outline-none transition-all flex-shrink-0 ";
+  let dotClass = "absolute w-3 h-3 rounded-full pointer-events-none ";
+
+  if (!reviewMode) {
+    containerClass += checked ? "border-blue-500 bg-blue-50" : "border-gray-200 hover:bg-gray-50 cursor-pointer";
+    ringClass += checked ? "border-blue-500 bg-white" : "border-gray-400";
+    dotClass += "bg-blue-500";
+  } else {
+    containerClass += "cursor-default ";
+    if (status === 'correct') {
+      containerClass += "border-green-500 bg-green-50 text-green-800 font-medium";
+      ringClass += "border-green-500 bg-white";
+      dotClass += "bg-green-500";
+    } else if (status === 'incorrect') {
+      containerClass += "border-red-500 bg-red-50 text-red-800";
+      ringClass += "border-red-500 bg-white";
+      dotClass += "bg-red-500";
+    } else {
+      containerClass += "border-gray-200 bg-gray-50 opacity-60";
+      ringClass += "border-gray-300";
+    }
+  }
+
+  return (
+    <label className={containerClass}>
+      <div className="relative flex items-center justify-center mr-3">
+        <input type="radio" id={id} name={name} value={id} checked={checked} onChange={!reviewMode ? onChange : undefined} disabled={reviewMode} className={ringClass} />
+        {checked && <div className={dotClass}></div>}
+      </div>
+      <span className="text-base">{label}</span>
+      {reviewMode && status === 'correct' && <span className="ml-auto pl-2 text-green-600 font-bold text-xl">✓</span>}
+      {reviewMode && status === 'incorrect' && <span className="ml-auto pl-2 text-red-500 font-bold text-xl">✗</span>}
+    </label>
+  );
+};
+
+// Nút Checkbox cho dạng nhiều lựa chọn
+const CheckboxOption = ({ id, name, label, checked, onChange, reviewMode, status }) => {
+  let containerClass = "flex items-center px-4 py-3 border rounded mb-2 transition-all duration-200 ";
+  let boxClass = "appearance-none w-6 h-6 border-2 rounded focus:outline-none transition-all flex items-center justify-center flex-shrink-0 ";
+
+  if (!reviewMode) {
+    containerClass += checked ? "border-blue-500 bg-blue-50" : "border-gray-200 hover:bg-gray-50 cursor-pointer";
+    boxClass += checked ? "border-blue-500 bg-blue-500" : "border-gray-400 bg-white";
+  } else {
+    containerClass += "cursor-default ";
+    if (status === 'correct') {
+      containerClass += "border-green-500 bg-green-50 text-green-800 font-medium";
+      boxClass += "border-green-500 bg-green-500";
+    } else if (status === 'incorrect') {
+      containerClass += "border-red-500 bg-red-50 text-red-800";
+      boxClass += "border-red-500 bg-red-500";
+    } else {
+      containerClass += "border-gray-200 bg-gray-50 opacity-60";
+      boxClass += "border-gray-300 bg-gray-100";
+    }
+  }
+
+  return (
+    <label className={containerClass}>
+      <div className="relative flex items-center justify-center mr-3">
+        <input type="checkbox" id={id} name={name} value={id} checked={checked} onChange={!reviewMode ? onChange : undefined} disabled={reviewMode} className={boxClass} />
+        {checked && <svg className="absolute w-4 h-4 text-white pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>}
+      </div>
+      <span className="text-base">{label}</span>
+      {reviewMode && status === 'correct' && <span className="ml-auto pl-2 text-green-600 font-bold text-xl">✓</span>}
+      {reviewMode && status === 'incorrect' && <span className="ml-auto pl-2 text-red-500 font-bold text-xl">✗</span>}
+    </label>
+  );
+};
+
+// --- Dạng Câu Hỏi ---
+
+const MultipleChoiceQuestion = ({ data, index, selectedValue, onChange, reviewMode }) => (
+  <div className="mb-8 bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+    <h3 className="font-bold text-gray-800 mb-2 text-lg">Câu {index + 1}:</h3>
+    <p className="text-gray-800 font-medium text-lg mb-2">{data.text}</p>
+    <Divider />
+    <div className="flex flex-col space-y-1 mt-4">
+      {data.options.map((opt, optIndex) => {
+        let status = 'neutral';
+        if (reviewMode) {
+          if (opt.id === data.correctAnswer) status = 'correct';
+          else if (selectedValue === opt.id) status = 'incorrect';
+        }
+        return (
+          <RadioOption key={opt.id} id={`${data.id}-${opt.id}`} name={data.id} label={`${String.fromCharCode(65 + optIndex)}. ${opt.text}`} checked={selectedValue === opt.id} onChange={() => onChange(data.id, opt.id)} reviewMode={reviewMode} status={status} />
+        );
+      })}
+    </div>
+  </div>
+);
+
+const MultipleSelectQuestion = ({ data, index, selectedValues = [], onChange, reviewMode }) => (
+  <div className="mb-8 bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+    <h3 className="font-bold text-gray-800 mb-2 text-lg">Câu {index + 1}:</h3>
+    <p className="text-gray-800 font-medium text-lg mb-2">{data.text}</p>
+    <Divider />
+    <div className="flex flex-col space-y-1 mt-4">
+      {data.options.map((opt, optIndex) => {
+        let status = 'neutral';
+        if (reviewMode) {
+          const isCorrectAnswer = data.correctAnswers.includes(opt.id);
+          const isSelected = selectedValues.includes(opt.id);
+          if (isCorrectAnswer && isSelected) status = 'correct';
+          else if (isCorrectAnswer && !isSelected) status = 'correct';
+          else if (!isCorrectAnswer && isSelected) status = 'incorrect';
+        }
+        return (
+          <CheckboxOption key={opt.id} id={`${data.id}-${opt.id}`} name={data.id} label={`${String.fromCharCode(65 + optIndex)}. ${opt.text}`} checked={selectedValues.includes(opt.id)} onChange={() => onChange(data.id, opt.id)} reviewMode={reviewMode} status={status} />
+        );
+      })}
+    </div>
+  </div>
+);
+
+const TrueFalseGroupQuestion = ({ data, index, answers, onChange, reviewMode }) => (
+  <div className="mb-8 bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+    <h3 className="font-bold text-gray-800 mb-2 text-lg">Câu {index + 1}:</h3>
+    <p className="text-gray-800 font-medium text-lg mb-2 leading-relaxed">{data.context}</p>
+    <Divider />
+    <div className="space-y-6 mt-4">
+      {data.subQuestions.map((subQ) => (
+        <div key={subQ.id} className="bg-gray-50 p-4 rounded border border-gray-200">
+          <p className="text-gray-800 font-medium mb-3">{subQ.text}</p>
+          <div className="flex flex-col space-y-2">
+             {subQ.options.map((opt) => {
+               let status = 'neutral';
+               if (reviewMode) {
+                 if (opt.id === subQ.correctAnswer) status = 'correct';
+                 else if (answers[subQ.id] === opt.id) status = 'incorrect';
+               }
+               return (
+                 <RadioOption key={opt.id} id={`${subQ.id}-${opt.id}`} name={subQ.id} label={`${opt.text}`} checked={answers[subQ.id] === opt.id} onChange={() => onChange(subQ.id, opt.id)} reviewMode={reviewMode} status={status} />
+               );
+             })}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
+const DragDropFillQuestion = ({ data, index, answers, setAnswers, reviewMode }) => {
+  const [selectedItem, setSelectedItem] = useState(null); 
+  const usedItems = Object.keys(data.correct).map(key => answers[`${data.id}_${key}`]).filter(Boolean);
+  const poolItems = data.items.filter(item => !usedItems.includes(item));
+
+  const handleDragStart = (e, item, source) => {
+    if (reviewMode) return;
+    setSelectedItem(null); 
+    e.dataTransfer.setData('itemName', item);
+    e.dataTransfer.setData('sourceBlank', source);
+    setTimeout(() => e.target.classList.add('opacity-50'), 0);
+  };
+  const handleDragEnd = (e) => e.target.classList.remove('opacity-50');
+  const handleDragOver = (e) => { if (!reviewMode) e.preventDefault(); };
+
+  const handleDropToBlank = (e, targetBlankId) => {
+    if (reviewMode) return;
+    e.preventDefault();
+    executeMove(e.dataTransfer.getData('itemName'), e.dataTransfer.getData('sourceBlank'), targetBlankId);
+  };
+
+  const handleDropToPool = (e) => {
+    if (reviewMode) return;
+    e.preventDefault();
+    const sourceBlank = e.dataTransfer.getData('sourceBlank');
+    if (sourceBlank !== 'pool') setAnswers(prev => ({ ...prev, [sourceBlank]: null }));
+  };
+
+  const handleItemClick = (e, item, source) => {
+    if (reviewMode) return;
+    e.stopPropagation(); 
+    if (selectedItem?.name === item) setSelectedItem(null); 
+    else setSelectedItem({ name: item, source: source }); 
+  };
+
+  const handleBlankClick = (targetBlankId) => {
+    if (reviewMode || !selectedItem) return;
+    executeMove(selectedItem.name, selectedItem.source, targetBlankId);
+    setSelectedItem(null); 
+  };
+
+  const handlePoolClick = () => {
+    if (reviewMode || !selectedItem) return;
+    if (selectedItem.source !== 'pool') setAnswers(prev => ({ ...prev, [selectedItem.source]: null }));
+    setSelectedItem(null);
+  };
+
+  const executeMove = (itemName, sourceBlank, targetBlankId) => {
+    if (!itemName) return;
+    setAnswers(prev => {
+      const newAns = { ...prev };
+      if (sourceBlank !== 'pool') newAns[sourceBlank] = null; 
+      newAns[`${data.id}_${targetBlankId}`] = itemName; 
+      return newAns;
+    });
+  };
+
+  const DraggableItem = ({ item, source }) => {
+    const isSelected = selectedItem?.name === item;
+    let baseClass = "inline-block px-3 py-1 rounded text-sm font-bold border transition-all mx-1 ";
+    
+    if (!reviewMode) {
+      baseClass += "bg-white border-blue-400 text-blue-700 shadow-sm hover:bg-blue-50 cursor-pointer ";
+      if (isSelected) baseClass += "ring-2 ring-offset-2 ring-blue-500 scale-105 z-10 relative bg-blue-100 "; 
+    } else {
+      baseClass += "cursor-default shadow-none ";
+      if (source === 'pool') baseClass += "bg-gray-100 border-gray-300 text-gray-500 opacity-60";
+      else {
+         const isCorrect = data.correct[source.replace(`${data.id}_`, '')] === item;
+         baseClass += isCorrect ? "bg-green-100 border-green-500 text-green-800" : "bg-red-100 border-red-500 text-red-800 line-through";
+      }
+    }
+
+    return (
+      <span draggable={!reviewMode} onDragStart={(e) => handleDragStart(e, item, source)} onDragEnd={handleDragEnd} onClick={(e) => handleItemClick(e, item, source)} className={baseClass}>
+        {item}
+      </span>
+    );
+  };
+
+  return (
+    <div className="mb-8 bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+      <h3 className="font-bold text-gray-800 mb-2 text-lg">Câu {index + 1}:</h3>
+      <p className="text-gray-800 font-medium text-lg mb-2">{data.text}</p>
+      {!reviewMode && <p className="text-sm text-blue-600 mb-2 italic">Mẹo: Bạn có thể kéo thả hoặc <strong>bấm vào từ khoá</strong> sau đó <strong>bấm vào chỗ trống</strong> để điền.</p>}
+      <Divider />
+      <div className={`flex flex-wrap items-center gap-2 mb-6 min-h-[50px] p-3 border-2 border-dashed rounded-lg transition-colors ${reviewMode ? 'bg-gray-50 border-gray-200' : (selectedItem && selectedItem.source !== 'pool' ? 'bg-blue-100 border-blue-400 cursor-pointer' : 'bg-blue-50/50 border-blue-300')}`} onDragOver={handleDragOver} onDrop={handleDropToPool} onClick={handlePoolClick}>
+        <span className="text-sm font-semibold text-gray-500 uppercase mr-2">Từ khoá:</span>
+        {poolItems.map((item, idx) => <DraggableItem key={idx} item={item} source="pool" />)}
+        {poolItems.length === 0 && !reviewMode && <span className="text-gray-400 italic text-sm">Đã dùng hết từ khoá</span>}
+      </div>
+      <div className="space-y-4 text-gray-800 text-lg leading-loose">
+        {data.sentences.map((s) => {
+          const blankId = `${data.id}_${s.id}`;
+          const filledItem = answers[blankId];
+          const isCorrectInReview = reviewMode && data.correct[s.id] === filledItem;
+          
+          let spanClass = `inline-flex items-center justify-center min-w-[120px] min-h-[36px] border-b-2 align-middle px-2 pb-1 transition-colors cursor-pointer `;
+          if (!filledItem) spanClass += reviewMode ? 'border-red-300 bg-red-50/50' : (selectedItem ? 'border-blue-500 bg-blue-50 hover:bg-blue-100' : 'border-gray-400 bg-white hover:bg-gray-50');
+          else spanClass += reviewMode ? (isCorrectInReview ? 'border-green-400' : 'border-red-400') : 'border-blue-400 hover:bg-gray-50';
+
+          return (
+            <p key={s.id} className="bg-gray-50 p-4 rounded border border-gray-100">
+              {s.pre} <span className={spanClass} onDragOver={handleDragOver} onDrop={(e) => handleDropToBlank(e, s.id)} onClick={() => handleBlankClick(s.id)}>
+                {filledItem ? <DraggableItem item={filledItem} source={blankId} /> : <span className="text-gray-400 text-sm italic">{selectedItem ? "Bấm để thả vào" : "(kéo thả vào đây)"}</span>}
+              </span> {s.post}
+              {reviewMode && !isCorrectInReview && <span className="block mt-2 text-sm text-green-600 font-bold bg-green-50 px-3 py-1 rounded inline-block">Đáp án đúng: {data.correct[s.id]}</span>}
+            </p>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+const DragDropCategoryQuestion = ({ data, index, itemsState, setItemsState, reviewMode }) => {
+  const [selectedItem, setSelectedItem] = useState(null);
+
+  const handleDragStart = (e, item, source) => {
+    if (reviewMode) return;
+    setSelectedItem(null);
+    e.dataTransfer.setData('itemName', item);
+    e.dataTransfer.setData('sourceArea', source);
+    setTimeout(() => e.target.classList.add('opacity-50'), 0);
+  };
+  const handleDragEnd = (e) => e.target.classList.remove('opacity-50');
+  const handleDragOver = (e) => { if (!reviewMode) e.preventDefault(); };
+
+  const handleDrop = (e, targetArea) => {
+    if (reviewMode) return;
+    e.preventDefault();
+    executeMove(e.dataTransfer.getData('itemName'), e.dataTransfer.getData('sourceArea'), targetArea);
+  };
+
+  const handleItemClick = (e, item, source) => {
+    if (reviewMode) return;
+    e.stopPropagation(); 
+    if (selectedItem?.name === item) setSelectedItem(null);
+    else setSelectedItem({ name: item, sourceArea: source });
+  };
+
+  const handleContainerClick = (targetArea) => {
+    if (reviewMode || !selectedItem) return;
+    if (selectedItem.sourceArea === targetArea) { setSelectedItem(null); return; }
+    executeMove(selectedItem.name, selectedItem.sourceArea, targetArea);
+    setSelectedItem(null);
+  };
+
+  const executeMove = (itemName, sourceArea, targetArea) => {
+    if (sourceArea === targetArea || !itemName) return;
+    setItemsState(prev => {
+      const qState = { ...prev[data.id] };
+      qState[sourceArea] = qState[sourceArea].filter(i => i !== itemName);
+      qState[targetArea] = [...qState[targetArea], itemName];
+      return { ...prev, [data.id]: qState };
+    });
+  };
+
+  const DraggableItem = ({ item, source }) => {
+    const isSelected = selectedItem?.name === item;
+    let itemClass = "px-4 py-2 rounded-md text-sm font-medium transition-all border ";
+    if (!reviewMode) {
+      itemClass += "bg-white hover:bg-gray-50 border-gray-300 text-gray-800 shadow-sm cursor-pointer ";
+      if (isSelected) itemClass += "ring-2 ring-offset-2 ring-blue-500 scale-105 z-10 relative bg-blue-50 border-blue-400";
+    } else {
+      itemClass += "cursor-default shadow-none ";
+      if (source === 'pool') itemClass += "bg-gray-100 border-gray-300 text-gray-500 opacity-60";
+      else {
+        const isCorrect = data.correct[source].includes(item);
+        itemClass += isCorrect ? "bg-green-100 border-green-500 text-green-800" : "bg-red-100 border-red-500 text-red-800";
+      }
+    }
+    return <div draggable={!reviewMode} onDragStart={(e) => handleDragStart(e, item, source)} onDragEnd={handleDragEnd} onClick={(e) => handleItemClick(e, item, source)} className={itemClass}>{item}</div>;
+  };
+
+  const currentState = itemsState[data.id] || { pool: [], cat1: [], cat2: [] };
+
+  return (
+    <div className="mb-8 bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+      <h3 className="font-bold text-gray-800 mb-2 text-lg">Câu {index + 1}:</h3>
+      <p className="text-gray-800 font-medium text-lg mb-2">{data.text}</p>
+      {!reviewMode && <p className="text-sm text-blue-600 mb-2 italic">Mẹo: Bạn có thể kéo thả hoặc <strong>bấm vào hàng hóa</strong> sau đó <strong>bấm vào khoảng trống của cột tương ứng</strong>.</p>}
+      <Divider />
+      <div className={`flex flex-wrap gap-2 mb-6 min-h-[60px] p-3 border-2 border-dashed rounded-lg transition-colors ${reviewMode ? 'bg-gray-50 border-gray-200' : (selectedItem && selectedItem.sourceArea !== 'pool' ? 'bg-blue-100 border-blue-400 cursor-pointer' : 'bg-blue-50/50 border-blue-300')}`} onDragOver={handleDragOver} onDrop={(e) => handleDrop(e, 'pool')} onClick={() => handleContainerClick('pool')}>
+        {currentState.pool.map((item, idx) => <DraggableItem key={idx} item={item} source="pool" />)}
+        {currentState.pool.length === 0 && !reviewMode && <span className="text-gray-400 italic text-sm py-2 px-1">{selectedItem ? "Bấm vào đây để thu hồi từ khoá" : "Tất cả đã được phân loại"}</span>}
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {['cat1', 'cat2'].map((cat, idx) => (
+          <div key={cat} className="flex flex-col h-full group">
+            <h4 className="text-gray-800 font-bold mb-3 text-center bg-gray-100 py-2 rounded">{data.categories[idx]}</h4>
+            <div className={`border-2 rounded p-4 flex-1 flex flex-wrap content-start gap-2 transition-colors ${reviewMode ? 'border-gray-200 bg-gray-50' : (selectedItem && selectedItem.sourceArea !== cat ? 'border-blue-400 border-dashed bg-blue-50/30 cursor-pointer hover:bg-blue-50' : 'border-gray-300 bg-white')}`} onDragOver={handleDragOver} onDrop={(e) => handleDrop(e, cat)} onClick={() => handleContainerClick(cat)}>
+              {currentState[cat].map((item, i) => <DraggableItem key={i} item={item} source={cat} />)}
+              {currentState[cat].length === 0 && selectedItem && !reviewMode && <div className="w-full text-center text-blue-400 italic py-4 pointer-events-none">Bấm để thả vào đây</div>}
+            </div>
+          </div>
+        ))}
+      </div>
+      {reviewMode && (
+        <div className="mt-6 p-4 bg-green-50 border border-green-200 rounded-md">
+          <p className="font-bold text-green-800 mb-2">Gợi ý đáp án đúng:</p>
+          <ul className="text-sm text-green-700 list-disc pl-5">
+            <li><strong>{data.categories[0]}:</strong> {data.correct.cat1.join(', ')}</li>
+            <li><strong>{data.categories[1]}:</strong> {data.correct.cat2.join(', ')}</li>
+          </ul>
+        </div>
+      )}
+    </div>
+  );
+};
+
+
+// --- KHO DỮ LIỆU ĐỀ THI ---
+const LESSONS_DATA = {
+  1: [
+    { id: 'l1_q1', type: 'multiple-choice', text: 'Sự giống nhau giữa quy luật kinh tế và chính sách kinh tế là:', options: [{id: 'A', text: 'Điều chỉnh hành vi kinh tế của con người.'}, {id: 'B', text: 'Luôn thúc đẩy sự giàu có và văn minh của xã hội.'}, {id: 'C', text: 'Tồn tại vĩnh viễn cùng với sự tồn tại, phát triển của xã hội loài người.'}, {id: 'D', text: 'Tồn tại khách quan, không phụ thuộc vào suy nghĩ của con người.'}], correctAnswer: 'D' },
+    { id: 'l1_q2', type: 'multiple-choice', text: 'Chọn phương án trả lời đúng nhất về sản xuất hàng hoá.', options: [{id: 'A', text: 'Phân phối sản phẩm cho các đối tượng sử dụng.'}, {id: 'B', text: 'Quá trình lưu thông sản phẩm trong xã hội.'}, {id: 'C', text: 'Sản xuất ra sản phẩm nhằm mục đích trao đổi, mua bán.'}, {id: 'D', text: 'Sản xuất phục vụ cho tiêu dùng nội bộ.'}], correctAnswer: 'C' },
+    { id: 'l1_q3', type: 'multiple-select', text: 'Chọn 2 phương án trả lời đúng. Sản xuất hàng hoá làm phát sinh quan hệ nào sau đây?', options: [{id: 'A', text: 'Quan hệ giữa người với người thông qua sản phẩm hàng hoá.'}, {id: 'B', text: 'Quan hệ giữa con người và tự nhiên.'}, {id: 'C', text: 'Quan hệ giữa người sản xuất và sản phẩm.'}, {id: 'D', text: 'Quan hệ trao đổi, mua bán giữa các chủ thể sản xuất.'}], correctAnswers: ['A', 'D'] },
+    { id: 'l1_q4', type: 'multiple-select', text: 'Chọn 2 phương án trả lời đúng. Điều kiện ra đời của sản xuất hàng hoá là:', options: [{id: 'A', text: 'Phân công lao động cá biệt và chế độ tư hữu về tư liệu sản xuất.'}, {id: 'B', text: 'Phân công lao động chung và chế độ sở hữu khác nhau về tư liệu sản xuất.'}, {id: 'C', text: 'Sự tách biệt về mặt kinh tế của các chủ thể sản xuất.'}, {id: 'D', text: 'Phân công lao động xã hội.'}], correctAnswers: ['C', 'D'] },
+    { id: 'l1_q5', type: 'multiple-choice', text: 'Giá trị của hàng hoá được quyết định bởi yếu tố nào?', options: [{id: 'A', text: 'Sự khan hiếm của hàng hoá.'}, {id: 'B', text: 'Lao động trừu tượng của người sản xuất kết tinh trong hàng hoá.'}, {id: 'C', text: 'Sự hao phí sức lao động của con người.'}, {id: 'D', text: 'Công dụng của hàng hoá.'}], correctAnswer: 'B' },
+    { id: 'l1_q6', type: 'multiple-choice', text: 'Hãy chọn phương án trả lời đúng nhất về lượng giá trị của một đơn vị hàng hoá.', options: [{id: 'A', text: 'Tỷ lệ nghịch với năng suất lao động.'}, {id: 'B', text: 'Tỷ lệ nghịch với cường độ lao động.'}, {id: 'C', text: 'Phụ thuộc vào cường độ lao động.'}, {id: 'D', text: 'Tỷ lệ thuận với năng suất lao động.'}], correctAnswer: 'A' },
+    { id: 'l1_q7', type: 'true-false-group', context: 'Trong 8 giờ công nhân sản xuất được 100 sản phẩm có tổng giá trị là 600 USD. Giá trị của một đơn vị sản phẩm là 6,0 USD. Chọn đáp án (Đúng hoặc Sai) với từng trường hợp sau:', subQuestions: [ { id: 'q7_1', text: '1. Nếu cường độ lao động tăng lên 3 lần thì giá trị của một đơn vị sản phẩm là 3,0 USD.', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'A' }, { id: 'q7_2', text: '2. Nếu năng suất lao động tăng lên 2 lần thì giá trị của một đơn vị sản phẩm là 6,0 USD.', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'A' }, { id: 'q7_3', text: '3. Nếu năng suất lao động tăng lên 3 lần thì giá trị của một đơn vị sản phẩm là 2,0 USD.', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'B' }, { id: 'q7_4', text: '4. Nếu cường độ lao động tăng lên 2 lần thì giá trị của một đơn vị sản phẩm là 6,0 USD.', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'B' } ] },
+    { id: 'l1_q8', type: 'true-false-group', context: 'Trong 8 giờ công nhân sản xuất được 100 sản phẩm có tổng giá trị là 300 USD. Giá trị của một đơn vị sản phẩm là 3 USD. Chọn đáp án (Đúng hoặc Sai) với từng trường hợp sau:', subQuestions: [ { id: 'q8_1', text: '1. Nếu năng suất lao động tăng lên 2 lần thì giá trị của một đơn vị sản phẩm là 3 USD.', options: [{id: 'A', text: 'Đúng'}, {id: 'B', text: 'Sai'}], correctAnswer: 'B' }, { id: 'q8_2', text: '2. Nếu năng suất lao động tăng lên 3 lần thì giá trị của một đơn vị sản phẩm là 1,0 USD.', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'B' }, { id: 'q8_3', text: '3. Nếu năng suất lao động tăng lên 3 lần thì giá trị của một đơn vị sản phẩm là 6,0 USD.', options: [{id: 'A', text: 'Đúng'}, {id: 'B', text: 'Sai'}], correctAnswer: 'B' }, { id: 'q8_4', text: '4. Nếu năng suất lao động tăng lên 2 lần thì giá trị của một đơn vị sản phẩm là 1,5 USD.', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'B' } ] },
+    { id: 'l1_q9', type: 'multiple-choice', text: 'Đặc điểm nào sau đây không thuộc về sản xuất hàng hoá?', options: [{id: 'A', text: 'Sản phẩm phục vụ hoàn toàn cho tiêu dùng cá nhân.'}, {id: 'B', text: 'Có sự tách biệt tương đối giữa các chủ thể sản xuất.'}, {id: 'C', text: 'Sản phẩm để trao đổi, mua bán.'}, {id: 'D', text: 'Có sự phân công lao động xã hội.'}], correctAnswer: 'A' },
+    { id: 'l1_q10', type: 'multiple-choice', text: 'Những chức năng cơ bản của Kinh tế chính trị Mác – Lênin?', options: [{id: 'A', text: 'Chức năng phê phán, chức năng thực tiễn, chức năng thông tin, chức năng tư tưởng.'}, {id: 'B', text: 'Chức năng nhận thức, chức năng thực tiễn, chức năng thông tin, chức năng tư tưởng.'}, {id: 'C', text: 'Chức năng nhận thức, chức năng thực tiễn, chức năng tư tưởng, chức năng phương pháp luận.'}, {id: 'D', text: 'Chức năng phê phán, chức năng thực tiễn, chức năng phương pháp luận, chức năng tư tưởng.'}], correctAnswer: 'C' },
+    { id: 'l1_q11', type: 'multiple-choice', text: 'Sản xuất hàng hoá khác với sản xuất tự nhiên ở điểm nào?', options: [{id: 'A', text: 'Sản xuất hàng hoá hướng đến trao đổi, còn sản xuất tự nhiên là để tự tiêu dùng.'}, {id: 'B', text: 'Sản xuất hàng hoá không phụ thuộc vào thị trường.'}, {id: 'C', text: 'Sản xuất tự nhiên có năng suất cao hơn.'}, {id: 'D', text: 'Sản xuất tự nhiên gắn với công nghệ cao.'}], correctAnswer: 'A' },
+    { id: 'l1_q12', type: 'drag-drop-fill', text: 'Kéo thả các đáp án khớp với các phát biểu từ 1 đến 4 dưới đây.', items: ['điều kiện cần', 'điều kiện đủ', 'sản phẩm', 'chuyên môn hoá'], sentences: [ { id: 'b1', pre: '1. Phân công lao động xã hội là', post: 'để nền sản xuất hàng hoá ra đời và phát triển.' }, { id: 'b2', pre: '2. Sự tách biệt về mặt kinh tế giữa những người sản xuất hàng hoá là', post: 'để nền sản xuất hàng hoá ra đời và phát triển.' }, { id: 'b3', pre: '3. Sản xuất hàng hoá là sản xuất ra', post: 'để trao đổi, mua bán.' }, { id: 'b4', pre: '4. Phân công lao động xã hội là sự phân chia lao động trong xã hội thành các ngành, các lĩnh vực của sản xuất khác nhau, tạo nên sự', post: 'của những người sản xuất khác nhau.' } ], correct: { b1: 'điều kiện cần', b2: 'điều kiện đủ', b3: 'sản phẩm', b4: 'chuyên môn hoá' } },
+    { id: 'l1_q13', type: 'multiple-choice', text: 'Đối tượng nghiên cứu của Kinh tế chính trị Mác – Lênin là:', options: [{id: 'A', text: 'Các phương thức sản xuất xã hội được đặt trong sự liên hệ biện chứng với trình độ phát triển của lực lượng sản xuất và kiến trúc thượng tầng.'}, {id: 'B', text: 'Sự sản xuất của xã hội.'}, {id: 'C', text: 'Nguồn gốc của cải và sự giàu có của tư bản chủ nghĩa.'}, {id: 'D', text: 'Các quan hệ sản xuất và trao đổi được đặt trong sự liên hệ biện chứng với trình độ phát triển của lực lượng sản xuất và kiến trúc thượng tầng.'}], correctAnswer: 'D' },
+    { id: 'l1_q14', type: 'multiple-choice', text: 'Phương pháp nghiên cứu quan trọng của Kinh tế chính trị Mác – Lênin là:', options: [{id: 'A', text: 'Khảo sát đối tượng và thu thập số liệu.'}, {id: 'B', text: 'Thực nghiệm khoa học.'}, {id: 'C', text: 'Mô hình hóa đối tượng.'}, {id: 'D', text: 'Trừu tượng hóa khoa học.'}], correctAnswer: 'D' },
+    { id: 'l1_q15', type: 'multiple-choice', text: 'Điều kiện nào là “điều kiện đủ” để sản xuất hàng hóa ra đời:', options: [{id: 'A', text: 'Có công cụ lao động tiên tiến.'}, {id: 'B', text: 'Sự tách biệt về mặt kinh tế của các chủ thể sản xuất.'}, {id: 'C', text: 'Có thị trường phát triển mạnh mẽ.'}, {id: 'D', text: 'Có nhà nước quản lý sản xuất.'}], correctAnswer: 'B' },
+    { id: 'l1_q16', type: 'multiple-choice', text: 'Điều kiện nào được gọi là “điều kiện cần” để sản xuất hàng hóa ra đời?', options: [{id: 'A', text: 'Có công cụ lao động hiện đại.'}, {id: 'B', text: 'Có phân công lao động xã hội.'}, {id: 'C', text: 'Có nhà nước quản lý xã hội.'}, {id: 'D', text: 'Có thị trường phát triển sôi động.'}], correctAnswer: 'B' },
+    { id: 'l1_q17', type: 'multiple-choice', text: 'Hàng hóa là gì?', options: [{id: 'A', text: 'Sản phẩm ở trên thị trường.'}, {id: 'B', text: 'Sản phẩm được sản xuất ra để đem bán.'}, {id: 'C', text: 'Sản phẩm của lao động có thể thỏa mãn nhu cầu nào đó của con người thông qua trao đổi, mua bán.'}, {id: 'D', text: 'Sản phẩm của lao động để thỏa mãn nhu cầu của con người.'}], correctAnswer: 'C' },
+    { id: 'l1_q18', type: 'drag-drop-category', text: 'Kéo thả các hàng hóa sau đây vào cột tương ứng.', items: ['Xe máy', 'Khóa học trực tuyến', 'Quần áo', 'Internet', 'Điện thoại', 'Dịch vụ y tế', 'Sách vở', 'Sách điện tử'], categories: ['Hàng hóa hữu hình', 'Hàng hóa vô hình'], correct: { cat1: ['Xe máy', 'Quần áo', 'Điện thoại', 'Sách vở'], cat2: ['Khóa học trực tuyến', 'Internet', 'Dịch vụ y tế', 'Sách điện tử'] } }
+  ],
+  2: [
+    { id: 'l2_q1', type: 'multiple-choice', text: 'Khi nào tiền tệ biến thành tư bản?', options: [{id: 'A', text: 'Có lượng tiền tệ đủ lớn'}, {id: 'B', text: 'Dùng tiền để buôn bán mua rẻ, bán đắt'}, {id: 'C', text: 'Sức lao động trở thành hàng hóa'}, {id: 'D', text: 'Dùng tiền đầu tư vào sản xuất kinh doanh'}], correctAnswer: 'C' },
+    { id: 'l2_q2', type: 'multiple-select', text: 'Chọn 2 phương án trả lời đúng. Đâu là thuộc tính của hàng hóa sức lao động?', options: [{id: 'A', text: 'Giá trị thặng dư'}, {id: 'B', text: 'Giá trị sử dụng của hàng hóa sức lao động'}, {id: 'C', text: 'Thuộc tính sử dụng của hàng hóa sức lao động'}, {id: 'D', text: 'Giá trị của hàng hóa sức lao động'}], correctAnswers: ['B', 'D'] },
+    { id: 'l2_q3', type: 'multiple-choice', text: 'Ý nào đúng nhất về tư bản bất biến (c) là?', options: [{id: 'A', text: 'Giá trị của nó không thay đổi về lượng và được chuyển nguyên vẹn sang sản phẩm'}, {id: 'B', text: 'Giá trị của nó chuyển dần vào sản phẩm qua khấu hao'}, {id: 'C', text: 'Giá trị của nó không thay đổi và được chuyển ngay sang sản phẩm sau một chu kỳ sản xuất'}, {id: 'D', text: 'Giá trị của nó lớn lên trong quá trình sản xuất'}], correctAnswer: 'A' },
+    { id: 'l2_q4', type: 'multiple-choice', text: 'Tỷ suất giá trị thặng dư (m\') phản ánh điều gì?', options: [{id: 'A', text: 'Trình độ bóc lột của tư bản đối với công nhân làm thuê'}, {id: 'B', text: 'Hiệu quả của nhà tư bản'}, {id: 'C', text: 'Số lượng giá trị thặng dư'}, {id: 'D', text: 'Quy mô bóc lột của nhà tư bản đối với người công nhân làm thuê'}], correctAnswer: 'A' },
+    { id: 'l2_q5', type: 'multiple-choice', text: 'Dựa vào căn cứ nào để chia tư bản thành tư bản bất biến và tư bản khả biến? Hãy chọn 1 phương án trả lời đúng nhất.', options: [{id: 'A', text: 'Hao mòn hữu hình hoặc vô hình'}, {id: 'B', text: 'Phương thức chuyển giá trị các bộ phận tư bản sang sản phẩm'}, {id: 'C', text: 'Vai trò các bộ phận tư bản trong quá trình sản xuất giá trị thặng dư'}, {id: 'D', text: 'Tốc độ chu chuyển của tư bản'}], correctAnswer: 'C' },
+    { id: 'l2_q6', type: 'multiple-choice', text: 'Dựa vào căn cứ nào để chia tư bản ra thành tư bản cố định và tư bản lưu động?', options: [{id: 'A', text: 'Phương thức chuyển giá trị của các bộ phận tư bản sang sản phẩm'}, {id: 'B', text: 'Sự thay đổi về lượng trong quá trình sản xuất'}, {id: 'C', text: 'Tốc độ chu chuyển chung của tư bản'}, {id: 'D', text: 'Vai trò các bộ phận tư bản trong quá trình sản xuất giá trị thặng dư'}], correctAnswer: 'A' },
+    { id: 'l2_q7', type: 'true-false-group', context: 'Tư bản đầu tư là 900 USD, trong đó số tư bản đầu tư vào tư liệu sản xuất là 600 USD. Chọn đáp án (Đúng hoặc Sai) với từng trường hợp sau:', subQuestions: [ { id: 'q7_1', text: '1/ Với m\' = 200% thì giá trị hàng hoá là 1.500 USD', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'B' }, { id: 'q7_2', text: '2/ Với m\' = 100% thì giá trị hàng hoá là 1.500 USD', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'A' }, { id: 'q7_3', text: '3/ Với m\' = 200% thì giá trị hàng hoá là 1.800 USD', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'A' }, { id: 'q7_4', text: '4/ Với m\' = 300% thì giá trị hàng hoá là 2.000 USD', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'A' } ] },
+    { id: 'l2_q8', type: 'multiple-select', text: 'Chọn 2 phương án trả lời đúng. Phương pháp sản xuất giá trị thặng dư tuyệt đối là:', options: [{id: 'A', text: 'Kéo dài ngày lao động vượt quá thời gian lao động tất yếu'}, {id: 'B', text: 'Tiết kiệm chi phí sản xuất'}, {id: 'C', text: 'Năng suất lao động, giá trị sức lao động không đổi và thời gian lao động tất yếu không đổi'}, {id: 'D', text: 'Sử dụng kỹ thuật tiên tiến'}], correctAnswers: ['A', 'C'] },
+    { id: 'l2_q9', type: 'multiple-choice', text: 'Chọn 1 phương án trả lời đúng nhất. Giá trị thặng dư siêu ngạch còn được gọi là:', options: [{id: 'A', text: 'Hình thức biến tướng của giá trị thặng dư tương đối'}, {id: 'B', text: 'Hình thức biến tướng của giá trị thặng dư tuyệt đối'}, {id: 'C', text: 'Hình thức biểu hiện của giá trị thặng dư tương đối'}, {id: 'D', text: 'Hình thức biến tướng của sản phẩm thặng dư tương đối'}], correctAnswer: 'A' },
+    { id: 'l2_q10', type: 'true-false-group', context: 'Cho biết tư bản bất biến c=1.500 USD, tỷ suất giá trị thặng dư m’=100%. Chọn đáp án (đúng hoặc sai) với từng trường hợp sau:', subQuestions: [ { id: 'q10_1', text: '1/ Với cấu tạo hữu cơ của tư bản c/v=2/1 thì giá trị hàng hóa là 3.000 USD', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'B' }, { id: 'q10_2', text: '2/ Với cấu tạo hữu cơ của tư bản c/v=3/1 thì giá trị hàng hóa là 2.600 USD', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'A' }, { id: 'q10_3', text: '3/ Với cấu tạo hữu cơ của tư bản c/v=5/1 thì giá trị hàng hóa là 2.250 USD', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'A' }, { id: 'q10_4', text: '4/ Với cấu tạo hữu cơ của tư bản c/v=3/1 thì giá trị hàng hóa là 2.500 USD', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'B' } ] },
+    { id: 'l2_q11', type: 'multiple-choice', text: 'Chọn 1 phương án trả lời đúng nhất. Phương pháp sản xuất giá trị thặng dư tuyệt đối có hạn chế gì?', options: [{id: 'A', text: 'Không áp dụng cho doanh nghiệp nhỏ'}, {id: 'B', text: 'Không tạo ra lợi nhuận'}, {id: 'C', text: 'Không bị ảnh hưởng bởi pháp luật'}, {id: 'D', text: 'Bị giới hạn bởi thời gian sinh học của con người'}], correctAnswer: 'D' },
+    { id: 'l2_q12', type: 'multiple-select', text: 'Chọn 2 phương án trả lời đúng. Điều kiện để nhà tư bản thu được giá trị thặng dư siêu ngạch là:', options: [{id: 'A', text: 'Sản phẩm sản xuất ra có giá trị thấp hơn giá trị xã hội nhưng vẫn bán theo giá thị trường'}, {id: 'B', text: 'Tổ chức sản xuất theo lối thủ công truyền thống'}, {id: 'C', text: 'Tăng ngày lao động của công nhân'}, {id: 'D', text: 'Năng suất lao động cá biệt cao hơn mức trung bình của xã hội'}], correctAnswers: ['A', 'D'] },
+    { id: 'l2_q13', type: 'multiple-select', text: 'Chọn 2 phương án trả lời đúng. Để đạt được giá trị thặng dư siêu ngạch, doanh nghiệp cần:', options: [{id: 'A', text: 'Trả lương công nhân cao hơn mức quy định'}, {id: 'B', text: 'Áp dụng công nghệ mới sớm hơn đối thủ cạnh tranh'}, {id: 'C', text: 'Bán hàng hóa với giá trị cao hơn cả giá trị xã hội'}, {id: 'D', text: 'Sản xuất ra hàng hóa có giá trị thấp hơn mức trung bình xã hội'}], correctAnswers: ['B', 'D'] },
+    { id: 'l2_q14', type: 'multiple-select', text: 'Chọn 2 phương án trả lời đúng. Điều kiện để sức lao động trở thành hàng hóa là:', options: [{id: 'A', text: 'Người lao động không có tư liệu sản xuất'}, {id: 'B', text: 'Người lao động có học vấn cao'}, {id: 'C', text: 'Nhà tư bản có quyền ra lệnh'}, {id: 'D', text: 'Người lao động được tự do về thân thể'}], correctAnswers: ['A', 'D'] },
+    { id: 'l2_q15', type: 'multiple-select', text: 'Chọn 2 phương án trả lời đúng. Phương pháp sản xuất giá trị thặng dư tuyệt đối chủ yếu dựa vào biện pháp nào sau đây?', options: [{id: 'A', text: 'Rút ngắn thời gian lao động tất yếu'}, {id: 'B', text: 'Không thay đổi năng suất lao động nhưng kéo dài ngày lao động'}, {id: 'C', text: 'Kéo dài thời gian lao động vượt quá thời gian lao động tất yếu'}, {id: 'D', text: 'Tăng năng suất lao động trong ngành sản xuất tư liệu sinh hoạt'}], correctAnswers: ['B', 'C'] },
+    { id: 'l2_q16', type: 'multiple-choice', text: 'Giá trị thặng dư là gì?', options: [{id: 'A', text: 'Phần giá trị mới dôi ra ngoài giá trị sức lao động do người công nhân làm thuê tạo ra'}, {id: 'B', text: 'Giá trị của tư bản tự tăng lên'}, {id: 'C', text: 'Lợi nhuận thu được của người sản xuất kinh doanh'}, {id: 'D', text: 'Hiệu số giữa giá trị hàng hóa với chi phí sản xuất tư bản chủ nghĩa'}], correctAnswer: 'A' },
+    { id: 'l2_q17', type: 'multiple-select', text: 'Chọn 2 phương án trả lời đúng. Hao mòn tư bản cố định có các loại nào?', options: [{id: 'A', text: 'Hao mòn hữu hình'}, {id: 'B', text: 'Hao mòn vật chất'}, {id: 'C', text: 'Hao mòn vô hình'}, {id: 'D', text: 'Hao mòn tự nhiên'}], correctAnswers: ['A', 'C'] },
+    { id: 'l2_q18', type: 'true-false-group', context: 'Cho biết chi phí tư bản khả biến là 2000 usd. Chọn đáp án (đúng hoặc sai) với từng trường hợp sau:', subQuestions: [ { id: 'q18_1', text: '1/ Nếu m’=200% thì khối lượng giá trị mới do công nhân tạo ra là 6000 usd', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'B' }, { id: 'q18_2', text: '2/ Nếu m’=100% thì khối lượng giá trị mới do công nhân tạo ra là 4000 usd', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'B' }, { id: 'q18_3', text: '3/ Nếu m’=300% thì khối lượng giá trị mới do công nhân tạo ra là 7000 usd', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'A' }, { id: 'q18_4', text: '4/ Nếu m’=400% thì khối lượng giá trị mới do công nhân tạo ra là 8000 usd', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'A' } ] },
+    { id: 'l2_q19', type: 'multiple-choice', text: 'Nguồn gốc chủ yếu của tích lũy tư bản là:', options: [{id: 'A', text: 'Giá trị thặng dư'}, {id: 'B', text: 'Sản phẩm thặng dư'}, {id: 'C', text: 'Tiền đi vay'}, {id: 'D', text: 'Tiền huy động'}], correctAnswer: 'A' },
+    { id: 'l2_q20', type: 'true-false-group', context: 'Cho biết tư bản bất biến c=1.200 USD, tỷ suất giá trị thặng dư m’=200%. Chọn đáp án (đúng hoặc sai) với từng trường hợp sau:', subQuestions: [ { id: 'q20_1', text: '1/ Với cấu tạo hữu cơ của tư bản c/v=4/1 thì giá trị hàng hóa là 2.000 USD', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'A' }, { id: 'q20_2', text: '2/ Với cấu tạo hữu cơ của tư bản c/v=4/1 thì giá trị hàng hóa là 1.800 USD', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'A' }, { id: 'q20_3', text: '3/ Với cấu tạo hữu cơ của tư bản c/v=2/1 thì giá trị hàng hóa là 3.000 USD', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'B' }, { id: 'q20_4', text: '4/ Với cấu tạo hữu cơ của tư bản c/v=3/1 thì giá trị hàng hóa là 2.400 USD', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'B' } ] },
+  ],
+  3: [
+    { id: 'l3_q1', type: 'multiple-choice', text: 'Tích lũy tư bản được định nghĩa là như thế nào?', options: [{id: 'A', text: 'Quá trình phân chia tư bản giữa các ngành'}, {id: 'B', text: 'Quá trình tăng giá trị hàng hóa trên thị trường'}, {id: 'C', text: 'Quá trình giảm chi phí sản xuất'}, {id: 'D', text: 'Quá trình tư bản hóa giá trị thặng dư để mở rộng sản xuất'}], correctAnswer: 'D' },
+    { id: 'l3_q2', type: 'multiple-choice', text: 'Nguồn gốc của tích lũy tư bản là gì?', options: [{id: 'A', text: 'Chi phí sản xuất'}, {id: 'B', text: 'Tư bản tài chính'}, {id: 'C', text: 'Giá trị thặng dư'}, {id: 'D', text: 'Lợi nhuận bình quân'}], correctAnswer: 'C' },
+    { id: 'l3_q3', type: 'multiple-choice', text: 'Động lực nào sau đây thúc đẩy tích lũy tư bản?', options: [{id: 'A', text: 'Giảm năng suất lao động'}, {id: 'B', text: 'Tăng giá trị thặng dư và cạnh tranh'}, {id: 'C', text: 'Tăng chi phí tiêu dùng cá nhân'}, {id: 'D', text: 'Giảm tư bản ứng trước'}], correctAnswer: 'B' },
+    { id: 'l3_q4', type: 'multiple-choice', text: 'Tái sản xuất giản đơn có đặc điểm gì?', options: [{id: 'A', text: 'Đầu tư thặng dư vào sản xuất'}, {id: 'B', text: 'Tăng năng suất lao động'}, {id: 'C', text: 'Toàn bộ thặng dư dùng cho tiêu dùng cá nhân'}, {id: 'D', text: 'Quy mô sản xuất tăng lên'}], correctAnswer: 'C' },
+    { id: 'l3_q5', type: 'multiple-choice', text: 'Yếu tố nào sau đây trực tiếp ảnh hưởng đến quy mô tích lũy tư bản?', options: [{id: 'A', text: 'Giảm tư bản ứng trước'}, {id: 'B', text: 'Giá cả hàng hóa quốc tế'}, {id: 'C', text: 'Tỷ lệ phân chia giá trị thặng dư thành tích lũy và tiêu dùng'}, {id: 'D', text: 'Sự suy thoái kinh tế'}], correctAnswer: 'C' },
+    { id: 'l3_q6', type: 'multiple-choice', text: 'Hệ quả nào sau đây của tích lũy tư bản làm tăng thất nghiệp?', options: [{id: 'A', text: 'Tăng lợi nhuận bình quân'}, {id: 'B', text: 'Giảm tỷ suất thặng dư'}, {id: 'C', text: 'Tăng năng suất lao động'}, {id: 'D', text: 'Tăng cấu tạo hữu cơ của tư bản'}], correctAnswer: 'D' },
+    { id: 'l3_q7', type: 'multiple-choice', text: 'Để tăng quy mô tích lũy nhà tư bản sẽ làm gì?', options: [{id: 'A', text: 'Tăng giá cả hàng hóa'}, {id: 'B', text: 'Giảm năng suất lao động'}, {id: 'C', text: 'Tăng tỷ suất giá trị thặng dư'}, {id: 'D', text: 'Giảm chi phí sản xuất'}], correctAnswer: 'C' },
+    { id: 'l3_q8', type: 'multiple-choice', text: 'Cấu tạo kỹ thuật của tư bản được xác định bởi yếu tố nào?', options: [{id: 'A', text: 'Giá trị tư liệu sinh hoạt'}, {id: 'B', text: 'Tỷ suất giá trị thặng dư'}, {id: 'C', text: 'Tỷ lệ giữa lợi nhuận và tư bản ứng trước'}, {id: 'D', text: 'Trình độ kỹ thuật của sản xuất'}], correctAnswer: 'D' },
+    { id: 'l3_q9', type: 'multiple-choice', text: 'Chi phí sản xuất trong chủ nghĩa tư bản bao gồm những gì?', options: [{id: 'A', text: 'Lợi tức và lợi nhuận thương nghiệp'}, {id: 'B', text: 'Chi phí đầu tư cho tư liệu sản xuất'}, {id: 'C', text: 'Tư bản bất biến và tư bản khả biến'}, {id: 'D', text: 'Giá trị thặng dư và lợi nhuận'}], correctAnswer: 'C' },
+    { id: 'l3_q10', type: 'multiple-choice', text: 'Lợi nhuận của chủ nghĩa tư bản trong nền kinh tế thị trường được tính là:', options: [{id: 'A', text: 'Chi phí sản xuất cộng lợi nhuận bình quân'}, {id: 'B', text: 'Giá trị thặng dư trừ lợi tức'}, {id: 'C', text: 'Giá trị hàng hóa cộng chi phí sản xuất'}, {id: 'D', text: 'Giá trị hàng hóa trừ chi phí sản xuất'}], correctAnswer: 'D' },
+    { id: 'l3_q11', type: 'multiple-choice', text: 'Lợi tức trong nền kinh tế thị trường là:', options: [{id: 'A', text: 'Lợi nhuận bình quân giữa các ngành'}, {id: 'B', text: 'Toàn bộ giá trị thặng dư từ sản xuất mà nhà sản xuất thu được'}, {id: 'C', text: 'Là một phần của lợi nhuận bình quân mà người đi vay trả cho người cho vay'}, {id: 'D', text: 'Chênh lệch giữa giá bán và giá mua hàng hóa trong nền kinh tế thị trường'}], correctAnswer: 'C' },
+    { id: 'l3_q12', type: 'multiple-choice', text: 'Lợi tức có đặc điểm nào sau đây?', options: [{id: 'A', text: 'Là chênh lệch giữa giá bán và giá mua'}, {id: 'B', text: 'Là phần giá trị thặng dư mà người đi vay trả cho người cho vay'}, {id: 'C', text: 'Là toàn bộ giá trị thặng dư từ sản xuất'}, {id: 'D', text: 'Là lợi nhuận từ hoạt động thương mại'}], correctAnswer: 'B' },
+    { id: 'l3_q13', type: 'multiple-choice', text: 'Giá trị thặng dư là nguồn gốc của hình thức nào trong kinh tế thị trường?', options: [{id: 'A', text: 'Tư bản bất biến'}, {id: 'B', text: 'Lợi nhuận và lợi tức'}, {id: 'C', text: 'Giá cả hàng hóa quốc tế'}, {id: 'D', text: 'Chi phí sản xuất'}], correctAnswer: 'B' },
+    { id: 'l3_q14', type: 'multiple-select', text: 'Chọn 2 phương án trả lời đúng. Những yếu tố nào sau đây liên quan trực tiếp đến tích lũy tư bản?', options: [{id: 'A', text: 'Cạnh tranh trong độc quyền'}, {id: 'B', text: 'Giá trị thặng dư'}, {id: 'C', text: 'Tái sản xuất mở rộng'}, {id: 'D', text: 'Lợi nhuận thương nghiệp'}], correctAnswers: ['B', 'C'] },
+    { id: 'l3_q15', type: 'multiple-select', text: 'Chọn 3 phương án trả lời đúng. Những yếu tố nào sau đây là động lực của tích lũy tư bản?', options: [{id: 'A', text: 'Ứng dụng tiến bộ kỹ thuật'}, {id: 'B', text: 'Giảm năng suất lao động'}, {id: 'C', text: 'Tăng giá trị thặng dư'}, {id: 'D', text: 'Cạnh tranh giữa các nhà tư bản'}], correctAnswers: ['A', 'C', 'D'] },
+    { id: 'l3_q16', type: 'true-false-group', context: 'Điền kết quả (đúng hoặc sai) ứng với từng phát biểu dưới đây', subQuestions: [ { id: 'q16_1', text: '1. Lợi nhuận thương nghiệp dựa trên sản xuất hàng hóa', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'B' }, { id: 'q16_2', text: '2. Chi phí sản xuất bao gồm tư bản bất biến và khả biến', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'B' }, { id: 'q16_3', text: '3. Tỷ suất lợi nhuận không phụ thuộc vào tư bản ứng trước', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'A' }, { id: 'q16_4', text: '4. Lợi tức là lợi nhuận từ hoạt động sản xuất', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'A' } ] },
+    { id: 'l3_q17', type: 'true-false-group', context: 'Điền kết quả (đúng hoặc sai) ứng với từng phát biểu dưới đây', subQuestions: [ { id: 'q17_1', text: '1. Tích lũy tư bản là quá trình tư bản hóa giá trị sản xuất', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'A' }, { id: 'q17_2', text: '2. Tái sản xuất giản đơn là đặc trưng của chủ nghĩa tư bản', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'A' }, { id: 'q17_3', text: '3. Giá trị thặng dư là nguồn gốc của tích lũy tư bản', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'B' }, { id: 'q17_4', text: '4. Tái sản xuất mở rộng sử dụng toàn bộ thặng dư cho tiêu dùng', options: [{id: 'A', text: 'Sai'}, {id: 'B', text: 'Đúng'}], correctAnswer: 'A' } ] },
+    { id: 'l3_q18', type: 'drag-drop-fill', text: 'Kéo thả các khái niệm khớp với phát biểu từ 1-4 dưới đây.', items: ['Lợi nhuận thương nghiệp', 'Lợi tức', 'Giá trị thặng dư', 'Lợi nhuận'], sentences: [ { id: 'b1', pre: '1. Nguồn gốc của lợi nhuận và lợi tức là', post: '' }, { id: 'b2', pre: '2. Chênh lệch giữa giá bán và giá mua hàng hóa là', post: '' }, { id: 'b3', pre: '3. Hình thái biểu hiện của giá trị thặng dư trong sản xuất là', post: '' }, { id: 'b4', pre: '4. Phần lợi nhuận người đi vay trả cho người cho vay là', post: '' } ], correct: { b1: 'Giá trị thặng dư', b2: 'Lợi nhuận thương nghiệp', b3: 'Lợi nhuận', b4: 'Lợi tức' } },
+    { id: 'l3_q19', type: 'drag-drop-fill', text: 'Kéo thả các khái niệm khớp với phát biểu từ 1-4 dưới đây.', items: ['Tích lũy tư bản', 'Tư bản khả biến', 'Tỷ suất giá trị thặng dư', 'Cấu tạo hữu cơ'], sentences: [ { id: 'b1', pre: '1. Tỷ lệ giữa tư bản bất biến và khả biến là', post: '' }, { id: 'b2', pre: '2. Phần tư bản dùng để thuê lao động là', post: '' }, { id: 'b3', pre: '3. Tỷ lệ m/v x 100% là', post: '' }, { id: 'b4', pre: '4. Quá trình tư bản hóa giá trị thặng dư là', post: '' } ], correct: { b1: 'Cấu tạo hữu cơ', b2: 'Tư bản khả biến', b3: 'Tỷ suất giá trị thặng dư', b4: 'Tích lũy tư bản' } },
+    { id: 'l3_q20', type: 'multiple-choice', text: 'Chọn 1 phương án trả lời đúng nhất. Tập trung tư bản phản ánh quan hệ nào trong chủ nghĩa tư bản?', options: [{id: 'A', text: 'Giữa công nhân và tư sản'}, {id: 'B', text: 'Giữa các nhà tư bản với nhau'}, {id: 'C', text: 'Giữa tư bản và nhà nước'}, {id: 'D', text: 'Giữa tư bản và thị trường quốc tế'}], correctAnswer: 'B' },
+  ],
+  4: null,
+  5: null,
+  6: null
+};
+
+// --- Main App ---
+
+export default function App() {
+  const [currentLesson, setCurrentLesson] = useState(null);
+  const [quizData, setQuizData] = useState([]);
+
+  const [currentStep, setCurrentStep] = useState(0);
+  const [answers, setAnswers] = useState({});
+  const [dragCategoryState, setDragCategoryState] = useState({});
+  
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [showReview, setShowReview] = useState(false);
+  const [score, setScore] = useState(0);
+
+  // Bắt đầu hoặc làm lại bài học
+  const startLesson = (lessonId) => {
+    const rawData = LESSONS_DATA[lessonId];
+    if (!rawData) return;
+
+    const shuffledData = prepareQuizData(rawData);
+    setQuizData(shuffledData);
+
+    const initialDragCategoryState = {};
+    shuffledData.forEach(q => {
+      if (q.type === 'drag-drop-category') {
+        initialDragCategoryState[q.id] = { pool: q.items, cat1: [], cat2: [] };
+      }
+    });
+    setDragCategoryState(initialDragCategoryState);
+    
+    setCurrentStep(0);
+    setAnswers({});
+    setIsSubmitted(false);
+    setShowReview(false);
+    setScore(0);
+    setCurrentLesson(lessonId);
+  };
+
+  const goHome = () => {
+    setCurrentLesson(null);
+  };
+
+  const handleOptionChange = (questionId, optionId) => {
+    setAnswers(prev => ({ ...prev, [questionId]: optionId }));
+  };
+
+  const handleCheckboxChange = (questionId, optionId) => {
+    setAnswers(prev => {
+      const currentSelected = prev[questionId] || [];
+      if (currentSelected.includes(optionId)) {
+        return { ...prev, [questionId]: currentSelected.filter(id => id !== optionId) };
+      }
+      return { ...prev, [questionId]: [...currentSelected, optionId] };
+    });
+  };
+
+  const calculateScore = () => {
+    let totalScore = 0;
+    quizData.forEach(q => {
+      if (q.type === 'multiple-choice') {
+        if (answers[q.id] === q.correctAnswer) totalScore++;
+      } 
+      else if (q.type === 'multiple-select') {
+        const userAns = answers[q.id] || [];
+        if (userAns.length === q.correctAnswers.length && userAns.every(v => q.correctAnswers.includes(v))) {
+          totalScore++;
+        }
+      } 
+      else if (q.type === 'true-false-group') {
+        const allCorrect = q.subQuestions.every(subQ => answers[subQ.id] === subQ.correctAnswer);
+        if (allCorrect) totalScore++;
+      } 
+      else if (q.type === 'drag-drop-category') {
+        const state = dragCategoryState[q.id];
+        const c1Ok = state.cat1.length === q.correct.cat1.length && state.cat1.every(i => q.correct.cat1.includes(i));
+        const c2Ok = state.cat2.length === q.correct.cat2.length && state.cat2.every(i => q.correct.cat2.includes(i));
+        if (c1Ok && c2Ok) totalScore++;
+      }
+      else if (q.type === 'drag-drop-fill') {
+        const allCorrect = Object.keys(q.correct).every(key => answers[`${q.id}_${key}`] === q.correct[key]);
+        if (allCorrect) totalScore++;
+      }
+    });
+
+    setScore(totalScore);
+    setIsSubmitted(true);
+  };
+
+  const handleNext = () => {
+    if (currentStep < quizData.length - 1) setCurrentStep(prev => prev + 1);
+    else calculateScore();
+  };
+
+  const handlePrev = () => {
+    if (currentStep > 0) setCurrentStep(prev => prev - 1);
+  };
+
+  const renderQuestion = (question, index, isReview) => {
+    switch (question.type) {
+      case 'multiple-choice': return <MultipleChoiceQuestion key={question.id} data={question} index={index} selectedValue={answers[question.id]} onChange={handleOptionChange} reviewMode={isReview} />;
+      case 'multiple-select': return <MultipleSelectQuestion key={question.id} data={question} index={index} selectedValues={answers[question.id]} onChange={handleCheckboxChange} reviewMode={isReview} />;
+      case 'true-false-group': return <TrueFalseGroupQuestion key={question.id} data={question} index={index} answers={answers} onChange={handleOptionChange} reviewMode={isReview} />;
+      case 'drag-drop-fill': return <DragDropFillQuestion key={question.id} data={question} index={index} answers={answers} setAnswers={setAnswers} reviewMode={isReview} />;
+      case 'drag-drop-category': return <DragDropCategoryQuestion key={question.id} data={question} index={index} itemsState={dragCategoryState} setItemsState={setDragCategoryState} reviewMode={isReview} />;
+      default: return null;
+    }
+  };
+
+  // ----------------------------------------------------
+  // GIAO DIỆN TRANG CHỦ (Hiển thị 6 bài)
+  // ----------------------------------------------------
+  if (currentLesson === null) {
+    return (
+      <div className="min-h-screen bg-[#f4f6f8] py-12 px-4 font-sans text-gray-800 flex items-center justify-center">
+        <div className="max-w-4xl mx-auto w-full">
+          <div className="text-center mb-10">
+            <h1 className="text-4xl font-extrabold text-blue-800 mb-3 tracking-tight">Hệ Thống Kiểm Tra Trực Tuyến</h1>
+            <p className="text-gray-500 text-lg">Vui lòng chọn bài học bên dưới để bắt đầu ôn tập</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[1, 2, 3, 4, 5, 6].map(lessonId => {
+              const isAvailable = !!LESSONS_DATA[lessonId];
+              return (
+                <div key={lessonId} className={`bg-white rounded-2xl shadow-sm border p-6 flex flex-col transition-all duration-300 ${isAvailable ? 'border-blue-100 hover:shadow-lg hover:-translate-y-1' : 'border-gray-100 opacity-70'}`}>
+                  <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-5 text-xl font-bold shadow-sm ${isAvailable ? 'bg-blue-50 text-blue-600 border border-blue-100' : 'bg-gray-50 text-gray-400 border border-gray-100'}`}>
+                    {lessonId}
+                  </div>
+                  <h3 className={`text-xl font-bold mb-2 ${isAvailable ? 'text-gray-800' : 'text-gray-400'}`}>Bài {lessonId}</h3>
+                  <p className="text-gray-500 text-sm mb-8 flex-1">
+                    {isAvailable ? `Bộ câu hỏi ôn tập tổng hợp cho nội dung Bài ${lessonId}.` : 'Nội dung đang được cập nhật.'}
+                  </p>
+                  <button 
+                    onClick={() => isAvailable && startLesson(lessonId)}
+                    disabled={!isAvailable}
+                    className={`w-full py-3.5 rounded-xl font-bold transition-colors ${isAvailable ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-md hover:shadow-blue-200' : 'bg-gray-100 text-gray-400 cursor-not-allowed'}`}
+                  >
+                    {isAvailable ? 'Bắt Đầu Làm Bài' : 'Chưa Mở'}
+                  </button>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ----------------------------------------------------
+  // GIAO DIỆN KẾT QUẢ ĐIỂM SỐ
+  // ----------------------------------------------------
+  if (isSubmitted && !showReview) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+        <div className="bg-white p-10 rounded-2xl shadow-lg max-w-md w-full text-center">
+          <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <span className="text-4xl text-green-600">✓</span>
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800 mb-2">Hoàn thành!</h2>
+          <p className="text-gray-500 mb-6">Bạn đã hoàn thành bài kiểm tra Bài {currentLesson}.</p>
+          
+          <div className="bg-blue-50 py-6 rounded-lg mb-8">
+            <p className="text-sm text-blue-600 font-bold uppercase tracking-wider mb-1">Tổng điểm</p>
+            <p className="text-5xl font-extrabold text-blue-700">{score} <span className="text-2xl text-blue-400">/ {quizData.length}</span></p>
+          </div>
+
+          <div className="space-y-3">
+            <button onClick={() => setShowReview(true)} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-xl transition-colors shadow-md">Xem chi tiết đáp án</button>
+            <button onClick={() => startLesson(currentLesson)} className="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold py-3 px-4 rounded-xl transition-colors">Làm lại bài này</button>
+            <button onClick={goHome} className="w-full text-gray-500 hover:text-gray-800 font-semibold py-3 px-4 rounded-xl transition-colors">Về trang chủ</button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ----------------------------------------------------
+  // GIAO DIỆN LÀM BÀI / XEM LẠI ĐÁP ÁN
+  // ----------------------------------------------------
+  return (
+    <div className="min-h-screen bg-[#f4f6f8] font-sans text-gray-800 pb-28">
+      
+      {/* Header */}
+      <div className="bg-white shadow-sm sticky top-0 z-40">
+        <div className="max-w-4xl mx-auto py-3 px-4 flex justify-between items-center">
+          <div className="flex items-center gap-3">
+            <button onClick={goHome} className="p-2 -ml-2 hover:bg-gray-100 rounded-full transition-colors flex items-center justify-center" title="Về trang chủ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-gray-500 hover:text-blue-600"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <div>
+              <h1 className="text-xl font-bold text-blue-700">Kiểm Tra: Bài {currentLesson}</h1>
+              {showReview && <span className="inline-block mt-0.5 px-3 py-0.5 bg-red-100 text-red-700 text-xs font-bold rounded-full">Chế độ xem lại (Đáp án)</span>}
+            </div>
+          </div>
+          {!showReview && (
+            <div className="text-sm font-bold text-gray-500 bg-gray-100 px-4 py-2 rounded-full">
+              Câu {currentStep + 1} / {quizData.length}
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="max-w-4xl mx-auto mt-8 px-4">
+        {showReview ? (
+          <div className="space-y-6">
+            <div className="bg-white p-6 rounded-lg shadow mb-8 text-center border-t-4 border-blue-500">
+              <h2 className="text-2xl font-bold text-gray-800">Chi tiết bài làm (Bài {currentLesson})</h2>
+              <p className="text-gray-600 mt-2">Tổng điểm: <strong className="text-blue-600 text-xl">{score}/{quizData.length}</strong></p>
+            </div>
+            {quizData.map((q, idx) => renderQuestion(q, idx, true))}
+          </div>
+        ) : (
+          renderQuestion(quizData[currentStep], currentStep, false)
+        )}
+      </div>
+
+      {/* Footer Navigation (Thi) */}
+      {!showReview && (
+        <div className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 shadow-[0_-10px_15px_-3px_rgba(0,0,0,0.05)] z-50">
+          <div className="max-w-4xl mx-auto flex justify-between items-center p-4 px-6">
+            <button onClick={handlePrev} disabled={currentStep === 0} className={`font-bold py-2.5 px-6 rounded-lg transition-colors ${currentStep === 0 ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-gray-200 hover:bg-gray-300 text-gray-800'}`}>
+              Quay lại
+            </button>
+            <button onClick={handleNext} className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 px-8 rounded-lg shadow-md transition-colors">
+              {currentStep === quizData.length - 1 ? 'Nộp Bài' : 'Tiếp Theo'}
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Footer Navigation (Xem lại) */}
+      {showReview && (
+        <div className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 shadow-lg z-50">
+          <div className="max-w-4xl mx-auto flex justify-center gap-4 p-4">
+             <button onClick={() => startLesson(currentLesson)} className="bg-blue-100 hover:bg-blue-200 text-blue-700 font-bold py-3 px-8 rounded-xl transition-colors shadow-sm">
+              Làm lại bài này
+            </button>
+             <button onClick={goHome} className="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-8 rounded-xl transition-colors shadow-md">
+              Về trang chủ
+            </button>
+          </div>
+        </div>
+      )}
+
+    </div>
+  );
+}

@@ -1,0 +1,4049 @@
+// --- KHO DỮ LIỆU ĐỀ THI ---
+const LESSONS_DATA = {
+  "1": [
+    {
+      "id": "l1_q1",
+      "type": "multiple-choice",
+      "text": "Đối tượng nghiên cứu của Kinh tế chính trị Mác - Lênin là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nguồn gốc của cải và sự giàu có của tư bản chủ nghĩa."
+        },
+        {
+          "id": "B",
+          "text": "Các phương thức sản xuất xã hội được đặt trong sự liên hệ biện chứng với trình độ phát triển của lực lượng sản xuất và kiến trúc thượng tầng."
+        },
+        {
+          "id": "C",
+          "text": "Sự sản xuất của xã hội."
+        },
+        {
+          "id": "D",
+          "text": "Các quan hệ sản xuất và trao đổi được đặt trong sự liên hệ biện chứng với trình độ phát triển của lực lượng sản xuất và kiến trúc thượng tầng."
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "l1_q2",
+      "type": "multiple-choice",
+      "text": "Phương pháp nghiên cứu quan trọng của Kinh tế chính trị Mác – Lênin là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trừu tượng hóa khoa học."
+        },
+        {
+          "id": "B",
+          "text": "Mô hình hóa đối tượng."
+        },
+        {
+          "id": "C",
+          "text": "Khảo sát đối tượng và thu thập số liệu."
+        },
+        {
+          "id": "D",
+          "text": "Thực nghiệm khoa học."
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l1_q3",
+      "type": "multiple-choice",
+      "text": "Điều kiện nào là \"điều kiện đủ\" để sản xuất hàng hoá ra đời?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Có thị trường phát triển mạnh mẽ."
+        },
+        {
+          "id": "B",
+          "text": "Có công cụ lao động tiên tiến."
+        },
+        {
+          "id": "C",
+          "text": "Sự tách biệt về mặt kinh tế của các chủ thể sản xuất."
+        },
+        {
+          "id": "D",
+          "text": "Có nhà nước quản lý sản xuất."
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l1_q4",
+      "type": "multiple-choice",
+      "text": "Điều kiện nào được gọi là \"điều kiện cần\" để sản xuất hàng hoá ra đời?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Có phân công lao động xã hội."
+        },
+        {
+          "id": "B",
+          "text": "Có công cụ lao động hiện đại."
+        },
+        {
+          "id": "C",
+          "text": "Có thị trường phát triển sôi động."
+        },
+        {
+          "id": "D",
+          "text": "Có nhà nước quản lý xã hội."
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l1_q5",
+      "type": "drag-drop-fill",
+      "text": "Kéo thả các đáp án khớp với các phát biểu từ 1 đến 4 dưới đây.",
+      "items": [
+        "điều kiện cần",
+        "điều kiện đủ",
+        "sản phẩm",
+        "chuyên môn hoá"
+      ],
+      "sentences": [
+        {
+          "id": "b1",
+          "pre": "1. Phân công lao động xã hội là",
+          "post": "để nền sản xuất hàng hoá ra đời và phát triển."
+        },
+        {
+          "id": "b2",
+          "pre": "2. Sự tách biệt về mặt kinh tế giữa những người sản xuất hàng hoá là",
+          "post": "để nền sản xuất hàng hoá ra đời và phát triển."
+        },
+        {
+          "id": "b3",
+          "pre": "3. Sản xuất hàng hoá là sản xuất ra",
+          "post": "để trao đổi, mua bán."
+        },
+        {
+          "id": "b4",
+          "pre": "4. Phân công lao động xã hội là sự phân chia lao động trong xã hội thành các ngành, các lĩnh vực của sản xuất khác nhau, tạo nên sự",
+          "post": "của những người sản xuất khác nhau."
+        }
+      ],
+      "correct": {
+        "b1": "điều kiện cần",
+        "b2": "điều kiện đủ",
+        "b3": "sản phẩm",
+        "b4": "chuyên môn hoá"
+      }
+    },
+    {
+      "id": "l1_q6",
+      "type": "multiple-choice",
+      "text": "Hàng hoá là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sản phẩm được sản xuất ra để đem bán."
+        },
+        {
+          "id": "B",
+          "text": "Sản phẩm của lao động để thoả mãn nhu cầu của con người."
+        },
+        {
+          "id": "C",
+          "text": "Sản phẩm của lao động có thể thoả mãn nhu cầu nào đó của con người thông qua trao đổi, mua bán."
+        },
+        {
+          "id": "D",
+          "text": "Sản phẩm ở trên thị trường."
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l1_q7",
+      "type": "multiple-choice",
+      "text": "Giá trị của hàng hoá được quyết định bởi yếu tố nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sự hao phí sức lao động của con người."
+        },
+        {
+          "id": "B",
+          "text": "Công dụng của hàng hoá."
+        },
+        {
+          "id": "C",
+          "text": "Lao động trừu tượng của người sản xuất kết tinh trong hàng hoá."
+        },
+        {
+          "id": "D",
+          "text": "Sự khan hiếm của hàng hoá."
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l1_q8",
+      "type": "multiple-choice",
+      "text": "Hãy chọn phương án trả lời đúng nhất về lượng giá trị của một đơn vị hàng hoá.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Phụ thuộc vào cường độ lao động."
+        },
+        {
+          "id": "B",
+          "text": "Tỷ lệ thuận với năng suất lao động."
+        },
+        {
+          "id": "C",
+          "text": "Tỷ lệ nghịch với cường độ lao động."
+        },
+        {
+          "id": "D",
+          "text": "Tỷ lệ nghịch với năng suất lao động."
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "l1_q9",
+      "type": "multiple-choice",
+      "text": "Khi đồng thời tăng năng suất lao động và cường độ lao động lên 2 lần thì ý nào dưới đây là đúng?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tổng số giá trị hàng hoá tăng 2 lần, tổng số hàng hoá tăng 2 lần."
+        },
+        {
+          "id": "B",
+          "text": "Giá trị 1 hàng hoá giảm 2 lần, tổng số giá trị hàng hoá tăng 2 lần."
+        },
+        {
+          "id": "C",
+          "text": "Tổng số hàng hoá tăng lên 2 lần, giá trị 1 hàng hoá giảm 2 lần."
+        },
+        {
+          "id": "D",
+          "text": "Tổng số hàng hoá tăng lên 4 lần, tổng số giá trị hàng hoá tăng lên 4 lần."
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l1_q10",
+      "type": "drag-drop-category",
+      "text": "Kéo thả các hàng hóa sau đây vào cột tương ứng.",
+      "items": [
+        "Xe máy",
+        "Khóa học trực tuyến",
+        "Quần áo",
+        "Internet",
+        "Điện thoại",
+        "Dịch vụ y tế",
+        "Sách vở",
+        "Sách điện tử"
+      ],
+      "categories": [
+        "Hàng hóa hữu hình",
+        "Hàng hóa vô hình"
+      ],
+      "correct": {
+        "cat1": [
+          "Xe máy",
+          "Quần áo",
+          "Điện thoại",
+          "Sách vở"
+        ],
+        "cat2": [
+          "Khóa học trực tuyến",
+          "Internet",
+          "Dịch vụ y tế",
+          "Sách điện tử"
+        ]
+      }
+    },
+    {
+      "id": "l1_q11",
+      "type": "true-false-group",
+      "context": "Trong 8 giờ công nhân sản xuất được 100 sản phẩm có tổng giá trị là 600 USD. Giá trị của một đơn vị sản phẩm là 6,0 USD. Chọn đáp án (Đúng hoặc Sai) với từng trường hợp sau:",
+      "subQuestions": [
+        {
+          "id": "q11_1",
+          "text": "1. Nếu cường độ lao động tăng lên 3 lần thì giá trị của một đơn vị sản phẩm là 3,0 USD.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q11_2",
+          "text": "2. Nếu cường độ lao động tăng lên 2 lần thì giá trị của một đơn vị sản phẩm là 6,0 USD.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q11_3",
+          "text": "3. Nếu năng suất lao động tăng lên 3 lần thì giá trị của một đơn vị sản phẩm là 2,0 USD.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q11_4",
+          "text": "4. Nếu năng suất lao động tăng lên 2 lần thì giá trị của một đơn vị sản phẩm là 6,0 USD.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        }
+      ]
+    },
+    {
+      "id": "l1_q12",
+      "type": "true-false-group",
+      "context": "Trong 8 giờ công nhân sản xuất được 100 sản phẩm có tổng giá trị là 300 USD. Giá trị của một đơn vị sản phẩm là 3 USD. Chọn đáp án (Đúng hoặc Sai) với từng trường hợp sau:",
+      "subQuestions": [
+        {
+          "id": "q12_1",
+          "text": "1. Nếu năng suất lao động tăng lên 3 lần thì giá trị của một đơn vị sản phẩm là 1,0 USD.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q12_2",
+          "text": "2. Nếu năng suất lao động tăng lên 2 lần thì giá trị của một đơn vị sản phẩm là 1,5 USD.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q12_3",
+          "text": "3. Nếu năng suất lao động tăng lên 2 lần thì giá trị của một đơn vị sản phẩm là 3 USD.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q12_4",
+          "text": "4. Nếu năng suất lao động tăng lên 3 lần thì giá trị của một đơn vị sản phẩm là 6,0 USD.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        }
+      ]
+    },
+    {
+      "id": "l1_q13",
+      "type": "multiple-choice",
+      "text": "Sản xuất hàng hoá khác với sản xuất tự nhiên ở điểm nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sản xuất hàng hoá hướng đến trao đổi, còn sản xuất tự nhiên là để tự tiêu dùng."
+        },
+        {
+          "id": "B",
+          "text": "Sản xuất tự nhiên có năng suất cao hơn."
+        },
+        {
+          "id": "C",
+          "text": "Sản xuất hàng hoá không phụ thuộc thị trường."
+        },
+        {
+          "id": "D",
+          "text": "Sản xuất tự nhiên gắn với công nghệ cao."
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l1_q14",
+      "type": "multiple-choice",
+      "text": "Đặc điểm nào sau đây không thuộc về sản xuất hàng hoá?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sản phẩm phục vụ hoàn toàn cho tiêu dùng cá nhân."
+        },
+        {
+          "id": "B",
+          "text": "Có sự phân công lao động xã hội."
+        },
+        {
+          "id": "C",
+          "text": "Có sự tách biệt tương đối giữa các chủ thể sản xuất."
+        },
+        {
+          "id": "D",
+          "text": "Sản phẩm để trao đổi, mua bán."
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l1_q15",
+      "type": "multiple-choice",
+      "text": "Những chức năng cơ bản của Kinh tế chính trị Mác – Lênin?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Chức năng phê phán, chức năng thực tiễn, chức năng phương pháp luận, chức năng tư tưởng."
+        },
+        {
+          "id": "B",
+          "text": "Chức năng nhận thức, chức năng thực tiễn, chức năng thông tin, chức năng tư tưởng."
+        },
+        {
+          "id": "C",
+          "text": "Chức năng phê phán, chức năng thực tiễn, chức năng thông tin, chức năng tư tưởng."
+        },
+        {
+          "id": "D",
+          "text": "Chức năng nhận thức, chức năng thực tiễn, chức năng tư tưởng, chức năng phương pháp luận."
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "l1_q16",
+      "type": "drag-drop-category",
+      "text": "Kéo thả các đặc điểm sau vào cột tương ứng.",
+      "items": [
+        "Con người có thể thay đổi",
+        "Sản phẩm của con người",
+        "Tồn tại khách quan",
+        "Con người có thể nhận thức và vận dụng"
+      ],
+      "categories": [
+        "Chính sách kinh tế",
+        "Quy luật kinh tế"
+      ],
+      "correct": {
+        "cat1": [
+          "Con người có thể thay đổi",
+          "Sản phẩm của con người"
+        ],
+        "cat2": [
+          "Tồn tại khách quan",
+          "Con người có thể nhận thức và vận dụng"
+        ]
+      }
+    },
+    {
+      "id": "l1_q17",
+      "type": "multiple-select",
+      "text": "Chọn 2 phương án trả lời đúng. Những phương pháp nghiên cứu và học tập chủ yếu được sử dụng trong Kinh tế chính trị Mác – Lênin gồm:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Logic kết hợp với lịch sử"
+        },
+        {
+          "id": "B",
+          "text": "Thí nghiệm trong điều kiện phòng lab"
+        },
+        {
+          "id": "C",
+          "text": "Dự báo mô hình kinh tế bằng thuật toán AI"
+        },
+        {
+          "id": "D",
+          "text": "Phân tích – tổng hợp và trừu tượng hóa khoa học"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "l1_q18",
+      "type": "multiple-select",
+      "text": "Chọn 2 phương án trả lời đúng. Đặc điểm nào phản ánh bản chất của phân công lao động xã hội?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sự phân chia lao động xã hội thành các ngành, nghề, các lĩnh vực kinh tế khác nhau"
+        },
+        {
+          "id": "B",
+          "text": "Giúp người sản xuất tự cung tự cấp, tạo ra sản phẩm đáp ứng đủ tất cả nhu cầu của đời sống"
+        },
+        {
+          "id": "C",
+          "text": "Tạo ra sự đồng nhất về sản phẩm và giá trị"
+        },
+        {
+          "id": "D",
+          "text": "Sự chuyên môn hóa của những người sản xuất"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "l1_q19",
+      "type": "true-false-group",
+      "context": "Trong 8 giờ công nhân sản xuất được 200 sản phẩm có tổng giá trị là 400 USD. Chọn đáp án (Đúng hoặc Sai):",
+      "subQuestions": [
+        {
+          "id": "q19_1",
+          "text": "1. Nếu cường độ lao động tăng lên 2 lần thì tổng giá trị hàng hoá là 800 USD.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q19_2",
+          "text": "2. Nếu cường độ lao động tăng lên 3 lần thì tổng giá trị hàng hoá là 400 USD.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q19_3",
+          "text": "3. Nếu năng suất lao động tăng lên 2 lần thì tổng giá trị hàng hoá là 400 USD.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q19_4",
+          "text": "4. Nếu năng suất lao động tăng lên 3 lần thì tổng giá trị hàng hoá là 1.200 USD.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        }
+      ]
+    },
+    {
+      "id": "l1_q20",
+      "type": "true-false-group",
+      "context": "Trong 8 giờ công nhân sản xuất được 200 sản phẩm có tổng giá trị là 600 USD. Giá trị của một đơn vị sản phẩm là 3 USD. Chọn đáp án (Đúng hoặc Sai):",
+      "subQuestions": [
+        {
+          "id": "q20_1",
+          "text": "1. Nếu cường độ lao động tăng lên 3 lần thì giá trị của một đơn vị sản phẩm là 9 USD.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q20_2",
+          "text": "2. Nếu cường độ lao động tăng lên 2 lần thì giá trị của một đơn vị sản phẩm là 6 USD.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q20_3",
+          "text": "3. Nếu cường độ lao động tăng lên 2 lần thì giá trị của một đơn vị sản phẩm là 3 USD.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q20_4",
+          "text": "4. Nếu cường độ lao động tăng lên 3 lần thì giá trị của một đơn vị sản phẩm là 3 USD.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        }
+      ]
+    },
+    {
+      "id": "l1_q21",
+      "type": "multiple-choice",
+      "text": "Sự giống nhau giữa quy luật kinh tế và chính sách kinh tế là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Đều là những hiện tượng tồn tại khách quan."
+        },
+        {
+          "id": "B",
+          "text": "Luôn thúc đẩy sự giàu có và văn minh của xã hội."
+        },
+        {
+          "id": "C",
+          "text": "Tồn tại khách quan, không phụ thuộc vào suy nghĩ của con người."
+        },
+        {
+          "id": "D",
+          "text": "Tồn tại vĩnh viễn cùng với sự tồn tại, phát triển của xã hội loài người."
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l1_q22",
+      "type": "multiple-select",
+      "text": "Chọn 2 phương án trả lời đúng. Sản xuất hàng hóa làm phát sinh các mối quan hệ nào sau đây?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Quan hệ trao đổi, mua bán giữa các chủ thể sản xuất."
+        },
+        {
+          "id": "B",
+          "text": "Quan hệ giữa người với người thông qua sản phẩm hàng hóa."
+        },
+        {
+          "id": "C",
+          "text": "Quan hệ giữa con người với thiên nhiên."
+        },
+        {
+          "id": "D",
+          "text": "Quan hệ trực tiếp giữa người sản xuất và sản phẩm họ làm ra."
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "l1_q23",
+      "type": "multiple-select",
+      "text": "Chọn 2 phương án trả lời đúng. Điều kiện ra đời của sản xuất hàng hóa bao gồm:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Phân công lao động chung và chế độ sở hữu khác nhau về tư liệu sản xuất."
+        },
+        {
+          "id": "B",
+          "text": "Phân công lao động xã hội."
+        },
+        {
+          "id": "C",
+          "text": "Phân công lao động cá biệt và chế độ tư hữu về tư liệu sản xuất."
+        },
+        {
+          "id": "D",
+          "text": "Sự tách biệt về mặt kinh tế của các chủ thể sản xuất."
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "l1_q24",
+      "type": "multiple-choice",
+      "text": "Trong sản xuất hàng hóa, mục đích chính của người sản xuất là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Để phục vụ nhu cầu tiêu dùng cá nhân và gia đình."
+        },
+        {
+          "id": "B",
+          "text": "Để tích trữ của cải cho các thế hệ sau."
+        },
+        {
+          "id": "C",
+          "text": "Nhằm mục đích trao đổi, mua bán trên thị trường."
+        },
+        {
+          "id": "D",
+          "text": "Theo mệnh lệnh từ các cơ quan quản lý nhà nước."
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l1_q25",
+      "type": "multiple-choice",
+      "text": "Nội dung nào sau đây phản ánh đúng bản chất của \"Phân công lao động xã hội\"?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Là sự phân chia lao động trong nội bộ một nhà máy hay một doanh nghiệp."
+        },
+        {
+          "id": "B",
+          "text": "Là việc mỗi người tự sản xuất mọi thứ để đáp ứng nhu cầu của mình."
+        },
+        {
+          "id": "C",
+          "text": "Là sự phân chia lao động xã hội thành các ngành, các lĩnh vực sản xuất khác nhau."
+        },
+        {
+          "id": "D",
+          "text": "Là sự phân chia lao động theo độ tuổi và giới tính của người lao động."
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l1_q26",
+      "type": "multiple-choice",
+      "text": "Phân công lao động xã hội tạo ra sự biến đổi nào đối với người sản xuất?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Làm cho người sản xuất trở nên độc lập hoàn toàn, không cần trao đổi."
+        },
+        {
+          "id": "B",
+          "text": "Làm cho người sản xuất có thể tự cung tự cấp mọi sản phẩm."
+        },
+        {
+          "id": "C",
+          "text": "Tạo nên sự chuyên môn hóa của những người sản xuất vào các ngành nghề khác nhau."
+        },
+        {
+          "id": "D",
+          "text": "Làm giảm năng suất lao động do quá trình sản xuất bị chia nhỏ."
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l1_q27",
+      "type": "multiple-choice",
+      "text": "Văn hóa thương hiệu có thể được hiểu là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Các chiến dịch quảng cáo rầm rộ trên mạng xã hội."
+        },
+        {
+          "id": "B",
+          "text": "Tên gọi và logo được thiết kế bắt mắt của doanh nghiệp."
+        },
+        {
+          "id": "C",
+          "text": "Những giá trị, niềm tin và cách thức thương hiệu tương tác với nhân viên và khách hàng."
+        },
+        {
+          "id": "D",
+          "text": "Các hoạt động từ thiện và bảo vệ môi trường của doanh nghiệp."
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l1_q28",
+      "type": "multiple-choice",
+      "text": "Đặc điểm nào sau đây KHÔNG thuộc về sản xuất hàng hóa?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Có sự phân công lao động xã hội."
+        },
+        {
+          "id": "B",
+          "text": "Sản phẩm phục vụ hoàn toàn cho tiêu dùng cá nhân của người sản xuất."
+        },
+        {
+          "id": "C",
+          "text": "Có sự tách biệt tương đối giữa các chủ thể sản xuất."
+        },
+        {
+          "id": "D",
+          "text": "Sản phẩm được sản xuất ra để trao đổi, mua bán."
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l1_q29",
+      "type": "multiple-choice",
+      "text": "Một sản phẩm của lao động chỉ trở thành hàng hóa khi nó:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Có ích cho người sản xuất ra nó."
+        },
+        {
+          "id": "B",
+          "text": "Được trưng bày trong các cửa hàng."
+        },
+        {
+          "id": "C",
+          "text": "Có thể thỏa mãn nhu cầu con người thông qua trao đổi, mua bán."
+        },
+        {
+          "id": "D",
+          "text": "Có giá trị sử dụng cao đối với mọi người."
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l1_q30",
+      "type": "multiple-choice",
+      "text": "Chức năng nào sau đây là chức năng cơ bản của Kinh tế chính trị Mác - Lênin?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Chức năng phê phán, thực tiễn, thông tin và tư tưởng."
+        },
+        {
+          "id": "B",
+          "text": "Chức năng nhận thức, thực tiễn, thông tin và tư tưởng."
+        },
+        {
+          "id": "C",
+          "text": "Chức năng nhận thức, thực tiễn, tư tưởng và phương pháp luận."
+        },
+        {
+          "id": "D",
+          "text": "Chức năng dự báo, thực tiễn, tư tưởng và phương pháp luận."
+        }
+      ],
+      "correctAnswer": "C"
+    }
+  ],
+  "2": [
+    {
+      "id": "l2_q1",
+      "type": "true-false-group",
+      "context": "Cho biết chi phí tư bản khả biến là 2000 usd. Chọn đáp án (Đúng hoặc Sai) với từng trường hợp sau:",
+      "subQuestions": [
+        {
+          "id": "q2_1_1",
+          "text": "1. Nếu m'=300% thì khối lượng giá trị mới do công nhân tạo ra là 7000 usd",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q2_1_2",
+          "text": "2. Nếu m'=400% thì khối lượng giá trị mới do công nhân tạo ra là 8000 usd",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q2_1_3",
+          "text": "3. Nếu m'=100% thì khối lượng giá trị mới do công nhân tạo ra là 4000 usd",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q2_1_4",
+          "text": "4. Nếu m'=200% thì khối lượng giá trị mới do công nhân tạo ra là 6000 usd",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        }
+      ]
+    },
+    {
+      "id": "l2_q2",
+      "type": "true-false-group",
+      "context": "Cho biết tư bản bất biến c=1.200 USD, tỷ suất giá trị thặng dư m'=200%. Chọn đáp án (Đúng hoặc Sai):",
+      "subQuestions": [
+        {
+          "id": "q2_2_1",
+          "text": "1. Với cấu tạo hữu cơ c/v=4/1 thì giá trị hàng hoá là 1.800 USD",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q2_2_2",
+          "text": "2. Với cấu tạo hữu cơ c/v=3/1 thì giá trị hàng hoá là 2.400 USD",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q2_2_3",
+          "text": "3. Với cấu tạo hữu cơ c/v=2/1 thì giá trị hàng hoá là 3.000 USD",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q2_2_4",
+          "text": "4. Với cấu tạo hữu cơ c/v=4/1 thì giá trị hàng hoá là 2.000 USD",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        }
+      ]
+    },
+    {
+      "id": "l2_q3",
+      "type": "true-false-group",
+      "context": "Cho biết tư bản bất biến c=1.500 USD, tỷ suất giá trị thặng dư m'=100%. Chọn đáp án (Đúng hoặc Sai):",
+      "subQuestions": [
+        {
+          "id": "q2_3_1",
+          "text": "1. Với cấu tạo hữu cơ c/v=3/1 thì giá trị hàng hoá là 2.500 USD",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q2_3_2",
+          "text": "2. Với cấu tạo hữu cơ c/v=2/1 thì giá trị hàng hoá là 3.000 USD",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q2_3_3",
+          "text": "3. Với cấu tạo hữu cơ c/v=3/1 thì giá trị hàng hoá là 2.600 USD",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q2_3_4",
+          "text": "4. Với cấu tạo hữu cơ c/v=5/1 thì giá trị hàng hoá là 2.250 USD",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        }
+      ]
+    },
+    {
+      "id": "l2_q4",
+      "type": "multiple-choice",
+      "text": "Dựa vào căn cứ nào để chia tư bản thành tư bản bất biến và tư bản khả biến?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hao mòn hữu hình hoặc vô hình"
+        },
+        {
+          "id": "B",
+          "text": "Phương thức chuyển giá trị các bộ phận tư bản sang sản phẩm"
+        },
+        {
+          "id": "C",
+          "text": "Tốc độ chu chuyển của tư bản"
+        },
+        {
+          "id": "D",
+          "text": "Vai trò các bộ phận tư bản trong quá trình sản xuất giá trị thặng dư"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "l2_q5",
+      "type": "multiple-choice",
+      "text": "Dựa vào căn cứ nào để chia tư bản ra thành tư bản cố định và tư bản lưu động?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Phương thức chuyển giá trị của các bộ phận tư bản sang sản phẩm"
+        },
+        {
+          "id": "B",
+          "text": "Vai trò các bộ phận tư bản trong quá trình sản xuất giá trị thặng dư"
+        },
+        {
+          "id": "C",
+          "text": "Tốc độ chu chuyển chung của tư bản"
+        },
+        {
+          "id": "D",
+          "text": "Sự thay đổi về lượng trong quá trình sản xuất"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l2_q6",
+      "type": "multiple-select",
+      "text": "Chọn 2 phương án trả lời đúng. Đâu là thuộc tính của hàng hoá sức lao động?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Giá trị sử dụng của hàng hoá sức lao động"
+        },
+        {
+          "id": "B",
+          "text": "Giá trị thặng dư"
+        },
+        {
+          "id": "C",
+          "text": "Thuộc tính sử dụng của hàng hoá sức lao động"
+        },
+        {
+          "id": "D",
+          "text": "Giá trị của hàng hoá sức lao động"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "l2_q7",
+      "type": "multiple-select",
+      "text": "Chọn 2 phương án trả lời đúng. Để đạt được giá trị thặng dư siêu ngạch, doanh nghiệp cần:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bán hàng hóa với giá trị cao hơn cả giá trị xã hội"
+        },
+        {
+          "id": "B",
+          "text": "Trả lương công nhân cao hơn mức quy định"
+        },
+        {
+          "id": "C",
+          "text": "Sản xuất ra hàng hóa có giá trị thấp hơn mức trung bình xã hội"
+        },
+        {
+          "id": "D",
+          "text": "Áp dụng công nghệ mới sớm hơn đối thủ cạnh tranh"
+        }
+      ],
+      "correctAnswers": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "l2_q8",
+      "type": "multiple-select",
+      "text": "Chọn 2 phương án trả lời đúng. Điều kiện để nhà tư bản thu được giá trị thặng dư siêu ngạch là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sản phẩm sản xuất ra có giá trị thấp hơn giá trị xã hội nhưng vẫn bán theo giá thị trường"
+        },
+        {
+          "id": "B",
+          "text": "Tổ chức sản xuất theo lối thủ công truyền thống"
+        },
+        {
+          "id": "C",
+          "text": "Năng suất lao động cá biệt cao hơn mức trung bình của xã hội"
+        },
+        {
+          "id": "D",
+          "text": "Tăng ngày lao động của công nhân"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "l2_q9",
+      "type": "multiple-select",
+      "text": "Chọn 2 phương án trả lời đúng. Điều kiện để sức lao động trở thành hàng hoá là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Người lao động có học vấn cao"
+        },
+        {
+          "id": "B",
+          "text": "Người lao động không có tư liệu sản xuất"
+        },
+        {
+          "id": "C",
+          "text": "Người lao động được tự do về thân thể"
+        },
+        {
+          "id": "D",
+          "text": "Nhà tư bản có quyền ra lệnh"
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "l2_q10",
+      "type": "multiple-choice",
+      "text": "Giá trị thặng dư siêu ngạch còn được gọi là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hình thức biến tướng của giá trị thặng dư tuyệt đối."
+        },
+        {
+          "id": "B",
+          "text": "Hình thức biểu hiện của giá trị thặng dư tương đối."
+        },
+        {
+          "id": "C",
+          "text": "Hình thức biến tướng của sản phẩm thặng dư tương đối."
+        },
+        {
+          "id": "D",
+          "text": "Hình thức biến tướng của giá trị thặng dư tương đối."
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "l2_q11",
+      "type": "multiple-choice",
+      "text": "Giá trị thặng dư là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Giá trị của tư bản tự tăng lên"
+        },
+        {
+          "id": "B",
+          "text": "Hiệu số giữa giá trị hàng hoá với chi phí sản xuất tư bản chủ nghĩa"
+        },
+        {
+          "id": "C",
+          "text": "Phần giá trị mới dôi ra ngoài giá trị sức lao động do người công nhân làm thuê tạo ra"
+        },
+        {
+          "id": "D",
+          "text": "Lợi nhuận thu được của người sản xuất kinh doanh"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l2_q12",
+      "type": "multiple-select",
+      "text": "Chọn 2 phương án trả lời đúng. Hao mòn tư bản cố định có các loại nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hao mòn vật chất"
+        },
+        {
+          "id": "B",
+          "text": "Hao mòn tự nhiên"
+        },
+        {
+          "id": "C",
+          "text": "Hao mòn vô hình"
+        },
+        {
+          "id": "D",
+          "text": "Hao mòn hữu hình"
+        }
+      ],
+      "correctAnswers": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "l2_q13",
+      "type": "multiple-choice",
+      "text": "Khi nào tiền tệ biến thành tư bản?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dùng tiền để buôn bán mua rẻ, bán đắt"
+        },
+        {
+          "id": "B",
+          "text": "Dùng tiền đầu tư vào sản xuất kinh doanh"
+        },
+        {
+          "id": "C",
+          "text": "Có lượng tiền tệ đủ lớn"
+        },
+        {
+          "id": "D",
+          "text": "Sức lao động trở thành hàng hoá"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "l2_q14",
+      "type": "multiple-choice",
+      "text": "Nguồn gốc chủ yếu của tích lũy tư bản là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Giá trị thặng dư"
+        },
+        {
+          "id": "B",
+          "text": "Tiền huy động"
+        },
+        {
+          "id": "C",
+          "text": "Sản phẩm thặng dư"
+        },
+        {
+          "id": "D",
+          "text": "Tiền đi vay"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l2_q15",
+      "type": "multiple-choice",
+      "text": "Phương pháp sản xuất giá trị thặng dư tuyệt đối có hạn chế gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Không áp dụng cho doanh nghiệp nhỏ"
+        },
+        {
+          "id": "B",
+          "text": "Không tạo ra lợi nhuận"
+        },
+        {
+          "id": "C",
+          "text": "Không bị ảnh hưởng bởi pháp luật"
+        },
+        {
+          "id": "D",
+          "text": "Bị giới hạn bởi thời gian sinh học của con người"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "l2_q16",
+      "type": "multiple-select",
+      "text": "Chọn 2 phương án trả lời đúng. Phương pháp sản xuất giá trị thặng dư tuyệt đối chủ yếu dựa vào biện pháp nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Không thay đổi năng suất lao động nhưng kéo dài ngày lao động"
+        },
+        {
+          "id": "B",
+          "text": "Kéo dài thời gian lao động vượt quá thời gian lao động tất yếu"
+        },
+        {
+          "id": "C",
+          "text": "Rút ngắn thời gian lao động tất yếu"
+        },
+        {
+          "id": "D",
+          "text": "Tăng năng suất lao động trong ngành sản xuất tư liệu sinh hoạt"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "l2_q17",
+      "type": "multiple-select",
+      "text": "Chọn 2 phương án trả lời đúng. Phương pháp sản xuất giá trị thặng dư tuyệt đối là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kéo dài ngày lao động vượt quá thời gian lao động tất yếu"
+        },
+        {
+          "id": "B",
+          "text": "Năng suất lao động, giá trị sức lao động không đổi và thời gian lao động tất yếu không đổi"
+        },
+        {
+          "id": "C",
+          "text": "Tiết kiệm chi phí sản xuất"
+        },
+        {
+          "id": "D",
+          "text": "Sử dụng kỹ thuật tiên tiến"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "l2_q18",
+      "type": "true-false-group",
+      "context": "Tư bản đầu tư là 900 USD, trong đó số tư bản đầu tư vào tư liệu sản xuất là 600 USD. Chọn đáp án (Đúng hoặc Sai):",
+      "subQuestions": [
+        {
+          "id": "q2_18_1",
+          "text": "1. Với m'=200% thì giá trị hàng hoá là 1.500 USD",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q2_18_2",
+          "text": "2. Với m'=200% thì giá trị hàng hoá là 1.800 USD",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q2_18_3",
+          "text": "3. Với m'=100% thì giá trị hàng hoá là 1.500 USD",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q2_18_4",
+          "text": "4. Với m'=300% thì giá trị hàng hoá là 2.000 USD",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        }
+      ]
+    },
+    {
+      "id": "l2_q19",
+      "type": "multiple-choice",
+      "text": "Tỷ suất giá trị thặng dư (m') phản ánh điều gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hiệu quả của nhà tư bản"
+        },
+        {
+          "id": "B",
+          "text": "Trình độ bóc lột của tư bản đối với công nhân làm thuê"
+        },
+        {
+          "id": "C",
+          "text": "Số lượng giá trị thặng dư"
+        },
+        {
+          "id": "D",
+          "text": "Quy mô bóc lột của nhà tư bản đối với người công nhân làm thuê"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l2_q20",
+      "type": "multiple-choice",
+      "text": "Ý nào đúng nhất về tư bản bất biến (c)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Giá trị của nó không thay đổi và được chuyển ngay sang sản phẩm sau một chu kỳ sản xuất"
+        },
+        {
+          "id": "B",
+          "text": "Giá trị của nó không thay đổi về lượng và được chuyển nguyên vẹn sang sản phẩm"
+        },
+        {
+          "id": "C",
+          "text": "Giá trị của nó lớn lên trong quá trình sản xuất"
+        },
+        {
+          "id": "D",
+          "text": "Giá trị của nó chuyển dần vào sản phẩm qua khấu hao"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l2_q21",
+      "type": "multiple-choice",
+      "text": "Sức lao động trở thành hàng hóa một cách phổ biến từ khi nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trong nền sản xuất hàng hóa giản đơn"
+        },
+        {
+          "id": "B",
+          "text": "Trong xã hội chiếm hữu nô lệ"
+        },
+        {
+          "id": "C",
+          "text": "Trong nền sản xuất tư bản chủ nghĩa"
+        },
+        {
+          "id": "D",
+          "text": "Trong xã hội phong kiến"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l2_q22",
+      "type": "multiple-choice",
+      "text": "Để sức lao động trở thành hàng hóa, cần có hai điều kiện cơ bản là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Người lao động được tự do và có tư liệu sản xuất"
+        },
+        {
+          "id": "B",
+          "text": "Người lao động được tự do về thân thể và không có tư liệu sản xuất"
+        },
+        {
+          "id": "C",
+          "text": "Người lao động có trình độ cao và có nhu cầu bán sức lao động"
+        },
+        {
+          "id": "D",
+          "text": "Nhà tư bản có vốn và người lao động cần việc làm"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l2_q23",
+      "type": "multiple-choice",
+      "text": "Giá trị của hàng hóa sức lao động được xác định bởi:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Lượng giá trị mới do công nhân tạo ra trong quá trình làm việc"
+        },
+        {
+          "id": "B",
+          "text": "Sự thỏa thuận trên thị trường giữa chủ và thợ"
+        },
+        {
+          "id": "C",
+          "text": "Lượng lao động xã hội cần thiết để sản xuất và tái sản xuất ra sức lao động"
+        },
+        {
+          "id": "D",
+          "text": "Hiệu suất công việc mà người lao động đóng góp cho doanh nghiệp"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l2_q24",
+      "type": "multiple-choice",
+      "text": "Điểm khác biệt lớn nhất giữa hàng hóa sức lao động và hàng hóa thông thường là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Giá trị của nó không thay đổi trong quá trình tiêu dùng"
+        },
+        {
+          "id": "B",
+          "text": "Càng tiêu dùng thì giá trị của nó càng giảm dần"
+        },
+        {
+          "id": "C",
+          "text": "Khi sử dụng, nó tạo ra giá trị mới lớn hơn giá trị của bản thân nó"
+        },
+        {
+          "id": "D",
+          "text": "Nó không thể được mua bán trên thị trường"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l2_q25",
+      "type": "multiple-choice",
+      "text": "Theo C.Mác, Tư bản là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Là tiền và các phương tiện máy móc dùng để sản xuất"
+        },
+        {
+          "id": "B",
+          "text": "Là giá trị mang lại giá trị thặng dư bằng cách bóc lột công nhân làm thuê"
+        },
+        {
+          "id": "C",
+          "text": "Là nguồn vốn tích lũy của các cá nhân trong xã hội"
+        },
+        {
+          "id": "D",
+          "text": "Là công cụ lao động được hiện đại hóa trong công nghiệp"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l2_q26",
+      "type": "multiple-choice",
+      "text": "Tư bản bất biến (c) được hiểu là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bộ phận tư bản dùng để thuê mướn nhân công"
+        },
+        {
+          "id": "B",
+          "text": "Bộ phận tư bản dùng để mua tư liệu sản xuất (máy móc, nguyên liệu)"
+        },
+        {
+          "id": "C",
+          "text": "Bộ phận tư bản có sự biến đổi về mặt giá trị trong sản xuất"
+        },
+        {
+          "id": "D",
+          "text": "Bộ phận tư bản dùng để trả tiền lương cho người lao động"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l2_q27",
+      "type": "multiple-choice",
+      "text": "Tư bản khả biến (v) có đặc điểm nào sau đây?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Giá trị của nó được chuyển nguyên vẹn vào sản phẩm mới"
+        },
+        {
+          "id": "B",
+          "text": "Giá trị của nó không thay đổi về lượng trong quá trình sản xuất"
+        },
+        {
+          "id": "C",
+          "text": "Giá trị của nó tăng lên về lượng thông qua việc tạo ra giá trị thặng dư"
+        },
+        {
+          "id": "D",
+          "text": "Nó bao gồm toàn bộ nhà xưởng và thiết bị sản xuất"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l2_q28",
+      "type": "multiple-choice",
+      "text": "Tư bản cố định bao gồm những yếu tố nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Máy móc, nhà xưởng, thiết bị sản xuất"
+        },
+        {
+          "id": "B",
+          "text": "Nguyên liệu, nhiên liệu, vật liệu phụ"
+        },
+        {
+          "id": "C",
+          "text": "Tiền lương trả cho công nhân và nhân viên"
+        },
+        {
+          "id": "D",
+          "text": "Toàn bộ các yếu tố của tư bản bất biến"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l2_q29",
+      "type": "multiple-choice",
+      "text": "Tư bản lưu động là bộ phận tư bản bao gồm:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Máy móc, thiết bị và tiền lương"
+        },
+        {
+          "id": "B",
+          "text": "Chỉ bao gồm tiền lương (tư bản khả biến)"
+        },
+        {
+          "id": "C",
+          "text": "Nguyên liệu, nhiên liệu, vật liệu phụ và tiền lương"
+        },
+        {
+          "id": "D",
+          "text": "Nhà xưởng và nguyên vật liệu sản xuất"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l2_q30",
+      "type": "multiple-choice",
+      "text": "Tỷ suất giá trị thặng dư (m') phản ánh điều gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hiệu quả kinh doanh của nhà tư bản"
+        },
+        {
+          "id": "B",
+          "text": "Trình độ bóc lột của tư bản đối với công nhân làm thuê"
+        },
+        {
+          "id": "C",
+          "text": "Quy mô bóc lột của nhà tư bản"
+        },
+        {
+          "id": "D",
+          "text": "Tổng số lợi nhuận thu được sau một chu kỳ sản xuất"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l2_q31",
+      "type": "multiple-choice",
+      "text": "Khối lượng giá trị thặng dư (M) phản ánh điều gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trình độ bóc lột của nhà tư bản"
+        },
+        {
+          "id": "B",
+          "text": "Quy mô bóc lột của tư bản đối với công nhân làm thuê"
+        },
+        {
+          "id": "C",
+          "text": "Hiệu suất sử dụng máy móc thiết bị"
+        },
+        {
+          "id": "D",
+          "text": "Tỷ lệ giữa tư bản bất biến và tư bản khả biến"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l2_q32",
+      "type": "multiple-choice",
+      "text": "Công thức tính khối lượng giá trị thặng dư (M) là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "M = m' . V"
+        },
+        {
+          "id": "B",
+          "text": "M = m' / V"
+        },
+        {
+          "id": "C",
+          "text": "M = (c + v) . m'"
+        },
+        {
+          "id": "D",
+          "text": "M = v / m'"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l2_q33",
+      "type": "multiple-choice",
+      "text": "Giá trị của một đơn vị hàng hóa được tính theo công thức nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "G = c + v"
+        },
+        {
+          "id": "B",
+          "text": "G = c + v + m"
+        },
+        {
+          "id": "C",
+          "text": "G = c + m"
+        },
+        {
+          "id": "D",
+          "text": "G = k + p"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l2_q34",
+      "type": "multiple-choice",
+      "text": "Trong quá trình sản xuất, lao động cụ thể của người công nhân có vai trò:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bảo tồn và chuyển giá trị cũ (c) vào sản phẩm mới"
+        },
+        {
+          "id": "B",
+          "text": "Tạo ra giá trị thặng dư cho nhà tư bản"
+        },
+        {
+          "id": "C",
+          "text": "Tạo ra giá trị mới (v + m) của hàng hóa"
+        },
+        {
+          "id": "D",
+          "text": "Làm tăng giá trị của tư liệu sản xuất"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l2_q35",
+      "type": "multiple-choice",
+      "text": "Trong quá trình sản xuất, lao động trừu tượng của người công nhân có vai trò:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Chuyển giá trị cũ của máy móc vào sản phẩm"
+        },
+        {
+          "id": "B",
+          "text": "Tạo ra giá trị mới (v + m) của hàng hóa"
+        },
+        {
+          "id": "C",
+          "text": "Làm thay đổi hình thái tự nhiên của vật chất"
+        },
+        {
+          "id": "D",
+          "text": "Bảo tồn các yếu tố của tư bản bất biến"
+        }
+      ],
+      "correctAnswer": "B"
+    }
+  ],
+  "3": [
+    {
+      "id": "l3_q1",
+      "type": "multiple-choice",
+      "text": "Nguyên nhân chính dẫn đến sự hình thành độc quyền là?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tích tụ và tập trung sản xuất do cạnh tranh và khoa học kỹ thuật"
+        },
+        {
+          "id": "B",
+          "text": "Sự suy thoái của hệ thống ngân hàng"
+        },
+        {
+          "id": "C",
+          "text": "Giảm năng suất lao động xã hội"
+        },
+        {
+          "id": "D",
+          "text": "Sự phát triển của các doanh nghiệp nhỏ"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l3_q2",
+      "type": "multiple-choice",
+      "text": "Cạnh tranh nội bộ trong độc quyền xảy ra giữa những ai?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Giữa độc quyền và doanh nghiệp nhỏ"
+        },
+        {
+          "id": "B",
+          "text": "Giữa các tổ chức độc quyền"
+        },
+        {
+          "id": "C",
+          "text": "Giữa các ngành công nghiệp khác nhau"
+        },
+        {
+          "id": "D",
+          "text": "Giữa các thành viên trong một tổ chức độc quyền"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "l3_q3",
+      "type": "multiple-choice",
+      "text": "Động lực chính của cạnh tranh trong độc quyền là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Giảm giá trị thặng dư"
+        },
+        {
+          "id": "B",
+          "text": "Tăng giá trị thặng dư và lợi nhuận"
+        },
+        {
+          "id": "C",
+          "text": "Tăng chi phí tiêu dùng cá nhân"
+        },
+        {
+          "id": "D",
+          "text": "Giảm quy mô sản xuất"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l3_q4",
+      "type": "multiple-choice",
+      "text": "Tư bản tài chính được hình thành như thế nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Từ sự giảm quy mô tích lũy tư bản"
+        },
+        {
+          "id": "B",
+          "text": "Từ sự tách biệt giữa công nghiệp và ngân hàng"
+        },
+        {
+          "id": "C",
+          "text": "Từ sự dung hợp giữa độc quyền công nghiệp và ngân hàng"
+        },
+        {
+          "id": "D",
+          "text": "Từ việc xuất khẩu hàng hóa ra nước ngoài"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l3_q5",
+      "type": "multiple-choice",
+      "text": "Xuất khẩu tư bản nhằm mục đích gì trong chủ nghĩa tư bản?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tăng năng suất lao động trong nước"
+        },
+        {
+          "id": "B",
+          "text": "Giảm sự phụ thuộc vào thị trường quốc tế"
+        },
+        {
+          "id": "C",
+          "text": "Giảm chi phí sản xuất trong nước"
+        },
+        {
+          "id": "D",
+          "text": "Chiếm đoạt giá trị thặng dư ở nước ngoài"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "l3_q6",
+      "type": "multiple-choice",
+      "text": "Hình thức độc quyền thấp nhất là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cartel"
+        },
+        {
+          "id": "B",
+          "text": "Syndicate"
+        },
+        {
+          "id": "C",
+          "text": "Trust"
+        },
+        {
+          "id": "D",
+          "text": "Consortium"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l3_q7",
+      "type": "multiple-choice",
+      "text": "Tư bản tài phiệt có vai trò gì trong nền kinh tế độc quyền?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Chi phối kinh tế và chính trị"
+        },
+        {
+          "id": "B",
+          "text": "Tăng cạnh tranh tự do"
+        },
+        {
+          "id": "C",
+          "text": "Giảm xuất khẩu tư bản"
+        },
+        {
+          "id": "D",
+          "text": "Giảm sự tập trung tư bản"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l3_q8",
+      "type": "multiple-choice",
+      "text": "Đặc điểm nào sau đây là cốt lõi của độc quyền?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Giảm tích tụ và tập trung tư bản"
+        },
+        {
+          "id": "B",
+          "text": "Giảm xuất khẩu tư bản"
+        },
+        {
+          "id": "C",
+          "text": "Quy mô tích tụ và tập trung tư bản lớn"
+        },
+        {
+          "id": "D",
+          "text": "Tăng cạnh tranh tự do"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l3_q9",
+      "type": "true-false-group",
+      "context": "Điền kết quả (Đúng hoặc Sai) ứng với từng phát biểu dưới đây:",
+      "subQuestions": [
+        {
+          "id": "q3_9_1",
+          "text": "1. Cartel là hình thức độc quyền cao nhất",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q3_9_2",
+          "text": "2. Xuất khẩu tư bản nhằm chiếm đoạt giá trị thặng dư",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q3_9_3",
+          "text": "3. Tư bản tài chính hình thành từ dung hợp công nghiệp và ngân hàng",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q3_9_4",
+          "text": "4. Tư bản tài phiệt không chi phối chính trị",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        }
+      ]
+    },
+    {
+      "id": "l3_q10",
+      "type": "multiple-choice",
+      "text": "Vai trò tích cực nào sau đây của chủ nghĩa tư bản?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Làm sâu sắc phân hóa giàu nghèo"
+        },
+        {
+          "id": "B",
+          "text": "Tăng năng suất lao động và sản xuất lớn"
+        },
+        {
+          "id": "C",
+          "text": "Gây ra chiến tranh và xung đột"
+        },
+        {
+          "id": "D",
+          "text": "Kim hãm tiến bộ khoa học kỹ thuật"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l3_q11",
+      "type": "multiple-choice",
+      "text": "Kinh tế tri thức là thành tựu của chủ nghĩa tư bản ở khía cạnh nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gây ra khủng hoảng kinh tế"
+        },
+        {
+          "id": "B",
+          "text": "Phát triển dựa trên khoa học và công nghệ"
+        },
+        {
+          "id": "C",
+          "text": "Giảm sự phụ thuộc vào khoa học kỹ thuật"
+        },
+        {
+          "id": "D",
+          "text": "Tăng phân hóa giàu nghèo"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l3_q12",
+      "type": "true-false-group",
+      "context": "Điền kết quả (Đúng hoặc Sai) ứng với từng phát biểu dưới đây:",
+      "subQuestions": [
+        {
+          "id": "q3_12_1",
+          "text": "1. Xã hội hóa lao động làm giảm hợp tác sản xuất",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q3_12_2",
+          "text": "2. Kinh tế tri thức là thành tựu của chủ nghĩa tư bản",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q3_12_3",
+          "text": "3. Chủ nghĩa tư bản gây bần cùng hóa người lao động",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q3_12_4",
+          "text": "4. Chiến tranh không liên quan đến cạnh tranh thị trường",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        }
+      ]
+    },
+    {
+      "id": "l3_q13",
+      "type": "multiple-select",
+      "text": "Chọn 3 phương án trả lời đúng. Những hạn chế nào sau đây của chủ nghĩa tư bản?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mục đích của nền sản xuất tập trung chủ yếu vì lợi ích của thiểu số giai cấp tư sản"
+        },
+        {
+          "id": "B",
+          "text": "Tăng năng suất lao động"
+        },
+        {
+          "id": "C",
+          "text": "Gây chiến tranh và xung đột"
+        },
+        {
+          "id": "D",
+          "text": "Phân hóa giàu nghèo"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "l3_q14",
+      "type": "multiple-select",
+      "text": "Chọn 3 phương án trả lời đúng. Những vai trò tích cực nào thuộc về chủ nghĩa tư bản?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Giải phóng loài người khỏi \"đêm trường trung cổ\" của xã hội phong kiến"
+        },
+        {
+          "id": "B",
+          "text": "Xã hội hóa sản xuất"
+        },
+        {
+          "id": "C",
+          "text": "Tăng năng suất lao động"
+        },
+        {
+          "id": "D",
+          "text": "Gây chiến tranh và xung đột"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "l3_q15",
+      "type": "multiple-choice",
+      "text": "Nguyên nhân sâu xa dẫn đến sự ra đời của độc quyền là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sự can thiệp trực tiếp của nhà nước vào kinh tế"
+        },
+        {
+          "id": "B",
+          "text": "Sự xuất hiện của các doanh nghiệp vừa và nhỏ"
+        },
+        {
+          "id": "C",
+          "text": "Sự tích tụ và tập trung sản xuất do cạnh tranh và tác động của khoa học kỹ thuật"
+        },
+        {
+          "id": "D",
+          "text": "Sự sụt giảm của năng suất lao động xã hội"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l3_q16",
+      "type": "multiple-choice",
+      "text": "Trong giai đoạn độc quyền, cạnh tranh không bị mất đi mà ngược lại:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trở nên đơn giản và dễ dự báo hơn"
+        },
+        {
+          "id": "B",
+          "text": "Chỉ diễn ra giữa các doanh nghiệp nhỏ với nhau"
+        },
+        {
+          "id": "C",
+          "text": "Trở nên gay gắt và quyết liệt hơn giữa các tổ chức độc quyền"
+        },
+        {
+          "id": "D",
+          "text": "Được nhà nước điều tiết hoàn toàn bằng pháp luật"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l3_q17",
+      "type": "multiple-choice",
+      "text": "Hình thức độc quyền nào là sự liên minh ký kết hiệp nghị thỏa thuận về giá cả, quy mô sản xuất và thị trường tiêu thụ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cartel"
+        },
+        {
+          "id": "B",
+          "text": "Syndicate"
+        },
+        {
+          "id": "C",
+          "text": "Trust"
+        },
+        {
+          "id": "D",
+          "text": "Consortium"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l3_q18",
+      "type": "multiple-choice",
+      "text": "Điểm khác biệt cơ bản giữa Syndicate và Cartel là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Syndicate không thỏa thuận về quy mô sản xuất"
+        },
+        {
+          "id": "B",
+          "text": "Syndicate có đầu mối quản lý việc lưu thông (mua nguyên liệu và bán hàng hóa) chung"
+        },
+        {
+          "id": "C",
+          "text": "Cartel là hình thức độc quyền cao hơn Syndicate"
+        },
+        {
+          "id": "D",
+          "text": "Syndicate chỉ tồn tại trong lĩnh vực ngân hàng"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l3_q19",
+      "type": "multiple-choice",
+      "text": "Tư bản tài chính là kết quả của quá trình nào sau đây?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sự hợp nhất của các ngân hàng thương mại nhỏ"
+        },
+        {
+          "id": "B",
+          "text": "Sự tách rời giữa sản xuất công nghiệp và hoạt động tài chính"
+        },
+        {
+          "id": "C",
+          "text": "Sự dung hợp giữa độc quyền công nghiệp và độc quyền ngân hàng"
+        },
+        {
+          "id": "D",
+          "text": "Sự quản lý vốn tập trung của nhà nước"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l3_q20",
+      "type": "multiple-choice",
+      "text": "Chế độ tham dự là phương thức thống trị của các đầu sỏ tài chính thông qua:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Việc tham gia trực tiếp vào các cuộc bầu cử chính trị"
+        },
+        {
+          "id": "B",
+          "text": "Việc kiểm soát các hoạt động văn hóa xã hội"
+        },
+        {
+          "id": "C",
+          "text": "Việc nắm giữ số cổ phiếu khống chế để điều hành các công ty mẹ và công ty con"
+        },
+        {
+          "id": "D",
+          "text": "Việc cho vay lãi suất thấp đối với các doanh nghiệp nhỏ"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l3_q21",
+      "type": "multiple-choice",
+      "text": "Xuất khẩu tư bản là đặc điểm nhằm mục đích chính là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hỗ trợ kinh tế cho các nước nghèo phát triển"
+        },
+        {
+          "id": "B",
+          "text": "Giảm bớt lượng tiền thừa trong nước"
+        },
+        {
+          "id": "C",
+          "text": "Chiếm đoạt giá trị thặng dư và các nguồn lợi nhuận ở nước nhập khẩu tư bản"
+        },
+        {
+          "id": "D",
+          "text": "Tăng cường mối quan hệ ngoại giao giữa các quốc gia"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l3_q22",
+      "type": "multiple-choice",
+      "text": "Độc quyền nhà nước trong chủ nghĩa tư bản hình thành nhằm:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Giải quyết vấn đề thất nghiệp cho người lao động"
+        },
+        {
+          "id": "B",
+          "text": "Phục vụ lợi ích của các tổ chức độc quyền tư nhân và cứu nguy cho chủ nghĩa tư bản"
+        },
+        {
+          "id": "C",
+          "text": "Xóa bỏ hoàn toàn chế độ tư hữu về tư liệu sản xuất"
+        },
+        {
+          "id": "D",
+          "text": "Phân phối lại của cải công bằng cho mọi tầng lớp xã hội"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l3_q23",
+      "type": "multiple-choice",
+      "text": "Vai trò tích cực của chủ nghĩa tư bản đối với lịch sử nhân loại bao gồm:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Xóa bỏ hoàn toàn sự phân hóa giàu nghèo"
+        },
+        {
+          "id": "B",
+          "text": "Ngăn chặn triệt để các cuộc chiến tranh thế giới"
+        },
+        {
+          "id": "C",
+          "text": "Giải phóng loài người khỏi \"đêm trường trung cổ\", phát triển lực lượng sản xuất và xã hội hóa sản xuất"
+        },
+        {
+          "id": "D",
+          "text": "Đưa nền kinh tế thế giới thoát khỏi mọi cuộc khủng hoảng"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l3_q24",
+      "type": "multiple-choice",
+      "text": "Đâu là một trong những hạn chế lớn của chủ nghĩa tư bản?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Làm tăng năng suất lao động xã hội quá nhanh"
+        },
+        {
+          "id": "B",
+          "text": "Mục đích nền sản xuất tập trung chủ yếu vì lợi ích của thiểu số giai cấp tư sản"
+        },
+        {
+          "id": "C",
+          "text": "Tạo ra quá nhiều sản phẩm cho người tiêu dùng"
+        },
+        {
+          "id": "D",
+          "text": "Thúc đẩy giao lưu kinh tế giữa các quốc gia"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l3_q25",
+      "type": "multiple-choice",
+      "text": "Các tổ chức độc quyền thường thiết lập giá cả độc quyền để:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Đảm bảo quyền lợi tối đa cho người tiêu dùng"
+        },
+        {
+          "id": "B",
+          "text": "Giúp các doanh nghiệp nhỏ cùng phát triển"
+        },
+        {
+          "id": "C",
+          "text": "Thu được lợi nhuận độc quyền cao"
+        },
+        {
+          "id": "D",
+          "text": "Giảm bớt sự cạnh tranh trên thị trường toàn cầu"
+        }
+      ],
+      "correctAnswer": "C"
+    }
+  ],
+  "4": [
+    {
+      "id": "l4_q1",
+      "type": "multiple-choice",
+      "text": "Nguyên nhân chính dẫn đến sự hình thành các tổ chức độc quyền là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tích tụ và tập trung sản xuất do cạnh tranh và tác động của khoa học kỹ thuật"
+        },
+        {
+          "id": "B",
+          "text": "Sự suy thoái của hệ thống ngân hàng tư nhân"
+        },
+        {
+          "id": "C",
+          "text": "Do năng suất lao động xã hội bị sụt giảm"
+        },
+        {
+          "id": "D",
+          "text": "Sự phát triển mạnh mẽ của các doanh nghiệp nhỏ lẻ"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l4_q2",
+      "type": "multiple-choice",
+      "text": "Trong giai đoạn độc quyền, quy luật cạnh tranh có đặc điểm gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Độc quyền triệt tiêu hoàn toàn cạnh tranh tự do"
+        },
+        {
+          "id": "B",
+          "text": "Cạnh tranh chỉ diễn ra giữa các doanh nghiệp nhỏ với nhau"
+        },
+        {
+          "id": "C",
+          "text": "Độc quyền không thủ tiêu cạnh tranh, nó làm cạnh tranh trở nên gay gắt và phức tạp hơn"
+        },
+        {
+          "id": "D",
+          "text": "Cạnh tranh được thay thế hoàn toàn bằng sự hợp tác giữa các tập đoàn"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l4_q3",
+      "type": "multiple-choice",
+      "text": "Động lực chính của cạnh tranh trong giai đoạn độc quyền là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Giảm giá trị thặng dư của doanh nghiệp"
+        },
+        {
+          "id": "B",
+          "text": "Thu được lợi nhuận độc quyền cao và tăng giá trị thặng dư"
+        },
+        {
+          "id": "C",
+          "text": "Tăng chi phí tiêu dùng cho người dân"
+        },
+        {
+          "id": "D",
+          "text": "Giảm quy mô sản xuất để tránh rủi ro"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l4_q4",
+      "type": "multiple-choice",
+      "text": "Cạnh tranh nội bộ trong các tổ chức độc quyền xảy ra giữa những ai?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Giữa độc quyền và các doanh nghiệp ngoài độc quyền"
+        },
+        {
+          "id": "B",
+          "text": "Giữa các tổ chức độc quyền thuộc các ngành khác nhau"
+        },
+        {
+          "id": "C",
+          "text": "Giữa các thành viên trong cùng một tổ chức độc quyền để giành lợi thế"
+        },
+        {
+          "id": "D",
+          "text": "Giữa người sản xuất và người tiêu dùng"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l4_q5",
+      "type": "multiple-choice",
+      "text": "Hình thức liên minh độc quyền nào mà các thành viên ký kết hiệp nghị về giá cả, quy mô nhưng vẫn độc lập về sản xuất và lưu thông?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cartel"
+        },
+        {
+          "id": "B",
+          "text": "Syndicate"
+        },
+        {
+          "id": "C",
+          "text": "Trust"
+        },
+        {
+          "id": "D",
+          "text": "Consortium"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l4_q6",
+      "type": "multiple-choice",
+      "text": "Đặc điểm của hình thức độc quyền \"Syndicate\" là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Các thành viên mất hoàn toàn tính độc lập về sản xuất"
+        },
+        {
+          "id": "B",
+          "text": "Việc mua nguyên liệu và bán hàng hóa do một ban quản trị chung đảm nhận"
+        },
+        {
+          "id": "C",
+          "text": "Các thành viên không cần thỏa thuận về giá cả hàng hóa"
+        },
+        {
+          "id": "D",
+          "text": "Chỉ tập trung vào lĩnh vực liên minh ngân hàng"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l4_q7",
+      "type": "multiple-choice",
+      "text": "Hình thức độc quyền nào mà các nhà tư bản tham gia trở thành những cổ đông, mất cả độc lập về sản xuất và lưu thông?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cartel"
+        },
+        {
+          "id": "B",
+          "text": "Syndicate"
+        },
+        {
+          "id": "C",
+          "text": "Trust"
+        },
+        {
+          "id": "D",
+          "text": "Consortium"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l4_q8",
+      "type": "multiple-choice",
+      "text": "Tư bản tài chính là kết quả của quá trình nào sau đây?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sự hợp nhất của các ngân hàng thương mại nhỏ"
+        },
+        {
+          "id": "B",
+          "text": "Sự tách rời giữa sản xuất công nghiệp và hoạt động tài chính"
+        },
+        {
+          "id": "C",
+          "text": "Sự dung hợp giữa độc quyền công nghiệp và độc quyền ngân hàng"
+        },
+        {
+          "id": "D",
+          "text": "Sự quản lý vốn tập trung hoàn toàn của nhà nước"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l4_q9",
+      "type": "multiple-choice",
+      "text": "\"Chế độ tham dự\" của các đầu sỏ tài chính được thực hiện thông qua:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Việc tham gia trực tiếp vào các cuộc bầu cử chính trị"
+        },
+        {
+          "id": "B",
+          "text": "Việc nắm giữ số cổ phiếu khống chế để điều hành hệ thống công ty mẹ, con"
+        },
+        {
+          "id": "C",
+          "text": "Việc công nhân được chia lợi nhuận cùng nhà tư bản"
+        },
+        {
+          "id": "D",
+          "text": "Việc nhà nước nắm giữ toàn bộ cổ phần ngân hàng"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l4_q10",
+      "type": "multiple-choice",
+      "text": "Xuất khẩu tư bản là đặc điểm nhằm mục đích chính là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hỗ trợ kinh tế cho các nước nghèo phát triển"
+        },
+        {
+          "id": "B",
+          "text": "Giảm bớt lượng tiền thừa trong nước"
+        },
+        {
+          "id": "C",
+          "text": "Chiếm đoạt giá trị thặng dư và lợi nhuận ở nước nhập khẩu tư bản"
+        },
+        {
+          "id": "D",
+          "text": "Tăng cường mối quan hệ ngoại giao giữa các quốc gia"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l4_q11",
+      "type": "multiple-choice",
+      "text": "Độc quyền nhà nước trong chủ nghĩa tư bản hình thành nhằm:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Giải quyết vấn đề thất nghiệp cho người lao động"
+        },
+        {
+          "id": "B",
+          "text": "Phục vụ lợi ích của tổ chức độc quyền tư nhân và cứu nguy cho CNTB"
+        },
+        {
+          "id": "C",
+          "text": "Xóa bỏ hoàn toàn chế độ tư hữu về tư liệu sản xuất"
+        },
+        {
+          "id": "D",
+          "text": "Phân phối lại của cải công bằng cho mọi tầng lớp"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l4_q12",
+      "type": "multiple-choice",
+      "text": "Các tổ chức độc quyền thường thiết lập giá cả độc quyền để:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Đảm bảo quyền lợi tối đa cho người tiêu dùng"
+        },
+        {
+          "id": "B",
+          "text": "Giúp các doanh nghiệp nhỏ cùng phát triển"
+        },
+        {
+          "id": "C",
+          "text": "Thu được lợi nhuận độc quyền cao"
+        },
+        {
+          "id": "D",
+          "text": "Giảm bớt sự cạnh tranh trên thị trường toàn cầu"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l4_q13",
+      "type": "multiple-choice",
+      "text": "Vai trò tích cực của chủ nghĩa tư bản đối với lịch sử nhân loại là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Xóa bỏ hoàn toàn sự phân hóa giàu nghèo"
+        },
+        {
+          "id": "B",
+          "text": "Phát triển lực lượng sản xuất, xã hội hóa sản xuất và giải phóng loài người khỏi phong kiến"
+        },
+        {
+          "id": "C",
+          "text": "Ngăn chặn triệt để các cuộc khủng hoảng kinh tế"
+        },
+        {
+          "id": "D",
+          "text": "Đảm bảo quyền làm chủ tuyệt đối cho giai cấp công nhân"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l4_q14",
+      "type": "multiple-select",
+      "text": "Chọn các phương án đúng. Những hạn chế của chủ nghĩa tư bản bao gồm:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mục đích sản xuất tập trung vì lợi ích của thiểu số giai cấp tư sản"
+        },
+        {
+          "id": "B",
+          "text": "Gây ra các cuộc chiến tranh và xung đột quốc tế tranh giành thị trường"
+        },
+        {
+          "id": "C",
+          "text": "Làm sâu sắc thêm sự phân hóa giàu nghèo và bất bình đẳng xã hội"
+        },
+        {
+          "id": "D",
+          "text": "Thúc đẩy tiến bộ khoa học kỹ thuật cho toàn dân"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "l4_q15",
+      "type": "multiple-choice",
+      "text": "Kinh tế tri thức được coi là thành tựu của chủ nghĩa tư bản ở khía cạnh nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Làm giảm sự phụ thuộc của con người vào máy móc"
+        },
+        {
+          "id": "B",
+          "text": "Phát triển lực lượng sản xuất dựa trên nền tảng khoa học công nghệ hiện đại"
+        },
+        {
+          "id": "C",
+          "text": "Loại bỏ hoàn toàn sự cạnh tranh khốc liệt"
+        },
+        {
+          "id": "D",
+          "text": "Tăng sự bóc lột lao động cơ bắp"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l4_q16",
+      "type": "multiple-choice",
+      "text": "Nhận định nào sau đây là ĐÚNG khi nói về độc quyền?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Độc quyền sinh ra từ cạnh tranh tự do nhưng không thủ tiêu cạnh tranh"
+        },
+        {
+          "id": "B",
+          "text": "Độc quyền xóa bỏ hoàn toàn các doanh nghiệp nhỏ và vừa"
+        },
+        {
+          "id": "C",
+          "text": "Độc quyền chỉ tồn tại trong các nước nghèo"
+        },
+        {
+          "id": "D",
+          "text": "Độc quyền giúp giá cả hàng hóa luôn ổn định ở mức thấp nhất"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l4_q17",
+      "type": "multiple-choice",
+      "text": "Xuất khẩu tư bản dưới hình thức \"đầu tư trực tiếp\" (FDI) là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Xây dựng xí nghiệp, nhà máy ở nước ngoài để khai thác giá trị thặng dư"
+        },
+        {
+          "id": "B",
+          "text": "Cho các chính phủ nước ngoài vay tiền lấy lãi"
+        },
+        {
+          "id": "C",
+          "text": "Mua trái phiếu của các tổ chức quốc tế"
+        },
+        {
+          "id": "D",
+          "text": "Cung cấp viện trợ không hoàn lại cho các nước phát triển"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l4_q18",
+      "type": "true-false-group",
+      "context": "Xác định Đúng/Sai cho các phát biểu dưới đây:",
+      "subQuestions": [
+        {
+          "id": "q4_18_1",
+          "text": "1. Xuất khẩu tư bản là đặc điểm nổi bật của giai đoạn CNTB tự do cạnh tranh.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q4_18_2",
+          "text": "2. Tư bản tài chính thống trị cả về kinh tế và chính trị.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q4_18_3",
+          "text": "3. Cartel là hình thức liên minh độc quyền cao hơn Trust.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q4_18_4",
+          "text": "4. Kinh tế tri thức là một trong những thành tựu của CNTB hiện đại.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q4_18_5",
+          "text": "5. Xã hội hóa lao động làm tăng sự hợp tác sản xuất giữa các ngành.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q4_18_6",
+          "text": "6. Chiến tranh thế giới không có mối liên hệ với cạnh tranh độc quyền.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sai"
+            },
+            {
+              "id": "B",
+              "text": "Đúng"
+            }
+          ],
+          "correctAnswer": "A"
+        }
+      ]
+    }
+  ],
+  "5": [
+    {
+      "id": "l5_q1",
+      "type": "multiple-choice",
+      "text": "Kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam vận hành theo:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kế hoạch tập trung quan liêu bao cấp"
+        },
+        {
+          "id": "B",
+          "text": "Các quy luật kinh tế thị trường đồng thời đảm bảo định hướng xã hội chủ nghĩa"
+        },
+        {
+          "id": "C",
+          "text": "Thị trường chủ nghĩa tự do hoàn toàn"
+        },
+        {
+          "id": "D",
+          "text": "Cơ chế kinh tế tự cấp tự túc"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l5_q2",
+      "type": "multiple-choice",
+      "text": "Khái niệm \"Kinh tế thị trường định hướng xã hội chủ nghĩa\" ở Việt Nam được hiểu là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Một hình thức kế hoạch hóa tập trung kiểu mới"
+        },
+        {
+          "id": "B",
+          "text": "Một nền kinh tế phi thị trường nhưng có định hướng cộng sản"
+        },
+        {
+          "id": "C",
+          "text": "Một nền kinh tế vận hành đầy đủ theo cơ chế thị trường hoạt động dưới sự lãnh đạo của Đảng, vì mục tiêu dân giàu, nước mạnh, dân chủ, công bằng, văn minh"
+        },
+        {
+          "id": "D",
+          "text": "Một nền kinh tế thị trường tư bản chủ nghĩa có can thiệp của Nhà nước"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l5_q3",
+      "type": "multiple-choice",
+      "text": "Tính tất yếu của việc phát triển kinh tế thị trường định hướng XHCN ở Việt Nam được thể hiện ở:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Quy luật vận động của nền kinh tế hàng hóa đạt tới giai đoạn kinh tế thị trường"
+        },
+        {
+          "id": "B",
+          "text": "Nhu cầu hợp tác khu vực"
+        },
+        {
+          "id": "C",
+          "text": "Yêu cầu của xu thế tự do hóa toàn cầu"
+        },
+        {
+          "id": "D",
+          "text": "Mục tiêu là lợi nhuận của doanh nghiệp"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l5_q4",
+      "type": "multiple-choice",
+      "text": "Đặc trưng nào thể hiện sự khác biệt giữa kinh tế thị trường định hướng XHCN và kinh tế thị trường tư bản:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tôn trọng quy luật cung cầu"
+        },
+        {
+          "id": "B",
+          "text": "Thừa nhận vai trò của kinh tế tư nhân"
+        },
+        {
+          "id": "C",
+          "text": "Vận hành hoàn toàn theo quy luật thị trường"
+        },
+        {
+          "id": "D",
+          "text": "Mục tiêu hướng đến xã hội \"dân giàu, nước mạnh, dân chủ, công bằng, văn minh\""
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "l5_q5",
+      "type": "multiple-select",
+      "text": "Chọn 2 phương án trả lời đúng. Những yếu tố nào là điều kiện để kinh tế thị trường định hướng XHCN phát triển đúng hướng:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kết hợp hài hòa giữa tăng trưởng kinh tế và công bằng xã hội"
+        },
+        {
+          "id": "B",
+          "text": "Thị trường hoàn toàn tự do, không kiểm soát"
+        },
+        {
+          "id": "C",
+          "text": "Vai trò lãnh đạo của Đảng Cộng sản Việt Nam"
+        },
+        {
+          "id": "D",
+          "text": "Bỏ qua vai trò của doanh nghiệp nhà nước"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "l5_q6",
+      "type": "multiple-select",
+      "text": "Chọn 2 phương án trả lời đúng. Vai trò của Nhà nước trong nền kinh tế thị trường định hướng XHCN bao gồm:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Từ bỏ vai trò quản lý vì thị trường tự điều tiết"
+        },
+        {
+          "id": "B",
+          "text": "Kiểm soát, điều tiết các mặt hàng chiến lược, thiết yếu"
+        },
+        {
+          "id": "C",
+          "text": "Xây dựng thể chế và hành lang pháp lý cho thị trường hoạt động ổn định"
+        },
+        {
+          "id": "D",
+          "text": "Trở thành đối trọng với khu vực tư nhân"
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "l5_q7",
+      "type": "multiple-choice",
+      "text": "Thể chế kinh tế là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kế hoạch điều tiết vĩ mô của Nhà nước"
+        },
+        {
+          "id": "B",
+          "text": "Hệ thống các quy tắc, luật pháp và cơ chế vận hành điều chỉnh hành vi các chủ thể kinh tế"
+        },
+        {
+          "id": "C",
+          "text": "Bộ luật dân sự và hình sự trong kinh tế"
+        },
+        {
+          "id": "D",
+          "text": "Hệ thống công cụ điều tiết thu nhập xã hội"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l5_q8",
+      "type": "multiple-choice",
+      "text": "Một trong những yếu tố cấu thành thể chế kinh tế thị trường là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Các thiết chế xã hội truyền thống"
+        },
+        {
+          "id": "B",
+          "text": "Các hiệp định thương mại song phương"
+        },
+        {
+          "id": "C",
+          "text": "Các sáng kiến tự phát từ doanh nghiệp"
+        },
+        {
+          "id": "D",
+          "text": "Các quy tắc, luật pháp chính thức và không chính thức"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "l5_q9",
+      "type": "multiple-choice",
+      "text": "Chủ thể tham gia thể chế kinh tế thị trường gồm:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cá nhân có vốn lớn"
+        },
+        {
+          "id": "B",
+          "text": "Chỉ gồm cơ quan điều tiết thị trường"
+        },
+        {
+          "id": "C",
+          "text": "Chỉ có các doanh nghiệp nhà nước"
+        },
+        {
+          "id": "D",
+          "text": "Doanh nghiệp, tổ chức xã hội và cơ quan quản lý kinh tế"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "l5_q10",
+      "type": "multiple-choice",
+      "text": "Vì sao cần hoàn thiện thể chế về các yếu tố thị trường?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Để loại bỏ kinh tế tư nhân"
+        },
+        {
+          "id": "B",
+          "text": "Để đảm bảo vận hành thông suốt các loại thị trường, phát huy tác động cộng hưởng"
+        },
+        {
+          "id": "C",
+          "text": "Để thực hiện bao cấp"
+        },
+        {
+          "id": "D",
+          "text": "Để hạn chế vai trò của thị trường"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l5_q11",
+      "type": "multiple-select",
+      "text": "Chọn 2 phương án trả lời đúng. Những nội dung nào thuộc hoàn thiện thể chế về sở hữu:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Xóa bỏ sở hữu tư nhân"
+        },
+        {
+          "id": "B",
+          "text": "Thể chế hóa đầy đủ quyền tài sản"
+        },
+        {
+          "id": "C",
+          "text": "Tăng bảo hộ doanh nghiệp nhà nước"
+        },
+        {
+          "id": "D",
+          "text": "Hoàn thiện pháp luật về đất đai, tài nguyên"
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "l5_q12",
+      "type": "multiple-choice",
+      "text": "Lợi ích kinh tế là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sự thỏa mãn nhu cầu vật chất thu được qua hoạt động kinh tế"
+        },
+        {
+          "id": "B",
+          "text": "Sự chia đều thu nhập giữa các cá nhân"
+        },
+        {
+          "id": "C",
+          "text": "Sự ưu đãi tài chính của Nhà nước"
+        },
+        {
+          "id": "D",
+          "text": "Sự phát triển các giá trị tinh thần"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l5_q13",
+      "type": "multiple-choice",
+      "text": "Vì sao cần điều tiết quan hệ lợi ích kinh tế?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vì thị trường không có vai trò điều phối"
+        },
+        {
+          "id": "B",
+          "text": "Vì nhà nước cần can thiệp vào mọi giao dịch"
+        },
+        {
+          "id": "C",
+          "text": "Vì mọi chủ thể đều bình đẳng như nhau"
+        },
+        {
+          "id": "D",
+          "text": "Vì tồn tại sự mâu thuẫn và xung đột trong lợi ích"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "l5_q14",
+      "type": "multiple-choice",
+      "text": "Mâu thuẫn trong quan hệ lợi ích có thể dẫn đến:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sự biến mất của tư hữu"
+        },
+        {
+          "id": "B",
+          "text": "Hài hòa lợi ích tự nhiên"
+        },
+        {
+          "id": "C",
+          "text": "Tăng trưởng nhanh chóng"
+        },
+        {
+          "id": "D",
+          "text": "Xung đột xã hội và bất ổn"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "l5_q15",
+      "type": "multiple-select",
+      "text": "Chọn 2 phương án trả lời đúng. Vai trò của lợi ích kinh tế đối với xã hội là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Là yếu tố duy nhất của tiến bộ xã hội"
+        },
+        {
+          "id": "B",
+          "text": "Là nguyên nhân dẫn đến bất ổn trong mọi trường hợp"
+        },
+        {
+          "id": "C",
+          "text": "Là động lực thúc đẩy sản xuất"
+        },
+        {
+          "id": "D",
+          "text": "Là cơ sở ổn định và phát triển xã hội"
+        }
+      ],
+      "correctAnswers": [
+        "C",
+        "D"
+      ]
+    }
+  ],
+  "6": [
+    {
+      "id": "l6_q1",
+      "type": "multiple-choice",
+      "text": "Theo Hội nghị Trung ương 7 khóa VII (1994), công nghiệp hóa, hiện đại hóa ở Việt Nam dựa trên nền tảng nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kinh tế thị trường tự phát"
+        },
+        {
+          "id": "B",
+          "text": "Tái cơ cấu dân cư"
+        },
+        {
+          "id": "C",
+          "text": "Phát triển công nghiệp và tiến bộ khoa học – công nghệ"
+        },
+        {
+          "id": "D",
+          "text": "Quản lý hành chính hiện đại"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "l6_q2",
+      "type": "multiple-choice",
+      "text": "Công nghiệp hóa là quá trình chuyển đổi nền sản xuất xã hội từ lao động thủ công là chính sang:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Lao động có trình độ học vấn cao"
+        },
+        {
+          "id": "B",
+          "text": "Lao động bằng máy móc"
+        },
+        {
+          "id": "C",
+          "text": "Lao động trí tuệ cao"
+        },
+        {
+          "id": "D",
+          "text": "Lao động theo mô hình khép kín"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l6_q3",
+      "type": "multiple-select",
+      "text": "Chọn 3 phương án trả lời đúng. Công nghiệp hóa, hiện đại hóa có những vai trò nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hoàn thiện quan hệ sản xuất xã hội chủ nghĩa"
+        },
+        {
+          "id": "B",
+          "text": "Tạo động lực phát triển kinh tế mạnh mẽ"
+        },
+        {
+          "id": "C",
+          "text": "Góp phần làm giảm vai trò của nông nghiệp"
+        },
+        {
+          "id": "D",
+          "text": "Là điều kiện xây dựng cơ sở vật chất – kỹ thuật cho chủ nghĩa xã hội"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "l6_q4",
+      "type": "multiple-select",
+      "text": "Chọn 2 phương án trả lời đúng. Những đặc điểm chính của mô hình công nghiệp hóa cổ điển ở Tây Âu và Mỹ bao gồm:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ưu tiên công nghiệp nặng"
+        },
+        {
+          "id": "B",
+          "text": "Dựa vào chuyên môn hóa, hiệu suất"
+        },
+        {
+          "id": "C",
+          "text": "Tuần tự từ thấp đến cao"
+        },
+        {
+          "id": "D",
+          "text": "Thực hiện nhanh chóng nhờ FDI"
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "l6_q5",
+      "type": "multiple-choice",
+      "text": "Lực lượng được coi là \"quốc sách hàng đầu\" trong việc thực hiện công nghiệp hóa là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Thị trường nội địa"
+        },
+        {
+          "id": "B",
+          "text": "Nguồn nhân lực"
+        },
+        {
+          "id": "C",
+          "text": "Tài nguyên thiên nhiên"
+        },
+        {
+          "id": "D",
+          "text": "Cơ sở hạ tầng kỹ thuật"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l6_q6",
+      "type": "multiple-choice",
+      "text": "Lực lượng giữ vai trò đặc biệt quan trọng trong việc sử dụng các phương tiện kỹ thuật công nghiệp hóa là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Doanh nhân trẻ"
+        },
+        {
+          "id": "B",
+          "text": "Nhà đầu tư nước ngoài"
+        },
+        {
+          "id": "C",
+          "text": "Tổ chức phi chính phủ"
+        },
+        {
+          "id": "D",
+          "text": "Công nhân lành nghề và cán bộ khoa học công nghệ"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "l6_q7",
+      "type": "multiple-choice",
+      "text": "Vì sao khoa học công nghệ được xem là động lực của công nghiệp hóa?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vì đó là mục tiêu của giáo dục"
+        },
+        {
+          "id": "B",
+          "text": "Vì khoa học công nghệ nâng cao năng lực cạnh tranh và tốc độ phát triển kinh tế"
+        },
+        {
+          "id": "C",
+          "text": "Vì đó là xu thế quốc tế"
+        },
+        {
+          "id": "D",
+          "text": "Vì khoa học công nghệ giúp giảm phụ thuộc vào đầu tư nước ngoài"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l6_q8",
+      "type": "multiple-choice",
+      "text": "Một ngành được coi là ngành kinh tế tri thức khi:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Có nhiều sản phẩm ứng dụng điện tử"
+        },
+        {
+          "id": "B",
+          "text": "Giá trị do tri thức tạo ra chiếm khoảng 70% tổng giá trị sản xuất"
+        },
+        {
+          "id": "C",
+          "text": "Có tốc độ tăng trưởng cao hơn bình quân cả nước"
+        },
+        {
+          "id": "D",
+          "text": "Có nhiều lao động chất lượng cao"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l6_q9",
+      "type": "multiple-select",
+      "text": "Chọn 2 phương án trả lời đúng. Những rủi ro mà các nước đang phát triển như Việt Nam có thể đối mặt khi hội nhập kinh tế quốc tế:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tăng sức mạnh tự chủ tuyệt đối trong nền kinh tế"
+        },
+        {
+          "id": "B",
+          "text": "Nguy cơ bị tổn thương trước biến động thị trường toàn cầu"
+        },
+        {
+          "id": "C",
+          "text": "Gia tăng cơ hội tiếp cận khoa học – công nghệ"
+        },
+        {
+          "id": "D",
+          "text": "Nguy cơ văn hóa truyền thống bị xâm lăng"
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "l6_q10",
+      "type": "multiple-choice",
+      "text": "Hội nhập kinh tế quốc tế là quá trình:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Quốc gia mở rộng thị trường trong nước"
+        },
+        {
+          "id": "B",
+          "text": "Quốc gia gắn kết kinh tế với thế giới trên cơ sở chia sẻ lợi ích và tuân thủ chuẩn mực quốc tế"
+        },
+        {
+          "id": "C",
+          "text": "Quốc gia tự chủ trong mọi chính sách kinh tế"
+        },
+        {
+          "id": "D",
+          "text": "Quốc gia rút khỏi các cam kết quốc tế"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "l6_q11",
+      "type": "multiple-choice",
+      "text": "Vì sao hội nhập kinh tế quốc tế là tất yếu khách quan đối với các nước đang phát triển như Việt Nam?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Để tiếp cận nguồn lực bên ngoài, rút ngắn khoảng cách phát triển"
+        },
+        {
+          "id": "B",
+          "text": "Để có thể cạnh tranh với các siêu cường kinh tế"
+        },
+        {
+          "id": "C",
+          "text": "Để giảm thiểu vai trò quản lý của Nhà nước"
+        },
+        {
+          "id": "D",
+          "text": "Để thay thế thương mại nội địa bằng ngoại thương"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l6_q12",
+      "type": "multiple-select",
+      "text": "Chọn 2 phương án trả lời đúng. Những lợi ích chính của hội nhập kinh tế quốc tế đối với Việt Nam gồm:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nâng cao chất lượng nguồn nhân lực qua hợp tác quốc tế"
+        },
+        {
+          "id": "B",
+          "text": "Tăng khả năng tiếp cận thị trường quốc tế"
+        },
+        {
+          "id": "C",
+          "text": "Giảm sự cạnh tranh và bảo hộ sản xuất trong nước"
+        },
+        {
+          "id": "D",
+          "text": "Mở rộng liên kết vùng trong nước"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "l6_q13",
+      "type": "multiple-choice",
+      "text": "Hội nhập kinh tế quốc tế giúp Việt Nam cải thiện môi trường đầu tư thông qua:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hạn chế hợp tác khoa học"
+        },
+        {
+          "id": "B",
+          "text": "Giảm số lượng đối tác quốc tế"
+        },
+        {
+          "id": "C",
+          "text": "Tăng thuế và kiểm soát nhập khẩu"
+        },
+        {
+          "id": "D",
+          "text": "Tăng cường tiếp nhận công nghệ hiện đại và vốn từ nước ngoài"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "l6_q14",
+      "type": "multiple-choice",
+      "text": "Một doanh nghiệp Việt Nam muốn mở rộng thị trường trong bối cảnh hội nhập quốc tế. Họ cần ưu tiên hành động nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Đẩy mạnh truyền thông nội địa"
+        },
+        {
+          "id": "B",
+          "text": "Giảm chất lượng sản phẩm để hạ giá"
+        },
+        {
+          "id": "C",
+          "text": "Chỉ bán hàng thông qua trung gian trong nước"
+        },
+        {
+          "id": "D",
+          "text": "Tuân thủ tiêu chuẩn quốc tế và cải tiến công nghệ sản xuất"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "l6_q15",
+      "type": "multiple-choice",
+      "text": "Để hạn chế nguy cơ mất bản sắc văn hóa trong hội nhập, Việt Nam cần:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bảo tồn văn hóa dân tộc đồng thời chọn lọc tinh hoa văn hóa nhân loại"
+        },
+        {
+          "id": "B",
+          "text": "Tập trung hội nhập chính trị thay vì văn hóa"
+        },
+        {
+          "id": "C",
+          "text": "Tăng cường thương mại hóa văn hóa truyền thống"
+        },
+        {
+          "id": "D",
+          "text": "Ngăn chặn mọi hình thức văn hóa nước ngoài"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l6_q16",
+      "type": "multiple-choice",
+      "text": "Trong bối cảnh hội nhập kinh tế quốc tế, để nâng cao khả năng cạnh tranh, Việt Nam cần ưu tiên giải pháp nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Phát triển doanh nghiệp đổi mới công nghệ, nâng cao chất lượng nguồn nhân lực"
+        },
+        {
+          "id": "B",
+          "text": "Tăng cường bảo hộ sản xuất nội địa"
+        },
+        {
+          "id": "C",
+          "text": "Tăng xuất khẩu tài nguyên thô"
+        },
+        {
+          "id": "D",
+          "text": "Giảm đầu tư vào nghiên cứu và phát triển"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l6_q17",
+      "type": "multiple-choice",
+      "text": "Trong nền kinh tế tri thức, yếu tố nào trở thành tài nguyên quan trọng nhất?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Thông tin"
+        },
+        {
+          "id": "B",
+          "text": "Tài chính"
+        },
+        {
+          "id": "C",
+          "text": "Tài nguyên khoáng sản"
+        },
+        {
+          "id": "D",
+          "text": "Địa lý"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "l6_q18",
+      "type": "multiple-select",
+      "text": "Chọn 3 phương án trả lời đúng. Những đặc điểm cơ bản của kinh tế tri thức bao gồm:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tri thức là lực lượng sản xuất trực tiếp"
+        },
+        {
+          "id": "B",
+          "text": "Công nghệ thông tin được ứng dụng rộng rãi"
+        },
+        {
+          "id": "C",
+          "text": "Tài nguyên thiên nhiên là yếu tố quyết định nhất"
+        },
+        {
+          "id": "D",
+          "text": "Nguồn nhân lực nhanh chóng được tri thức hóa"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "l6_q19",
+      "type": "drag-drop-fill",
+      "text": "Kéo đáp án đúng nhất vào ô trống.",
+      "items": [
+        "Dịch vụ công",
+        "Máy móc",
+        "Tài chính – ngân hàng",
+        "Công nghệ số"
+      ],
+      "sentences": [
+        {
+          "id": "b1",
+          "pre": "Công nghiệp hóa là quá trình chuyển đổi từ nền sản xuất xã hội dựa trên lao động thủ công là chính sang sản xuất dựa chủ yếu trên",
+          "post": ""
+        }
+      ],
+      "correct": {
+        "b1": "Máy móc"
+      }
+    },
+    {
+      "id": "l6_q20",
+      "type": "drag-drop-category",
+      "text": "Kéo thả những đặc điểm cơ bản tương ứng với nền kinh tế tri thức và nền kinh tế truyền thống.",
+      "items": [
+        "Dựa chủ yếu vào lao động cơ bắp",
+        "Tri thức là lực lượng sản xuất trực tiếp",
+        "Nhân lực được tri thức hóa nhanh chóng",
+        "Cơ cấu kinh tế khép kín, bảo thủ"
+      ],
+      "categories": [
+        "Kinh tế tri thức",
+        "Kinh tế truyền thống"
+      ],
+      "correct": {
+        "cat1": [
+          "Tri thức là lực lượng sản xuất trực tiếp",
+          "Nhân lực được tri thức hóa nhanh chóng"
+        ],
+        "cat2": [
+          "Dựa chủ yếu vào lao động cơ bắp",
+          "Cơ cấu kinh tế khép kín, bảo thủ"
+        ]
+      }
+    }
+  ]
+};
+
+export default LESSONS_DATA;

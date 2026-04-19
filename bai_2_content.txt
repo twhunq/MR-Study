@@ -1,0 +1,189 @@
+===== BÀI 2 =====
+BÀI 2: LÝ LUẬN CỦA C.MÁC VỀ GIÁ TRỊ THẶNG DƯ
+Câu 1: Cho biết chi phí tư bản khả biến là 2000 usd. Chọn đáp án (Đúng hoặc Sai) với từng trường hợp sau:
+Nếu m' = 300% thì khối lượng giá trị mới do công nhân tạo ra là 7000 usd
+Đúng
+Nếu m' = 400% thì khối lượng giá trị mới do công nhân tạo ra là 8000 usd
+Đúng
+Nếu m' = 100% thì khối lượng giá trị mới do công nhân tạo ra là 4000 usd
+Đúng
+Nếu m' = 200% thì khối lượng giá trị mới do công nhân tạo ra là 6000 usd
+Đúng
+Câu 2: Cho biết tư bản bất biến c = 1.200 USD tỷ suất giá trị thặng dư m' = 200%. Chọn đáp án (Đúng hoặc Sai) với từng trường hợp sau:
+Với cấu tạo hữu cơ của tư bản c / v = 4/1 thì giá trị hàng hoá là 1.800 usd
+Sai
+Với cấu tạo hữu cơ của tư bản c / v = 3/1 thì giá trị hàng hoá là 2.400 usd
+Đúng
+Với cấu tạo hữu cơ của tư bản c / v = 2/1 thì giá trị hàng hoá là 3000 usd
+Đúng
+Với cấu tạo hữu cơ của tư bản c / v = 4/1 thì giá trị hàng hoá là 2.000 usd
+Sai
+Câu 3: Cho biết tư bản bất biến c = 1.500 USD tỷ suất giá trị thặng dư m' = 100%. Chọn đáp án (Đúng hoặc Sai) với từng trường hợp sau:
+Với cấu tạo hữu cơ của tư bản c / v = 3/1 thì giá trị hàng hoá là 2.500 USD
+Đúng
+Với cấu tạo hữu cơ của tư bản c / v = 2/1 thì giá trị hàng hoá là 3.000 USD
+Đúng
+Với cấu tạo hữu cơ của tư bản c / v = 3/1 thì giá trị hàng hoá là 2.600 USD
+Sai
+Với cấu tạo hữu cơ của tư bản c / v = 5/1 thì giá trị hàng hoá là 2.250 USD
+Sai
+Câu 4: Dựa vào căn cứ nào để chia tư bản thành tư bản bất biến và tư bản khả biến?
+Hao mòn hữu hình hoặc vô hình
+Phương thức chuyển giá trị các bộ phận tư bản sang sản phẩm
+Tốc độ chu chuyển của tư bản
+Vai trò các bộ phận tư bản trong quá trình sản xuất giá trị thặng dư
+Câu 5: Dựa vào căn cứ nào để chia tư bản ra thành tư bản cố định và tư bản lưu động?
+Phương thức chuyển giá trị của các bộ phận tư bản sang sản phẩm
+Vai trò các bộ phận tư bản trong quá trình sản xuất giá trị thặng dư
+Tốc độ chu chuyển chung của tư bản
+Sự thay đổi về lượng trong quá trình sản xuất
+Câu 6: Đâu là thuộc tính của hàng hoá sức lao động? (Chọn 2 đáp án đúng)
+Giá trị sử dụng của hàng hoá sức lao động
+Giá trị thặng dư
+Thuộc tính sử dụng của hàng hoá sức lao động
+Giá trị của hàng hoá sức lao động
+Câu 7: Để đạt được giá trị thặng dư siêu ngạch, doanh nghiệp cần: (Chọn 2 đáp án đúng)
+Bán hàng hóa với giá trị cao hơn cả giá trị xã hội
+Trả lương công nhân cao hơn mức quy định
+Sản xuất ra hàng hóa có giá trị thấp hơn mức trung bình xã hội
+Áp dụng công nghệ mới sớm hơn đối thủ cạnh tranh
+Câu 8: Điều kiện để nhà tư bản thu được giá trị thặng dư siêu ngạch là: (Chọn 2 đáp án đúng)
+Sản phẩm sản xuất ra có giá trị thấp hơn giá trị xã hội nhưng vẫn bán theo giá thị trường
+Tổ chức sản xuất theo lối thủ công truyền thống
+Năng suất lao động cá biệt cao hơn mức trung bình của xã hội
+Tăng ngày lao động của công nhân
+Câu 9: Điều kiện để sức lao động trở thành hàng hoá là: (Chọn 2 đáp án đúng)
+Người lao động có học vấn cao
+Người lao động không có tư liệu sản xuất
+Người lao động được tự do về thân thể
+Nhà tư bản có quyền ra lệnh
+Câu 10: Giá trị thặng dư siêu ngạch còn được gọi là:
+Hình thức biến tướng của giá trị thặng dư tuyệt đối.
+Hình thức biểu hiện của giá trị thặng dư tương đối.
+Hình thức biến tướng của sản phẩm thặng dư tương đối.
+Hình thức biến tướng của giá trị thặng dư tương đối
+Câu 11: Giá trị thặng dư là gì?
+Giá trị của tư bản tự tăng lên
+Hiệu số giữa giá trị hàng hoá với chi phí sản xuất tư bản chủ nghĩa
+Phần giá trị mới dôi ra ngoài giá trị sức lao động do người công nhân làm thuê tạo ra
+Lợi nhuận thu được của người sản xuất kinh doanh
+Câu 12: Hao mòn tư bản cố định có các loại nào? (Chọn 2 đáp án đúng)
+Hao mòn vật chất
+Hao mòn tự nhiên
+Hao mòn vô hình
+Hao mòn hữu hình
+Câu 13: Khi nào tiền tệ biến thành tư bản?
+Dùng tiền để buôn bán mua rẻ, bán đắt
+Dùng tiền đầu tư vào sản xuất kinh doanh
+Có lượng tiền tệ đủ lớn
+Sức lao động trở thành hàng hoá
+Câu 14: Nguồn gốc chủ yếu của tích lũy tư bản là:
+Giá trị thặng dư
+Tiền huy động
+Sản phẩm thặng dư
+Tiền đi vay
+Câu 15: Phương pháp sản xuất giá trị thặng dư tuyệt đối có hạn chế gì?
+Không áp dụng cho doanh nghiệp nhỏ
+Không tạo ra lợi nhuận
+Không bị ảnh hưởng bởi pháp luật
+Bị giới hạn bởi thời gian sinh học của con người
+Câu 16: Phương pháp sản xuất giá trị thặng dư tuyệt đối chủ yếu dựa vào biện pháp nào sau đây? (Chọn 2 đáp án đúng)
+Không thay đổi năng suất lao động nhưng kéo dài ngày lao động
+Kéo dài thời gian lao động vượt quá thời gian lao động tất yếu
+Rút ngắn thời gian lao động tất yếu
+Tăng năng suất lao động trong ngành sản xuất tư liệu sinh hoạt
+Câu 17: Phương pháp sản xuất giá trị thặng dư tuyệt đối là: (Chọn 2 đáp án đúng)
+Kéo dài ngày lao động vượt quá thời gian lao động tất yếu
+Năng suất lao động, giá trị sức lao động không đổi và thời gian lao động tất yếu không đổi
+Tiết kiệm chi phí sản xuất
+Sử dụng kỹ thuật tiên tiến
+Câu 18: Tư bản đầu tư là 900 usd, trong đó số tư bản đầu tư vào tư liệu sản xuất là 600 usd. Chọn đáp án (Đúng hoặc Sai) với từng trường hợp sau:
+Với m' = 200% thì giá trị hàng hoá là 1.500 usd
+Đúng
+Với m' = 200% thì giá trị hàng hoá là 1.800 usd
+Sai
+Với m' = 100% thì giá trị hàng hoá là 1.500 usd
+Sai
+Với m' = 300% thì giá trị hàng hoá là 2.000 usd
+Sai
+Câu 19: Tỷ suất giá trị thặng dư (m') phản ánh điều gì?
+Hiệu quả của nhà tư bản
+Trình độ bóc lột của tư bản đối với công nhân làm thuê
+Số lượng giá trị thặng dư
+Quy mô bóc lột của nhà tư bản đối với người công nhân làm thuê
+Câu 20: Ý nào đúng nhất về tư bản bất biến (c) là?
+Giá trị của nó không thay đổi và được chuyển ngay sang sản phẩm sau một chu kỳ sản xuất
+Giá trị của nó không thay đổi về lượng và được chuyển nguyên vẹn sang sản phẩm
+Giá trị của nó lớn lên trong quá trình sản xuất
+Giá trị của nó chuyển dần vào sản phẩm qua khấu hao
+Câu 21. Sức lao động trở thành hàng hóa một cách phổ biến từ khi nào? 
+A. Trong nền sản xuất hàng hóa giản đơn B. Trong xã hội chiếm hữu nô lệ
+ C. Trong nền sản xuất tư bản chủ nghĩa
+ D. Trong xã hội phong kiến
+     Câu 22. Để sức lao động trở thành hàng hóa, cần có hai điều kiện cơ bản là: 
+A. Người lao động được tự do và có tư liệu sản xuất 
+B. Người lao động được tự do về thân thể và không có tư liệu sản xuất
+ C. Người lao động có trình độ cao và có nhu cầu bán sức lao động
+ D. Nhà tư bản có vốn và người lao động cần việc làm
+Câu 23. Giá trị của hàng hóa sức lao động được xác định bởi: 
+A. Lượng giá trị mới do công nhân tạo ra trong quá trình làm việc
+ B. Sự thỏa thuận trên thị trường giữa chủ và thợ
+ C. Lượng lao động xã hội cần thiết để sản xuất và tái sản xuất ra sức lao động 
+D. Hiệu suất công việc mà người lao động đóng góp cho doanh nghiệp
+Câu 24. Điểm khác biệt lớn nhất giữa hàng hóa sức lao động và hàng hóa thông thường là gì? 
+A. Giá trị của nó không thay đổi trong quá trình tiêu dùng 
+B. Càng tiêu dùng thì giá trị của nó càng giảm dần 
+C. Khi sử dụng, nó tạo ra giá trị mới lớn hơn giá trị của bản thân nó
+ D. Nó không thể được mua bán trên thị trường
+Câu 25. Theo C.Mác, Tư bản là gì?
+ A. Là tiền và các phương tiện máy móc dùng để sản xuất 
+B. Là giá trị mang lại giá trị thặng dư bằng cách bóc lột công nhân làm thuê 
+C. Là nguồn vốn tích lũy của các cá nhân trong xã hội 
+D. Là công cụ lao động được hiện đại hóa trong công nghiệp
+Câu 26. Tư bản bất biến (c) được hiểu là: 
+A. Bộ phận tư bản dùng để thuê mướn nhân công 
+B. Bộ phận tư bản dùng để mua tư liệu sản xuất (máy móc, nguyên liệu)
+ C. Bộ phận tư bản có sự biến đổi về mặt giá trị trong sản xuất
+ D. Bộ phận tư bản dùng để trả tiền lương cho người lao động
+Câu 27. Tư bản khả biến (v) có đặc điểm nào sau đây?
+ A. Giá trị của nó được chuyển nguyên vẹn vào sản phẩm mới
+ B. Giá trị của nó không thay đổi về lượng trong quá trình sản xuất
+ C. Giá trị của nó tăng lên về lượng thông qua việc tạo ra giá trị thặng dư
+ D. Nó bao gồm toàn bộ nhà xưởng và thiết bị sản xuất
+Câu 28. Tư bản cố định bao gồm những yếu tố nào?
+ A. Máy móc, nhà xưởng, thiết bị sản xuất
+ B. Nguyên liệu, nhiên liệu, vật liệu phụ 
+C. Tiền lương trả cho công nhân và nhân viên 
+D. Toàn bộ các yếu tố của tư bản bất biến
+Câu 29. Tư bản lưu động là bộ phận tư bản bao gồm: 
+A. Máy móc, thiết bị và tiền lương 
+B. Chỉ bao gồm tiền lương (tư bản khả biến)
+ C. Nguyên liệu, nhiên liệu, vật liệu phụ và tiền lương
+ D. Nhà xưởng và nguyên vật liệu sản xuất
+Câu 30. Tỷ suất giá trị thặng dư (m') phản ánh điều gì? 
+A. Hiệu quả kinh doanh của nhà tư bản 
+B. Trình độ bóc lột của tư bản đối với công nhân làm thuê 
+C. Quy mô bóc lột của nhà tư bản 
+D. Tổng số lợi nhuận thu được sau một chu kỳ sản xuất
+Câu 31. Khối lượng giá trị thặng dư (M) phản ánh điều gì?
+ A. Trình độ bóc lột của nhà tư bản 
+B. Quy mô bóc lột của tư bản đối với công nhân làm thuê 
+C. Hiệu suất sử dụng máy móc thiết bị 
+D. Tỷ lệ giữa tư bản bất biến và tư bản khả biến
+Câu 32. Công thức tính khối lượng giá trị thặng dư (M) là:
+ A. M = m' . V B. M = m' / V C. M = (c + v) . m' D. M = v / m'
+Câu 33. Giá trị của một đơn vị hàng hóa được tính theo công thức nào sau đây?
+ A. G = c + v
+ B. G = c + v + m
+ C. G = c + m 
+D. G = k + p
+Câu 34. Trong quá trình sản xuất, lao động cụ thể của người công nhân có vai trò:
+ A. Bảo tồn và chuyển giá trị cũ (c) vào sản phẩm mới
+ B. Tạo ra giá trị thặng dư cho nhà tư bản
+ C. Tạo ra giá trị mới (v + m) của hàng hóa 
+D. Làm tăng giá trị của tư liệu sản xuất
+Câu 35. Trong quá trình sản xuất, lao động trừu tượng của người công nhân có vai trò: 
+A. Chuyển giá trị cũ của máy móc vào sản phẩm 
+B. Tạo ra giá trị mới (v + m) của hàng hóa
+ C. Làm thay đổi hình thái tự nhiên của vật chất
+ D. Bảo tồn các yếu tố của tư bản bất biến
