@@ -1,0 +1,346 @@
+[
+  {
+    "id": "ktsl4_q1",
+    "type": "multiple-choice",
+    "text": "Hình ảnh dưới đây mô tả tín hiệu gì?",
+    "image": "/images/ktsl_b4/ktsl_b4_img1.png",
+    "options": [
+      { "id": "A", "text": "Tín hiệu nhiễu ngẫu nhiên khi có tác động của môi trường" },
+      { "id": "B", "text": "Tín hiệu ở ngõ ra đồng pha với tín hiệu ngõ vào" },
+      { "id": "C", "text": "Tín hiệu ở đầu ra khi có nhiễu tác động ở đầu vào dữ liệu" },
+      { "id": "D", "text": "Tín hiệu dải nền cộng phiên AWGN" }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl4_q1_1",
+    "type": "multiple-choice",
+    "text": "Tín hiệu truyền trên đường truyền nếu bỏ qua các tác động khác thì ít nhất cũng chịu tác động khách quan của môi trường đó là?",
+    "options": [
+      { "id": "A", "text": "Nhiễu ngẫu nhiên" },
+      { "id": "B", "text": "Hiện tượng Fading" },
+      { "id": "C", "text": "Hiện tượng lỗi bit" },
+      { "id": "D", "text": "Nhiễu xuyên kênh" }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl4_q2",
+    "type": "multiple-choice",
+    "text": "Hình vẽ dưới đây mô tả xác suất lỗi khi truyền bit nào?",
+    "image": "/images/ktsl_b4/ktsl_b4_img2.png",
+    "options": [
+      { "id": "A", "text": "Bit 3" },
+      { "id": "B", "text": "Bit 2" },
+      { "id": "C", "text": "Bit 0" },
+      { "id": "D", "text": "Bit 1" }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl4_q3",
+    "type": "multiple-choice",
+    "text": "Hình vẽ dưới đây mô tả xác suất lổi khi truyền bit nào?",
+    "image": "/images/ktsl_b4/ktsl_b4_img3.png",
+    "options": [
+      { "id": "A", "text": "Bit 1" },
+      { "id": "B", "text": "Bit 0" },
+      { "id": "C", "text": "Bit 3" },
+      { "id": "D", "text": "Bit 2" }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl4_q4",
+    "type": "multiple-select",
+    "text": "Mục dịch truyền dữ liệu là đạt độ chính xác cao nhất, do đó cần có cơ chế để phát hiện sai nhằm mục đích? (Chọn 02 đáp án đúng)",
+    "options": [
+      { "id": "A", "text": "Không truyền lại" },
+      { "id": "B", "text": "Truyền lại" },
+      { "id": "C", "text": "Sửa sai" },
+      { "id": "D", "text": "Không sửa sai" }
+    ],
+    "correctAnswers": ["B", "C"]
+  },
+  {
+    "id": "ktsl4_q4_1",
+    "type": "multiple-choice",
+    "text": "Hình vẽ sau đây mô tả phương pháp nào trong các phương pháp phát hiện sai khi truyền dữ liệu?",
+    "image": "/images/ktsl_b4/ktsl_b4_img4.png",
+    "options": [
+      { "id": "A", "text": "Phương pháp lặp lại" },
+      { "id": "B", "text": "Phương pháp tạo thông điệp" },
+      { "id": "C", "text": "Phương pháp kiểm tra chẵn lẻ" },
+      { "id": "D", "text": "Phương pháp tạo bản sao dữ liệu" }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl4_q5",
+    "type": "multiple-choice",
+    "text": "Hình vẽ sau đẩy mô tả phương pháp nào trong các phương pháp phát hiện sai khi truyền dữ liệu?",
+    "image": "/images/ktsl_b4/ktsl_b4_img5.png",
+    "options": [
+      { "id": "A", "text": "Phương pháp tạo thông điệp" },
+      { "id": "B", "text": "Phương pháp Echoing" },
+      { "id": "C", "text": "Phương pháp lặp" },
+      { "id": "D", "text": "Phương pháp tạo bản sao tín hiệu" }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl4_q5_1",
+    "type": "multiple-choice",
+    "text": "Nhược điểm của kiểm tra chẳn lẻ là không thể phát hiện được?",
+    "options": [
+      { "id": "A", "text": "Tổng số bit đúng là chẵn" },
+      { "id": "B", "text": "Tổng số bit đúng là lẻ" },
+      { "id": "C", "text": "Tổng số bit sai là chẵn" },
+      { "id": "D", "text": "Tổng số bit sai là lẻ" }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ktsl4_q5_2",
+    "type": "multiple-choice",
+    "text": "Ưu điểm của phương pháp kiểm tra tổng khối là?",
+    "options": [
+      { "id": "A", "text": "Có khả năng phát hiện tất cả các bit đúng chẵn" },
+      { "id": "B", "text": "Có khả năng phát hiện tất cả các bit sai chẵn" },
+      { "id": "C", "text": "Có khả năng phát hiện tất cả các bit đúng lẻ" },
+      { "id": "D", "text": "Có khả năng phát hiện tất cả các bit sai lẻ" }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl4_q6",
+    "type": "multiple-choice",
+    "text": "Vận dụng kiến thức đã học về mã Hamming, em hãy cho biết mã Hamming (7,4) có ý nghĩa gì?",
+    "options": [
+      { "id": "A", "text": "Mã Hamming có 4 bit tổng cộng, bao gồm cả dữ liệu và bit kiểm tra" },
+      { "id": "B", "text": "Mã Hamming có 7 bit tổng cộng, bao gồm cả dữ liệu và bit kiểm tra" },
+      { "id": "C", "text": "Mã Hamming có 4 bit dữ liệu và 7 bit kiểm tra lỗi" },
+      { "id": "D", "text": "Mã Hamming có 7 bit dữ liệu và 4 bit kiểm tra lỗi" }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl4_q7",
+    "type": "multiple-choice",
+    "text": "Hình về sau mô tà cấu trúc của ... trong kỹ thuật Packed Decimal?",
+    "image": "/images/ktsl_b4/ktsl_b4_img6.png",
+    "options": [
+      { "id": "A", "text": "Cấu trúc truyền định hướng byte" },
+      { "id": "B", "text": "Cấu trúc truyền định hướng bít" },
+      { "id": "C", "text": "Cấu trúc nén dữ liệu" },
+      { "id": "D", "text": "Cấu trúc của khung truyền" }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl4_q7_1",
+    "type": "multiple-choice",
+    "text": "Trong kỹ thuật Packed Decimal, mỗi byte lưu trữ bao nhiêu chữ số thập phân?",
+    "options": [
+      { "id": "A", "text": "1 chữ số thập phân" },
+      { "id": "B", "text": "4 chữ số thập phân" },
+      { "id": "C", "text": "2 chữ số thập phân" },
+      { "id": "D", "text": "8 chữ số thập phần" }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ktsl4_q8",
+    "type": "multiple-choice",
+    "text": "Mã hóa Huffman có thể đảm bảo điều gi trong quả trình nén dữ liệu?",
+    "options": [
+      { "id": "A", "text": "Đảm bảo rằng tất cả các ký tự đều có độ dài mã như nhau" },
+      { "id": "B", "text": "Đảm bảo tốc độ truyền tải dữ liệu cao hơn" },
+      { "id": "C", "text": "Đảm bảo không có sự mất mát dữ liệu" },
+      { "id": "D", "text": "Đảm bảo rằng dữ liệu được mã hóa không thế giải mã được" }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ktsl4_q8_1",
+    "type": "multiple-choice",
+    "text": "Hình vẽ sau mô tả khung loại nào?",
+    "image": "/images/ktsl_b4/ktsl_b4_img7.png",
+    "options": [
+      { "id": "A", "text": "Khung định hướng bit" },
+      { "id": "B", "text": "Khung định hướng ký tự" },
+      { "id": "C", "text": "Khung định hướng byte" },
+      { "id": "D", "text": "Khung biểu diễn các mã BCD" }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl4_q8_2",
+    "type": "multiple-choice",
+    "text": "Hình vẽ sau đây mô tả khung loại nào?",
+    "image": "/images/ktsl_b4/ktsl_b4_img8.png",
+    "options": [
+      { "id": "A", "text": "Khung định hướng ký tự" },
+      { "id": "B", "text": "Khung định hướng bit" },
+      { "id": "C", "text": "Khung định hướng byte" },
+      { "id": "D", "text": "Khung biểu diễn các mã BCD" }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl4_q9",
+    "type": "multiple-choice",
+    "text": "Trong cây Huffman, các ký tự có tần suất xuất hiện lớn hơn sẽ có mã nhị phân:",
+    "options": [
+      { "id": "A", "text": "Dài hơn" },
+      { "id": "B", "text": "Giống nhau" },
+      { "id": "C", "text": "Ngắn hơn" },
+      { "id": "D", "text": "Không thay đổi" }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ktsl4_q9_1",
+    "type": "multiple-choice",
+    "text": "Mã hóa Huffman có thể mã hóa tốt nhất cho loại dữ liệu nào?",
+    "options": [
+      { "id": "A", "text": "Dữ liệu với tần suất ký tự đều" },
+      { "id": "B", "text": "Dữ liệu có cấu trúc phức tạp" },
+      { "id": "C", "text": "Dữ liệu với tần suất ký tự không đều" },
+      { "id": "D", "text": "Dữ liệu có số lượng ký tự rất lớn" }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ktsl4_q10",
+    "type": "multiple-choice",
+    "text": "Kết quả cuối cùng của việc xây dựng cây Huffman là?",
+    "options": [
+      { "id": "A", "text": "Một danh sách các ký tự đã được sắp xếp" },
+      { "id": "B", "text": "Một cây nhị phân chứa các ký tự và mã của chúng" },
+      { "id": "C", "text": "Một bảng tần suất các ký tự" },
+      { "id": "D", "text": "Một chuỗi nhị phân của tất cả các ký tự" }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl4_q10_1",
+    "type": "multiple-choice",
+    "text": "Quá trình xây dựng cây Huffman tiếp tục cho đến khi nào?",
+    "options": [
+      { "id": "A", "text": "Tất cả các ký tự và cây con đã được kết hợp thành một cây duy nhất" },
+      { "id": "B", "text": "Tất cả các ký tự đã có tần suất xuất hiện bằng nhau" },
+      { "id": "C", "text": "Tất cả các ký tự đã có mã nhị phân" },
+      { "id": "D", "text": "Đã xây dựng đủ số lượng cây con" }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl4_q10_2",
+    "type": "multiple-choice",
+    "text": "Cấu trúc cây trong mã hóa Huffman có đặc điểm gì?",
+    "options": [
+      { "id": "A", "text": "Mỗi nút trong cây đại diện cho một ký tự và tần suất của nó" },
+      { "id": "B", "text": "Cây có chiều cao cố định" },
+      { "id": "C", "text": "Cây là một cây nhị phân không hoàn chỉnh" },
+      { "id": "D", "text": "Cây là một cây nhị phân đầy đủ" }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl4_q11",
+    "type": "multiple-choice",
+    "text": "Trong nén facsimile, phương pháp nén nào được sử dụng phổ biến trong truyền fax?",
+    "options": [
+      { "id": "A", "text": "Nén LZW" },
+      { "id": "B", "text": "Nén Group 3 và Group 4" },
+      { "id": "C", "text": "Nén Run-Length Encoding (RLE)" },
+      { "id": "D", "text": "Nén JPEG" }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl4_q12",
+    "type": "multiple-choice",
+    "text": "Kỹ thuật nén facsimile Group 3 được đặc trưng bởi?",
+    "options": [
+      { "id": "A", "text": "Độ nén rất thấp, thích hợp cho văn bản dài" },
+      { "id": "B", "text": "Hỗ trợ nén hình ảnh đơn giản mà hiệu quả, chủ yếu cho hình ảnh trắng đen" },
+      { "id": "C", "text": "Sử dụng mã hóa dựa trên các khối hình ảnh" },
+      { "id": "D", "text": "Dùng cho hình ảnh màu sắc và có độ phân giải cao" }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl4_q12_1",
+    "type": "multiple-choice",
+    "text": "Nén facsimile Group 4 (G4) cải tiến Group 3 chú yếu nhờ vào?",
+    "options": [
+      { "id": "A", "text": "Tăng chất lượng hình ảnh" },
+      { "id": "B", "text": "Phương pháp nén bít (bit-level) hiệu quả hơn" },
+      { "id": "C", "text": "Việc sử dụng thuật toán nén JPEG" },
+      { "id": "D", "text": "Giảm độ phân giải của hình ảnh" }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl4_q13",
+    "type": "multiple-choice",
+    "text": "Phương pháp nén nào trong facsimile thích hợp cho việc gửi tài liệu có chứa cả văn bản và hình ảnh?",
+    "options": [
+      { "id": "A", "text": "Group 4 (G4)" },
+      { "id": "B", "text": "Group 3 (G3)" },
+      { "id": "C", "text": "Lempel-Ziv-Welch (LZW)" },
+      { "id": "D", "text": "JPEG" }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl4_q14",
+    "type": "multiple-choice",
+    "text": "Khi gửi fax, một trong các phương pháp nén đặc trưng của nén facsimile là?",
+    "options": [
+      { "id": "A", "text": "Nén thông qua phân tích dữ liệu pixel" },
+      { "id": "B", "text": "Sử dụng hình ảnh định dạng bitmap" },
+      { "id": "C", "text": "Nén thông qua mã hóa Run-Length Encoding (RLE)" },
+      { "id": "D", "text": "Nén thông qua phương pháp nén hình ảnh có mất dữ liệu (lossy)" }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ktsl4_q14_1",
+    "type": "multiple-choice",
+    "text": "Nén Group 3 (G3) chủ yếu sử dụng phương pháp gì để nén dữ liệu?",
+    "options": [
+      { "id": "A", "text": "Sử dụng phương pháp nén theo lớp (layering)" },
+      { "id": "B", "text": "Sử dụng mã hóa dữ liệu theo độ dài chạy (Run-Length Encoding - RLE)" },
+      { "id": "C", "text": "Nén theo tỷ lệ nén tĩnh" },
+      { "id": "D", "text": "Dùng mã hóa DCT (Discrete Cosine Transform)" }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl4_q15",
+    "type": "multiple-choice",
+    "text": "Giả sử có bộ ký tự dưới dây với tần suất xuất hiện như sau: A: 5, B: 9, C: 12, D: 13, E: 16, F: 45. Quá trình kết hợp cây con trong bước đầu tiên sẽ như thế nào?",
+    "options": [
+      { "id": "A", "text": "Kết hợp A và B để tạo thành một cây con mới" },
+      { "id": "B", "text": "Kết hợp B và C để tạo thành một cây con mới" },
+      { "id": "C", "text": "Kết hợp A và C để tạo thành một cây con mới" },
+      { "id": "D", "text": "Kết hợp D và E để tạo thành một cây con mới" }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl4_q15_1",
+    "type": "multiple-choice",
+    "text": "Vận dụng kiến thức đã học về mã đa thức, em hãy cho biết mã đa thức (7,4) có nghĩa là gì?",
+    "options": [
+      { "id": "A", "text": "Mã có 4 bit dữ liệu và tổng độ dài của từ mã là 7" },
+      { "id": "B", "text": "Mã có 3 bit dữ liệu và tổng độ dài của từ mã là 7" },
+      { "id": "C", "text": "Mã có 5 bit dữ liệu và tổng độ dài của từ mã là 7" },
+      { "id": "D", "text": "Mã có 6 bit dữ liệu và tổng độ dài của từ mã là 7" }
+    ],
+    "correctAnswer": "A"
+  }
+]

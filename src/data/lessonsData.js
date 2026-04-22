@@ -4045,805 +4045,817 @@ const LESSONS_DATA = {
     }
   ],
   "ktsl_1": [
-  {
-    "id": "ktsl1_q1",
-    "type": "multiple-choice",
-    "text": "Các thiết bị thông tin phải là một phần của hệ thống thông tin được cấu thành từ?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Phần mềm và mạng máy tính"
-      },
-      {
-        "id": "B",
-        "text": "Phần cứng và mạng máy tính"
-      },
-      {
-        "id": "C",
-        "text": "Phần cứng và phần mềm"
-      },
-      {
-        "id": "D",
-        "text": "Dữ liệu và môi trường truyền"
-      }
-    ],
-    "correctAnswer": "C"
-  },
-  {
-    "id": "ktsl1_q2",
-    "type": "multiple-choice",
-    "text": "Tầm tác động của hệ thống truyền thông dữ liệu phụ thuộc vào các đặc tính cơ bản nào?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Cả 03 đáp án trên đều đúng"
-      },
-      {
-        "id": "B",
-        "text": "Đúng lúc"
-      },
-      {
-        "id": "C",
-        "text": "Chính xác"
-      },
-      {
-        "id": "D",
-        "text": "Sự phát xạ"
-      }
-    ],
-    "correctAnswer": "A"
-  },
-  {
-    "id": "ktsl1_q3",
-    "type": "multiple-choice",
-    "text": "Một hệ thống thông tin dữ liệu được cấu tạo từ bao nhiêu thành phần?",
-    "options": [
-      {
-        "id": "A",
-        "text": "6"
-      },
-      {
-        "id": "B",
-        "text": "5"
-      },
-      {
-        "id": "C",
-        "text": "4"
-      },
-      {
-        "id": "D",
-        "text": "3"
-      }
-    ],
-    "correctAnswer": "B"
-  },
-  {
-    "id": "ktsl1_q3_1",
-    "type": "multiple-choice",
-    "text": "Nghi thức trong hệ thống thông tin dữ liệu là?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Môi trường điều hành thông tin dữ liệu"
-      },
-      {
-        "id": "B",
-        "text": "Thiết bị nhận điều hành thông tin dữ liệu"
-      },
-      {
-        "id": "C",
-        "text": "Tập quy luật dùng điều hành thông tin dữ liệu"
-      },
-      {
-        "id": "D",
-        "text": "Thiết bị gửi điều hành thông tin dữ liệu"
-      }
-    ],
-    "correctAnswer": "C"
-  },
-  {
-    "id": "ktsl1_q3_2",
-    "type": "multiple-choice",
-    "text": "Hình vẽ sau đây mô tả:",
-    "image": "/images/ktsl/ktsl_b1_img7.png",
-    "options": [
-      {
-        "id": "A",
-        "text": "Các thành phần của môi trường truyền dẫn"
-      },
-      {
-        "id": "B",
-        "text": "Các thành phần của hệ thống thông tin dữ liệu"
-      },
-      {
-        "id": "C",
-        "text": "Thông điệp khi truyền dữ liệu từ bộ gởi đến bộ nhận"
-      },
-      {
-        "id": "D",
-        "text": "Nghi thức lớp liên kết dữ liệu"
-      }
-    ],
-    "correctAnswer": "B"
-  },
-  {
-    "id": "ktsl1_q4",
-    "type": "multiple-choice",
-    "text": "IEEE có nhiều tiểu ban (Committee). Trong đó Tiểu ban 802 phụ trách về các chuẩn cho?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Mạng xe cộ"
-      },
-      {
-        "id": "B",
-        "text": "Mạng diện rộng"
-      },
-      {
-        "id": "C",
-        "text": "Mạng cục bộ"
-      },
-      {
-        "id": "D",
-        "text": "Mạng di động"
-      }
-    ],
-    "correctAnswer": "C"
-  },
-  {
-    "id": "ktsl1_q4_1",
-    "type": "multiple-choice",
-    "text": "802.4 là chuẩn cho mạng nào?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Vệ tinh"
-      },
-      {
-        "id": "B",
-        "text": "Internet"
-      },
-      {
-        "id": "C",
-        "text": "Ethernet"
-      },
-      {
-        "id": "D",
-        "text": "Token Bus"
-      }
-    ],
-    "correctAnswer": "D"
-  },
-  {
-    "id": "ktsl1_q5",
-    "type": "multiple-choice",
-    "text": "802.3 là chuẩn cho mạng nào?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Di động"
-      },
-      {
-        "id": "B",
-        "text": "Ethernet"
-      },
-      {
-        "id": "C",
-        "text": "Internet"
-      },
-      {
-        "id": "D",
-        "text": "Viba"
-      }
-    ],
-    "correctAnswer": "B"
-  },
-  {
-    "id": "ktsl1_q6",
-    "type": "multiple-choice",
-    "text": "802.5 là chuẩn cho mạng nào?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Di động"
-      },
-      {
-        "id": "B",
-        "text": "Không dây"
-      },
-      {
-        "id": "C",
-        "text": "Token Ring"
-      },
-      {
-        "id": "D",
-        "text": "Hữu tuyến"
-      }
-    ],
-    "correctAnswer": "C"
-  },
-  {
-    "id": "ktsl1_q6_1",
-    "type": "multiple-choice",
-    "text": "802.11 là chuẩn cho mạng nào?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Mạng di động"
-      },
-      {
-        "id": "B",
-        "text": "Mạng thông tin vệ tinh"
-      },
-      {
-        "id": "C",
-        "text": "Mạng hữu tuyến"
-      },
-      {
-        "id": "D",
-        "text": "Mạng không dây"
-      }
-    ],
-    "correctAnswer": "D"
-  },
-  {
-    "id": "ktsl1_q6_2",
-    "type": "multiple-choice",
-    "text": "Các chuẩn do IEEE 802 định nghĩa thực hiện chức năng của tầng thứ mấy trong mô hình tham khảo OSI?",
-    "options": [
-      {
-        "id": "A",
-        "text": "2"
-      },
-      {
-        "id": "B",
-        "text": "4"
-      },
-      {
-        "id": "C",
-        "text": "3"
-      },
-      {
-        "id": "D",
-        "text": "5"
-      }
-    ],
-    "correctAnswer": "A"
-  },
-  {
-    "id": "ktsl1_q7",
-    "type": "multiple-select",
-    "text": "IEEE 802.1 dành cho liên mạng của các mạng nào sau đây? (Chọn 2 đáp án)",
-    "options": [
-      {
-        "id": "A",
-        "text": "LANS"
-      },
-      {
-        "id": "B",
-        "text": "MANs"
-      },
-      {
-        "id": "C",
-        "text": "WANs"
-      },
-      {
-        "id": "D",
-        "text": "OBS"
-      }
-    ],
-    "correctAnswers": [
-      "A",
-      "B"
-    ]
-  },
-  {
-    "id": "ktsl1_q8",
-    "type": "multiple-choice",
-    "text": "Hình vẽ sau mô tả vấn đề nào của PDU?",
-    "image": "/images/ktsl/ktsl_b1_img5.png",
-    "options": [
-      {
-        "id": "A",
-        "text": "Nghi thức PDU"
-      },
-      {
-        "id": "B",
-        "text": "Môi trường PDU"
-      },
-      {
-        "id": "C",
-        "text": "Dạng thức PDU"
-      },
-      {
-        "id": "D",
-        "text": "Địa chỉ PDU"
-      }
-    ],
-    "correctAnswer": "C"
-  },
-  {
-    "id": "ktsl1_q9",
-    "type": "multiple-choice",
-    "text": "Hình vẽ sau mô tả?",
-    "image": "/images/ktsl/ktsl_b1_img3.png",
-    "options": [
-      {
-        "id": "A",
-        "text": "Trường cờ trong một PDU"
-      },
-      {
-        "id": "B",
-        "text": "Trường kiểm soát trong một PDU"
-      },
-      {
-        "id": "C",
-        "text": "Trường tín hiệu trong một PDU"
-      },
-      {
-        "id": "D",
-        "text": "Trường điều khiển trong một PDU"
-      }
-    ],
-    "correctAnswer": "D"
-  },
-  {
-    "id": "ktsl1_q9_1",
-    "type": "multiple-select",
-    "text": "Tầng ứng dụng trong mô hình TCP/IP bao gồm các chi tiết của các tầng nào trong mô hình OSI? (Chọn 3 đáp án)",
-    "options": [
-      {
-        "id": "A",
-        "text": "Tầng ứng dụng"
-      },
-      {
-        "id": "B",
-        "text": "Tầng điều khiển"
-      },
-      {
-        "id": "C",
-        "text": "Tầng phiên"
-      },
-      {
-        "id": "D",
-        "text": "Tầng trình bày"
-      }
-    ],
-    "correctAnswers": [
-      "A",
-      "C",
-      "D"
-    ]
-  },
-  {
-    "id": "ktsl1_q9_2",
-    "type": "multiple-choice",
-    "text": "Mô hình OSI gồm có bao nhiêu tầng?",
-    "image": "/images/ktsl/ktsl_b1_img1.png",
-    "options": [
-      {
-        "id": "A",
-        "text": "7"
-      },
-      {
-        "id": "B",
-        "text": "6"
-      },
-      {
-        "id": "C",
-        "text": "5"
-      },
-      {
-        "id": "D",
-        "text": "4"
-      }
-    ],
-    "correctAnswer": "A"
-  },
-  {
-    "id": "ktsl1_q10",
-    "type": "multiple-choice",
-    "text": "Trong mô hình OSI dưới đây tầng vận chuyển làm nhiệm vụ?",
-    "image": "/images/ktsl/ktsl_b1_img9.png",
-    "options": [
-      {
-        "id": "A",
-        "text": "Cả 03 đáp án trên đều đúng"
-      },
-      {
-        "id": "B",
-        "text": "Thực hiện việc ghép kênh (multiplexing), cắt/hợp dữ liệu nếu cần"
-      },
-      {
-        "id": "C",
-        "text": "Thực hiện cả việc kiểm soát lỗi và kiểm soát luồng dữ liệu giữa 2 đầu nút"
-      },
-      {
-        "id": "D",
-        "text": "Thực hiện việc truyền dữ liệu giữa hai đầu mút (end - to end)"
-      }
-    ],
-    "correctAnswer": "A"
-  },
-  {
-    "id": "ktsl1_q10_1",
-    "type": "multiple-choice",
-    "text": "Trong mô hình OSI dưới đây tầng mạng làm nhiệm vụ?",
-    "image": "/images/ktsl/ktsl_b1_img8.png",
-    "options": [
-      {
-        "id": "A",
-        "text": "Chuyển tiếp thông tin với công nghệ chuyển mạch thích hợp"
-      },
-      {
-        "id": "B",
-        "text": "Cả 03 đáp án trên đều đúng"
-      },
-      {
-        "id": "C",
-        "text": "Thực hiện kiểm soát luồng dữ liệu và cắt/hợp dữ liệu nếu cần"
-      },
-      {
-        "id": "D",
-        "text": "Thực hiện việc chọn đường"
-      }
-    ],
-    "correctAnswer": "B"
-  },
-  {
-    "id": "ktsl1_q11",
-    "type": "multiple-choice",
-    "text": "TCP/IP là bộ giao thức cho phép kết nối?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Các hệ thống mạng đô thị với nhau"
-      },
-      {
-        "id": "B",
-        "text": "Các hệ thống mạng diện rộng với nhau"
-      },
-      {
-        "id": "C",
-        "text": "Các hệ thống mạng cá nhân với nhau"
-      },
-      {
-        "id": "D",
-        "text": "Các hệ thống mạng không đồng nhất với nhau"
-      }
-    ],
-    "correctAnswer": "D"
-  },
-  {
-    "id": "ktsl1_q11_1",
-    "type": "multiple-choice",
-    "text": "Trong mô hình OSI dưới đây tầng liên kết dữ liệu làm nhiệm vụ?",
-    "image": "/images/ktsl/ktsl_b1_img8.png",
-    "options": [
-      {
-        "id": "A",
-        "text": "Kiểm soát lỗi và kiểm soát luồng dữ liệu cần thiết"
-      },
-      {
-        "id": "B",
-        "text": "Cung cấp phương tiện để truyền thông tin qua liên kết vật lý đảm bảo tin cậy"
-      },
-      {
-        "id": "C",
-        "text": "Cả 03 đáp án trên đều đúng"
-      },
-      {
-        "id": "D",
-        "text": "Gửi các khối dữ liệu (frame) với các cơ chế đồng bộ hóa"
-      }
-    ],
-    "correctAnswer": "C"
-  },
-  {
-    "id": "ktsl1_q12",
-    "type": "multiple-choice",
-    "text": "Telnet trong tầng ứng dụng sử dụng trong việc?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Truy cập mạng từ xa"
-      },
-      {
-        "id": "B",
-        "text": "Dịch vụ thư tín điện tử"
-      },
-      {
-        "id": "C",
-        "text": "Dịch vụ truyền tệp"
-      },
-      {
-        "id": "D",
-        "text": "Dịch vụ truyền âm thanh"
-      }
-    ],
-    "correctAnswer": "A"
-  },
-  {
-    "id": "ktsl1_q12_1",
-    "type": "multiple-choice",
-    "text": "TCP/IP được xem là giản lược của mô hình tham chiếu OSI với bao nhiêu tầng?",
-    "options": [
-      {
-        "id": "A",
-        "text": "4"
-      },
-      {
-        "id": "B",
-        "text": "5"
-      },
-      {
-        "id": "C",
-        "text": "6"
-      },
-      {
-        "id": "D",
-        "text": "7"
-      }
-    ],
-    "correctAnswer": "A"
-  },
-  {
-    "id": "ktsl1_q13",
-    "type": "multiple-choice",
-    "text": "Tầng vận chuyển trong mô hình TCP/IP liên quan đến chủ đề về chất lượng dịch vụ như?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Độ tin cậy"
-      },
-      {
-        "id": "B",
-        "text": "Cả 03 đáp án trên đều đúng"
-      },
-      {
-        "id": "C",
-        "text": "Kiểm soát luồng"
-      },
-      {
-        "id": "D",
-        "text": "Kiểm soát lỗi"
-      }
-    ],
-    "correctAnswer": "B"
-  },
-  {
-    "id": "ktsl1_q13_1",
-    "type": "multiple-choice",
-    "text": "Cách bố trí vật lý của 10Base2 được trình bày trong hình sau đây bao gồm các đầu nối và cáp được sử dụng là:",
-    "image": "/images/ktsl/ktsl_b1_img6.png",
-    "options": [
-      {
-        "id": "A",
-        "text": "Cáp đồng trục nhỏ"
-      },
-      {
-        "id": "B",
-        "text": "Cả 03 đáp án trên"
-      },
-      {
-        "id": "C",
-        "text": "Các đầu nối BNC-T"
-      },
-      {
-        "id": "D",
-        "text": "NICs"
-      }
-    ],
-    "correctAnswer": "B"
-  },
-  {
-    "id": "ktsl1_q13_2",
-    "type": "multiple-choice",
-    "text": "Mục tiêu chính của mạng truyền số liệu là gì?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Giảm chi phí phần cứng máy tính"
-      },
-      {
-        "id": "B",
-        "text": "Đảm bảo truyền tin nhanh, tin cậy và bảo mật giữa các thiết bị"
-      },
-      {
-        "id": "C",
-        "text": "Tăng tốc độ xử lý của CPU"
-      },
-      {
-        "id": "D",
-        "text": "Tăng khả năng lưu trữ dữ liệu trong hệ thống"
-      }
-    ],
-    "correctAnswer": "B"
-  },
-  {
-    "id": "ktsl1_q14",
-    "type": "multiple-choice",
-    "text": "Mô hình TCP/IP hướng đến tối đa độ linh hoạt tại tầng nào cho người phát triển phần mềm?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Tầng ứng dụng"
-      },
-      {
-        "id": "B",
-        "text": "Tầng vận chuyển"
-      },
-      {
-        "id": "C",
-        "text": "Internet"
-      },
-      {
-        "id": "D",
-        "text": "Truy cập mạng"
-      }
-    ],
-    "correctAnswer": "A"
-  },
-  {
-    "id": "ktsl1_q14_1",
-    "type": "multiple-choice",
-    "text": "Hình vẽ sau đây mô tả các đoạn Ethernet loại nào?",
-    "image": "/images/ktsl/ktsl_b1_img4.png",
-    "options": [
-      {
-        "id": "A",
-        "text": "Các đoạn Ethernet 10Base5"
-      },
-      {
-        "id": "B",
-        "text": "Các đoạn Ethernet 10Base3"
-      },
-      {
-        "id": "C",
-        "text": "Các đoạn Ethernet 10Base4"
-      },
-      {
-        "id": "D",
-        "text": "Các đoạn Ethernet 10Base6"
-      }
-    ],
-    "correctAnswer": "A"
-  },
-  {
-    "id": "ktsl1_q14_2",
-    "type": "multiple-choice",
-    "text": "Thông tin dữ liệu trong truyền số liệu thường được biểu diễn dưới dạng:",
-    "options": [
-      {
-        "id": "A",
-        "text": "Dạng số nhị phân (bit)"
-      },
-      {
-        "id": "B",
-        "text": "Dạng hình ảnh"
-      },
-      {
-        "id": "C",
-        "text": "Dạng mã Morse"
-      },
-      {
-        "id": "D",
-        "text": "Dạng analog"
-      }
-    ],
-    "correctAnswer": "A"
-  },
-  {
-    "id": "ktsl1_q15",
-    "type": "multiple-choice",
-    "text": "Hình vẽ dưới đây mô tả khung MAC của chuẩn nào?",
-    "image": "/images/ktsl/ktsl_b1_img2.png",
-    "options": [
-      {
-        "id": "A",
-        "text": "Khung MAC của 802.5"
-      },
-      {
-        "id": "B",
-        "text": "Khung MAC của 802.4"
-      },
-      {
-        "id": "C",
-        "text": "Khung MAC của 802.11"
-      },
-      {
-        "id": "D",
-        "text": "Khung MAC của 802.3"
-      }
-    ],
-    "correctAnswer": "D"
-  },
-  {
-    "id": "ktsl1_q15_1",
-    "type": "multiple-choice",
-    "text": "Mục tiêu của dự án IEEE 802 là:",
-    "options": [
-      {
-        "id": "A",
-        "text": "Xây dựng chuẩn cho các hệ thống mạng cục bộ (LAN) và mạng đô thị (MAN)"
-      },
-      {
-        "id": "B",
-        "text": "Phát triển giao thức truyền file FTP"
-      },
-      {
-        "id": "C",
-        "text": "Chuẩn hóa giao thức Internet"
-      },
-      {
-        "id": "D",
-        "text": "Thiết lập các tiêu chuẩn bảo mật mạng toàn cầu"
-      }
-    ],
-    "correctAnswer": "A"
-  },
-  {
-    "id": "ktsl1_q15_2",
-    "type": "multiple-choice",
-    "text": "Lớp vận chuyển (Transport) đảm nhiệm vai trò gì?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Định tuyến gói tin giữa các mạng"
-      },
-      {
-        "id": "B",
-        "text": "Giao tiếp trực tiếp với lớp vật lý"
-      },
-      {
-        "id": "C",
-        "text": "Chia nhỏ khung dữ liệu"
-      },
-      {
-        "id": "D",
-        "text": "Cung cấp truyền tin đầu cuối đáng tin cậy"
-      }
-    ],
-    "correctAnswer": "D"
-  },
-  {
-    "id": "ktsl1_q15_3",
-    "type": "multiple-select",
-    "text": "Lớp ứng dụng của mô hình TCP/IP bao gồm các giao thức nào? (Chọn 2 đáp án)",
-    "options": [
-      {
-        "id": "A",
-        "text": "IP"
-      },
-      {
-        "id": "B",
-        "text": "FTP"
-      },
-      {
-        "id": "C",
-        "text": "HTTP"
-      },
-      {
-        "id": "D",
-        "text": "ARP"
-      }
-    ],
-    "correctAnswers": [
-      "B",
-      "C"
-    ]
-  }
-],
+    {
+      "id": "ktsl1_q1",
+      "type": "multiple-choice",
+      "text": "Các thiết bị thông tin phải là một phần của hệ thống thông tin được cấu thành từ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Phần mềm và mạng máy tính"
+        },
+        {
+          "id": "B",
+          "text": "Phần cứng và mạng máy tính"
+        },
+        {
+          "id": "C",
+          "text": "Phần cứng và phần mềm"
+        },
+        {
+          "id": "D",
+          "text": "Dữ liệu và môi trường truyền"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl1_q2",
+      "type": "multiple-choice",
+      "text": "Tầm tác động của hệ thống truyền thông dữ liệu phụ thuộc vào các đặc tính cơ bản nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cả 03 đáp án trên đều đúng"
+        },
+        {
+          "id": "B",
+          "text": "Đúng lúc"
+        },
+        {
+          "id": "C",
+          "text": "Chính xác"
+        },
+        {
+          "id": "D",
+          "text": "Sự phát xạ"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl1_q3",
+      "type": "multiple-choice",
+      "text": "Một hệ thống thông tin dữ liệu được cấu tạo từ bao nhiêu thành phần?",
+      "options": [
+        {
+          "id": "A",
+          "text": "6"
+        },
+        {
+          "id": "B",
+          "text": "5"
+        },
+        {
+          "id": "C",
+          "text": "4"
+        },
+        {
+          "id": "D",
+          "text": "3"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl1_q3_1",
+      "type": "multiple-choice",
+      "text": "Nghi thức trong hệ thống thông tin dữ liệu là?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Môi trường điều hành thông tin dữ liệu"
+        },
+        {
+          "id": "B",
+          "text": "Thiết bị nhận điều hành thông tin dữ liệu"
+        },
+        {
+          "id": "C",
+          "text": "Tập quy luật dùng điều hành thông tin dữ liệu"
+        },
+        {
+          "id": "D",
+          "text": "Thiết bị gửi điều hành thông tin dữ liệu"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl1_q3_2",
+      "type": "multiple-choice",
+      "text": "Hình vẽ sau đây mô tả:",
+      "image": "/images/ktsl/ktsl_b1_img7.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Các thành phần của môi trường truyền dẫn"
+        },
+        {
+          "id": "B",
+          "text": "Các thành phần của hệ thống thông tin dữ liệu"
+        },
+        {
+          "id": "C",
+          "text": "Thông điệp khi truyền dữ liệu từ bộ gởi đến bộ nhận"
+        },
+        {
+          "id": "D",
+          "text": "Nghi thức lớp liên kết dữ liệu"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl1_q4",
+      "type": "multiple-choice",
+      "text": "IEEE có nhiều tiểu ban (Committee). Trong đó Tiểu ban 802 phụ trách về các chuẩn cho?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mạng xe cộ"
+        },
+        {
+          "id": "B",
+          "text": "Mạng diện rộng"
+        },
+        {
+          "id": "C",
+          "text": "Mạng cục bộ"
+        },
+        {
+          "id": "D",
+          "text": "Mạng di động"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl1_q4_1",
+      "type": "multiple-choice",
+      "text": "802.4 là chuẩn cho mạng nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vệ tinh"
+        },
+        {
+          "id": "B",
+          "text": "Internet"
+        },
+        {
+          "id": "C",
+          "text": "Ethernet"
+        },
+        {
+          "id": "D",
+          "text": "Token Bus"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl1_q5",
+      "type": "multiple-choice",
+      "text": "802.3 là chuẩn cho mạng nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Di động"
+        },
+        {
+          "id": "B",
+          "text": "Ethernet"
+        },
+        {
+          "id": "C",
+          "text": "Internet"
+        },
+        {
+          "id": "D",
+          "text": "Viba"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl1_q6",
+      "type": "multiple-choice",
+      "text": "802.5 là chuẩn cho mạng nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Di động"
+        },
+        {
+          "id": "B",
+          "text": "Không dây"
+        },
+        {
+          "id": "C",
+          "text": "Token Ring"
+        },
+        {
+          "id": "D",
+          "text": "Hữu tuyến"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl1_q6_1",
+      "type": "multiple-choice",
+      "text": "802.11 là chuẩn cho mạng nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mạng di động"
+        },
+        {
+          "id": "B",
+          "text": "Mạng thông tin vệ tinh"
+        },
+        {
+          "id": "C",
+          "text": "Mạng hữu tuyến"
+        },
+        {
+          "id": "D",
+          "text": "Mạng không dây"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl1_q6_2",
+      "type": "multiple-choice",
+      "text": "Các chuẩn do IEEE 802 định nghĩa thực hiện chức năng của tầng thứ mấy trong mô hình tham khảo OSI?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2"
+        },
+        {
+          "id": "B",
+          "text": "4"
+        },
+        {
+          "id": "C",
+          "text": "3"
+        },
+        {
+          "id": "D",
+          "text": "5"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl1_q7",
+      "type": "multiple-select",
+      "text": "IEEE 802.1 dành cho liên mạng của các mạng nào sau đây? (Chọn 2 đáp án)",
+      "options": [
+        {
+          "id": "A",
+          "text": "LANS"
+        },
+        {
+          "id": "B",
+          "text": "MANs"
+        },
+        {
+          "id": "C",
+          "text": "WANs"
+        },
+        {
+          "id": "D",
+          "text": "OBS"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "ktsl1_q8",
+      "type": "multiple-choice",
+      "text": "Hình vẽ sau mô tả vấn đề nào của PDU?",
+      "image": "/images/ktsl/ktsl_b1_img5.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nghi thức PDU"
+        },
+        {
+          "id": "B",
+          "text": "Môi trường PDU"
+        },
+        {
+          "id": "C",
+          "text": "Dạng thức PDU"
+        },
+        {
+          "id": "D",
+          "text": "Địa chỉ PDU"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl1_q9",
+      "type": "multiple-choice",
+      "text": "Hình vẽ sau mô tả?",
+      "image": "/images/ktsl/ktsl_b1_img3.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trường cờ trong một PDU"
+        },
+        {
+          "id": "B",
+          "text": "Trường kiểm soát trong một PDU"
+        },
+        {
+          "id": "C",
+          "text": "Trường tín hiệu trong một PDU"
+        },
+        {
+          "id": "D",
+          "text": "Trường điều khiển trong một PDU"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl1_q9_1",
+      "type": "multiple-select",
+      "text": "Tầng ứng dụng trong mô hình TCP/IP bao gồm các chi tiết của các tầng nào trong mô hình OSI? (Chọn 3 đáp án)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tầng ứng dụng"
+        },
+        {
+          "id": "B",
+          "text": "Tầng điều khiển"
+        },
+        {
+          "id": "C",
+          "text": "Tầng phiên"
+        },
+        {
+          "id": "D",
+          "text": "Tầng trình bày"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "ktsl1_q9_2",
+      "type": "multiple-choice",
+      "text": "Mô hình OSI gồm có bao nhiêu tầng?",
+      "image": "/images/ktsl/ktsl_b1_img1.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "7"
+        },
+        {
+          "id": "B",
+          "text": "6"
+        },
+        {
+          "id": "C",
+          "text": "5"
+        },
+        {
+          "id": "D",
+          "text": "4"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl1_q10",
+      "type": "multiple-choice",
+      "text": "Trong mô hình OSI dưới đây tầng vận chuyển làm nhiệm vụ?",
+      "image": "/images/ktsl/ktsl_b1_img9.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cả 03 đáp án trên đều đúng"
+        },
+        {
+          "id": "B",
+          "text": "Thực hiện việc ghép kênh (multiplexing), cắt/hợp dữ liệu nếu cần"
+        },
+        {
+          "id": "C",
+          "text": "Thực hiện cả việc kiểm soát lỗi và kiểm soát luồng dữ liệu giữa 2 đầu nút"
+        },
+        {
+          "id": "D",
+          "text": "Thực hiện việc truyền dữ liệu giữa hai đầu mút (end - to end)"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl1_q10_1",
+      "type": "multiple-choice",
+      "text": "Trong mô hình OSI dưới đây tầng mạng làm nhiệm vụ?",
+      "image": "/images/ktsl/ktsl_b1_img8.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Chuyển tiếp thông tin với công nghệ chuyển mạch thích hợp"
+        },
+        {
+          "id": "B",
+          "text": "Cả 03 đáp án trên đều đúng"
+        },
+        {
+          "id": "C",
+          "text": "Thực hiện kiểm soát luồng dữ liệu và cắt/hợp dữ liệu nếu cần"
+        },
+        {
+          "id": "D",
+          "text": "Thực hiện việc chọn đường"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl1_q11",
+      "type": "multiple-choice",
+      "text": "TCP/IP là bộ giao thức cho phép kết nối?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Các hệ thống mạng đô thị với nhau"
+        },
+        {
+          "id": "B",
+          "text": "Các hệ thống mạng diện rộng với nhau"
+        },
+        {
+          "id": "C",
+          "text": "Các hệ thống mạng cá nhân với nhau"
+        },
+        {
+          "id": "D",
+          "text": "Các hệ thống mạng không đồng nhất với nhau"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl1_q11_1",
+      "type": "multiple-choice",
+      "text": "Trong mô hình OSI dưới đây tầng liên kết dữ liệu làm nhiệm vụ?",
+      "image": "/images/ktsl/ktsl_b1_img8.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kiểm soát lỗi và kiểm soát luồng dữ liệu cần thiết"
+        },
+        {
+          "id": "B",
+          "text": "Cung cấp phương tiện để truyền thông tin qua liên kết vật lý đảm bảo tin cậy"
+        },
+        {
+          "id": "C",
+          "text": "Cả 03 đáp án trên đều đúng"
+        },
+        {
+          "id": "D",
+          "text": "Gửi các khối dữ liệu (frame) với các cơ chế đồng bộ hóa"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl1_q12",
+      "type": "multiple-choice",
+      "text": "Telnet trong tầng ứng dụng sử dụng trong việc?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Truy cập mạng từ xa"
+        },
+        {
+          "id": "B",
+          "text": "Dịch vụ thư tín điện tử"
+        },
+        {
+          "id": "C",
+          "text": "Dịch vụ truyền tệp"
+        },
+        {
+          "id": "D",
+          "text": "Dịch vụ truyền âm thanh"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl1_q12_1",
+      "type": "multiple-choice",
+      "text": "TCP/IP được xem là giản lược của mô hình tham chiếu OSI với bao nhiêu tầng?",
+      "options": [
+        {
+          "id": "A",
+          "text": "4"
+        },
+        {
+          "id": "B",
+          "text": "5"
+        },
+        {
+          "id": "C",
+          "text": "6"
+        },
+        {
+          "id": "D",
+          "text": "7"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl1_q13",
+      "type": "multiple-choice",
+      "text": "Tầng vận chuyển trong mô hình TCP/IP liên quan đến chủ đề về chất lượng dịch vụ như?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Độ tin cậy"
+        },
+        {
+          "id": "B",
+          "text": "Cả 03 đáp án trên đều đúng"
+        },
+        {
+          "id": "C",
+          "text": "Kiểm soát luồng"
+        },
+        {
+          "id": "D",
+          "text": "Kiểm soát lỗi"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl1_q13_1",
+      "type": "multiple-choice",
+      "text": "Cách bố trí vật lý của 10Base2 được trình bày trong hình sau đây bao gồm các đầu nối và cáp được sử dụng là:",
+      "image": "/images/ktsl/ktsl_b1_img6.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cáp đồng trục nhỏ"
+        },
+        {
+          "id": "B",
+          "text": "Cả 03 đáp án trên"
+        },
+        {
+          "id": "C",
+          "text": "Các đầu nối BNC-T"
+        },
+        {
+          "id": "D",
+          "text": "NICs"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl1_q13_2",
+      "type": "multiple-choice",
+      "text": "Mục tiêu chính của mạng truyền số liệu là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Giảm chi phí phần cứng máy tính"
+        },
+        {
+          "id": "B",
+          "text": "Đảm bảo truyền tin nhanh, tin cậy và bảo mật giữa các thiết bị"
+        },
+        {
+          "id": "C",
+          "text": "Tăng tốc độ xử lý của CPU"
+        },
+        {
+          "id": "D",
+          "text": "Tăng khả năng lưu trữ dữ liệu trong hệ thống"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl1_q14",
+      "type": "multiple-choice",
+      "text": "Mô hình TCP/IP hướng đến tối đa độ linh hoạt tại tầng nào cho người phát triển phần mềm?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tầng ứng dụng"
+        },
+        {
+          "id": "B",
+          "text": "Tầng vận chuyển"
+        },
+        {
+          "id": "C",
+          "text": "Internet"
+        },
+        {
+          "id": "D",
+          "text": "Truy cập mạng"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl1_q14_1",
+      "type": "multiple-choice",
+      "text": "Hình vẽ sau đây mô tả các đoạn Ethernet loại nào?",
+      "image": "/images/ktsl/ktsl_b1_img4.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Các đoạn Ethernet 10Base5"
+        },
+        {
+          "id": "B",
+          "text": "Các đoạn Ethernet 10Base3"
+        },
+        {
+          "id": "C",
+          "text": "Các đoạn Ethernet 10Base4"
+        },
+        {
+          "id": "D",
+          "text": "Các đoạn Ethernet 10Base6"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl1_q14_2",
+      "type": "multiple-choice",
+      "text": "Thông tin dữ liệu trong truyền số liệu thường được biểu diễn dưới dạng:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dạng số nhị phân (bit)"
+        },
+        {
+          "id": "B",
+          "text": "Dạng hình ảnh"
+        },
+        {
+          "id": "C",
+          "text": "Dạng mã Morse"
+        },
+        {
+          "id": "D",
+          "text": "Dạng analog"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl1_q15",
+      "type": "multiple-choice",
+      "text": "Hình vẽ dưới đây mô tả khung MAC của chuẩn nào?",
+      "image": "/images/ktsl/ktsl_b1_img2.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Khung MAC của 802.5"
+        },
+        {
+          "id": "B",
+          "text": "Khung MAC của 802.4"
+        },
+        {
+          "id": "C",
+          "text": "Khung MAC của 802.11"
+        },
+        {
+          "id": "D",
+          "text": "Khung MAC của 802.3"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl1_q15_1",
+      "type": "multiple-choice",
+      "text": "Mục tiêu của dự án IEEE 802 là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Xây dựng chuẩn cho các hệ thống mạng cục bộ (LAN) và mạng đô thị (MAN)"
+        },
+        {
+          "id": "B",
+          "text": "Phát triển giao thức truyền file FTP"
+        },
+        {
+          "id": "C",
+          "text": "Chuẩn hóa giao thức Internet"
+        },
+        {
+          "id": "D",
+          "text": "Thiết lập các tiêu chuẩn bảo mật mạng toàn cầu"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl1_q15_2",
+      "type": "multiple-choice",
+      "text": "Lớp vận chuyển (Transport) đảm nhiệm vai trò gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Định tuyến gói tin giữa các mạng"
+        },
+        {
+          "id": "B",
+          "text": "Giao tiếp trực tiếp với lớp vật lý"
+        },
+        {
+          "id": "C",
+          "text": "Chia nhỏ khung dữ liệu"
+        },
+        {
+          "id": "D",
+          "text": "Cung cấp truyền tin đầu cuối đáng tin cậy"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl1_q15_3",
+      "type": "multiple-select",
+      "text": "Lớp ứng dụng của mô hình TCP/IP bao gồm các giao thức nào? (Chọn 2 đáp án)",
+      "options": [
+        {
+          "id": "A",
+          "text": "IP"
+        },
+        {
+          "id": "B",
+          "text": "FTP"
+        },
+        {
+          "id": "C",
+          "text": "HTTP"
+        },
+        {
+          "id": "D",
+          "text": "ARP"
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "C"
+      ]
+    }
+  ],
   "ktsl_2": [
     {
       "id": "ktsl2_q1",
       "type": "multiple-choice",
       "text": "Token Bus (IEEE 802.4) kết hợp các đặc tính của?",
       "options": [
-        { "id": "A", "text": "Ethernet và MAN" },
-        { "id": "B", "text": "Ethernet và Token Ring" },
-        { "id": "C", "text": "Ethernet và phần cứng" },
-        { "id": "D", "text": "Ethernet và LAN" }
+        {
+          "id": "A",
+          "text": "Ethernet và MAN"
+        },
+        {
+          "id": "B",
+          "text": "Ethernet và Token Ring"
+        },
+        {
+          "id": "C",
+          "text": "Ethernet và phần cứng"
+        },
+        {
+          "id": "D",
+          "text": "Ethernet và LAN"
+        }
       ],
       "correctAnswer": "B"
     },
@@ -4852,10 +4864,22 @@ const LESSONS_DATA = {
       "type": "multiple-choice",
       "text": "Token Ring dùng địa chỉ bao nhiêu byte trong NIC tương tự như địa chỉ của Ethernet?",
       "options": [
-        { "id": "A", "text": "7 bytes" },
-        { "id": "B", "text": "5 bytes" },
-        { "id": "C", "text": "6 bytes" },
-        { "id": "D", "text": "8 bytes" }
+        {
+          "id": "A",
+          "text": "7 bytes"
+        },
+        {
+          "id": "B",
+          "text": "5 bytes"
+        },
+        {
+          "id": "C",
+          "text": "6 bytes"
+        },
+        {
+          "id": "D",
+          "text": "8 bytes"
+        }
       ],
       "correctAnswer": "C"
     },
@@ -4865,10 +4889,22 @@ const LESSONS_DATA = {
       "text": "Hình vẽ dưới đây mô tả cấu trúc khung của?",
       "image": "/images/ktsl_b2/ktsl_b2_img3.png",
       "options": [
-        { "id": "A", "text": "Token Bus" },
-        { "id": "B", "text": "Token SD" },
-        { "id": "C", "text": "Token Data" },
-        { "id": "D", "text": "Token Ring" }
+        {
+          "id": "A",
+          "text": "Token Bus"
+        },
+        {
+          "id": "B",
+          "text": "Token SD"
+        },
+        {
+          "id": "C",
+          "text": "Token Data"
+        },
+        {
+          "id": "D",
+          "text": "Token Ring"
+        }
       ],
       "correctAnswer": "D"
     },
@@ -4877,10 +4913,22 @@ const LESSONS_DATA = {
       "type": "multiple-choice",
       "text": "Trường SD trong khung Data/Command có nhiệm vụ gì?",
       "options": [
-        { "id": "A", "text": "Thông báo bộ thu biết có khung đến và giúp đồng bộ" },
-        { "id": "B", "text": "Thông báo trường địa chỉ biết có khung đến và giúp đồng bộ" },
-        { "id": "C", "text": "Thông báo bộ nhận biết có khung đến và giúp đồng bộ" },
-        { "id": "D", "text": "Thông báo trường điều khiển biết có khung đến và giúp đồng bộ" }
+        {
+          "id": "A",
+          "text": "Thông báo bộ thu biết có khung đến và giúp đồng bộ"
+        },
+        {
+          "id": "B",
+          "text": "Thông báo trường địa chỉ biết có khung đến và giúp đồng bộ"
+        },
+        {
+          "id": "C",
+          "text": "Thông báo bộ nhận biết có khung đến và giúp đồng bộ"
+        },
+        {
+          "id": "D",
+          "text": "Thông báo trường điều khiển biết có khung đến và giúp đồng bộ"
+        }
       ],
       "correctAnswer": "A"
     },
@@ -4889,10 +4937,22 @@ const LESSONS_DATA = {
       "type": "multiple-choice",
       "text": "Công nghệ mạng cục bộ Token Ring là giao thức truyền thông cho mạng nào?",
       "options": [
-        { "id": "A", "text": "Mạng diện rộng" },
-        { "id": "B", "text": "Mạng cục bộ" },
-        { "id": "C", "text": "Mạng vệ tinh" },
-        { "id": "D", "text": "Mạng viba" }
+        {
+          "id": "A",
+          "text": "Mạng diện rộng"
+        },
+        {
+          "id": "B",
+          "text": "Mạng cục bộ"
+        },
+        {
+          "id": "C",
+          "text": "Mạng vệ tinh"
+        },
+        {
+          "id": "D",
+          "text": "Mạng viba"
+        }
       ],
       "correctAnswer": "B"
     },
@@ -4901,10 +4961,22 @@ const LESSONS_DATA = {
       "type": "multiple-choice",
       "text": "Trường SD trong khung Data/Command chứa dữ liệu và có thể dài tối đa bao nhiêu byte?",
       "options": [
-        { "id": "A", "text": "3500 byte" },
-        { "id": "B", "text": "4500 byte" },
-        { "id": "C", "text": "5500 byte" },
-        { "id": "D", "text": "6500 byte" }
+        {
+          "id": "A",
+          "text": "3500 byte"
+        },
+        {
+          "id": "B",
+          "text": "4500 byte"
+        },
+        {
+          "id": "C",
+          "text": "5500 byte"
+        },
+        {
+          "id": "D",
+          "text": "6500 byte"
+        }
       ],
       "correctAnswer": "B"
     },
@@ -4914,10 +4986,22 @@ const LESSONS_DATA = {
       "text": "Trong khung Data/Command, trường địa chỉ vật lý đích đến có độ dài từ bao nhiêu byte đến bao nhiêu byte?",
       "image": "/images/ktsl_b2/ktsl_b2_img4.png",
       "options": [
-        { "id": "A", "text": "3 byte đến 5 byte" },
-        { "id": "B", "text": "2 byte đến 4 byte" },
-        { "id": "C", "text": "1 byte đến 3 byte" },
-        { "id": "D", "text": "2 byte đến 6 byte" }
+        {
+          "id": "A",
+          "text": "3 byte đến 5 byte"
+        },
+        {
+          "id": "B",
+          "text": "2 byte đến 4 byte"
+        },
+        {
+          "id": "C",
+          "text": "1 byte đến 3 byte"
+        },
+        {
+          "id": "D",
+          "text": "2 byte đến 6 byte"
+        }
       ],
       "correctAnswer": "D"
     },
@@ -4927,10 +5011,22 @@ const LESSONS_DATA = {
       "text": "Trường CRC trong khung Data/Command dùng để làm gì?",
       "image": "/images/ktsl_b2/ktsl_b2_img4.png",
       "options": [
-        { "id": "A", "text": "Phát hiện sai CRC-32" },
-        { "id": "B", "text": "Phát hiện sai CRC-02" },
-        { "id": "C", "text": "Phát hiện sai CRC-12" },
-        { "id": "D", "text": "Phát hiện sai CRC-22" }
+        {
+          "id": "A",
+          "text": "Phát hiện sai CRC-32"
+        },
+        {
+          "id": "B",
+          "text": "Phát hiện sai CRC-02"
+        },
+        {
+          "id": "C",
+          "text": "Phát hiện sai CRC-12"
+        },
+        {
+          "id": "D",
+          "text": "Phát hiện sai CRC-22"
+        }
       ],
       "correctAnswer": "A"
     },
@@ -4940,10 +5036,22 @@ const LESSONS_DATA = {
       "text": "Trong mô hình MAU như hình dưới, một MAU có thể trợ giúp bao nhiêu trạm?",
       "image": "/images/ktsl_b2/ktsl_b2_img2.png",
       "options": [
-        { "id": "A", "text": "12" },
-        { "id": "B", "text": "8" },
-        { "id": "C", "text": "10" },
-        { "id": "D", "text": "6" }
+        {
+          "id": "A",
+          "text": "12"
+        },
+        {
+          "id": "B",
+          "text": "8"
+        },
+        {
+          "id": "C",
+          "text": "10"
+        },
+        {
+          "id": "D",
+          "text": "6"
+        }
       ],
       "correctAnswer": "B"
     },
@@ -4952,10 +5060,22 @@ const LESSONS_DATA = {
       "type": "multiple-choice",
       "text": "Mục đích chính của IP là gì?",
       "options": [
-        { "id": "A", "text": "Sử dụng trong các mạng thế hệ mới" },
-        { "id": "B", "text": "Sử dụng trong các mạng không có sự liên hệ với Internet" },
-        { "id": "C", "text": "Sử dụng trong các mạng di động nâng cao" },
-        { "id": "D", "text": "Cung cấp khả năng kết nối các mạng con thành liên mạng để truyền dữ liệu" }
+        {
+          "id": "A",
+          "text": "Sử dụng trong các mạng thế hệ mới"
+        },
+        {
+          "id": "B",
+          "text": "Sử dụng trong các mạng không có sự liên hệ với Internet"
+        },
+        {
+          "id": "C",
+          "text": "Sử dụng trong các mạng di động nâng cao"
+        },
+        {
+          "id": "D",
+          "text": "Cung cấp khả năng kết nối các mạng con thành liên mạng để truyền dữ liệu"
+        }
       ],
       "correctAnswer": "D"
     },
@@ -4964,10 +5084,22 @@ const LESSONS_DATA = {
       "type": "multiple-choice",
       "text": "Vai trò của IP tương tự vai trò của giao thức tầng nào trong mô hình OSI?",
       "options": [
-        { "id": "A", "text": "Tầng mạng" },
-        { "id": "B", "text": "Tầng vận chuyển" },
-        { "id": "C", "text": "Tầng trình bày" },
-        { "id": "D", "text": "Tầng phiên" }
+        {
+          "id": "A",
+          "text": "Tầng mạng"
+        },
+        {
+          "id": "B",
+          "text": "Tầng vận chuyển"
+        },
+        {
+          "id": "C",
+          "text": "Tầng trình bày"
+        },
+        {
+          "id": "D",
+          "text": "Tầng phiên"
+        }
       ],
       "correctAnswer": "A"
     },
@@ -4976,10 +5108,22 @@ const LESSONS_DATA = {
       "type": "multiple-choice",
       "text": "Đơn vị dữ liệu dùng trong giao thức IP là?",
       "options": [
-        { "id": "A", "text": "mm" },
-        { "id": "B", "text": "cm" },
-        { "id": "C", "text": "m/s" },
-        { "id": "D", "text": "Datagram" }
+        {
+          "id": "A",
+          "text": "mm"
+        },
+        {
+          "id": "B",
+          "text": "cm"
+        },
+        {
+          "id": "C",
+          "text": "m/s"
+        },
+        {
+          "id": "D",
+          "text": "Datagram"
+        }
       ],
       "correctAnswer": "D"
     },
@@ -4988,22 +5132,49 @@ const LESSONS_DATA = {
       "type": "multiple-select",
       "text": "Một Datagram trong giao thức IP được chia làm những phần nào sau đây? (Chọn 2 đáp án)",
       "options": [
-        { "id": "A", "text": "Phần tiêu đề (Header)" },
-        { "id": "B", "text": "Phần chứa dữ liệu cần truyền (Data)" },
-        { "id": "C", "text": "Phần điều khiển (Control)" },
-        { "id": "D", "text": "Phần địa chỉ (Address)" }
+        {
+          "id": "A",
+          "text": "Phần tiêu đề (Header)"
+        },
+        {
+          "id": "B",
+          "text": "Phần chứa dữ liệu cần truyền (Data)"
+        },
+        {
+          "id": "C",
+          "text": "Phần điều khiển (Control)"
+        },
+        {
+          "id": "D",
+          "text": "Phần địa chỉ (Address)"
+        }
       ],
-      "correctAnswers": ["A", "B"]
+      "correctAnswers": [
+        "A",
+        "B"
+      ]
     },
     {
       "id": "ktsl2_q7",
       "type": "multiple-choice",
       "text": "Địa chỉ mạng IP 10.0.0.0/8 có bao nhiêu subnet con khi chia thành các subnet có subnet mask /16?",
       "options": [
-        { "id": "A", "text": "256" },
-        { "id": "B", "text": "64" },
-        { "id": "C", "text": "128" },
-        { "id": "D", "text": "2" }
+        {
+          "id": "A",
+          "text": "256"
+        },
+        {
+          "id": "B",
+          "text": "64"
+        },
+        {
+          "id": "C",
+          "text": "128"
+        },
+        {
+          "id": "D",
+          "text": "2"
+        }
       ],
       "correctAnswer": "A"
     },
@@ -5013,10 +5184,22 @@ const LESSONS_DATA = {
       "text": "Từ hình vẽ cấu trúc phân lớp địa chỉ IP dưới đây, địa chỉ lớp A có giá trị?",
       "image": "/images/ktsl_b2/ktsl_b2_img1.png",
       "options": [
-        { "id": "A", "text": "Nhỏ hơn 129" },
-        { "id": "B", "text": "Nhỏ hơn 130" },
-        { "id": "C", "text": "Nhỏ hơn 128" },
-        { "id": "D", "text": "Nhỏ hơn 135" }
+        {
+          "id": "A",
+          "text": "Nhỏ hơn 129"
+        },
+        {
+          "id": "B",
+          "text": "Nhỏ hơn 130"
+        },
+        {
+          "id": "C",
+          "text": "Nhỏ hơn 128"
+        },
+        {
+          "id": "D",
+          "text": "Nhỏ hơn 135"
+        }
       ],
       "correctAnswer": "C"
     },
@@ -5025,10 +5208,22 @@ const LESSONS_DATA = {
       "type": "multiple-choice",
       "text": "Địa chỉ IPv4 có bao nhiêu bit?",
       "options": [
-        { "id": "A", "text": "128 bit" },
-        { "id": "B", "text": "32 bit" },
-        { "id": "C", "text": "16 bit" },
-        { "id": "D", "text": "64 bit" }
+        {
+          "id": "A",
+          "text": "128 bit"
+        },
+        {
+          "id": "B",
+          "text": "32 bit"
+        },
+        {
+          "id": "C",
+          "text": "16 bit"
+        },
+        {
+          "id": "D",
+          "text": "64 bit"
+        }
       ],
       "correctAnswer": "B"
     },
@@ -5038,10 +5233,22 @@ const LESSONS_DATA = {
       "text": "Từ hình vẽ cấu trúc phân lớp địa chỉ IP dưới đây, địa chỉ lớp C có giá trị?",
       "image": "/images/ktsl_b2/ktsl_b2_img1.png",
       "options": [
-        { "id": "A", "text": "Từ 195 đến 226" },
-        { "id": "B", "text": "Từ 192 đến 223" },
-        { "id": "C", "text": "Từ 193 đến 224" },
-        { "id": "D", "text": "Từ 194 đến 225" }
+        {
+          "id": "A",
+          "text": "Từ 195 đến 226"
+        },
+        {
+          "id": "B",
+          "text": "Từ 192 đến 223"
+        },
+        {
+          "id": "C",
+          "text": "Từ 193 đến 224"
+        },
+        {
+          "id": "D",
+          "text": "Từ 194 đến 225"
+        }
       ],
       "correctAnswer": "B"
     },
@@ -5050,10 +5257,22 @@ const LESSONS_DATA = {
       "type": "multiple-choice",
       "text": "Địa chỉ IPv6 có bao nhiêu bit?",
       "options": [
-        { "id": "A", "text": "128 bit" },
-        { "id": "B", "text": "32 bit" },
-        { "id": "C", "text": "256 bit" },
-        { "id": "D", "text": "64 bit" }
+        {
+          "id": "A",
+          "text": "128 bit"
+        },
+        {
+          "id": "B",
+          "text": "32 bit"
+        },
+        {
+          "id": "C",
+          "text": "256 bit"
+        },
+        {
+          "id": "D",
+          "text": "64 bit"
+        }
       ],
       "correctAnswer": "A"
     },
@@ -5062,10 +5281,22 @@ const LESSONS_DATA = {
       "type": "multiple-choice",
       "text": "Trong các địa chỉ IP dưới đây, địa chỉ nào thuộc lớp A?",
       "options": [
-        { "id": "A", "text": "224.0.0.1" },
-        { "id": "B", "text": "192.168.1.1" },
-        { "id": "C", "text": "172.16.0.1" },
-        { "id": "D", "text": "10.0.0.1" }
+        {
+          "id": "A",
+          "text": "224.0.0.1"
+        },
+        {
+          "id": "B",
+          "text": "192.168.1.1"
+        },
+        {
+          "id": "C",
+          "text": "172.16.0.1"
+        },
+        {
+          "id": "D",
+          "text": "10.0.0.1"
+        }
       ],
       "correctAnswer": "D"
     },
@@ -5074,10 +5305,22 @@ const LESSONS_DATA = {
       "type": "multiple-choice",
       "text": "Trong các địa chỉ IP dưới đây, địa chỉ nào thuộc lớp C?",
       "options": [
-        { "id": "A", "text": "224.0.0.1" },
-        { "id": "B", "text": "128.0.0.1" },
-        { "id": "C", "text": "192.168.0.1" },
-        { "id": "D", "text": "10.0.0.1" }
+        {
+          "id": "A",
+          "text": "224.0.0.1"
+        },
+        {
+          "id": "B",
+          "text": "128.0.0.1"
+        },
+        {
+          "id": "C",
+          "text": "192.168.0.1"
+        },
+        {
+          "id": "D",
+          "text": "10.0.0.1"
+        }
       ],
       "correctAnswer": "C"
     },
@@ -5086,10 +5329,22 @@ const LESSONS_DATA = {
       "type": "multiple-choice",
       "text": "Trong các địa chỉ IP dưới đây, địa chỉ nào thuộc lớp B?",
       "options": [
-        { "id": "A", "text": "172.16.0.1" },
-        { "id": "B", "text": "192.168.1.1" },
-        { "id": "C", "text": "10.10.10.10" },
-        { "id": "D", "text": "224.0.0.1" }
+        {
+          "id": "A",
+          "text": "172.16.0.1"
+        },
+        {
+          "id": "B",
+          "text": "192.168.1.1"
+        },
+        {
+          "id": "C",
+          "text": "10.10.10.10"
+        },
+        {
+          "id": "D",
+          "text": "224.0.0.1"
+        }
       ],
       "correctAnswer": "A"
     },
@@ -5098,10 +5353,22 @@ const LESSONS_DATA = {
       "type": "multiple-choice",
       "text": "Địa chỉ IP nào sau đây là địa chỉ gateway mặc định trong mạng lớp C (subnet mask 255.255.255.0)?",
       "options": [
-        { "id": "A", "text": "192.168.1.1" },
-        { "id": "B", "text": "192.168.1.255" },
-        { "id": "C", "text": "192.168.1.128" },
-        { "id": "D", "text": "192.168.1.0" }
+        {
+          "id": "A",
+          "text": "192.168.1.1"
+        },
+        {
+          "id": "B",
+          "text": "192.168.1.255"
+        },
+        {
+          "id": "C",
+          "text": "192.168.1.128"
+        },
+        {
+          "id": "D",
+          "text": "192.168.1.0"
+        }
       ],
       "correctAnswer": "A"
     },
@@ -5110,10 +5377,22 @@ const LESSONS_DATA = {
       "type": "multiple-choice",
       "text": "Địa chỉ IP 192.168.1.0/24 có thể chia thành bao nhiêu mạng con nếu chia theo mặt nạ 255.255.255.192?",
       "options": [
-        { "id": "A", "text": "4 mạng con, mỗi mạng có 30 địa chỉ" },
-        { "id": "B", "text": "2 mạng con, mỗi mạng có 62 địa chỉ" },
-        { "id": "C", "text": "4 mạng con, mỗi mạng có 62 địa chỉ" },
-        { "id": "D", "text": "8 mạng con, mỗi mạng có 30 địa chỉ" }
+        {
+          "id": "A",
+          "text": "4 mạng con, mỗi mạng có 30 địa chỉ"
+        },
+        {
+          "id": "B",
+          "text": "2 mạng con, mỗi mạng có 62 địa chỉ"
+        },
+        {
+          "id": "C",
+          "text": "4 mạng con, mỗi mạng có 62 địa chỉ"
+        },
+        {
+          "id": "D",
+          "text": "8 mạng con, mỗi mạng có 30 địa chỉ"
+        }
       ],
       "correctAnswer": "C"
     },
@@ -5122,10 +5401,22 @@ const LESSONS_DATA = {
       "type": "multiple-choice",
       "text": "Mặt nạ mạng 255.255.255.248 có thể cung cấp bao nhiêu địa chỉ IP khả dụng cho các thiết bị trong mỗi mạng con?",
       "options": [
-        { "id": "A", "text": "62 địa chỉ IP khả dụng" },
-        { "id": "B", "text": "6 địa chỉ IP khả dụng" },
-        { "id": "C", "text": "14 địa chỉ IP khả dụng" },
-        { "id": "D", "text": "30 địa chỉ IP khả dụng" }
+        {
+          "id": "A",
+          "text": "62 địa chỉ IP khả dụng"
+        },
+        {
+          "id": "B",
+          "text": "6 địa chỉ IP khả dụng"
+        },
+        {
+          "id": "C",
+          "text": "14 địa chỉ IP khả dụng"
+        },
+        {
+          "id": "D",
+          "text": "30 địa chỉ IP khả dụng"
+        }
       ],
       "correctAnswer": "B"
     },
@@ -5134,10 +5425,22 @@ const LESSONS_DATA = {
       "type": "multiple-choice",
       "text": "Địa chỉ IP 255.255.255.255 được sử dụng làm địa chỉ nào?",
       "options": [
-        { "id": "A", "text": "Địa chỉ riêng tư" },
-        { "id": "B", "text": "Địa chỉ gateway" },
-        { "id": "C", "text": "Địa chỉ loopback" },
-        { "id": "D", "text": "Địa chỉ broadcast" }
+        {
+          "id": "A",
+          "text": "Địa chỉ riêng tư"
+        },
+        {
+          "id": "B",
+          "text": "Địa chỉ gateway"
+        },
+        {
+          "id": "C",
+          "text": "Địa chỉ loopback"
+        },
+        {
+          "id": "D",
+          "text": "Địa chỉ broadcast"
+        }
       ],
       "correctAnswer": "D"
     },
@@ -5146,10 +5449,22 @@ const LESSONS_DATA = {
       "type": "multiple-choice",
       "text": "Địa chỉ IP nào sau đây có thể được gán cho một host trong mạng 192.168.1.0/24?",
       "options": [
-        { "id": "A", "text": "192.168.0.100" },
-        { "id": "B", "text": "192.168.1.0" },
-        { "id": "C", "text": "192.168.1.255" },
-        { "id": "D", "text": "192.168.1.100" }
+        {
+          "id": "A",
+          "text": "192.168.0.100"
+        },
+        {
+          "id": "B",
+          "text": "192.168.1.0"
+        },
+        {
+          "id": "C",
+          "text": "192.168.1.255"
+        },
+        {
+          "id": "D",
+          "text": "192.168.1.100"
+        }
       ],
       "correctAnswer": "D"
     },
@@ -5158,10 +5473,22 @@ const LESSONS_DATA = {
       "type": "multiple-choice",
       "text": "Trong mạng Token Ring, việc truyền dữ liệu dựa trên:",
       "options": [
-        { "id": "A", "text": "Truyền đồng thời giữa tất cả các nút" },
-        { "id": "B", "text": "Sở hữu token và truyền tuần tự theo vòng" },
-        { "id": "C", "text": "Truyền không cần token" },
-        { "id": "D", "text": "Định tuyến gói tin thông minh" }
+        {
+          "id": "A",
+          "text": "Truyền đồng thời giữa tất cả các nút"
+        },
+        {
+          "id": "B",
+          "text": "Sở hữu token và truyền tuần tự theo vòng"
+        },
+        {
+          "id": "C",
+          "text": "Truyền không cần token"
+        },
+        {
+          "id": "D",
+          "text": "Định tuyến gói tin thông minh"
+        }
       ],
       "correctAnswer": "B"
     },
@@ -5170,651 +5497,4253 @@ const LESSONS_DATA = {
       "type": "multiple-select",
       "text": "Modem có vai trò gì? (Chọn 2 đáp án)",
       "options": [
-        { "id": "A", "text": "Biến đổi tín hiệu số - analog để truyền trên đường dây điện thoại" },
-        { "id": "B", "text": "Định tuyến dữ liệu trong mạng LAN" },
-        { "id": "C", "text": "Kết nối trực tiếp giữa hai máy tính mà không cần mạng" },
-        { "id": "D", "text": "Chuyển đổi tín hiệu analog - số tại đầu nhận" }
+        {
+          "id": "A",
+          "text": "Biến đổi tín hiệu số - analog để truyền trên đường dây điện thoại"
+        },
+        {
+          "id": "B",
+          "text": "Định tuyến dữ liệu trong mạng LAN"
+        },
+        {
+          "id": "C",
+          "text": "Kết nối trực tiếp giữa hai máy tính mà không cần mạng"
+        },
+        {
+          "id": "D",
+          "text": "Chuyển đổi tín hiệu analog - số tại đầu nhận"
+        }
       ],
-      "correctAnswers": ["A", "D"]
+      "correctAnswers": [
+        "A",
+        "D"
+      ]
     }
   ],
   "ktsl_3": [
-  {
-    "id": "ktsl3_q1",
-    "text": "Mã ASCII được phát triển cho thông tin máy tính vào năm nào ?",
-    "options": [
-      {
-        "id": "A",
-        "text": "1965"
-      },
-      {
-        "id": "B",
-        "text": "1964"
-      },
-      {
-        "id": "C",
-        "text": "1962"
-      },
-      {
-        "id": "D",
-        "text": "1963"
-      }
-    ],
-    "image": null,
-    "type": "multiple-choice",
-    "correctAnswer": "C"
-  },
-  {
-    "id": "ktsl3_q2",
-    "text": "Mã ASCII là mã 7 bit và cũng được diễn tả bằng số Hex với số có trọng số cao không vượt quá bao nhiêu ?",
-    "options": [
-      {
-        "id": "A",
-        "text": "6 byte"
-      },
-      {
-        "id": "B",
-        "text": "8 byte"
-      },
-      {
-        "id": "C",
-        "text": "5 byte"
-      },
-      {
-        "id": "D",
-        "text": "7 byte"
-      }
-    ],
-    "image": null,
-    "type": "multiple-choice",
-    "correctAnswer": "D"
-  },
-  {
-    "id": "ktsl3_q2.1",
-    "text": "Nhóm kiểm soát truyền trong bảng mã ASCII có bao nhiêu ký tự?",
-    "options": [
-      {
-        "id": "A",
-        "text": "8"
-      },
-      {
-        "id": "B",
-        "text": "7"
-      },
-      {
-        "id": "C",
-        "text": "10"
-      },
-      {
-        "id": "D",
-        "text": "9"
-      }
-    ],
-    "image": null,
-    "type": "multiple-choice",
-    "correctAnswer": "C"
-  },
-  {
-    "id": "ktsl3_q3",
-    "text": "Các ký tự điều khiển của ASCII gồm 32 ký tự từ .... đến ..... ?",
-    "options": [
-      {
-        "id": "A",
-        "text": "02H đến 3FH"
-      },
-      {
-        "id": "B",
-        "text": "01H đến 2FH"
-      },
-      {
-        "id": "C",
-        "text": "03H đến 4FH"
-      },
-      {
-        "id": "D",
-        "text": "00H đến 1FH"
-      }
-    ],
-    "image": null,
-    "type": "multiple-choice",
-    "correctAnswer": "D"
-  },
-  {
-    "id": "ktsl3_q4",
-    "text": "Nhóm chia rời lượng tin trong bảng mã ASCII có bao nhiêu ký tự ?",
-    "options": [
-      {
-        "id": "A",
-        "text": "7"
-      },
-      {
-        "id": "B",
-        "text": "5"
-      },
-      {
-        "id": "C",
-        "text": "6"
-      },
-      {
-        "id": "D",
-        "text": "8"
-      }
-    ],
-    "image": null,
-    "type": "multiple-choice",
-    "correctAnswer": "B"
-  },
-  {
-    "id": "ktsl3_q4.1",
-    "text": "Ký tự NULL trong bảng mã ASCII là ?",
-    "options": [
-      {
-        "id": "A",
-        "text": "NULL là byte trống gồm chuỗi bit 2"
-      },
-      {
-        "id": "B",
-        "text": "NULL là byte trống gồm chuỗi bit 0"
-      },
-      {
-        "id": "C",
-        "text": "NULL là byte trống gồm chuỗi bit 1"
-      },
-      {
-        "id": "D",
-        "text": "NULL là byte trống gồm chuỗi bit 0 và chuỗi bit 1"
-      }
-    ],
-    "image": null,
-    "type": "multiple-choice",
-    "correctAnswer": "B"
-  },
-  {
-    "id": "ktsl3_q5",
-    "text": "Stop bit trong đồng bộ byte ký tự là bit biểu diễn sự kết thúc của ký tự bao gồm bao nhiêu bit ? (chọn 03 đáp án đúng)",
-    "options": [
-      {
-        "id": "A",
-        "text": "1"
-      },
-      {
-        "id": "B",
-        "text": "2"
-      },
-      {
-        "id": "C",
-        "text": "3"
-      },
-      {
-        "id": "D",
-        "text": "1.5"
-      }
-    ],
-    "image": null,
-    "type": "multiple-select",
-    "correctAnswers": [
-      "A",
-      "B",
-      "D"
-    ]
-  },
-  {
-    "id": "ktsl3_q6",
-    "text": "Dữ liệu của một ký tự truyền theo thứ tự thời gian là ?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Bit có trọng số thấp nhất (LSB) truyền trước và bit có trọng số cao nhất (MSB) truyền sau cùng"
-      },
-      {
-        "id": "B",
-        "text": "Bit có trọng số cao nhất (MSB) truyền trước và bít có trọng số thấp nhất (LSB) truyền sau cùng"
-      },
-      {
-        "id": "C",
-        "text": "Bit có trọng số thấp nhất (LSB) và bít có trọng số cao nhất (MSB) truyền đồng thời"
-      },
-      {
-        "id": "D",
-        "text": "Bit có trọng số thấp nhất (LSB) truyền trước và bít có trọng số cao nhất (MSB) không cần truyền"
-      }
-    ],
-    "image": null,
-    "type": "multiple-choice",
-    "correctAnswer": "A"
-  },
-  {
-    "id": "ktsl3_q6.1",
-    "text": "Hình vẽ dưới đây biểu diễn việc đồng bộ ?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Đồng bộ Byte ký tự"
-      },
-      {
-        "id": "B",
-        "text": "Đồng bộ khung"
-      },
-      {
-        "id": "C",
-        "text": "Đồng bộ bit"
-      },
-      {
-        "id": "D",
-        "text": "Đồng bộ mã"
-      }
-    ],
-    "image": "/images/ktsl_b3/image1.png",
-    "type": "multiple-choice",
-    "correctAnswer": "A"
-  },
-  {
-    "id": "ktsl3_q7",
-    "text": "Mục đích bit kiểm tra chẵn lẻ là ?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Để phát hiện xem khi thu một ký tự là đúng hay là sai"
-      },
-      {
-        "id": "B",
-        "text": "Để phát hiện nhiễu khi thu một ký tự là đúng hay là sai"
-      },
-      {
-        "id": "C",
-        "text": "Để phát hiện xem khi truyền một ký tự là đúng hay là sai"
-      },
-      {
-        "id": "D",
-        "text": "Để phát hiện xem khi phát một ký tự là đúng hay là sai"
-      }
-    ],
-    "image": null,
-    "type": "multiple-choice",
-    "correctAnswer": "A"
-  },
-  {
-    "id": "ktsl3_q7.1",
-    "text": "Nếu mất đồng bộ bit thì tốc độ truyền và nhận bị sai nhau nên dữ liệu thu sẽ bị sai do?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Nhiều bit bị chồng lấn lên nhau"
-      },
-      {
-        "id": "B",
-        "text": "Nhiễu bit"
-      },
-      {
-        "id": "C",
-        "text": "Bit lỗi"
-      },
-      {
-        "id": "D",
-        "text": "Mất đồng bộ bit"
-      }
-    ],
-    "image": null,
-    "type": "multiple-choice",
-    "correctAnswer": "D"
-  },
-  {
-    "id": "ktsl3_q8",
-    "text": "Trong truyền số liệu nói chung thì bộ thu sẽ lấy mẫu tại ?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Cuối mỗi bit"
-      },
-      {
-        "id": "B",
-        "text": "Đầu mỗi bit"
-      },
-      {
-        "id": "C",
-        "text": "Khoảng cách giữa các bit"
-      },
-      {
-        "id": "D",
-        "text": "Trung tâm của mỗi bit"
-      }
-    ],
-    "image": null,
-    "type": "multiple-choice",
-    "correctAnswer": "D"
-  },
-  {
-    "id": "ktsl3_q8.1",
-    "text": "Hình vẽ sau đây biểu diễn nguyên lý?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Đồng bộ khung"
-      },
-      {
-        "id": "B",
-        "text": "Đồng bộ ký tự"
-      },
-      {
-        "id": "C",
-        "text": "Đồng bộ vào song song ra nối tiếp"
-      },
-      {
-        "id": "D",
-        "text": "Đồng bộ bit"
-      }
-    ],
-    "image": "/images/ktsl_b3/image2.png",
-    "type": "multiple-choice",
-    "correctAnswer": "D"
-  },
-  {
-    "id": "ktsl3_q9",
-    "text": "Cách mã hóa nhịp vào tín hiệu thường được thực hiện với mã đường dây hay còn được gọi là biến đổi ?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Số - Số"
-      },
-      {
-        "id": "B",
-        "text": "Tương tự - Tương Tự"
-      },
-      {
-        "id": "C",
-        "text": "Tương tự - Số"
-      },
-      {
-        "id": "D",
-        "text": "Số - Tương tự"
-      }
-    ],
-    "image": null,
-    "type": "multiple-choice",
-    "correctAnswer": "A"
-  },
-  {
-    "id": "ktsl3_q9.1",
-    "text": "Nếu trong khung truyền có dữ liệu trùng với DLE thì một ký tự nào phải được chèn thêm và phía thu sẽ tự động loại bỏ một ?",
-    "options": [
-      {
-        "id": "A",
-        "text": "DLE"
-      },
-      {
-        "id": "B",
-        "text": "STX"
-      },
-      {
-        "id": "C",
-        "text": "ETX"
-      },
-      {
-        "id": "D",
-        "text": "DTE"
-      }
-    ],
-    "image": "/images/ktsl_b3/image3.png",
-    "type": "multiple-choice",
-    "correctAnswer": "A"
-  },
-  {
-    "id": "ktsl3_q10",
-    "text": "Mã hóa Unipolar được mô tả ở hình dưới đây có mức điện áp như thế nào ?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Mức điện áp này có 2 cực tính hoặc dương hoặc am thường biểu diễn luan phiên nhau trên hệ toạ độ"
-      },
-      {
-        "id": "B",
-        "text": "Mức điện áp này có 2,5 cực tính hoặc dương hoặc am thường biểu diễn luân phiên nhau trên hệ toạ độ"
-      },
-      {
-        "id": "C",
-        "text": "Mức điện ap này có 3 cực tính hoặc dương hoặc am thường biểu diễn luan phiên nhau trên hệ toạ độ"
-      },
-      {
-        "id": "D",
-        "text": "Mức điện áp này chỉ có một cực tính hoặc dương hoặc âm thuờng đại diện cho bit 1, con trạng thái còn lại là 0"
-      }
-    ],
-    "image": null,
-    "type": "multiple-choice",
-    "correctAnswer": "D"
-  },
-  {
-    "id": "ktsl3_q10.1",
-    "text": "Thực tế có hai loại kiểm soát truyền đồng bộ là ? (chọn 02 đáp án đúng)",
-    "options": [
-      {
-        "id": "A",
-        "text": "Định hướng ký tự"
-      },
-      {
-        "id": "B",
-        "text": "Định hướng khung"
-      },
-      {
-        "id": "C",
-        "text": "Định hướng Bit"
-      },
-      {
-        "id": "D",
-        "text": "Định hướng lỗi bit"
-      }
-    ],
-    "image": null,
-    "type": "multiple-select",
-    "correctAnswers": [
-      "A",
-      "C"
-    ]
-  },
-  {
-    "id": "ktsl3_q11",
-    "text": "nhìn vào hình ve được biểu diễn dưới đay Em hay cho biết dãy nhị phân dưới đay bieu diễn theo mã nào?",
-    "options": [
-      {
-        "id": "A",
-        "text": "NRZ-1"
-      },
-      {
-        "id": "B",
-        "text": "NRZ - L"
-      },
-      {
-        "id": "C",
-        "text": "Unipolar"
-      },
-      {
-        "id": "D",
-        "text": "RZ"
-      }
-    ],
-    "image": "/images/ktsl_b3/image4.png",
-    "type": "multiple-choice",
-    "correctAnswer": "B"
-  },
-  {
-    "id": "ktsl3_q11.1",
-    "text": "Hình vẽ dưới đây mô tả ?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Các loại mã đồng bộ bit"
-      },
-      {
-        "id": "B",
-        "text": "Các loại giải mã đường dây"
-      },
-      {
-        "id": "C",
-        "text": "Các loại mã hóa đường dây"
-      },
-      {
-        "id": "D",
-        "text": "Các loại mã không đồng bộ bit"
-      }
-    ],
-    "image": "/images/ktsl_b3/image5.png",
-    "type": "multiple-choice",
-    "correctAnswer": "C"
-  },
-  {
-    "id": "ktsl3_q12",
-    "text": "Nhìn vào đồ thị dưới đây Em hãy cho biết dãy nhị phân dưới đây biểu diễn theo mã nào ? Biên độ t0",
-    "options": [
-      {
-        "id": "A",
-        "text": "Manchester"
-      },
-      {
-        "id": "B",
-        "text": "NRZ -I"
-      },
-      {
-        "id": "C",
-        "text": "NRZ -L"
-      },
-      {
-        "id": "D",
-        "text": "RZ"
-      }
-    ],
-    "image": "/images/ktsl_b3/image6.png",
-    "type": "multiple-choice",
-    "correctAnswer": "D"
-  },
-  {
-    "id": "ktsl3_q13",
-    "text": "Hình vẽ dưới đây mô tả truyền định hướng ký tự với kiểu định dạng nào ?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Định dạng theo thời gian"
-      },
-      {
-        "id": "B",
-        "text": "Định dạng ký tự"
-      },
-      {
-        "id": "C",
-        "text": "Định dạng bit"
-      },
-      {
-        "id": "D",
-        "text": "Định dạng khung"
-      }
-    ],
-    "image": "/images/ktsl_b3/image7.png",
-    "type": "multiple-choice",
-    "correctAnswer": "B"
-  },
-  {
-    "id": "ktsl3_q14",
-    "text": "Truyền một ký tự dùng mã ASCII 7 bit và có kiểm tra chẵn lẻ với 1 start bit và 2 stop bit thì hiệu suất bằng ?",
-    "options": [
-      {
-        "id": "A",
-        "text": "75 %"
-      },
-      {
-        "id": "B",
-        "text": "80%"
-      },
-      {
-        "id": "C",
-        "text": "70 %"
-      },
-      {
-        "id": "D",
-        "text": "85 %"
-      }
-    ],
-    "image": null,
-    "type": "multiple-choice",
-    "correctAnswer": "C"
-  },
-  {
-    "id": "ktsl3_q14.1",
-    "text": "Hình vẽ dưới đây mô tả truyền định hướng ký tự với kiểu truyền nào?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Kiểu truyền có nhiễu kèm theo dữ liệu mới"
-      },
-      {
-        "id": "B",
-        "text": "Kiểu truyền trong suốt dữ liệu"
-      },
-      {
-        "id": "C",
-        "text": "Kiểu truyền được đóng gói dữ liệu"
-      },
-      {
-        "id": "D",
-        "text": "Kiểu truyền chèn thêm dữ liệu mới"
-      }
-    ],
-    "image": "/images/ktsl_b3/image8.png",
-    "type": "multiple-choice",
-    "correctAnswer": "B"
-  },
-  {
-    "id": "ktsl3_q15",
-    "text": "Đồng bộ bit trong truyền đồng bộ dùng để: (Chọn 02 đáp án đúng)",
-    "options": [
-      {
-        "id": "A",
-        "text": "Đồng bộ tín hiệu từng bit"
-      },
-      {
-        "id": "B",
-        "text": "Phát hiện lỗi bit"
-      },
-      {
-        "id": "C",
-        "text": "Đồng bộ toàn bộ khung dữ liệu"
-      },
-      {
-        "id": "D",
-        "text": "Mã hóa ký tự"
-      }
-    ],
-    "image": null,
-    "type": "multiple-select",
-    "correctAnswers": [
-      "A",
-      "C"
-    ]
-  },
-  {
-    "id": "ktsl3_q16",
-    "text": "Trong định hướng bit với kiểu truyền dùng các cặp ký tự SYN cũng như kèm theo các ký tự như STX, ETX, và DLE thường dẫn đến hiệu suất của đường truyền sẽ như thế nào ?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Hiệu suất tối ưu"
-      },
-      {
-        "id": "B",
-        "text": "Hiệu suất chỉ đạt 55%"
-      },
-      {
-        "id": "C",
-        "text": "Hiệu suất kém"
-      },
-      {
-        "id": "D",
-        "text": "Hiệu suất cao"
-      }
-    ],
-    "image": null,
-    "type": "multiple-choice",
-    "correctAnswer": "C"
-  }
-],
+    {
+      "id": "ktsl3_q1",
+      "text": "Mã ASCII được phát triển cho thông tin máy tính vào năm nào ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1965"
+        },
+        {
+          "id": "B",
+          "text": "1964"
+        },
+        {
+          "id": "C",
+          "text": "1962"
+        },
+        {
+          "id": "D",
+          "text": "1963"
+        }
+      ],
+      "image": null,
+      "type": "multiple-choice",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl3_q2",
+      "text": "Mã ASCII là mã 7 bit và cũng được diễn tả bằng số Hex với số có trọng số cao không vượt quá bao nhiêu ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "6 byte"
+        },
+        {
+          "id": "B",
+          "text": "8 byte"
+        },
+        {
+          "id": "C",
+          "text": "5 byte"
+        },
+        {
+          "id": "D",
+          "text": "7 byte"
+        }
+      ],
+      "image": null,
+      "type": "multiple-choice",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl3_q2.1",
+      "text": "Nhóm kiểm soát truyền trong bảng mã ASCII có bao nhiêu ký tự?",
+      "options": [
+        {
+          "id": "A",
+          "text": "8"
+        },
+        {
+          "id": "B",
+          "text": "7"
+        },
+        {
+          "id": "C",
+          "text": "10"
+        },
+        {
+          "id": "D",
+          "text": "9"
+        }
+      ],
+      "image": null,
+      "type": "multiple-choice",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl3_q3",
+      "text": "Các ký tự điều khiển của ASCII gồm 32 ký tự từ .... đến ..... ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "02H đến 3FH"
+        },
+        {
+          "id": "B",
+          "text": "01H đến 2FH"
+        },
+        {
+          "id": "C",
+          "text": "03H đến 4FH"
+        },
+        {
+          "id": "D",
+          "text": "00H đến 1FH"
+        }
+      ],
+      "image": null,
+      "type": "multiple-choice",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl3_q4",
+      "text": "Nhóm chia rời lượng tin trong bảng mã ASCII có bao nhiêu ký tự ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "7"
+        },
+        {
+          "id": "B",
+          "text": "5"
+        },
+        {
+          "id": "C",
+          "text": "6"
+        },
+        {
+          "id": "D",
+          "text": "8"
+        }
+      ],
+      "image": null,
+      "type": "multiple-choice",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl3_q4.1",
+      "text": "Ký tự NULL trong bảng mã ASCII là ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "NULL là byte trống gồm chuỗi bit 2"
+        },
+        {
+          "id": "B",
+          "text": "NULL là byte trống gồm chuỗi bit 0"
+        },
+        {
+          "id": "C",
+          "text": "NULL là byte trống gồm chuỗi bit 1"
+        },
+        {
+          "id": "D",
+          "text": "NULL là byte trống gồm chuỗi bit 0 và chuỗi bit 1"
+        }
+      ],
+      "image": null,
+      "type": "multiple-choice",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl3_q5",
+      "text": "Stop bit trong đồng bộ byte ký tự là bit biểu diễn sự kết thúc của ký tự bao gồm bao nhiêu bit ? (chọn 03 đáp án đúng)",
+      "options": [
+        {
+          "id": "A",
+          "text": "1"
+        },
+        {
+          "id": "B",
+          "text": "2"
+        },
+        {
+          "id": "C",
+          "text": "3"
+        },
+        {
+          "id": "D",
+          "text": "1.5"
+        }
+      ],
+      "image": null,
+      "type": "multiple-select",
+      "correctAnswers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "ktsl3_q6",
+      "text": "Dữ liệu của một ký tự truyền theo thứ tự thời gian là ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bit có trọng số thấp nhất (LSB) truyền trước và bit có trọng số cao nhất (MSB) truyền sau cùng"
+        },
+        {
+          "id": "B",
+          "text": "Bit có trọng số cao nhất (MSB) truyền trước và bít có trọng số thấp nhất (LSB) truyền sau cùng"
+        },
+        {
+          "id": "C",
+          "text": "Bit có trọng số thấp nhất (LSB) và bít có trọng số cao nhất (MSB) truyền đồng thời"
+        },
+        {
+          "id": "D",
+          "text": "Bit có trọng số thấp nhất (LSB) truyền trước và bít có trọng số cao nhất (MSB) không cần truyền"
+        }
+      ],
+      "image": null,
+      "type": "multiple-choice",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl3_q6.1",
+      "text": "Hình vẽ dưới đây biểu diễn việc đồng bộ ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Đồng bộ Byte ký tự"
+        },
+        {
+          "id": "B",
+          "text": "Đồng bộ khung"
+        },
+        {
+          "id": "C",
+          "text": "Đồng bộ bit"
+        },
+        {
+          "id": "D",
+          "text": "Đồng bộ mã"
+        }
+      ],
+      "image": "/images/ktsl_b3/image1.png",
+      "type": "multiple-choice",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl3_q7",
+      "text": "Mục đích bit kiểm tra chẵn lẻ là ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Để phát hiện xem khi thu một ký tự là đúng hay là sai"
+        },
+        {
+          "id": "B",
+          "text": "Để phát hiện nhiễu khi thu một ký tự là đúng hay là sai"
+        },
+        {
+          "id": "C",
+          "text": "Để phát hiện xem khi truyền một ký tự là đúng hay là sai"
+        },
+        {
+          "id": "D",
+          "text": "Để phát hiện xem khi phát một ký tự là đúng hay là sai"
+        }
+      ],
+      "image": null,
+      "type": "multiple-choice",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl3_q7.1",
+      "text": "Nếu mất đồng bộ bit thì tốc độ truyền và nhận bị sai nhau nên dữ liệu thu sẽ bị sai do?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nhiều bit bị chồng lấn lên nhau"
+        },
+        {
+          "id": "B",
+          "text": "Nhiễu bit"
+        },
+        {
+          "id": "C",
+          "text": "Bit lỗi"
+        },
+        {
+          "id": "D",
+          "text": "Mất đồng bộ bit"
+        }
+      ],
+      "image": null,
+      "type": "multiple-choice",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl3_q8",
+      "text": "Trong truyền số liệu nói chung thì bộ thu sẽ lấy mẫu tại ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cuối mỗi bit"
+        },
+        {
+          "id": "B",
+          "text": "Đầu mỗi bit"
+        },
+        {
+          "id": "C",
+          "text": "Khoảng cách giữa các bit"
+        },
+        {
+          "id": "D",
+          "text": "Trung tâm của mỗi bit"
+        }
+      ],
+      "image": null,
+      "type": "multiple-choice",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl3_q8.1",
+      "text": "Hình vẽ sau đây biểu diễn nguyên lý?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Đồng bộ khung"
+        },
+        {
+          "id": "B",
+          "text": "Đồng bộ ký tự"
+        },
+        {
+          "id": "C",
+          "text": "Đồng bộ vào song song ra nối tiếp"
+        },
+        {
+          "id": "D",
+          "text": "Đồng bộ bit"
+        }
+      ],
+      "image": "/images/ktsl_b3/image2.png",
+      "type": "multiple-choice",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl3_q9",
+      "text": "Cách mã hóa nhịp vào tín hiệu thường được thực hiện với mã đường dây hay còn được gọi là biến đổi ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Số - Số"
+        },
+        {
+          "id": "B",
+          "text": "Tương tự - Tương Tự"
+        },
+        {
+          "id": "C",
+          "text": "Tương tự - Số"
+        },
+        {
+          "id": "D",
+          "text": "Số - Tương tự"
+        }
+      ],
+      "image": null,
+      "type": "multiple-choice",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl3_q9.1",
+      "text": "Nếu trong khung truyền có dữ liệu trùng với DLE thì một ký tự nào phải được chèn thêm và phía thu sẽ tự động loại bỏ một ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "DLE"
+        },
+        {
+          "id": "B",
+          "text": "STX"
+        },
+        {
+          "id": "C",
+          "text": "ETX"
+        },
+        {
+          "id": "D",
+          "text": "DTE"
+        }
+      ],
+      "image": "/images/ktsl_b3/image3.png",
+      "type": "multiple-choice",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl3_q10",
+      "text": "Mã hóa Unipolar được mô tả ở hình dưới đây có mức điện áp như thế nào ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mức điện áp này có 2 cực tính hoặc dương hoặc am thường biểu diễn luan phiên nhau trên hệ toạ độ"
+        },
+        {
+          "id": "B",
+          "text": "Mức điện áp này có 2,5 cực tính hoặc dương hoặc am thường biểu diễn luân phiên nhau trên hệ toạ độ"
+        },
+        {
+          "id": "C",
+          "text": "Mức điện ap này có 3 cực tính hoặc dương hoặc am thường biểu diễn luan phiên nhau trên hệ toạ độ"
+        },
+        {
+          "id": "D",
+          "text": "Mức điện áp này chỉ có một cực tính hoặc dương hoặc âm thuờng đại diện cho bit 1, con trạng thái còn lại là 0"
+        }
+      ],
+      "image": null,
+      "type": "multiple-choice",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl3_q10.1",
+      "text": "Thực tế có hai loại kiểm soát truyền đồng bộ là ? (chọn 02 đáp án đúng)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Định hướng ký tự"
+        },
+        {
+          "id": "B",
+          "text": "Định hướng khung"
+        },
+        {
+          "id": "C",
+          "text": "Định hướng Bit"
+        },
+        {
+          "id": "D",
+          "text": "Định hướng lỗi bit"
+        }
+      ],
+      "image": null,
+      "type": "multiple-select",
+      "correctAnswers": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "ktsl3_q11",
+      "text": "nhìn vào hình ve được biểu diễn dưới đay Em hay cho biết dãy nhị phân dưới đay bieu diễn theo mã nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "NRZ-1"
+        },
+        {
+          "id": "B",
+          "text": "NRZ - L"
+        },
+        {
+          "id": "C",
+          "text": "Unipolar"
+        },
+        {
+          "id": "D",
+          "text": "RZ"
+        }
+      ],
+      "image": "/images/ktsl_b3/image4.png",
+      "type": "multiple-choice",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl3_q11.1",
+      "text": "Hình vẽ dưới đây mô tả ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Các loại mã đồng bộ bit"
+        },
+        {
+          "id": "B",
+          "text": "Các loại giải mã đường dây"
+        },
+        {
+          "id": "C",
+          "text": "Các loại mã hóa đường dây"
+        },
+        {
+          "id": "D",
+          "text": "Các loại mã không đồng bộ bit"
+        }
+      ],
+      "image": "/images/ktsl_b3/image5.png",
+      "type": "multiple-choice",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl3_q12",
+      "text": "Nhìn vào đồ thị dưới đây Em hãy cho biết dãy nhị phân dưới đây biểu diễn theo mã nào ? Biên độ t0",
+      "options": [
+        {
+          "id": "A",
+          "text": "Manchester"
+        },
+        {
+          "id": "B",
+          "text": "NRZ -I"
+        },
+        {
+          "id": "C",
+          "text": "NRZ -L"
+        },
+        {
+          "id": "D",
+          "text": "RZ"
+        }
+      ],
+      "image": "/images/ktsl_b3/image6.png",
+      "type": "multiple-choice",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl3_q13",
+      "text": "Hình vẽ dưới đây mô tả truyền định hướng ký tự với kiểu định dạng nào ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Định dạng theo thời gian"
+        },
+        {
+          "id": "B",
+          "text": "Định dạng ký tự"
+        },
+        {
+          "id": "C",
+          "text": "Định dạng bit"
+        },
+        {
+          "id": "D",
+          "text": "Định dạng khung"
+        }
+      ],
+      "image": "/images/ktsl_b3/image7.png",
+      "type": "multiple-choice",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl3_q14",
+      "text": "Truyền một ký tự dùng mã ASCII 7 bit và có kiểm tra chẵn lẻ với 1 start bit và 2 stop bit thì hiệu suất bằng ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "75 %"
+        },
+        {
+          "id": "B",
+          "text": "80%"
+        },
+        {
+          "id": "C",
+          "text": "70 %"
+        },
+        {
+          "id": "D",
+          "text": "85 %"
+        }
+      ],
+      "image": null,
+      "type": "multiple-choice",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl3_q14.1",
+      "text": "Hình vẽ dưới đây mô tả truyền định hướng ký tự với kiểu truyền nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kiểu truyền có nhiễu kèm theo dữ liệu mới"
+        },
+        {
+          "id": "B",
+          "text": "Kiểu truyền trong suốt dữ liệu"
+        },
+        {
+          "id": "C",
+          "text": "Kiểu truyền được đóng gói dữ liệu"
+        },
+        {
+          "id": "D",
+          "text": "Kiểu truyền chèn thêm dữ liệu mới"
+        }
+      ],
+      "image": "/images/ktsl_b3/image8.png",
+      "type": "multiple-choice",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl3_q15",
+      "text": "Đồng bộ bit trong truyền đồng bộ dùng để: (Chọn 02 đáp án đúng)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Đồng bộ tín hiệu từng bit"
+        },
+        {
+          "id": "B",
+          "text": "Phát hiện lỗi bit"
+        },
+        {
+          "id": "C",
+          "text": "Đồng bộ toàn bộ khung dữ liệu"
+        },
+        {
+          "id": "D",
+          "text": "Mã hóa ký tự"
+        }
+      ],
+      "image": null,
+      "type": "multiple-select",
+      "correctAnswers": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "ktsl3_q16",
+      "text": "Trong định hướng bit với kiểu truyền dùng các cặp ký tự SYN cũng như kèm theo các ký tự như STX, ETX, và DLE thường dẫn đến hiệu suất của đường truyền sẽ như thế nào ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hiệu suất tối ưu"
+        },
+        {
+          "id": "B",
+          "text": "Hiệu suất chỉ đạt 55%"
+        },
+        {
+          "id": "C",
+          "text": "Hiệu suất kém"
+        },
+        {
+          "id": "D",
+          "text": "Hiệu suất cao"
+        }
+      ],
+      "image": null,
+      "type": "multiple-choice",
+      "correctAnswer": "C"
+    }
+  ],
+  "ktsl_4": [
+    {
+      "id": "ktsl4_q1",
+      "type": "multiple-choice",
+      "text": "Hình ảnh dưới đây mô tả tín hiệu gì?",
+      "image": "/images/ktsl_b4/ktsl_b4_img1.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tín hiệu nhiễu ngẫu nhiên khi có tác động của môi trường"
+        },
+        {
+          "id": "B",
+          "text": "Tín hiệu ở ngõ ra đồng pha với tín hiệu ngõ vào"
+        },
+        {
+          "id": "C",
+          "text": "Tín hiệu ở đầu ra khi có nhiễu tác động ở đầu vào dữ liệu"
+        },
+        {
+          "id": "D",
+          "text": "Tín hiệu dải nền cộng phiên AWGN"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl4_q1_1",
+      "type": "multiple-choice",
+      "text": "Tín hiệu truyền trên đường truyền nếu bỏ qua các tác động khác thì ít nhất cũng chịu tác động khách quan của môi trường đó là?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nhiễu ngẫu nhiên"
+        },
+        {
+          "id": "B",
+          "text": "Hiện tượng Fading"
+        },
+        {
+          "id": "C",
+          "text": "Hiện tượng lỗi bit"
+        },
+        {
+          "id": "D",
+          "text": "Nhiễu xuyên kênh"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl4_q2",
+      "type": "multiple-choice",
+      "text": "Hình vẽ dưới đây mô tả xác suất lỗi khi truyền bit nào?",
+      "image": "/images/ktsl_b4/ktsl_b4_img2.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bit 3"
+        },
+        {
+          "id": "B",
+          "text": "Bit 2"
+        },
+        {
+          "id": "C",
+          "text": "Bit 0"
+        },
+        {
+          "id": "D",
+          "text": "Bit 1"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl4_q3",
+      "type": "multiple-choice",
+      "text": "Hình vẽ dưới đây mô tả xác suất lổi khi truyền bit nào?",
+      "image": "/images/ktsl_b4/ktsl_b4_img3.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bit 1"
+        },
+        {
+          "id": "B",
+          "text": "Bit 0"
+        },
+        {
+          "id": "C",
+          "text": "Bit 3"
+        },
+        {
+          "id": "D",
+          "text": "Bit 2"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl4_q4",
+      "type": "multiple-select",
+      "text": "Mục dịch truyền dữ liệu là đạt độ chính xác cao nhất, do đó cần có cơ chế để phát hiện sai nhằm mục đích? (Chọn 02 đáp án đúng)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Không truyền lại"
+        },
+        {
+          "id": "B",
+          "text": "Truyền lại"
+        },
+        {
+          "id": "C",
+          "text": "Sửa sai"
+        },
+        {
+          "id": "D",
+          "text": "Không sửa sai"
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "ktsl4_q4_1",
+      "type": "multiple-choice",
+      "text": "Hình vẽ sau đây mô tả phương pháp nào trong các phương pháp phát hiện sai khi truyền dữ liệu?",
+      "image": "/images/ktsl_b4/ktsl_b4_img4.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Phương pháp lặp lại"
+        },
+        {
+          "id": "B",
+          "text": "Phương pháp tạo thông điệp"
+        },
+        {
+          "id": "C",
+          "text": "Phương pháp kiểm tra chẵn lẻ"
+        },
+        {
+          "id": "D",
+          "text": "Phương pháp tạo bản sao dữ liệu"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl4_q5",
+      "type": "multiple-choice",
+      "text": "Hình vẽ sau đẩy mô tả phương pháp nào trong các phương pháp phát hiện sai khi truyền dữ liệu?",
+      "image": "/images/ktsl_b4/ktsl_b4_img5.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Phương pháp tạo thông điệp"
+        },
+        {
+          "id": "B",
+          "text": "Phương pháp Echoing"
+        },
+        {
+          "id": "C",
+          "text": "Phương pháp lặp"
+        },
+        {
+          "id": "D",
+          "text": "Phương pháp tạo bản sao tín hiệu"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl4_q5_1",
+      "type": "multiple-choice",
+      "text": "Nhược điểm của kiểm tra chẳn lẻ là không thể phát hiện được?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tổng số bit đúng là chẵn"
+        },
+        {
+          "id": "B",
+          "text": "Tổng số bit đúng là lẻ"
+        },
+        {
+          "id": "C",
+          "text": "Tổng số bit sai là chẵn"
+        },
+        {
+          "id": "D",
+          "text": "Tổng số bit sai là lẻ"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl4_q5_2",
+      "type": "multiple-choice",
+      "text": "Ưu điểm của phương pháp kiểm tra tổng khối là?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Có khả năng phát hiện tất cả các bit đúng chẵn"
+        },
+        {
+          "id": "B",
+          "text": "Có khả năng phát hiện tất cả các bit sai chẵn"
+        },
+        {
+          "id": "C",
+          "text": "Có khả năng phát hiện tất cả các bit đúng lẻ"
+        },
+        {
+          "id": "D",
+          "text": "Có khả năng phát hiện tất cả các bit sai lẻ"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl4_q6",
+      "type": "multiple-choice",
+      "text": "Vận dụng kiến thức đã học về mã Hamming, em hãy cho biết mã Hamming (7,4) có ý nghĩa gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mã Hamming có 4 bit tổng cộng, bao gồm cả dữ liệu và bit kiểm tra"
+        },
+        {
+          "id": "B",
+          "text": "Mã Hamming có 7 bit tổng cộng, bao gồm cả dữ liệu và bit kiểm tra"
+        },
+        {
+          "id": "C",
+          "text": "Mã Hamming có 4 bit dữ liệu và 7 bit kiểm tra lỗi"
+        },
+        {
+          "id": "D",
+          "text": "Mã Hamming có 7 bit dữ liệu và 4 bit kiểm tra lỗi"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl4_q7",
+      "type": "multiple-choice",
+      "text": "Hình về sau mô tà cấu trúc của ... trong kỹ thuật Packed Decimal?",
+      "image": "/images/ktsl_b4/ktsl_b4_img6.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cấu trúc truyền định hướng byte"
+        },
+        {
+          "id": "B",
+          "text": "Cấu trúc truyền định hướng bít"
+        },
+        {
+          "id": "C",
+          "text": "Cấu trúc nén dữ liệu"
+        },
+        {
+          "id": "D",
+          "text": "Cấu trúc của khung truyền"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl4_q7_1",
+      "type": "multiple-choice",
+      "text": "Trong kỹ thuật Packed Decimal, mỗi byte lưu trữ bao nhiêu chữ số thập phân?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 chữ số thập phân"
+        },
+        {
+          "id": "B",
+          "text": "4 chữ số thập phân"
+        },
+        {
+          "id": "C",
+          "text": "2 chữ số thập phân"
+        },
+        {
+          "id": "D",
+          "text": "8 chữ số thập phần"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl4_q8",
+      "type": "multiple-choice",
+      "text": "Mã hóa Huffman có thể đảm bảo điều gi trong quả trình nén dữ liệu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Đảm bảo rằng tất cả các ký tự đều có độ dài mã như nhau"
+        },
+        {
+          "id": "B",
+          "text": "Đảm bảo tốc độ truyền tải dữ liệu cao hơn"
+        },
+        {
+          "id": "C",
+          "text": "Đảm bảo không có sự mất mát dữ liệu"
+        },
+        {
+          "id": "D",
+          "text": "Đảm bảo rằng dữ liệu được mã hóa không thế giải mã được"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl4_q8_1",
+      "type": "multiple-choice",
+      "text": "Hình vẽ sau mô tả khung loại nào?",
+      "image": "/images/ktsl_b4/ktsl_b4_img7.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Khung định hướng bit"
+        },
+        {
+          "id": "B",
+          "text": "Khung định hướng ký tự"
+        },
+        {
+          "id": "C",
+          "text": "Khung định hướng byte"
+        },
+        {
+          "id": "D",
+          "text": "Khung biểu diễn các mã BCD"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl4_q8_2",
+      "type": "multiple-choice",
+      "text": "Hình vẽ sau đây mô tả khung loại nào?",
+      "image": "/images/ktsl_b4/ktsl_b4_img8.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Khung định hướng ký tự"
+        },
+        {
+          "id": "B",
+          "text": "Khung định hướng bit"
+        },
+        {
+          "id": "C",
+          "text": "Khung định hướng byte"
+        },
+        {
+          "id": "D",
+          "text": "Khung biểu diễn các mã BCD"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl4_q9",
+      "type": "multiple-choice",
+      "text": "Trong cây Huffman, các ký tự có tần suất xuất hiện lớn hơn sẽ có mã nhị phân:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dài hơn"
+        },
+        {
+          "id": "B",
+          "text": "Giống nhau"
+        },
+        {
+          "id": "C",
+          "text": "Ngắn hơn"
+        },
+        {
+          "id": "D",
+          "text": "Không thay đổi"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl4_q9_1",
+      "type": "multiple-choice",
+      "text": "Mã hóa Huffman có thể mã hóa tốt nhất cho loại dữ liệu nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dữ liệu với tần suất ký tự đều"
+        },
+        {
+          "id": "B",
+          "text": "Dữ liệu có cấu trúc phức tạp"
+        },
+        {
+          "id": "C",
+          "text": "Dữ liệu với tần suất ký tự không đều"
+        },
+        {
+          "id": "D",
+          "text": "Dữ liệu có số lượng ký tự rất lớn"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl4_q10",
+      "type": "multiple-choice",
+      "text": "Kết quả cuối cùng của việc xây dựng cây Huffman là?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Một danh sách các ký tự đã được sắp xếp"
+        },
+        {
+          "id": "B",
+          "text": "Một cây nhị phân chứa các ký tự và mã của chúng"
+        },
+        {
+          "id": "C",
+          "text": "Một bảng tần suất các ký tự"
+        },
+        {
+          "id": "D",
+          "text": "Một chuỗi nhị phân của tất cả các ký tự"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl4_q10_1",
+      "type": "multiple-choice",
+      "text": "Quá trình xây dựng cây Huffman tiếp tục cho đến khi nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tất cả các ký tự và cây con đã được kết hợp thành một cây duy nhất"
+        },
+        {
+          "id": "B",
+          "text": "Tất cả các ký tự đã có tần suất xuất hiện bằng nhau"
+        },
+        {
+          "id": "C",
+          "text": "Tất cả các ký tự đã có mã nhị phân"
+        },
+        {
+          "id": "D",
+          "text": "Đã xây dựng đủ số lượng cây con"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl4_q10_2",
+      "type": "multiple-choice",
+      "text": "Cấu trúc cây trong mã hóa Huffman có đặc điểm gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mỗi nút trong cây đại diện cho một ký tự và tần suất của nó"
+        },
+        {
+          "id": "B",
+          "text": "Cây có chiều cao cố định"
+        },
+        {
+          "id": "C",
+          "text": "Cây là một cây nhị phân không hoàn chỉnh"
+        },
+        {
+          "id": "D",
+          "text": "Cây là một cây nhị phân đầy đủ"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl4_q11",
+      "type": "multiple-choice",
+      "text": "Trong nén facsimile, phương pháp nén nào được sử dụng phổ biến trong truyền fax?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nén LZW"
+        },
+        {
+          "id": "B",
+          "text": "Nén Group 3 và Group 4"
+        },
+        {
+          "id": "C",
+          "text": "Nén Run-Length Encoding (RLE)"
+        },
+        {
+          "id": "D",
+          "text": "Nén JPEG"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl4_q12",
+      "type": "multiple-choice",
+      "text": "Kỹ thuật nén facsimile Group 3 được đặc trưng bởi?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Độ nén rất thấp, thích hợp cho văn bản dài"
+        },
+        {
+          "id": "B",
+          "text": "Hỗ trợ nén hình ảnh đơn giản mà hiệu quả, chủ yếu cho hình ảnh trắng đen"
+        },
+        {
+          "id": "C",
+          "text": "Sử dụng mã hóa dựa trên các khối hình ảnh"
+        },
+        {
+          "id": "D",
+          "text": "Dùng cho hình ảnh màu sắc và có độ phân giải cao"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl4_q12_1",
+      "type": "multiple-choice",
+      "text": "Nén facsimile Group 4 (G4) cải tiến Group 3 chú yếu nhờ vào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tăng chất lượng hình ảnh"
+        },
+        {
+          "id": "B",
+          "text": "Phương pháp nén bít (bit-level) hiệu quả hơn"
+        },
+        {
+          "id": "C",
+          "text": "Việc sử dụng thuật toán nén JPEG"
+        },
+        {
+          "id": "D",
+          "text": "Giảm độ phân giải của hình ảnh"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl4_q13",
+      "type": "multiple-choice",
+      "text": "Phương pháp nén nào trong facsimile thích hợp cho việc gửi tài liệu có chứa cả văn bản và hình ảnh?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Group 4 (G4)"
+        },
+        {
+          "id": "B",
+          "text": "Group 3 (G3)"
+        },
+        {
+          "id": "C",
+          "text": "Lempel-Ziv-Welch (LZW)"
+        },
+        {
+          "id": "D",
+          "text": "JPEG"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl4_q14",
+      "type": "multiple-choice",
+      "text": "Khi gửi fax, một trong các phương pháp nén đặc trưng của nén facsimile là?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nén thông qua phân tích dữ liệu pixel"
+        },
+        {
+          "id": "B",
+          "text": "Sử dụng hình ảnh định dạng bitmap"
+        },
+        {
+          "id": "C",
+          "text": "Nén thông qua mã hóa Run-Length Encoding (RLE)"
+        },
+        {
+          "id": "D",
+          "text": "Nén thông qua phương pháp nén hình ảnh có mất dữ liệu (lossy)"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl4_q14_1",
+      "type": "multiple-choice",
+      "text": "Nén Group 3 (G3) chủ yếu sử dụng phương pháp gì để nén dữ liệu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sử dụng phương pháp nén theo lớp (layering)"
+        },
+        {
+          "id": "B",
+          "text": "Sử dụng mã hóa dữ liệu theo độ dài chạy (Run-Length Encoding - RLE)"
+        },
+        {
+          "id": "C",
+          "text": "Nén theo tỷ lệ nén tĩnh"
+        },
+        {
+          "id": "D",
+          "text": "Dùng mã hóa DCT (Discrete Cosine Transform)"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl4_q15",
+      "type": "multiple-choice",
+      "text": "Giả sử có bộ ký tự dưới dây với tần suất xuất hiện như sau: A: 5, B: 9, C: 12, D: 13, E: 16, F: 45. Quá trình kết hợp cây con trong bước đầu tiên sẽ như thế nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kết hợp A và B để tạo thành một cây con mới"
+        },
+        {
+          "id": "B",
+          "text": "Kết hợp B và C để tạo thành một cây con mới"
+        },
+        {
+          "id": "C",
+          "text": "Kết hợp A và C để tạo thành một cây con mới"
+        },
+        {
+          "id": "D",
+          "text": "Kết hợp D và E để tạo thành một cây con mới"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl4_q15_1",
+      "type": "multiple-choice",
+      "text": "Vận dụng kiến thức đã học về mã đa thức, em hãy cho biết mã đa thức (7,4) có nghĩa là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mã có 4 bit dữ liệu và tổng độ dài của từ mã là 7"
+        },
+        {
+          "id": "B",
+          "text": "Mã có 3 bit dữ liệu và tổng độ dài của từ mã là 7"
+        },
+        {
+          "id": "C",
+          "text": "Mã có 5 bit dữ liệu và tổng độ dài của từ mã là 7"
+        },
+        {
+          "id": "D",
+          "text": "Mã có 6 bit dữ liệu và tổng độ dài của từ mã là 7"
+        }
+      ],
+      "correctAnswer": "A"
+    }
+  ],
+  "ktsl_5": [
+    {
+      "id": "ktsl5_q1",
+      "type": "multiple-choice",
+      "text": "Nghi thức idle RQ hoạt động ở Mode nào ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mode phát hiện lỗi"
+        },
+        {
+          "id": "B",
+          "text": "Mode song công"
+        },
+        {
+          "id": "C",
+          "text": "Mode bán song công"
+        },
+        {
+          "id": "D",
+          "text": "Mode idle"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl5_q2",
+      "type": "multiple-select",
+      "text": "Ba khung cơ bản nào được biết như các đơn vị dữ liệu nghi thức PDU (Protocol Data Units) của nghi thức idle RQ. (chọn 03 đáp án đúng) Hãy chọn 3 đáp án đúng nhất !",
+      "options": [
+        {
+          "id": "A",
+          "text": "NAK-frame"
+        },
+        {
+          "id": "B",
+          "text": "ACK"
+        },
+        {
+          "id": "C",
+          "text": "I-frame"
+        },
+        {
+          "id": "D",
+          "text": "BCC"
+        }
+      ],
+      "image": null,
+      "correctAnswers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "ktsl5_q3",
+      "type": "multiple-choice",
+      "text": "Trong cấu trúc khung của Idle RQ, một yêu cầu (Request) sẽ được xử lý khi nào? Hãy chọn 1 đáp án đúng nhất !",
+      "options": [
+        {
+          "id": "A",
+          "text": "Khi máy chủ vào trạng thái \"Busy\""
+        },
+        {
+          "id": "B",
+          "text": "Khi có phản hồi từ phía client"
+        },
+        {
+          "id": "C",
+          "text": "Ngay khi yêu cầu được gửi đi"
+        },
+        {
+          "id": "D",
+          "text": "Khi máy chủ đang trong trạng thái \"Idle\""
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl5_q4",
+      "type": "multiple-choice",
+      "text": "Trong một hệ thống sử dụng Idle RQ, trạng thái \"Idle\" chủ yếu đại diện cho điều gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Máy chủ đang xử lý yêu cầu"
+        },
+        {
+          "id": "B",
+          "text": "Máy chủ đang đóng băng"
+        },
+        {
+          "id": "C",
+          "text": "Máy chủ chờ nhận yêu cầu mới"
+        },
+        {
+          "id": "D",
+          "text": "Máy chủ không nhận yêu cầu mới"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl5_q5",
+      "type": "multiple-choice",
+      "text": "Cấu trúc khung Idle RQ chủ yếu được áp dụng trong mô hình nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mô hình Master-Slave"
+        },
+        {
+          "id": "B",
+          "text": "Mô hình Peer-to-Peer"
+        },
+        {
+          "id": "C",
+          "text": "Mô hình Client-Server"
+        },
+        {
+          "id": "D",
+          "text": "Mô hình Request - Response"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl5_q6",
+      "type": "multiple-choice",
+      "text": "Mối quan hệ giữa \"Request\" và \"Response\" trong Idle RQ là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Request và Response không có sự phụ thuộc lẫn nhau"
+        },
+        {
+          "id": "B",
+          "text": "Request được gửi trước và sau đó máy chủ trả về Response"
+        },
+        {
+          "id": "C",
+          "text": "Response luôn được gửi trước Request"
+        },
+        {
+          "id": "D",
+          "text": "Request và Response đều do client quản lý"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl5_q7",
+      "type": "multiple-choice",
+      "text": "Vận dụng kiến thức đã học về IDLE RQ Em hãy cho biết một trong những ưu điểm của cấu trúc khung Idle RQ là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Không yêu cầu kết nối liên tục với client"
+        },
+        {
+          "id": "B",
+          "text": "Tăng khả năng chịu tải của máy chủ"
+        },
+        {
+          "id": "C",
+          "text": "Quản lý tài nguyên hiệu quả hơn"
+        },
+        {
+          "id": "D",
+          "text": "Giảm độ trễ khi chờ yêu cầu"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl5_q8",
+      "type": "multiple-choice",
+      "text": "Hệ số sử dụng đường truyền của nghi thức idle RQ nhằm mục đích đánh giá vấn đề gì ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Đánh giá khung truyền chứa các ký tự bị nén"
+        },
+        {
+          "id": "B",
+          "text": "Đánh giá tín hiệu ở phía nhận khi phía phát truyền đi"
+        },
+        {
+          "id": "C",
+          "text": "Đánh giá khung truyền chứa các ký tự lặp lại nhiều lần"
+        },
+        {
+          "id": "D",
+          "text": "Đánh giá hiệu quả của nghi thức có tận dụng tốt đường truyền hay không"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl5_q9",
+      "type": "multiple-choice",
+      "text": "Trong sơ đồ sử dụng đường truyền idle RQ sau đây. Tix là gì ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Thời gian xử lý 01 khung"
+        },
+        {
+          "id": "B",
+          "text": "Thời gian truyền 01 byte"
+        },
+        {
+          "id": "C",
+          "text": "Thời gian truyền 01 bit"
+        },
+        {
+          "id": "D",
+          "text": "Thời gian phát một khung"
+        }
+      ],
+      "image": "/images/ktsl_b5/image1.png",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl5_q16",
+      "type": "multiple-select",
+      "text": "nghi thức idle RQ có 02 cách truyền nào? (chọn 2 đáp án đúng)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Truyền tường minh"
+        },
+        {
+          "id": "B",
+          "text": "Truyền hiểu ngầm"
+        },
+        {
+          "id": "C",
+          "text": "Truyền không lỗi"
+        },
+        {
+          "id": "D",
+          "text": "Truyền tránh nhiễu"
+        }
+      ],
+      "image": null,
+      "correctAnswers": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "ktsl5_q17",
+      "type": "multiple-choice",
+      "text": "Hình vẽ sau đây mô tả cấu trúc khung của nghi thức nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cấu trúc khung của ACK"
+        },
+        {
+          "id": "B",
+          "text": "Các cấu trúc khung của idle RQ"
+        },
+        {
+          "id": "C",
+          "text": "Cấu trúc khung BCC"
+        },
+        {
+          "id": "D",
+          "text": "Cấu trúc khung của N(R)"
+        }
+      ],
+      "image": "/images/ktsl_b5/image2.png",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl5_q18",
+      "type": "multiple-choice",
+      "text": "Trong cấu trúc khung của idle RQ, một yêu cầu (Request) sẽ được xử lý khi nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Khi có phản hồi từ phía client"
+        },
+        {
+          "id": "B",
+          "text": "Khi máy chủ vào trạng thái “Busy”"
+        },
+        {
+          "id": "C",
+          "text": "Ngay khi yêu cầu được gửi đi"
+        },
+        {
+          "id": "D",
+          "text": "Khi máy chủ đang trong trạng thái “Idle”"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl5_q19",
+      "type": "multiple-choice",
+      "text": "nhận định nào sau đây mô tả chính xác về trạng thái “Idle” trong khung RQ",
+      "options": [
+        {
+          "id": "A",
+          "text": "Máy chủ đang thực hiện xử lý một yêu cầu"
+        },
+        {
+          "id": "B",
+          "text": "Máy chủ không thể nhận yêu cầu mới"
+        },
+        {
+          "id": "C",
+          "text": "Máy chủ đang chờ yêu cầu và chưa xử lý gì"
+        },
+        {
+          "id": "D",
+          "text": "Máy chủ đã hoàn tất tất cả các yêu cầu"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl5_q20",
+      "type": "multiple-choice",
+      "text": "sơ đồ sau đây mô tả điều gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sơ đồ sử dụng đường truyền idle RQ"
+        },
+        {
+          "id": "B",
+          "text": "Sơ đồ thời gian nhận một khung"
+        },
+        {
+          "id": "C",
+          "text": "Sơ đồ biểu diễn tốc độ truyền tải dữ liệu của khung"
+        },
+        {
+          "id": "D",
+          "text": "Sơ đồ biểu diễn thời gian phát một khung"
+        }
+      ],
+      "image": "/images/ktsl_b5/image3.png",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl5_q21",
+      "type": "multiple-choice",
+      "text": "Trong sơ đồ sử dụng đường truyền idle RQ sau đây. Tp là gì ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Thời gian xử ly từ P sang S"
+        },
+        {
+          "id": "B",
+          "text": "Dữ liệu có cấu trúc phức tạp"
+        },
+        {
+          "id": "C",
+          "text": "Thời gian truyền từ P sang S và ngược lại"
+        },
+        {
+          "id": "D",
+          "text": "Thời gian phát một khung"
+        }
+      ],
+      "image": "/images/ktsl_b5/image4.png",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl5_q25",
+      "type": "multiple-choice",
+      "text": "trong cấu trúc idle RQ, khi nào máy chủ sẽ chuyển từ trạng thái “Idle” sang “Busy”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Khi nhận được yêu cầu mới"
+        },
+        {
+          "id": "B",
+          "text": "Khi có lỗi xảy ra"
+        },
+        {
+          "id": "C",
+          "text": "Khi yêu cầu phản hồi hoàn tất"
+        },
+        {
+          "id": "D",
+          "text": "Khi máy chủ thực hiện các phép toán nội bộ"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl5_q26",
+      "type": "multiple-choice",
+      "text": "Cấu trúc khung Idle RQ có thể giúp tối ưu hóa điều gì trong hệ thống?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tăng tốc độ xử lý dữ liệu"
+        },
+        {
+          "id": "B",
+          "text": "Giảm số lượng yêu cầu cần phải xử lý"
+        },
+        {
+          "id": "C",
+          "text": "Giảm thiểu băng thông"
+        },
+        {
+          "id": "D",
+          "text": "Thời gian chờ của yêu cầu"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl5_q28",
+      "type": "multiple-choice",
+      "text": "Hình vẽ dưới đây trình bày các ví dụ với Stop and wait ARQ loại nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stop and wait ARQ loại hiểu ngầm"
+        },
+        {
+          "id": "B",
+          "text": "Stop and wait ARQ loại phát hiện nhiễu"
+        },
+        {
+          "id": "C",
+          "text": "Stop and wait ARQ loại phát hiện lỗi"
+        },
+        {
+          "id": "D",
+          "text": "Stop and wait ARQ loại tường minh"
+        }
+      ],
+      "image": "/images/ktsl_b5/image5.png",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl5_q29",
+      "type": "multiple-choice",
+      "text": "Nguyên lý kiểm soát lỗi idle RQ được định nghĩa để cho phép các khung của các ký tự được truyền ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Một cách tin cậy"
+        },
+        {
+          "id": "B",
+          "text": "Không bị lỗi"
+        },
+        {
+          "id": "C",
+          "text": "Từ phía gửi đến phía nhận"
+        },
+        {
+          "id": "D",
+          "text": "Giảm ảnh hưởng của nhiễu"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    }
+  ],
+  "ktsl_6": [
+    {
+      "id": "ktsl6_q1",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Với nguyên lý kiểm soát lỗi RQ liên tục sẽ cải thiện hệ số sử dụng đường truyền rất nhiều nhưng bù lại sẽ tốn nhiều bộ nhớ cho vùng nào?"
+        },
+        {
+          "id": "A",
+          "text": "Vùng đệm"
+        },
+        {
+          "id": "B",
+          "text": "Vùng bị lỗi"
+        },
+        {
+          "id": "C",
+          "text": "Vùng không bị lỗi"
+        },
+        {
+          "id": "D",
+          "text": "Vùng tin cậy"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl6_q2",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nghi thức RQ liên tục có đặc điểm gì nổi bật?"
+        },
+        {
+          "id": "A",
+          "text": "Chỉ có phản hồi liên tục mà không có yêu cầu"
+        },
+        {
+          "id": "B",
+          "text": "Yêu cầu và phản hồi diễn ra một lần duy nhất"
+        },
+        {
+          "id": "C",
+          "text": "Không có yêu cầu hoặc phản hồi"
+        },
+        {
+          "id": "D",
+          "text": "Yêu cầu được gửi liên tục và phản hồi cũng được trả về liên tục"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl6_q3",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Để duy trì nghi thức Request/Response liên tục, yêu cầu phản hồi phải như thế nào?"
+        },
+        {
+          "id": "A",
+          "text": "Phản hồi phải được gửi bất cứ lúc nào trong vòng 1 giây"
+        },
+        {
+          "id": "B",
+          "text": "Phản hồi có thể có độ trễ lớn tùy thuộc vào yêu cầu"
+        },
+        {
+          "id": "C",
+          "text": "Phản hồi phải được gửi lại ngay lập tức sau yêu cầu"
+        },
+        {
+          "id": "D",
+          "text": "Phản hồi phải luôn có sẵn trong hệ thống"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl6_q4",
+      "type": "multiple-choice",
+      "text": "Hình vẽ dưới đây mô tả?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Các cấu hình HDLC"
+        },
+        {
+          "id": "B",
+          "text": "Các địa chỉ HDLC"
+        },
+        {
+          "id": "C",
+          "text": "Các dữ liệu HDLC"
+        },
+        {
+          "id": "D",
+          "text": "Các trạng thái HDLC"
+        }
+      ],
+      "image": "/images/ktsl_b6/image1.png",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl6_q5",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mỗi khung HDLC có thể chứa bao nhiêu trường?"
+        },
+        {
+          "id": "A",
+          "text": "6"
+        },
+        {
+          "id": "B",
+          "text": "9"
+        },
+        {
+          "id": "C",
+          "text": "7"
+        },
+        {
+          "id": "D",
+          "text": "8"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl6_q6",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trường điều khiển trong HDLC có thể dùng bao nhiêu byte cho quản lý luồng?"
+        },
+        {
+          "id": "A",
+          "text": "Một hoặc hai byte"
+        },
+        {
+          "id": "B",
+          "text": "Ba hoặc bốn byte"
+        },
+        {
+          "id": "C",
+          "text": "Hai hoặc ba byte"
+        },
+        {
+          "id": "D",
+          "text": "Chỉ 01 byte duy nhất"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl6_q7",
+      "type": "multiple-choice",
+      "text": "Hình vẽ sau mô tả trường nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trường cờ"
+        },
+        {
+          "id": "B",
+          "text": "Trường địa chỉ HDLC"
+        },
+        {
+          "id": "C",
+          "text": "Trường thông tin"
+        },
+        {
+          "id": "D",
+          "text": "Trường điều khiển"
+        }
+      ],
+      "image": "/images/ktsl_b6/image2.png",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl6_q8",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Để kiểm soát luồng các khung dọc trên đường truyền, một cơ chế được dùng là?"
+        },
+        {
+          "id": "A",
+          "text": "Cửa sổ trượt"
+        },
+        {
+          "id": "B",
+          "text": "Cửa sổ phát"
+        },
+        {
+          "id": "C",
+          "text": "Cửa sổ đợi"
+        },
+        {
+          "id": "D",
+          "text": "Cửa sổ nhận"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl6_q9",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Theo nguyên lý đánh số. Với go-back-n một cửa sổ gửi là K, thì việc đánh số ít nhất đến?"
+        },
+        {
+          "id": "A",
+          "text": "K + 3"
+        },
+        {
+          "id": "B",
+          "text": "K + 2"
+        },
+        {
+          "id": "C",
+          "text": "K + 1"
+        },
+        {
+          "id": "D",
+          "text": "K + 0.5"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl6_q10",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Một chuỗi các khung có chiều dài 1000 bits được phát dùng nghi thức RQ liên tục. Vận tốc truyền sóng là 2.108 m/s và tỷ lệ bit lỗi đường truyền thấp có thể bỏ qua. Đường truyền dài 1 km, tốc độ 1 Mbps và cửa sổ gửi là K = 2. Xác định Tix?"
+        },
+        {
+          "id": "A",
+          "text": "10-5 s"
+        },
+        {
+          "id": "B",
+          "text": "10-6 s"
+        },
+        {
+          "id": "C",
+          "text": "10-4 s"
+        },
+        {
+          "id": "D",
+          "text": "10-3 s"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl6_q11",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Một chuỗi các khung có chiều dài 1000 bits được phát dùng nghi thức RQ liên tục. Vận tốc truyền sóng là 2.108 m/s và tỷ lệ bit lỗi đường truyền thấp có thể bỏ qua. Đường truyền vệ tinh xa 50000 km, tốc độ 2 Mbps và cửa sổ gửi K = 127. Xác định Tix?"
+        },
+        {
+          "id": "A",
+          "text": "5.10-5 s"
+        },
+        {
+          "id": "B",
+          "text": "5.10-6 s"
+        },
+        {
+          "id": "C",
+          "text": "5.10-3 s"
+        },
+        {
+          "id": "D",
+          "text": "5.10-4 s"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl6_q12",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Một chuỗi các khung có chiều dài 1000 bits được phát dùng nghi thức RQ liên tục. Vận tốc truyền sóng là 2.108 m/s và tỷ lệ bit lỗi đường truyền thấp có thể bỏ qua. Đường truyền dài 10 km, tốc độ 200 Mbps và cửa sổ gửi là K = 7. Xác định hệ số sử dụng đường truyền?"
+        },
+        {
+          "id": "A",
+          "text": "U = 0.5"
+        },
+        {
+          "id": "B",
+          "text": "U = 0.55"
+        },
+        {
+          "id": "C",
+          "text": "U = 1.55"
+        },
+        {
+          "id": "D",
+          "text": "U = 0.33"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl6_q13",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Một chuỗi các khung có chiều dài 1000 bits được phát dùng nghi thức RQ liên tục. Vận tốc truyền sóng là 2.108 m/s và tỷ lệ bit lỗi đường truyền thấp có thể bỏ qua. Đường truyền vệ tinh xa 50000 km, tốc độ 2 Mbps và cửa sổ gửi K = 127. Xác định hệ số sử dụng đường truyền U?"
+        },
+        {
+          "id": "A",
+          "text": "U = 0.35"
+        },
+        {
+          "id": "B",
+          "text": "U = 0.5"
+        },
+        {
+          "id": "C",
+          "text": "U = 0.127"
+        },
+        {
+          "id": "D",
+          "text": "U = 0.55"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl6_q14",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Một chuỗi các khung với 1000 bits mỗi khung được truyền dọc một tuyến dài 100 km tại tốc độ 20 Mbps. Nếu vận tốc truyền là 2.108 m/s và tỷ lệ lỗi bit là 4.10-5, xác định Tp?"
+        },
+        {
+          "id": "A",
+          "text": "5.10-3 s"
+        },
+        {
+          "id": "B",
+          "text": "5.10-2 s"
+        },
+        {
+          "id": "C",
+          "text": "5.10-4 s"
+        },
+        {
+          "id": "D",
+          "text": "5.10-1 s"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl6_q15",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Một chuỗi các khung với 1000 bits mỗi khung được truyền dọc một tuyến dài 100 km tại tốc độ 20 Mbps. Nếu vận tốc truyền là 2.108 m/s và tỷ lệ lỗi bit là 4.10-5, xác định Tix?"
+        },
+        {
+          "id": "A",
+          "text": "5.10-5 s"
+        },
+        {
+          "id": "B",
+          "text": "5.10-3 s"
+        },
+        {
+          "id": "C",
+          "text": "5.10-2 s"
+        },
+        {
+          "id": "D",
+          "text": "5.10-4 s"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl6_q16",
+      "type": "multiple-choice",
+      "text": "Mô hình nào thường sử dụng nghi thức RQ liên tục",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mô hình client-Server"
+        },
+        {
+          "id": "B",
+          "text": "Mô hình Peer-to-peer"
+        },
+        {
+          "id": "C",
+          "text": "Mô hình Publish-Subcribe"
+        },
+        {
+          "id": "D",
+          "text": "Mô hình Master-Slave"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl6_q17",
+      "type": "multiple-choice",
+      "text": "Trong nghi thức RQ liên tục, phản hồi sẽ được gửi đi khi nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sau mỗi yêu cầu mới từ client"
+        },
+        {
+          "id": "B",
+          "text": "Khi hệ thống có lỗi"
+        },
+        {
+          "id": "C",
+          "text": "Sau khi máy chủ hoàn thành tất cả các yêu cầu"
+        },
+        {
+          "id": "D",
+          "text": "Khi có sự thay đổi trong trạng thái hệ thống"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl6_q18",
+      "type": "multiple-choice",
+      "text": "Một trong những lợi ích của nghi thwucs Request/Response liên tục là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Giảm độ trễ giữa các yêu cầu và phản hồi"
+        },
+        {
+          "id": "B",
+          "text": "Tăng hiệu quả xử lý khi hệ hống có nhiều tài nguyên"
+        },
+        {
+          "id": "C",
+          "text": "Giảm độ trên trong việc gửi yêu cầu"
+        },
+        {
+          "id": "D",
+          "text": "Tăng khả năng chịu tải của máy chủ"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl6_q19",
+      "type": "multiple-choice",
+      "text": "Trong quá trình giao tiếp, hệ thống có thể phải chịu tác động nào khi sử dụng RQ liên tục?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Giảm hiệu quả tài nguyên hệ thống"
+        },
+        {
+          "id": "B",
+          "text": "Tăng mức độ bão hòa của mạng"
+        },
+        {
+          "id": "C",
+          "text": "Tăng độ tin cậy của hệ thống"
+        },
+        {
+          "id": "D",
+          "text": "Tăng độ trễ khi xử lý yêu cầu"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl6_q20",
+      "type": "multiple-choice",
+      "text": "Trường FCS trong trường điều khiển dưới đây dùng để làm gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Đánh số khung gửi"
+        },
+        {
+          "id": "B",
+          "text": "Kiểm soát thông tin"
+        },
+        {
+          "id": "C",
+          "text": "Ra tín hiệu cờ"
+        },
+        {
+          "id": "D",
+          "text": "Phát hiện sai"
+        }
+      ],
+      "image": "/images/ktsl_b6/image3.png",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl6_q21",
+      "type": "multiple-choice",
+      "text": "Kiểm soát luồng sẽ kiểm soát tốc độ truyền của?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Data trên đường truyền"
+        },
+        {
+          "id": "B",
+          "text": "Khung trên đường truyền"
+        },
+        {
+          "id": "C",
+          "text": "Khung truyền chứa các ký tự lặp lại nhiều lần"
+        },
+        {
+          "id": "D",
+          "text": "Khung truyền chứa các ký tự bị nén"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl6_q22",
+      "type": "multiple-choice",
+      "text": "Hình vẽ sau đây mô tả nguyên lý nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "nguyên lý kiểm soát luồng"
+        },
+        {
+          "id": "B",
+          "text": "nguyên lý truyền từ P sang S"
+        },
+        {
+          "id": "C",
+          "text": "nguyên lý các khung xác nhận và khung đợi"
+        },
+        {
+          "id": "D",
+          "text": "nguyên lý về thứ tự truyền các khung"
+        }
+      ],
+      "image": "/images/ktsl_b6/image4.png",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl6_q23",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Một chuỗi các khung có chiều dài 1000 bits được phát dùng nghi thức RQ liên tục. Vận tốc truyền sóng là 2.108 m/s và tỷ lệ bit lỗi đường truyền thấp có thể bỏ qua. Đường truyền dài 10 km, tốc độ 200 Mbps và cửa sổ gửi là K = 7. Xác định Tp?"
+        },
+        {
+          "id": "A",
+          "text": "4.10-5 s"
+        },
+        {
+          "id": "B",
+          "text": "10-5 s"
+        },
+        {
+          "id": "C",
+          "text": "3.10-5 s"
+        },
+        {
+          "id": "D",
+          "text": "5.10-5 s"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl6_q24",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Một chuỗi các khung có chiều dài 1000 bits được phát dùng nghi thức RQ liên tục. Vận tốc truyền sóng là 2.108 m/s và tỷ lệ bit lỗi đường truyền thấp có thể bỏ qua. Đường truyền vệ tinh xa 50000 km, tốc độ 2Mbps và cửa sổ gửi là K = 127. Xác định Tp?"
+        },
+        {
+          "id": "A",
+          "text": "0.55s"
+        },
+        {
+          "id": "B",
+          "text": "0.45s"
+        },
+        {
+          "id": "C",
+          "text": "0.35s"
+        },
+        {
+          "id": "D",
+          "text": "0.25s"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl6_q25",
+      "type": "multiple-choice",
+      "text": "Một chuỗi các khung có chiều dài 1000 bits được phát dùng nghi thức RQ liên tục. Vận tốc truyền sóng là 2.108 m/s và tỷ lệ bit lỗi đường truyền thấp có thể bỏ qua. Đường truyền dài 1 km, tốc độ 1 Mbps và cửa sổ gửi là K = 2. Xác định hệ số sử dụng đường truyền U?",
+      "options": [
+        {
+          "id": "A",
+          "text": "U = 2"
+        },
+        {
+          "id": "B",
+          "text": "U = 1.75"
+        },
+        {
+          "id": "C",
+          "text": "U = 1.5"
+        },
+        {
+          "id": "D",
+          "text": "U = 1"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl6_q26",
+      "type": "multiple-select",
+      "text": "một nguyên tắc quan trong cần chú ý cho tất cả các RQ liên tục là? (chọn 2 đáp án đúng)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Chỉ trả về ACK-frame sau khi nhận được một khung không bị sai"
+        },
+        {
+          "id": "B",
+          "text": "S phát hiện lỗi"
+        },
+        {
+          "id": "C",
+          "text": "S nhận khung đúng"
+        },
+        {
+          "id": "D",
+          "text": "S loại bỏ khung bị sai"
+        }
+      ],
+      "image": null,
+      "correctAnswers": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "ktsl6_q27",
+      "type": "multiple-choice",
+      "text": "trong nghi thức Request/Response liên tục, trạng thái “waiting có nghĩa là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hệ thống đang gặp lỗi"
+        },
+        {
+          "id": "B",
+          "text": "Hệ thống đang xử lý yêu cầu hiện tại"
+        },
+        {
+          "id": "C",
+          "text": "Hệ thống đang chờ yêu cầu mới từ client"
+        },
+        {
+          "id": "D",
+          "text": "Hệ thống đã hoàn thành tất cả yêu cầu"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl6_q28",
+      "type": "multiple-select",
+      "text": "HDLC định nghĩa những loại khung nào? (chọn 03 đáp án đúng)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Khung không đánh số (U-frames)"
+        },
+        {
+          "id": "B",
+          "text": "Khung thông tin (I-frames)"
+        },
+        {
+          "id": "C",
+          "text": "Khung cờ (Flag)"
+        },
+        {
+          "id": "D",
+          "text": "Khung giám sát (S-frames)"
+        }
+      ],
+      "image": null,
+      "correctAnswers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "ktsl6_q29",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Một chuỗi các khung có chiều dài 1000 bits được phát dùng nghi thức RQ liên tục. Vận tốc truyền sóng là 2.108 m/s và tỷ lệ bit lỗi đường truyền thấp có thể bỏ qua. Đường truyền dài 1 km, tốc độ 1 Mbps và cửa sổ gửi là K = 2. Xác định Tp?"
+        },
+        {
+          "id": "A",
+          "text": "4.10-6 s"
+        },
+        {
+          "id": "B",
+          "text": "2.10-6 s"
+        },
+        {
+          "id": "C",
+          "text": "3.10-6 s"
+        },
+        {
+          "id": "D",
+          "text": "5.10-6 s"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    }
+  ],
+  "ktsl_7": [
+    {
+      "id": "ktsl7_q1",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Lớp vỏ ngoài của cáp đồng trục có chức năng gì? ("
+        },
+        {
+          "id": "A",
+          "text": "Cách điện và bảo vệ cáp khỏi tác động cơ học"
+        },
+        {
+          "id": "B",
+          "text": "Cung cấp nguồn điện"
+        },
+        {
+          "id": "C",
+          "text": "Tăng cường chất lượng tín hiệu"
+        },
+        {
+          "id": "D",
+          "text": "Giúp dẫn tín hiệu"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl7_q2",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cáp đồng trục thường được sử dụng trong mạng nào?"
+        },
+        {
+          "id": "A",
+          "text": "Mạng cáp quang"
+        },
+        {
+          "id": "B",
+          "text": "Mạng điện thoại"
+        },
+        {
+          "id": "C",
+          "text": "Mạng LAN không dây"
+        },
+        {
+          "id": "D",
+          "text": "Mạng truyền hình cáp và internet băng thông rộng"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl7_q3",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dải tần 3.7 đến 4.2 GHz (rộng 500MHz) dành cho truyền thông nào. Nhận định nào sau đây là đúng nhất?"
+        },
+        {
+          "id": "A",
+          "text": "Từ vệ tinh xuống tới khu vực xa xôi, hẻo lánh"
+        },
+        {
+          "id": "B",
+          "text": "Từ vệ tinh hướng xuống mặt đất"
+        },
+        {
+          "id": "C",
+          "text": "Từ vệ tinh xuống đến các phương tiện di động"
+        },
+        {
+          "id": "D",
+          "text": "Từ vệ tinh hướng xuống thiết bị đầu cuối"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl7_q4",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dải tần 5.925 đến 6.425 GHz (rộng 500MHz) dành cho truyền thông từ?"
+        },
+        {
+          "id": "A",
+          "text": "Mặt đất lên vệ tinh"
+        },
+        {
+          "id": "B",
+          "text": "Mặt đất lên các phương tiện di động"
+        },
+        {
+          "id": "C",
+          "text": "Mặt đất lên đến các trạm giám sát vệ tinh"
+        },
+        {
+          "id": "D",
+          "text": "Mặt đất lên đến trạm viễn thông"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl7_q5",
+      "type": "multiple-choice",
+      "text": "Hình vẽ sau đây mô tả truyền dẫn vô tuyến theo khu vực?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Đa tế bào"
+        },
+        {
+          "id": "B",
+          "text": "Đơn tế bào"
+        },
+        {
+          "id": "C",
+          "text": "Mạng di động"
+        },
+        {
+          "id": "D",
+          "text": "Đa tần số F1 đến Fn"
+        }
+      ],
+      "image": "/images/ktsl_b7/image2.png",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl7_q6",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Để giảm thiểu nhiễu và đảm bảo tín hiệu vi ba mạnh và rõ ràng, các trạm phát và thu thường phải:"
+        },
+        {
+          "id": "A",
+          "text": "Đặt tại vị trí cao và thoáng để giảm cản trở"
+        },
+        {
+          "id": "B",
+          "text": "Sử dụng nhiều dây cáp đồng trục"
+        },
+        {
+          "id": "C",
+          "text": "Sử dụng công nghệ mã hóa phức tạp"
+        },
+        {
+          "id": "D",
+          "text": "Sử dụng tần số thấp"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl7_q7",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vận dụng kiến thức đã học về truyền dẫn số liệu. Em hãy cho biết trên vệ tinh có gắn một số thiết bị gì mà nó sẽ thu sóng điện từ trong một phổ tần số nhất định (thường là 36MHz), khuếch đại lên rồi phát lại ở dải tần số khác hướng xuống trái đất."
+        },
+        {
+          "id": "A",
+          "text": "Bộ phân kênh"
+        },
+        {
+          "id": "B",
+          "text": "Bộ phát đáp"
+        },
+        {
+          "id": "C",
+          "text": "Anten"
+        },
+        {
+          "id": "D",
+          "text": "Bộ ghép kênh"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl7_q8",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Thiết bị đầu cuối dữ liệu (DTE) chủ yếu được sử dụng để làm gì?"
+        },
+        {
+          "id": "A",
+          "text": "Xử lý và truyền tải dữ liệu giữa người dùng và mạng"
+        },
+        {
+          "id": "B",
+          "text": "Cung cấp kết nối vật lý giữa hai thiết bị mạng"
+        },
+        {
+          "id": "C",
+          "text": "Chuyển đổi tín hiệu analog thành tín hiệu số"
+        },
+        {
+          "id": "D",
+          "text": "Cung cấp nguồn điện cho các thiết bị mạng"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl7_q9",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Thiết bị đầu cuối dữ liệu (DTE) trong một mạng thường là:"
+        },
+        {
+          "id": "A",
+          "text": "Bộ định tuyến (Router)"
+        },
+        {
+          "id": "B",
+          "text": "Máy tính cá nhân, điện thoại hoặc máy chủ"
+        },
+        {
+          "id": "C",
+          "text": "Cổng chuyển mạch (Switch)"
+        },
+        {
+          "id": "D",
+          "text": "Modem"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl7_q10",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Thiết bị nào dưới đây không phải là một ví dụ điển hình của DTE?"
+        },
+        {
+          "id": "A",
+          "text": "Modem"
+        },
+        {
+          "id": "B",
+          "text": "Máy in"
+        },
+        {
+          "id": "C",
+          "text": "Switch"
+        },
+        {
+          "id": "D",
+          "text": "Máy tính cá nhân (PC)"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl7_q11",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "DCE (Data Circuit-Terminating Equipment) có vai trò chính nào trong hệ thống truyền thông dữ liệu?"
+        },
+        {
+          "id": "A",
+          "text": "Kết nối thiết bị đầu cuối dữ liệu (DTE) với mạng viễn thông"
+        },
+        {
+          "id": "B",
+          "text": "Chuyển đổi tín hiệu analog sang tín hiệu số"
+        },
+        {
+          "id": "C",
+          "text": "Cung cấp kết nối trực tiếp giữa các thiết bị đầu cuối dữ liệu (DTE) trong mạng nội bộ"
+        },
+        {
+          "id": "D",
+          "text": "Điều chỉnh và định tuyến lưu lượng dữ liệu giữa các mạng"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl7_q12",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "DCE và DTE giao tiếp với nhau bằng cách sử dụng:"
+        },
+        {
+          "id": "A",
+          "text": "Tín hiệu radio"
+        },
+        {
+          "id": "B",
+          "text": "Tín hiệu ánh sáng"
+        },
+        {
+          "id": "C",
+          "text": "Tín hiệu số qua một kết nối vật lý"
+        },
+        {
+          "id": "D",
+          "text": "Tín hiệu analog qua sóng vô tuyến"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl7_q13",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trong kết nối mạng, DCE thường được sử dụng để:"
+        },
+        {
+          "id": "A",
+          "text": "Cung cấp băng thông cao cho dữ liệu"
+        },
+        {
+          "id": "B",
+          "text": "Chuyển đổi và điều chỉnh tín hiệu truyền giữa DTE và mạng viễn thông"
+        },
+        {
+          "id": "C",
+          "text": "Xử lý dữ liệu"
+        },
+        {
+          "id": "D",
+          "text": "Quản lý thiết bị đầu cuối dữ liệu (DTE)"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl7_q14",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Thiết bị nào dưới đây là thiết bị DCE trong hệ thống truyền thông qua modem?"
+        },
+        {
+          "id": "A",
+          "text": "Máy chủ"
+        },
+        {
+          "id": "B",
+          "text": "Bộ định tuyến (Router)"
+        },
+        {
+          "id": "C",
+          "text": "Modem"
+        },
+        {
+          "id": "D",
+          "text": "Máy tính"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl7_q15",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mạch Transmitted Data (BA) hướng từ DTE sang DCE có chức năng?"
+        },
+        {
+          "id": "A",
+          "text": "Dữ liệu được nhận bởi DCE"
+        },
+        {
+          "id": "B",
+          "text": "Dữ liệu được nhận bởi DTE"
+        },
+        {
+          "id": "C",
+          "text": "Dữ liệu được tạo bởi DCE"
+        },
+        {
+          "id": "D",
+          "text": "Dữ liệu được tạo bởi DTE"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl7_q16",
+      "type": "multiple-choice",
+      "text": "Đồ thị sau đây mô tả độ suy giảm của ánh sáng qua sợi quang trong miền nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Miền ánh sáng"
+        },
+        {
+          "id": "B",
+          "text": "Miền ánh sáng bị phản xạ"
+        },
+        {
+          "id": "C",
+          "text": "Miền hồng ngoại"
+        },
+        {
+          "id": "D",
+          "text": "Miền ánh sáng bị khúc xạ"
+        }
+      ],
+      "image": "/images/ktsl_b7/image3.png",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl7_q17",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Đường truyền vi ba chủ yếu được ứng dụng trong lĩnh vực nào?"
+        },
+        {
+          "id": "A",
+          "text": "Mạng lưới điện quốc gia"
+        },
+        {
+          "id": "B",
+          "text": "Truyền tải năng lượng điện"
+        },
+        {
+          "id": "C",
+          "text": "Tất cả các đáp án trên"
+        },
+        {
+          "id": "D",
+          "text": "Truyền hình vệ tinh và viễn thông"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl7_q18",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trong mô hình mạng, thiết bị đầu cuối dữ liệu (DTE) thường kết nối với thiết bị nào để truyền tải dữ liệu?"
+        },
+        {
+          "id": "A",
+          "text": "Bộ chuyển đổi quang (Optical Transceiver)"
+        },
+        {
+          "id": "B",
+          "text": "DCE (Data Circuit-terminating Equipment)"
+        },
+        {
+          "id": "C",
+          "text": "Hub"
+        },
+        {
+          "id": "D",
+          "text": "Firewall"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl7_q19",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Thiết bị cuối kênh dữ liệu (DCE) là thiết bị nào trong hệ thống mạng?"
+        },
+        {
+          "id": "A",
+          "text": "Thiết bị xử lý tín hiệu số"
+        },
+        {
+          "id": "B",
+          "text": "Thiết bị định tuyến tín hiệu giữa các mạng"
+        },
+        {
+          "id": "C",
+          "text": "Thiết bị cung cấp nguồn điện cho các thiết bị mạng"
+        },
+        {
+          "id": "D",
+          "text": "Thiết bị kết nối mạng với các thiết bị đầu cuối dữ liệu"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl7_q20",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Thiết bị nào dưới đây là ví dụ điển hình của DCE?"
+        },
+        {
+          "id": "A",
+          "text": "Switch"
+        },
+        {
+          "id": "B",
+          "text": "Modem"
+        },
+        {
+          "id": "C",
+          "text": "Máy in"
+        },
+        {
+          "id": "D",
+          "text": "Máy tính cá nhân"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl7_q21",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "DCE thường kết nối với DTE qua giao diện nào?"
+        },
+        {
+          "id": "A",
+          "text": "Giao diện USB"
+        },
+        {
+          "id": "B",
+          "text": "Giao diện LAN"
+        },
+        {
+          "id": "C",
+          "text": "Giao diện serial như RS-232"
+        },
+        {
+          "id": "D",
+          "text": "Giao diện HDMI"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl7_q22",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mạch Data set relay (CC) trong chuẩn RS-232-C/V24 hướng DCE => DTE có chức năng gì?"
+        },
+        {
+          "id": "A",
+          "text": "DCE sẵn sàng làm việc"
+        },
+        {
+          "id": "B",
+          "text": "DTE muốn truyền dữ liệu"
+        },
+        {
+          "id": "C",
+          "text": "DTE sẵn sàng làm việc"
+        },
+        {
+          "id": "D",
+          "text": "DCE muốn truyền dữ liệu"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl7_q23",
+      "type": "multiple-select",
+      "text": "các tham số chất lượng cơ bản của hệ thống truyền dẫn số được đánh giá thông qua các tham số nào? (chọn 02 đáp án đúng)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dung lượng truyền dẫn"
+        },
+        {
+          "id": "B",
+          "text": "Data trên đường truyền"
+        },
+        {
+          "id": "C",
+          "text": "Tỷ lệ lỗi bit (BER)"
+        },
+        {
+          "id": "D",
+          "text": "Tần số hoạt động"
+        }
+      ],
+      "image": null,
+      "correctAnswers": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "ktsl7_q24",
+      "type": "multiple-choice",
+      "text": "hình ảnh dưới đây mô tả cấu tạo của loại cáp nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cấu tạo cáp CAT5"
+        },
+        {
+          "id": "B",
+          "text": "Cấu tạo cáp CAT6"
+        },
+        {
+          "id": "C",
+          "text": "Cấu tạo cáp đồng trục"
+        },
+        {
+          "id": "D",
+          "text": "Cấu tạo cáp quang"
+        }
+      ],
+      "image": "/images/ktsl_b7/image1.png",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl7_q25",
+      "type": "multiple-choice",
+      "text": "Hình vẽ sau đây mô tả truyền dẫn vô tuyến theo khu vực?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mạng cố định"
+        },
+        {
+          "id": "B",
+          "text": "Trạm thu phát"
+        },
+        {
+          "id": "C",
+          "text": "Đa tế bào"
+        },
+        {
+          "id": "D",
+          "text": "Một tế bào"
+        }
+      ],
+      "image": "/images/ktsl_b7/image4.png",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl7_q26",
+      "type": "multiple-choice",
+      "text": "Tín hiệu trong cáp đồng trục di chuyển trên phần nào của cáp?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Lớp màn chắn (shield)"
+        },
+        {
+          "id": "B",
+          "text": "Lớp cách điện"
+        },
+        {
+          "id": "C",
+          "text": "Vỏ bọc ngoài"
+        },
+        {
+          "id": "D",
+          "text": "Lõi dẫn tín hiệu trung tâm"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl7_q27",
+      "type": "multiple-choice",
+      "text": "Mạch Carrier Detect (CF) trong chuẩn RS-232-C/V24 hướng từ DCE sáng DTE có chức năng gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Khẳng định để DCE chọn tốc độ dữ liệu"
+        },
+        {
+          "id": "B",
+          "text": "Chỉ ra rằng DTE đang nhận một carrier signal."
+        },
+        {
+          "id": "C",
+          "text": "Chỉ ra rằng DCE đang nhận một carrier signal"
+        },
+        {
+          "id": "D",
+          "text": "Khẳng định để DTE chọn tốc độ dữ liệu"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl7_q28",
+      "type": "multiple-choice",
+      "text": "Các trạm phát tín hiệu vi ba thường được đặt ở đâu để đảm bảo tín hiệu được truyền tốt nhất? (chọn 01 đáp án đúng trong các câu trả lời bên dưới)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trong lòng đất"
+        },
+        {
+          "id": "B",
+          "text": "ở dưới mặt đất"
+        },
+        {
+          "id": "C",
+          "text": "trên đỉnh các tòa nhà cao hoặc các cột thu sóng"
+        },
+        {
+          "id": "D",
+          "text": "trong các hầm chứa kín"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl7_q29",
+      "type": "multiple-select",
+      "text": "Dải thông của đường cáp xoắn đôi phụ thuộc vào các yếu tố nào? (chọn 2 đáp án đúng)",
+      "options": [
+        {
+          "id": "A",
+          "text": "đường kính của sợi dây"
+        },
+        {
+          "id": "B",
+          "text": "chiều dài sợi dây"
+        },
+        {
+          "id": "C",
+          "text": "vật liệu sợi dây"
+        },
+        {
+          "id": "D",
+          "text": "tính chất sợi dây"
+        }
+      ],
+      "image": null,
+      "correctAnswers": [
+        "A",
+        "B"
+      ]
+    }
+  ],
+  "ktsl_8": [
+    {
+      "id": "ktsl8_q1",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mã nhị phân NRZ (Non-Return-to-Zero) là gì?"
+        },
+        {
+          "id": "A",
+          "text": "Là dạng mã mà mức tín hiệu luôn ở mức không đổi"
+        },
+        {
+          "id": "B",
+          "text": "Là dạng mã có sự thay đổi mức tín hiệu tại mỗi bit"
+        },
+        {
+          "id": "C",
+          "text": "Là dạng mã có sự thay đổi mức tín hiệu tại giữa mỗi bit"
+        },
+        {
+          "id": "D",
+          "text": "Là dạng mã mà mức tín hiệu không thay đổi trong suốt thời gian của bit"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl8_q2",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Đặc điểm nào sau đây đúng về mã NRZ-L (Non-Return-to-Zero-Level)?"
+        },
+        {
+          "id": "A",
+          "text": "Mã NRZ-L sử dụng mức tín hiệu cao cho bit 1 và mức tín hiệu thấp cho bit 0"
+        },
+        {
+          "id": "B",
+          "text": "Mã NRZ-L có sự thay đổi mức tín hiệu giữa các bit"
+        },
+        {
+          "id": "C",
+          "text": "Mã NRZ-L sử dụng mức tín hiệu thấp cho bit 1 và mức tín hiệu cao cho bit 0"
+        },
+        {
+          "id": "D",
+          "text": "Mã NRZ-L có mức tín hiệu không thay đổi giữa các bit"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl8_q3",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Đáp án nào dưới đây là nhược điểm của mã NRZ là:"
+        },
+        {
+          "id": "A",
+          "text": "Khó đồng bộ khi có chuỗi dài các bit giống nhau (1 hoặc 0)"
+        },
+        {
+          "id": "B",
+          "text": "Không hỗ trợ mã hóa bit 0 và 1"
+        },
+        {
+          "id": "C",
+          "text": "Dễ dàng phát hiện lỗi đồng bộ khi có sự thay đổi mức tín hiệu"
+        },
+        {
+          "id": "D",
+          "text": "Dễ dàng phát hiện lỗi đồng bộ khi không có sự thay đổi mức tín hiệu"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl8_q4",
+      "type": "multiple-choice",
+      "text": "Bảng sau đây mô tả quy luật biến đổi của mã nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mã HDB3"
+        },
+        {
+          "id": "B",
+          "text": "Mã NRZ"
+        },
+        {
+          "id": "C",
+          "text": "Mã RZ"
+        },
+        {
+          "id": "D",
+          "text": "Mã tam phân chọn cặp"
+        }
+      ],
+      "image": "/images/ktsl_b8/image1.png",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl8_q5",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mã 6B4T biến đổi 6 số nhị phân thành bao nhiêu số tam phân?"
+        },
+        {
+          "id": "A",
+          "text": "4"
+        },
+        {
+          "id": "B",
+          "text": "5"
+        },
+        {
+          "id": "C",
+          "text": "6"
+        },
+        {
+          "id": "D",
+          "text": "3"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl8_q6",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mã HDB3 là gì?"
+        },
+        {
+          "id": "A",
+          "text": "Là mã nhị phân có chuỗi dài các bit 0 thay đổi thành các chuỗi dài bit 1"
+        },
+        {
+          "id": "B",
+          "text": "Là mã nhị phân không thay đổi mức tín hiệu giữa các bit"
+        },
+        {
+          "id": "C",
+          "text": "Là mã nhị phân có ba bit 1 liên tiếp thay đổi mức tín hiệu"
+        },
+        {
+          "id": "D",
+          "text": "Là mã nhị phân có ba bit 0 liên tiếp được thay thế bằng một chuỗi có sự thay đổi mức tín hiệu"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl8_q7",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trong mã HDB3, ba bit 0 liên tiếp sẽ được thay thế bằng chuỗi nào?"
+        },
+        {
+          "id": "A",
+          "text": "1100 hoặc 1110"
+        },
+        {
+          "id": "B",
+          "text": "0000"
+        },
+        {
+          "id": "C",
+          "text": "1000 hoặc 1001"
+        },
+        {
+          "id": "D",
+          "text": "0001"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl8_q8",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trong phương pháp điều chế biên độ ASK, nếu bit 1 được mã hóa, thì biên độ của tín hiệu mang sẽ:"
+        },
+        {
+          "id": "A",
+          "text": "Bằng không"
+        },
+        {
+          "id": "B",
+          "text": "Tăng lên một giá trị nhất định"
+        },
+        {
+          "id": "C",
+          "text": "Vẫn giữ nguyên biên độ"
+        },
+        {
+          "id": "D",
+          "text": "Giảm xuống một giá trị nhỏ"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl8_q9",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trong quá trình giải điều chế ASK, máy thu sẽ:"
+        },
+        {
+          "id": "A",
+          "text": "Thay đổi biên độ của tín hiệu mang theo tín hiệu thông tin"
+        },
+        {
+          "id": "B",
+          "text": "Dùng pha của tín hiệu mang để giải mã tín hiệu"
+        },
+        {
+          "id": "C",
+          "text": "Sử dụng tần số của tín hiệu mang để tách tín hiệu thông tin"
+        },
+        {
+          "id": "D",
+          "text": "Đo biên độ của tín hiệu thu được và so sánh với ngưỡng để xác định giá trị của bit"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl8_q10",
+      "type": "multiple-choice",
+      "text": "HÌnh vẽ dưới đây mô tả phương pháp điều chế nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Phương pháp điều chế FSK"
+        },
+        {
+          "id": "B",
+          "text": "Phương pháp điều chế ASK"
+        },
+        {
+          "id": "C",
+          "text": "Phương pháp điều chế PSK"
+        },
+        {
+          "id": "D",
+          "text": "Phương pháp điều chế QAM"
+        }
+      ],
+      "image": "/images/ktsl_b8/image2.png",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl8_q11",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Khi thực hiện giải điều chế FSK, máy thu sẽ:"
+        },
+        {
+          "id": "A",
+          "text": "So sánh tần số của tín hiệu thu được với ngưỡng để xác định giá trị của bit"
+        },
+        {
+          "id": "B",
+          "text": "Dùng pha của tín hiệu mang để giải mã tín hiệu"
+        },
+        {
+          "id": "C",
+          "text": "Đo biên độ của tín hiệu thu được và so sánh với ngưỡng để xác định giá trị của bit"
+        },
+        {
+          "id": "D",
+          "text": "Thay đổi tần số của tín hiệu mang để tái tạo dữ liệu ban đầu"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl8_q12",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Điều chế PSK (Phase Shift Keying) là gì?"
+        },
+        {
+          "id": "A",
+          "text": "Là phương pháp thay đổi độ dài xung của tín hiệu mang"
+        },
+        {
+          "id": "B",
+          "text": "Là phương pháp thay đổi tần số của tín hiệu mang để biểu diễn dữ liệu số"
+        },
+        {
+          "id": "C",
+          "text": "Là phương pháp thay đổi biên độ của tín hiệu mang để biểu diễn dữ liệu số"
+        },
+        {
+          "id": "D",
+          "text": "Là phương pháp thay đổi pha của tín hiệu mang để biểu diễn dữ liệu số"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl8_q13",
+      "type": "multiple-choice",
+      "text": "Hình vẽ dưới đây mô tả phương pháp giải điều chế nào ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Phương pháp giải điều chế FSK"
+        },
+        {
+          "id": "B",
+          "text": "Phương pháp giải điều chế 16-QAM"
+        },
+        {
+          "id": "C",
+          "text": "Phương pháp giải điều chế 8-ASK"
+        },
+        {
+          "id": "D",
+          "text": "Phương pháp giải điều chế PSK"
+        }
+      ],
+      "image": "/images/ktsl_b8/image3.png",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl8_q14",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trong điều chế QAM, tín hiệu được điều chế bằng cách thay đổi:"
+        },
+        {
+          "id": "A",
+          "text": "Cả biên độ và pha của tín hiệu mang"
+        },
+        {
+          "id": "B",
+          "text": "Biên độ của tín hiệu mang và giữ pha cố định"
+        },
+        {
+          "id": "C",
+          "text": "Tần số của tín hiệu mang và giữ pha cố định"
+        },
+        {
+          "id": "D",
+          "text": "Pha của tín hiệu mang và giữ biên độ cố định"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl8_q15",
+      "type": "multiple-choice",
+      "text": "Hình vẽ sau đây mô tả phương pháp điều chế và giải điều chế nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Phương pháp điều chế và giải điều chế PSK vi phân"
+        },
+        {
+          "id": "B",
+          "text": "Phương pháp điều chế và giải điều chế ASK vi phân"
+        },
+        {
+          "id": "C",
+          "text": "Phương pháp điều chế và giải điều chế FSK vi phân"
+        },
+        {
+          "id": "D",
+          "text": "Phương pháp điều chế và giải điều chế QPSK vi phân"
+        }
+      ],
+      "image": "/images/ktsl_b8/image4.png",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl8_q16",
+      "type": "multiple-select",
+      "text": "Lý do tại sao tín hiệu nhị phân đơn cự không thích hợp để truyền qua biến áp? (chọn 2 đáp án đúng)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nó có chưa thành phần tần số mức cao"
+        },
+        {
+          "id": "B",
+          "text": "Nó có chứa thành phần 1 chiều"
+        },
+        {
+          "id": "C",
+          "text": "Do tính chất của biến áp"
+        },
+        {
+          "id": "D",
+          "text": "Nó có chưa thành phần xoay chiều"
+        }
+      ],
+      "image": null,
+      "correctAnswers": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "ktsl8_q17",
+      "type": "multiple-choice",
+      "text": "một trong các ưu điểm của mã HDB3 so với mã NRZ là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mã HDB3 dễ bị mất đồng bộ hơn mã NRZ"
+        },
+        {
+          "id": "B",
+          "text": "Mã HDB3 không có sự thay đổi mức tín hiệu, giúp dễ dàng nhận dạng bit 0 và bit 1"
+        },
+        {
+          "id": "C",
+          "text": "Mã HDB3 có thể duy trì đồng bộ hóa tín hiệu khi có chuỗi dài các bit 0"
+        },
+        {
+          "id": "D",
+          "text": "Mã HDB3 có hiệu suất truyền dữ liệu cao hơn mã NRZ"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl8_q18",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Điều chế FSK (Frequency Shift Keying) là gì?"
+        },
+        {
+          "id": "A",
+          "text": "Là phương pháp thay đổi độ dài xung của tín hiệu mang"
+        },
+        {
+          "id": "B",
+          "text": "Là phương pháp thay đổi pha của tín hiệu mang để biểu diễn dữ liệu số"
+        },
+        {
+          "id": "C",
+          "text": "Là phương pháp thay đổi biên độ của tín hiệu mang để biểu diễn dữ liệu số"
+        },
+        {
+          "id": "D",
+          "text": "Là phương pháp thay đổi tần số của tín hiệu mang để biểu diễn dữ liệu số"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl8_q19",
+      "type": "multiple-choice",
+      "text": "trong điều chế PSK, mỗi bit 1 và bit 0 được biểu diễn bằng:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Một mức biên độ và một pha khác nhau"
+        },
+        {
+          "id": "B",
+          "text": "Hai mức biên độ khác nhau của tín hiệu mang"
+        },
+        {
+          "id": "C",
+          "text": "Hai tần số khác nhau của tín hiệu mang"
+        },
+        {
+          "id": "D",
+          "text": "Hai pha khác nhau của tín hiệu mang"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl8_q20",
+      "type": "multiple-choice",
+      "text": "Điều chế PSK có thể được mở rộng thành nhiều mức như:",
+      "options": [
+        {
+          "id": "A",
+          "text": "BPSK, 16-QAM, 8-FSK"
+        },
+        {
+          "id": "B",
+          "text": "BPSK, 8-ASK,FSK"
+        },
+        {
+          "id": "C",
+          "text": "16-PSK, QPSK, ASK"
+        },
+        {
+          "id": "D",
+          "text": "BPSK (Binary PSK), QPSK (Quadrature PSK), 8-PSK"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl8_q21",
+      "type": "multiple-choice",
+      "text": "Phương pháp điều chế QPSK vi phân (DQPSK) là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Là phương pháp thay đổi biên độ của tín hiệu mang để biểu diễn dữ liệu số"
+        },
+        {
+          "id": "B",
+          "text": "Là phương pháp thay đổi pha tín hiệu mang giữa các tín hiệu liên tiếp, thay vì dựa vào pha tuyệt đối"
+        },
+        {
+          "id": "C",
+          "text": "Là phowng pháp thay đổi pha của tín hiệu mang theo sự thay đổi các bit 0 và bit 1"
+        },
+        {
+          "id": "D",
+          "text": "Là phương pháp thay đổi tần số của tín hiệu mang để biểu diễn dữ liệu số"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl8_q22",
+      "type": "multiple-choice",
+      "text": "bảng dưới đây mô tả quy luật biến đổi của mã nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mã MS43"
+        },
+        {
+          "id": "B",
+          "text": "Mã HDB3"
+        },
+        {
+          "id": "C",
+          "text": "Mã tam phân chọn cặp"
+        },
+        {
+          "id": "D",
+          "text": "Mã NRZ"
+        }
+      ],
+      "image": "/images/ktsl_b8/image5.png",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl8_q23",
+      "type": "multiple-choice",
+      "text": "",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trong mã nhị phân RZ, đặc điểm nào đúng khi mã hóa bit 0 ?A. Mức tín hiệu cao trong nửa thời gian của bit, sau đó chuyển về mức thấp"
+        },
+        {
+          "id": "B",
+          "text": "mức tín hiệu cao tỏng suốt thời gian của bit 0"
+        },
+        {
+          "id": "C",
+          "text": "mức tín hiệu thấp trong suốt thời gian của bit 0"
+        },
+        {
+          "id": "D",
+          "text": "mức tín hiệu không thay đổi trong suốt thời gian của bit"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl8_q24",
+      "type": "multiple-choice",
+      "text": "Bảng dưới đây là quy luật biến đổi của mã nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mã HDB3"
+        },
+        {
+          "id": "B",
+          "text": "Mã RZ"
+        },
+        {
+          "id": "C",
+          "text": "Mã tam phân chọn cặp"
+        },
+        {
+          "id": "D",
+          "text": "4B3T"
+        }
+      ],
+      "image": "/images/ktsl_b8/image6.png",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl8_q25",
+      "type": "multiple-choice",
+      "text": "trong điều chế ASK, tín hiệu mang có thể được biểu diễn dưới dạng:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Biên độ thay đổi giữa các bit 0 và bit 1"
+        },
+        {
+          "id": "B",
+          "text": "Tần số thay đổi giữa các bit"
+        },
+        {
+          "id": "C",
+          "text": "Pha thay đổi giữa các bit 0 và bit 1"
+        },
+        {
+          "id": "D",
+          "text": "Độ dài của mỗi bit thay đổi"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl8_q26",
+      "type": "multiple-choice",
+      "text": "Trong điều chế QAM, nếu sử dụng QAM-16, số lượng mwucs tín hiệu có thể có là:",
+      "options": [
+        {
+          "id": "A",
+          "text": "8 mức tín hiệu"
+        },
+        {
+          "id": "B",
+          "text": "16 mức tín hiệu"
+        },
+        {
+          "id": "C",
+          "text": "32 mức tín hiệu"
+        },
+        {
+          "id": "D",
+          "text": "4 mức tín hiệu"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl8_q27",
+      "type": "multiple-choice",
+      "text": "trong mã nhị phân RZ( Return – to – zero), sau mỗi bit bằng 1, tín hiệu sẽ:",
+      "options": [
+        {
+          "id": "A",
+          "text": "ở mức cao trong suốt thời gina của bit"
+        },
+        {
+          "id": "B",
+          "text": "ở mức cao trong nửa thời gian của bit và quay lại mức thấp trong nửa còn lại"
+        },
+        {
+          "id": "C",
+          "text": "ở mức thấp trong suốt thười gian của bit"
+        },
+        {
+          "id": "D",
+          "text": "ở mức cao trong suốt bit và không quay lại mức thấp"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl8_q28",
+      "type": "multiple-choice",
+      "text": "Khi sử dụng mã HDB3, nếu một chuỗi gồm 4 bit 0 liên tiếp, chuỗi này sẽ được mã hóa như thế nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0000 được thay thế bằng 1000 hoặc 1001 tùy vào trạng thái mức tín hiệu trước đo"
+        },
+        {
+          "id": "B",
+          "text": "0000 sẽ không được mã hóa"
+        },
+        {
+          "id": "C",
+          "text": "0000 được thay thế bằng 1111"
+        },
+        {
+          "id": "D",
+          "text": "0000 không thay đổi và giữ nguyên"
+        }
+      ],
+      "image": null,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl8_q29",
+      "type": "multiple-select",
+      "text": "Lý do tại sao một tín hiệu nhị phân đơn cực phải biến thành dạng khác trước lúc truyền qua kênh thông tin? (CHỌN 03 ĐÁP ÁN ĐÚNG)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Khi truyền một dãy “0” liên tiếp thì không có điểm chuyển tiếp tín hiẹu"
+        },
+        {
+          "id": "B",
+          "text": "Nó có chứa thành phần một chiều"
+        },
+        {
+          "id": "C",
+          "text": "Nó có các thành phần tần số mức thấp"
+        },
+        {
+          "id": "D",
+          "text": "Nó có các thành phần tần số thấp mức cao"
+        }
+      ],
+      "image": null,
+      "correctAnswers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "ktsl8_q30",
+      "type": "multiple-choice",
+      "text": "hình vẽ dưới đây mô tả phương pháp điều chế nào?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Phương pháp điều chế 16-QAM"
+        },
+        {
+          "id": "B",
+          "text": "Phương pháp điêuc chế FSK"
+        },
+        {
+          "id": "C",
+          "text": "Phương pháp điều chế QAM"
+        },
+        {
+          "id": "D",
+          "text": "Phương pháp điều chế PSK"
+        }
+      ],
+      "image": "/images/ktsl_b8/image7.png",
+      "correctAnswer": "B"
+    }
+  ]
 };
 
 export default LESSONS_DATA;
