@@ -5177,7 +5177,644 @@ const LESSONS_DATA = {
       ],
       "correctAnswers": ["A", "D"]
     }
-  ]
+  ],
+  "ktsl_3": [
+  {
+    "id": "ktsl3_q1",
+    "text": "Mã ASCII được phát triển cho thông tin máy tính vào năm nào ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1965"
+      },
+      {
+        "id": "B",
+        "text": "1964"
+      },
+      {
+        "id": "C",
+        "text": "1962"
+      },
+      {
+        "id": "D",
+        "text": "1963"
+      }
+    ],
+    "image": null,
+    "type": "multiple-choice",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ktsl3_q2",
+    "text": "Mã ASCII là mã 7 bit và cũng được diễn tả bằng số Hex với số có trọng số cao không vượt quá bao nhiêu ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "6 byte"
+      },
+      {
+        "id": "B",
+        "text": "8 byte"
+      },
+      {
+        "id": "C",
+        "text": "5 byte"
+      },
+      {
+        "id": "D",
+        "text": "7 byte"
+      }
+    ],
+    "image": null,
+    "type": "multiple-choice",
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl3_q2.1",
+    "text": "Nhóm kiểm soát truyền trong bảng mã ASCII có bao nhiêu ký tự?",
+    "options": [
+      {
+        "id": "A",
+        "text": "8"
+      },
+      {
+        "id": "B",
+        "text": "7"
+      },
+      {
+        "id": "C",
+        "text": "10"
+      },
+      {
+        "id": "D",
+        "text": "9"
+      }
+    ],
+    "image": null,
+    "type": "multiple-choice",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ktsl3_q3",
+    "text": "Các ký tự điều khiển của ASCII gồm 32 ký tự từ .... đến ..... ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "02H đến 3FH"
+      },
+      {
+        "id": "B",
+        "text": "01H đến 2FH"
+      },
+      {
+        "id": "C",
+        "text": "03H đến 4FH"
+      },
+      {
+        "id": "D",
+        "text": "00H đến 1FH"
+      }
+    ],
+    "image": null,
+    "type": "multiple-choice",
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl3_q4",
+    "text": "Nhóm chia rời lượng tin trong bảng mã ASCII có bao nhiêu ký tự ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "7"
+      },
+      {
+        "id": "B",
+        "text": "5"
+      },
+      {
+        "id": "C",
+        "text": "6"
+      },
+      {
+        "id": "D",
+        "text": "8"
+      }
+    ],
+    "image": null,
+    "type": "multiple-choice",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl3_q4.1",
+    "text": "Ký tự NULL trong bảng mã ASCII là ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "NULL là byte trống gồm chuỗi bit 2"
+      },
+      {
+        "id": "B",
+        "text": "NULL là byte trống gồm chuỗi bit 0"
+      },
+      {
+        "id": "C",
+        "text": "NULL là byte trống gồm chuỗi bit 1"
+      },
+      {
+        "id": "D",
+        "text": "NULL là byte trống gồm chuỗi bit 0 và chuỗi bit 1"
+      }
+    ],
+    "image": null,
+    "type": "multiple-choice",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl3_q5",
+    "text": "Stop bit trong đồng bộ byte ký tự là bit biểu diễn sự kết thúc của ký tự bao gồm bao nhiêu bit ? (chọn 03 đáp án đúng)",
+    "options": [
+      {
+        "id": "A",
+        "text": "1"
+      },
+      {
+        "id": "B",
+        "text": "2"
+      },
+      {
+        "id": "C",
+        "text": "3"
+      },
+      {
+        "id": "D",
+        "text": "1.5"
+      }
+    ],
+    "image": null,
+    "type": "multiple-select",
+    "correctAnswers": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "ktsl3_q6",
+    "text": "Dữ liệu của một ký tự truyền theo thứ tự thời gian là ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bit có trọng số thấp nhất (LSB) truyền trước và bit có trọng số cao nhất (MSB) truyền sau cùng"
+      },
+      {
+        "id": "B",
+        "text": "Bit có trọng số cao nhất (MSB) truyền trước và bít có trọng số thấp nhất (LSB) truyền sau cùng"
+      },
+      {
+        "id": "C",
+        "text": "Bit có trọng số thấp nhất (LSB) và bít có trọng số cao nhất (MSB) truyền đồng thời"
+      },
+      {
+        "id": "D",
+        "text": "Bit có trọng số thấp nhất (LSB) truyền trước và bít có trọng số cao nhất (MSB) không cần truyền"
+      }
+    ],
+    "image": null,
+    "type": "multiple-choice",
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl3_q6.1",
+    "text": "Hình vẽ dưới đây biểu diễn việc đồng bộ ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đồng bộ Byte ký tự"
+      },
+      {
+        "id": "B",
+        "text": "Đồng bộ khung"
+      },
+      {
+        "id": "C",
+        "text": "Đồng bộ bit"
+      },
+      {
+        "id": "D",
+        "text": "Đồng bộ mã"
+      }
+    ],
+    "image": "/images/ktsl_b3/image1.png",
+    "type": "multiple-choice",
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl3_q7",
+    "text": "Mục đích bit kiểm tra chẵn lẻ là ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Để phát hiện xem khi thu một ký tự là đúng hay là sai"
+      },
+      {
+        "id": "B",
+        "text": "Để phát hiện nhiễu khi thu một ký tự là đúng hay là sai"
+      },
+      {
+        "id": "C",
+        "text": "Để phát hiện xem khi truyền một ký tự là đúng hay là sai"
+      },
+      {
+        "id": "D",
+        "text": "Để phát hiện xem khi phát một ký tự là đúng hay là sai"
+      }
+    ],
+    "image": null,
+    "type": "multiple-choice",
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl3_q7.1",
+    "text": "Nếu mất đồng bộ bit thì tốc độ truyền và nhận bị sai nhau nên dữ liệu thu sẽ bị sai do?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nhiều bit bị chồng lấn lên nhau"
+      },
+      {
+        "id": "B",
+        "text": "Nhiễu bit"
+      },
+      {
+        "id": "C",
+        "text": "Bit lỗi"
+      },
+      {
+        "id": "D",
+        "text": "Mất đồng bộ bit"
+      }
+    ],
+    "image": null,
+    "type": "multiple-choice",
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl3_q8",
+    "text": "Trong truyền số liệu nói chung thì bộ thu sẽ lấy mẫu tại ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuối mỗi bit"
+      },
+      {
+        "id": "B",
+        "text": "Đầu mỗi bit"
+      },
+      {
+        "id": "C",
+        "text": "Khoảng cách giữa các bit"
+      },
+      {
+        "id": "D",
+        "text": "Trung tâm của mỗi bit"
+      }
+    ],
+    "image": null,
+    "type": "multiple-choice",
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl3_q8.1",
+    "text": "Hình vẽ sau đây biểu diễn nguyên lý?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đồng bộ khung"
+      },
+      {
+        "id": "B",
+        "text": "Đồng bộ ký tự"
+      },
+      {
+        "id": "C",
+        "text": "Đồng bộ vào song song ra nối tiếp"
+      },
+      {
+        "id": "D",
+        "text": "Đồng bộ bit"
+      }
+    ],
+    "image": "/images/ktsl_b3/image2.png",
+    "type": "multiple-choice",
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl3_q9",
+    "text": "Cách mã hóa nhịp vào tín hiệu thường được thực hiện với mã đường dây hay còn được gọi là biến đổi ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Số - Số"
+      },
+      {
+        "id": "B",
+        "text": "Tương tự - Tương Tự"
+      },
+      {
+        "id": "C",
+        "text": "Tương tự - Số"
+      },
+      {
+        "id": "D",
+        "text": "Số - Tương tự"
+      }
+    ],
+    "image": null,
+    "type": "multiple-choice",
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl3_q9.1",
+    "text": "Nếu trong khung truyền có dữ liệu trùng với DLE thì một ký tự nào phải được chèn thêm và phía thu sẽ tự động loại bỏ một ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DLE"
+      },
+      {
+        "id": "B",
+        "text": "STX"
+      },
+      {
+        "id": "C",
+        "text": "ETX"
+      },
+      {
+        "id": "D",
+        "text": "DTE"
+      }
+    ],
+    "image": "/images/ktsl_b3/image3.png",
+    "type": "multiple-choice",
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl3_q10",
+    "text": "Mã hóa Unipolar được mô tả ở hình dưới đây có mức điện áp như thế nào ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mức điện áp này có 2 cực tính hoặc dương hoặc am thường biểu diễn luan phiên nhau trên hệ toạ độ"
+      },
+      {
+        "id": "B",
+        "text": "Mức điện áp này có 2,5 cực tính hoặc dương hoặc am thường biểu diễn luân phiên nhau trên hệ toạ độ"
+      },
+      {
+        "id": "C",
+        "text": "Mức điện ap này có 3 cực tính hoặc dương hoặc am thường biểu diễn luan phiên nhau trên hệ toạ độ"
+      },
+      {
+        "id": "D",
+        "text": "Mức điện áp này chỉ có một cực tính hoặc dương hoặc âm thuờng đại diện cho bit 1, con trạng thái còn lại là 0"
+      }
+    ],
+    "image": null,
+    "type": "multiple-choice",
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl3_q10.1",
+    "text": "Thực tế có hai loại kiểm soát truyền đồng bộ là ? (chọn 02 đáp án đúng)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Định hướng ký tự"
+      },
+      {
+        "id": "B",
+        "text": "Định hướng khung"
+      },
+      {
+        "id": "C",
+        "text": "Định hướng Bit"
+      },
+      {
+        "id": "D",
+        "text": "Định hướng lỗi bit"
+      }
+    ],
+    "image": null,
+    "type": "multiple-select",
+    "correctAnswers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "ktsl3_q11",
+    "text": "nhìn vào hình ve được biểu diễn dưới đay Em hay cho biết dãy nhị phân dưới đay bieu diễn theo mã nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "NRZ-1"
+      },
+      {
+        "id": "B",
+        "text": "NRZ - L"
+      },
+      {
+        "id": "C",
+        "text": "Unipolar"
+      },
+      {
+        "id": "D",
+        "text": "RZ"
+      }
+    ],
+    "image": "/images/ktsl_b3/image4.png",
+    "type": "multiple-choice",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl3_q11.1",
+    "text": "Hình vẽ dưới đây mô tả ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Các loại mã đồng bộ bit"
+      },
+      {
+        "id": "B",
+        "text": "Các loại giải mã đường dây"
+      },
+      {
+        "id": "C",
+        "text": "Các loại mã hóa đường dây"
+      },
+      {
+        "id": "D",
+        "text": "Các loại mã không đồng bộ bit"
+      }
+    ],
+    "image": "/images/ktsl_b3/image5.png",
+    "type": "multiple-choice",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ktsl3_q12",
+    "text": "Nhìn vào đồ thị dưới đây Em hãy cho biết dãy nhị phân dưới đây biểu diễn theo mã nào ? Biên độ t0",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manchester"
+      },
+      {
+        "id": "B",
+        "text": "NRZ -I"
+      },
+      {
+        "id": "C",
+        "text": "NRZ -L"
+      },
+      {
+        "id": "D",
+        "text": "RZ"
+      }
+    ],
+    "image": "/images/ktsl_b3/image6.png",
+    "type": "multiple-choice",
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl3_q13",
+    "text": "Hình vẽ dưới đây mô tả truyền định hướng ký tự với kiểu định dạng nào ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Định dạng theo thời gian"
+      },
+      {
+        "id": "B",
+        "text": "Định dạng ký tự"
+      },
+      {
+        "id": "C",
+        "text": "Định dạng bit"
+      },
+      {
+        "id": "D",
+        "text": "Định dạng khung"
+      }
+    ],
+    "image": "/images/ktsl_b3/image7.png",
+    "type": "multiple-choice",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl3_q14",
+    "text": "Truyền một ký tự dùng mã ASCII 7 bit và có kiểm tra chẵn lẻ với 1 start bit và 2 stop bit thì hiệu suất bằng ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "75 %"
+      },
+      {
+        "id": "B",
+        "text": "80%"
+      },
+      {
+        "id": "C",
+        "text": "70 %"
+      },
+      {
+        "id": "D",
+        "text": "85 %"
+      }
+    ],
+    "image": null,
+    "type": "multiple-choice",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ktsl3_q14.1",
+    "text": "Hình vẽ dưới đây mô tả truyền định hướng ký tự với kiểu truyền nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Kiểu truyền có nhiễu kèm theo dữ liệu mới"
+      },
+      {
+        "id": "B",
+        "text": "Kiểu truyền trong suốt dữ liệu"
+      },
+      {
+        "id": "C",
+        "text": "Kiểu truyền được đóng gói dữ liệu"
+      },
+      {
+        "id": "D",
+        "text": "Kiểu truyền chèn thêm dữ liệu mới"
+      }
+    ],
+    "image": "/images/ktsl_b3/image8.png",
+    "type": "multiple-choice",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl3_q15",
+    "text": "Đồng bộ bit trong truyền đồng bộ dùng để: (Chọn 02 đáp án đúng)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đồng bộ tín hiệu từng bit"
+      },
+      {
+        "id": "B",
+        "text": "Phát hiện lỗi bit"
+      },
+      {
+        "id": "C",
+        "text": "Đồng bộ toàn bộ khung dữ liệu"
+      },
+      {
+        "id": "D",
+        "text": "Mã hóa ký tự"
+      }
+    ],
+    "image": null,
+    "type": "multiple-select",
+    "correctAnswers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "ktsl3_q16",
+    "text": "Trong định hướng bit với kiểu truyền dùng các cặp ký tự SYN cũng như kèm theo các ký tự như STX, ETX, và DLE thường dẫn đến hiệu suất của đường truyền sẽ như thế nào ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hiệu suất tối ưu"
+      },
+      {
+        "id": "B",
+        "text": "Hiệu suất chỉ đạt 55%"
+      },
+      {
+        "id": "C",
+        "text": "Hiệu suất kém"
+      },
+      {
+        "id": "D",
+        "text": "Hiệu suất cao"
+      }
+    ],
+    "image": null,
+    "type": "multiple-choice",
+    "correctAnswer": "C"
+  }
+],
 };
 
 export default LESSONS_DATA;

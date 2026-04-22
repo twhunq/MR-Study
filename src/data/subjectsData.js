@@ -24,10 +24,11 @@ const SUBJECTS_DATA = {
     icon: "📡",
     color: "emerald",
     description: "Kỹ thuật truyền dữ liệu và mạng máy tính",
-    lessons: ["ktsl_1", "ktsl_2"],
+    lessons: ["ktsl_1", "ktsl_2", "ktsl_3"],
     lessonNames: {
       "ktsl_1": "Tổng quan truyền số liệu & Mô hình OSI/TCP-IP",
       "ktsl_2": "Token Ring, IP và chia mạng cơ bản",
+      "ktsl_3": "Mã hóa và Đồng bộ dữ liệu",
     },
   },
 };
