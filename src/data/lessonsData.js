@@ -4043,6 +4043,1140 @@ const LESSONS_DATA = {
         ]
       }
     }
+  ],
+  "ktsl_1": [
+  {
+    "id": "ktsl1_q1",
+    "type": "multiple-choice",
+    "text": "Các thiết bị thông tin phải là một phần của hệ thống thông tin được cấu thành từ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Phần mềm và mạng máy tính"
+      },
+      {
+        "id": "B",
+        "text": "Phần cứng và mạng máy tính"
+      },
+      {
+        "id": "C",
+        "text": "Phần cứng và phần mềm"
+      },
+      {
+        "id": "D",
+        "text": "Dữ liệu và môi trường truyền"
+      }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ktsl1_q2",
+    "type": "multiple-choice",
+    "text": "Tầm tác động của hệ thống truyền thông dữ liệu phụ thuộc vào các đặc tính cơ bản nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cả 03 đáp án trên đều đúng"
+      },
+      {
+        "id": "B",
+        "text": "Đúng lúc"
+      },
+      {
+        "id": "C",
+        "text": "Chính xác"
+      },
+      {
+        "id": "D",
+        "text": "Sự phát xạ"
+      }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl1_q3",
+    "type": "multiple-choice",
+    "text": "Một hệ thống thông tin dữ liệu được cấu tạo từ bao nhiêu thành phần?",
+    "options": [
+      {
+        "id": "A",
+        "text": "6"
+      },
+      {
+        "id": "B",
+        "text": "5"
+      },
+      {
+        "id": "C",
+        "text": "4"
+      },
+      {
+        "id": "D",
+        "text": "3"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl1_q3_1",
+    "type": "multiple-choice",
+    "text": "Nghi thức trong hệ thống thông tin dữ liệu là?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Môi trường điều hành thông tin dữ liệu"
+      },
+      {
+        "id": "B",
+        "text": "Thiết bị nhận điều hành thông tin dữ liệu"
+      },
+      {
+        "id": "C",
+        "text": "Tập quy luật dùng điều hành thông tin dữ liệu"
+      },
+      {
+        "id": "D",
+        "text": "Thiết bị gửi điều hành thông tin dữ liệu"
+      }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ktsl1_q3_2",
+    "type": "multiple-choice",
+    "text": "Hình vẽ sau đây mô tả:",
+    "image": "/images/ktsl/ktsl_b1_img7.png",
+    "options": [
+      {
+        "id": "A",
+        "text": "Các thành phần của môi trường truyền dẫn"
+      },
+      {
+        "id": "B",
+        "text": "Các thành phần của hệ thống thông tin dữ liệu"
+      },
+      {
+        "id": "C",
+        "text": "Thông điệp khi truyền dữ liệu từ bộ gởi đến bộ nhận"
+      },
+      {
+        "id": "D",
+        "text": "Nghi thức lớp liên kết dữ liệu"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl1_q4",
+    "type": "multiple-choice",
+    "text": "IEEE có nhiều tiểu ban (Committee). Trong đó Tiểu ban 802 phụ trách về các chuẩn cho?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mạng xe cộ"
+      },
+      {
+        "id": "B",
+        "text": "Mạng diện rộng"
+      },
+      {
+        "id": "C",
+        "text": "Mạng cục bộ"
+      },
+      {
+        "id": "D",
+        "text": "Mạng di động"
+      }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ktsl1_q4_1",
+    "type": "multiple-choice",
+    "text": "802.4 là chuẩn cho mạng nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vệ tinh"
+      },
+      {
+        "id": "B",
+        "text": "Internet"
+      },
+      {
+        "id": "C",
+        "text": "Ethernet"
+      },
+      {
+        "id": "D",
+        "text": "Token Bus"
+      }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl1_q5",
+    "type": "multiple-choice",
+    "text": "802.3 là chuẩn cho mạng nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Di động"
+      },
+      {
+        "id": "B",
+        "text": "Ethernet"
+      },
+      {
+        "id": "C",
+        "text": "Internet"
+      },
+      {
+        "id": "D",
+        "text": "Viba"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl1_q6",
+    "type": "multiple-choice",
+    "text": "802.5 là chuẩn cho mạng nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Di động"
+      },
+      {
+        "id": "B",
+        "text": "Không dây"
+      },
+      {
+        "id": "C",
+        "text": "Token Ring"
+      },
+      {
+        "id": "D",
+        "text": "Hữu tuyến"
+      }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ktsl1_q6_1",
+    "type": "multiple-choice",
+    "text": "802.11 là chuẩn cho mạng nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mạng di động"
+      },
+      {
+        "id": "B",
+        "text": "Mạng thông tin vệ tinh"
+      },
+      {
+        "id": "C",
+        "text": "Mạng hữu tuyến"
+      },
+      {
+        "id": "D",
+        "text": "Mạng không dây"
+      }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl1_q6_2",
+    "type": "multiple-choice",
+    "text": "Các chuẩn do IEEE 802 định nghĩa thực hiện chức năng của tầng thứ mấy trong mô hình tham khảo OSI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "4"
+      },
+      {
+        "id": "C",
+        "text": "3"
+      },
+      {
+        "id": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl1_q7",
+    "type": "multiple-select",
+    "text": "IEEE 802.1 dành cho liên mạng của các mạng nào sau đây? (Chọn 2 đáp án)",
+    "options": [
+      {
+        "id": "A",
+        "text": "LANS"
+      },
+      {
+        "id": "B",
+        "text": "MANs"
+      },
+      {
+        "id": "C",
+        "text": "WANs"
+      },
+      {
+        "id": "D",
+        "text": "OBS"
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": "ktsl1_q8",
+    "type": "multiple-choice",
+    "text": "Hình vẽ sau mô tả vấn đề nào của PDU?",
+    "image": "/images/ktsl/ktsl_b1_img5.png",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nghi thức PDU"
+      },
+      {
+        "id": "B",
+        "text": "Môi trường PDU"
+      },
+      {
+        "id": "C",
+        "text": "Dạng thức PDU"
+      },
+      {
+        "id": "D",
+        "text": "Địa chỉ PDU"
+      }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ktsl1_q9",
+    "type": "multiple-choice",
+    "text": "Hình vẽ sau mô tả?",
+    "image": "/images/ktsl/ktsl_b1_img3.png",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trường cờ trong một PDU"
+      },
+      {
+        "id": "B",
+        "text": "Trường kiểm soát trong một PDU"
+      },
+      {
+        "id": "C",
+        "text": "Trường tín hiệu trong một PDU"
+      },
+      {
+        "id": "D",
+        "text": "Trường điều khiển trong một PDU"
+      }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl1_q9_1",
+    "type": "multiple-select",
+    "text": "Tầng ứng dụng trong mô hình TCP/IP bao gồm các chi tiết của các tầng nào trong mô hình OSI? (Chọn 3 đáp án)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tầng ứng dụng"
+      },
+      {
+        "id": "B",
+        "text": "Tầng điều khiển"
+      },
+      {
+        "id": "C",
+        "text": "Tầng phiên"
+      },
+      {
+        "id": "D",
+        "text": "Tầng trình bày"
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "ktsl1_q9_2",
+    "type": "multiple-choice",
+    "text": "Mô hình OSI gồm có bao nhiêu tầng?",
+    "image": "/images/ktsl/ktsl_b1_img1.png",
+    "options": [
+      {
+        "id": "A",
+        "text": "7"
+      },
+      {
+        "id": "B",
+        "text": "6"
+      },
+      {
+        "id": "C",
+        "text": "5"
+      },
+      {
+        "id": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl1_q10",
+    "type": "multiple-choice",
+    "text": "Trong mô hình OSI dưới đây tầng vận chuyển làm nhiệm vụ?",
+    "image": "/images/ktsl/ktsl_b1_img9.png",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cả 03 đáp án trên đều đúng"
+      },
+      {
+        "id": "B",
+        "text": "Thực hiện việc ghép kênh (multiplexing), cắt/hợp dữ liệu nếu cần"
+      },
+      {
+        "id": "C",
+        "text": "Thực hiện cả việc kiểm soát lỗi và kiểm soát luồng dữ liệu giữa 2 đầu nút"
+      },
+      {
+        "id": "D",
+        "text": "Thực hiện việc truyền dữ liệu giữa hai đầu mút (end - to end)"
+      }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl1_q10_1",
+    "type": "multiple-choice",
+    "text": "Trong mô hình OSI dưới đây tầng mạng làm nhiệm vụ?",
+    "image": "/images/ktsl/ktsl_b1_img8.png",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chuyển tiếp thông tin với công nghệ chuyển mạch thích hợp"
+      },
+      {
+        "id": "B",
+        "text": "Cả 03 đáp án trên đều đúng"
+      },
+      {
+        "id": "C",
+        "text": "Thực hiện kiểm soát luồng dữ liệu và cắt/hợp dữ liệu nếu cần"
+      },
+      {
+        "id": "D",
+        "text": "Thực hiện việc chọn đường"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl1_q11",
+    "type": "multiple-choice",
+    "text": "TCP/IP là bộ giao thức cho phép kết nối?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Các hệ thống mạng đô thị với nhau"
+      },
+      {
+        "id": "B",
+        "text": "Các hệ thống mạng diện rộng với nhau"
+      },
+      {
+        "id": "C",
+        "text": "Các hệ thống mạng cá nhân với nhau"
+      },
+      {
+        "id": "D",
+        "text": "Các hệ thống mạng không đồng nhất với nhau"
+      }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl1_q11_1",
+    "type": "multiple-choice",
+    "text": "Trong mô hình OSI dưới đây tầng liên kết dữ liệu làm nhiệm vụ?",
+    "image": "/images/ktsl/ktsl_b1_img8.png",
+    "options": [
+      {
+        "id": "A",
+        "text": "Kiểm soát lỗi và kiểm soát luồng dữ liệu cần thiết"
+      },
+      {
+        "id": "B",
+        "text": "Cung cấp phương tiện để truyền thông tin qua liên kết vật lý đảm bảo tin cậy"
+      },
+      {
+        "id": "C",
+        "text": "Cả 03 đáp án trên đều đúng"
+      },
+      {
+        "id": "D",
+        "text": "Gửi các khối dữ liệu (frame) với các cơ chế đồng bộ hóa"
+      }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ktsl1_q12",
+    "type": "multiple-choice",
+    "text": "Telnet trong tầng ứng dụng sử dụng trong việc?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Truy cập mạng từ xa"
+      },
+      {
+        "id": "B",
+        "text": "Dịch vụ thư tín điện tử"
+      },
+      {
+        "id": "C",
+        "text": "Dịch vụ truyền tệp"
+      },
+      {
+        "id": "D",
+        "text": "Dịch vụ truyền âm thanh"
+      }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl1_q12_1",
+    "type": "multiple-choice",
+    "text": "TCP/IP được xem là giản lược của mô hình tham chiếu OSI với bao nhiêu tầng?",
+    "options": [
+      {
+        "id": "A",
+        "text": "4"
+      },
+      {
+        "id": "B",
+        "text": "5"
+      },
+      {
+        "id": "C",
+        "text": "6"
+      },
+      {
+        "id": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl1_q13",
+    "type": "multiple-choice",
+    "text": "Tầng vận chuyển trong mô hình TCP/IP liên quan đến chủ đề về chất lượng dịch vụ như?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Độ tin cậy"
+      },
+      {
+        "id": "B",
+        "text": "Cả 03 đáp án trên đều đúng"
+      },
+      {
+        "id": "C",
+        "text": "Kiểm soát luồng"
+      },
+      {
+        "id": "D",
+        "text": "Kiểm soát lỗi"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl1_q13_1",
+    "type": "multiple-choice",
+    "text": "Cách bố trí vật lý của 10Base2 được trình bày trong hình sau đây bao gồm các đầu nối và cáp được sử dụng là:",
+    "image": "/images/ktsl/ktsl_b1_img6.png",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cáp đồng trục nhỏ"
+      },
+      {
+        "id": "B",
+        "text": "Cả 03 đáp án trên"
+      },
+      {
+        "id": "C",
+        "text": "Các đầu nối BNC-T"
+      },
+      {
+        "id": "D",
+        "text": "NICs"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl1_q13_2",
+    "type": "multiple-choice",
+    "text": "Mục tiêu chính của mạng truyền số liệu là gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Giảm chi phí phần cứng máy tính"
+      },
+      {
+        "id": "B",
+        "text": "Đảm bảo truyền tin nhanh, tin cậy và bảo mật giữa các thiết bị"
+      },
+      {
+        "id": "C",
+        "text": "Tăng tốc độ xử lý của CPU"
+      },
+      {
+        "id": "D",
+        "text": "Tăng khả năng lưu trữ dữ liệu trong hệ thống"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl1_q14",
+    "type": "multiple-choice",
+    "text": "Mô hình TCP/IP hướng đến tối đa độ linh hoạt tại tầng nào cho người phát triển phần mềm?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tầng ứng dụng"
+      },
+      {
+        "id": "B",
+        "text": "Tầng vận chuyển"
+      },
+      {
+        "id": "C",
+        "text": "Internet"
+      },
+      {
+        "id": "D",
+        "text": "Truy cập mạng"
+      }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl1_q14_1",
+    "type": "multiple-choice",
+    "text": "Hình vẽ sau đây mô tả các đoạn Ethernet loại nào?",
+    "image": "/images/ktsl/ktsl_b1_img4.png",
+    "options": [
+      {
+        "id": "A",
+        "text": "Các đoạn Ethernet 10Base5"
+      },
+      {
+        "id": "B",
+        "text": "Các đoạn Ethernet 10Base3"
+      },
+      {
+        "id": "C",
+        "text": "Các đoạn Ethernet 10Base4"
+      },
+      {
+        "id": "D",
+        "text": "Các đoạn Ethernet 10Base6"
+      }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl1_q14_2",
+    "type": "multiple-choice",
+    "text": "Thông tin dữ liệu trong truyền số liệu thường được biểu diễn dưới dạng:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dạng số nhị phân (bit)"
+      },
+      {
+        "id": "B",
+        "text": "Dạng hình ảnh"
+      },
+      {
+        "id": "C",
+        "text": "Dạng mã Morse"
+      },
+      {
+        "id": "D",
+        "text": "Dạng analog"
+      }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl1_q15",
+    "type": "multiple-choice",
+    "text": "Hình vẽ dưới đây mô tả khung MAC của chuẩn nào?",
+    "image": "/images/ktsl/ktsl_b1_img2.png",
+    "options": [
+      {
+        "id": "A",
+        "text": "Khung MAC của 802.5"
+      },
+      {
+        "id": "B",
+        "text": "Khung MAC của 802.4"
+      },
+      {
+        "id": "C",
+        "text": "Khung MAC của 802.11"
+      },
+      {
+        "id": "D",
+        "text": "Khung MAC của 802.3"
+      }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl1_q15_1",
+    "type": "multiple-choice",
+    "text": "Mục tiêu của dự án IEEE 802 là:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Xây dựng chuẩn cho các hệ thống mạng cục bộ (LAN) và mạng đô thị (MAN)"
+      },
+      {
+        "id": "B",
+        "text": "Phát triển giao thức truyền file FTP"
+      },
+      {
+        "id": "C",
+        "text": "Chuẩn hóa giao thức Internet"
+      },
+      {
+        "id": "D",
+        "text": "Thiết lập các tiêu chuẩn bảo mật mạng toàn cầu"
+      }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl1_q15_2",
+    "type": "multiple-choice",
+    "text": "Lớp vận chuyển (Transport) đảm nhiệm vai trò gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Định tuyến gói tin giữa các mạng"
+      },
+      {
+        "id": "B",
+        "text": "Giao tiếp trực tiếp với lớp vật lý"
+      },
+      {
+        "id": "C",
+        "text": "Chia nhỏ khung dữ liệu"
+      },
+      {
+        "id": "D",
+        "text": "Cung cấp truyền tin đầu cuối đáng tin cậy"
+      }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl1_q15_3",
+    "type": "multiple-select",
+    "text": "Lớp ứng dụng của mô hình TCP/IP bao gồm các giao thức nào? (Chọn 2 đáp án)",
+    "options": [
+      {
+        "id": "A",
+        "text": "IP"
+      },
+      {
+        "id": "B",
+        "text": "FTP"
+      },
+      {
+        "id": "C",
+        "text": "HTTP"
+      },
+      {
+        "id": "D",
+        "text": "ARP"
+      }
+    ],
+    "correctAnswers": [
+      "B",
+      "C"
+    ]
+  }
+],
+  "ktsl_2": [
+    {
+      "id": "ktsl2_q1",
+      "type": "multiple-choice",
+      "text": "Token Bus (IEEE 802.4) kết hợp các đặc tính của?",
+      "options": [
+        { "id": "A", "text": "Ethernet và MAN" },
+        { "id": "B", "text": "Ethernet và Token Ring" },
+        { "id": "C", "text": "Ethernet và phần cứng" },
+        { "id": "D", "text": "Ethernet và LAN" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl2_q1_1",
+      "type": "multiple-choice",
+      "text": "Token Ring dùng địa chỉ bao nhiêu byte trong NIC tương tự như địa chỉ của Ethernet?",
+      "options": [
+        { "id": "A", "text": "7 bytes" },
+        { "id": "B", "text": "5 bytes" },
+        { "id": "C", "text": "6 bytes" },
+        { "id": "D", "text": "8 bytes" }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl2_q2",
+      "type": "multiple-choice",
+      "text": "Hình vẽ dưới đây mô tả cấu trúc khung của?",
+      "image": "/images/ktsl_b2/ktsl_b2_img3.png",
+      "options": [
+        { "id": "A", "text": "Token Bus" },
+        { "id": "B", "text": "Token SD" },
+        { "id": "C", "text": "Token Data" },
+        { "id": "D", "text": "Token Ring" }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl2_q2_1",
+      "type": "multiple-choice",
+      "text": "Trường SD trong khung Data/Command có nhiệm vụ gì?",
+      "options": [
+        { "id": "A", "text": "Thông báo bộ thu biết có khung đến và giúp đồng bộ" },
+        { "id": "B", "text": "Thông báo trường địa chỉ biết có khung đến và giúp đồng bộ" },
+        { "id": "C", "text": "Thông báo bộ nhận biết có khung đến và giúp đồng bộ" },
+        { "id": "D", "text": "Thông báo trường điều khiển biết có khung đến và giúp đồng bộ" }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl2_q3",
+      "type": "multiple-choice",
+      "text": "Công nghệ mạng cục bộ Token Ring là giao thức truyền thông cho mạng nào?",
+      "options": [
+        { "id": "A", "text": "Mạng diện rộng" },
+        { "id": "B", "text": "Mạng cục bộ" },
+        { "id": "C", "text": "Mạng vệ tinh" },
+        { "id": "D", "text": "Mạng viba" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl2_q3_1",
+      "type": "multiple-choice",
+      "text": "Trường SD trong khung Data/Command chứa dữ liệu và có thể dài tối đa bao nhiêu byte?",
+      "options": [
+        { "id": "A", "text": "3500 byte" },
+        { "id": "B", "text": "4500 byte" },
+        { "id": "C", "text": "5500 byte" },
+        { "id": "D", "text": "6500 byte" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl2_q4",
+      "type": "multiple-choice",
+      "text": "Trong khung Data/Command, trường địa chỉ vật lý đích đến có độ dài từ bao nhiêu byte đến bao nhiêu byte?",
+      "image": "/images/ktsl_b2/ktsl_b2_img4.png",
+      "options": [
+        { "id": "A", "text": "3 byte đến 5 byte" },
+        { "id": "B", "text": "2 byte đến 4 byte" },
+        { "id": "C", "text": "1 byte đến 3 byte" },
+        { "id": "D", "text": "2 byte đến 6 byte" }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl2_q4_1",
+      "type": "multiple-choice",
+      "text": "Trường CRC trong khung Data/Command dùng để làm gì?",
+      "image": "/images/ktsl_b2/ktsl_b2_img4.png",
+      "options": [
+        { "id": "A", "text": "Phát hiện sai CRC-32" },
+        { "id": "B", "text": "Phát hiện sai CRC-02" },
+        { "id": "C", "text": "Phát hiện sai CRC-12" },
+        { "id": "D", "text": "Phát hiện sai CRC-22" }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl2_q4_2",
+      "type": "multiple-choice",
+      "text": "Trong mô hình MAU như hình dưới, một MAU có thể trợ giúp bao nhiêu trạm?",
+      "image": "/images/ktsl_b2/ktsl_b2_img2.png",
+      "options": [
+        { "id": "A", "text": "12" },
+        { "id": "B", "text": "8" },
+        { "id": "C", "text": "10" },
+        { "id": "D", "text": "6" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl2_q5",
+      "type": "multiple-choice",
+      "text": "Mục đích chính của IP là gì?",
+      "options": [
+        { "id": "A", "text": "Sử dụng trong các mạng thế hệ mới" },
+        { "id": "B", "text": "Sử dụng trong các mạng không có sự liên hệ với Internet" },
+        { "id": "C", "text": "Sử dụng trong các mạng di động nâng cao" },
+        { "id": "D", "text": "Cung cấp khả năng kết nối các mạng con thành liên mạng để truyền dữ liệu" }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl2_q5_1",
+      "type": "multiple-choice",
+      "text": "Vai trò của IP tương tự vai trò của giao thức tầng nào trong mô hình OSI?",
+      "options": [
+        { "id": "A", "text": "Tầng mạng" },
+        { "id": "B", "text": "Tầng vận chuyển" },
+        { "id": "C", "text": "Tầng trình bày" },
+        { "id": "D", "text": "Tầng phiên" }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl2_q6",
+      "type": "multiple-choice",
+      "text": "Đơn vị dữ liệu dùng trong giao thức IP là?",
+      "options": [
+        { "id": "A", "text": "mm" },
+        { "id": "B", "text": "cm" },
+        { "id": "C", "text": "m/s" },
+        { "id": "D", "text": "Datagram" }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl2_q6_1",
+      "type": "multiple-select",
+      "text": "Một Datagram trong giao thức IP được chia làm những phần nào sau đây? (Chọn 2 đáp án)",
+      "options": [
+        { "id": "A", "text": "Phần tiêu đề (Header)" },
+        { "id": "B", "text": "Phần chứa dữ liệu cần truyền (Data)" },
+        { "id": "C", "text": "Phần điều khiển (Control)" },
+        { "id": "D", "text": "Phần địa chỉ (Address)" }
+      ],
+      "correctAnswers": ["A", "B"]
+    },
+    {
+      "id": "ktsl2_q7",
+      "type": "multiple-choice",
+      "text": "Địa chỉ mạng IP 10.0.0.0/8 có bao nhiêu subnet con khi chia thành các subnet có subnet mask /16?",
+      "options": [
+        { "id": "A", "text": "256" },
+        { "id": "B", "text": "64" },
+        { "id": "C", "text": "128" },
+        { "id": "D", "text": "2" }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl2_q7_1",
+      "type": "multiple-choice",
+      "text": "Từ hình vẽ cấu trúc phân lớp địa chỉ IP dưới đây, địa chỉ lớp A có giá trị?",
+      "image": "/images/ktsl_b2/ktsl_b2_img1.png",
+      "options": [
+        { "id": "A", "text": "Nhỏ hơn 129" },
+        { "id": "B", "text": "Nhỏ hơn 130" },
+        { "id": "C", "text": "Nhỏ hơn 128" },
+        { "id": "D", "text": "Nhỏ hơn 135" }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl2_q8",
+      "type": "multiple-choice",
+      "text": "Địa chỉ IPv4 có bao nhiêu bit?",
+      "options": [
+        { "id": "A", "text": "128 bit" },
+        { "id": "B", "text": "32 bit" },
+        { "id": "C", "text": "16 bit" },
+        { "id": "D", "text": "64 bit" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl2_q8_1",
+      "type": "multiple-choice",
+      "text": "Từ hình vẽ cấu trúc phân lớp địa chỉ IP dưới đây, địa chỉ lớp C có giá trị?",
+      "image": "/images/ktsl_b2/ktsl_b2_img1.png",
+      "options": [
+        { "id": "A", "text": "Từ 195 đến 226" },
+        { "id": "B", "text": "Từ 192 đến 223" },
+        { "id": "C", "text": "Từ 193 đến 224" },
+        { "id": "D", "text": "Từ 194 đến 225" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl2_q9",
+      "type": "multiple-choice",
+      "text": "Địa chỉ IPv6 có bao nhiêu bit?",
+      "options": [
+        { "id": "A", "text": "128 bit" },
+        { "id": "B", "text": "32 bit" },
+        { "id": "C", "text": "256 bit" },
+        { "id": "D", "text": "64 bit" }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl2_q10",
+      "type": "multiple-choice",
+      "text": "Trong các địa chỉ IP dưới đây, địa chỉ nào thuộc lớp A?",
+      "options": [
+        { "id": "A", "text": "224.0.0.1" },
+        { "id": "B", "text": "192.168.1.1" },
+        { "id": "C", "text": "172.16.0.1" },
+        { "id": "D", "text": "10.0.0.1" }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl2_q11",
+      "type": "multiple-choice",
+      "text": "Trong các địa chỉ IP dưới đây, địa chỉ nào thuộc lớp C?",
+      "options": [
+        { "id": "A", "text": "224.0.0.1" },
+        { "id": "B", "text": "128.0.0.1" },
+        { "id": "C", "text": "192.168.0.1" },
+        { "id": "D", "text": "10.0.0.1" }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl2_q11_1",
+      "type": "multiple-choice",
+      "text": "Trong các địa chỉ IP dưới đây, địa chỉ nào thuộc lớp B?",
+      "options": [
+        { "id": "A", "text": "172.16.0.1" },
+        { "id": "B", "text": "192.168.1.1" },
+        { "id": "C", "text": "10.10.10.10" },
+        { "id": "D", "text": "224.0.0.1" }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl2_q12",
+      "type": "multiple-choice",
+      "text": "Địa chỉ IP nào sau đây là địa chỉ gateway mặc định trong mạng lớp C (subnet mask 255.255.255.0)?",
+      "options": [
+        { "id": "A", "text": "192.168.1.1" },
+        { "id": "B", "text": "192.168.1.255" },
+        { "id": "C", "text": "192.168.1.128" },
+        { "id": "D", "text": "192.168.1.0" }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ktsl2_q13",
+      "type": "multiple-choice",
+      "text": "Địa chỉ IP 192.168.1.0/24 có thể chia thành bao nhiêu mạng con nếu chia theo mặt nạ 255.255.255.192?",
+      "options": [
+        { "id": "A", "text": "4 mạng con, mỗi mạng có 30 địa chỉ" },
+        { "id": "B", "text": "2 mạng con, mỗi mạng có 62 địa chỉ" },
+        { "id": "C", "text": "4 mạng con, mỗi mạng có 62 địa chỉ" },
+        { "id": "D", "text": "8 mạng con, mỗi mạng có 30 địa chỉ" }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "ktsl2_q14",
+      "type": "multiple-choice",
+      "text": "Mặt nạ mạng 255.255.255.248 có thể cung cấp bao nhiêu địa chỉ IP khả dụng cho các thiết bị trong mỗi mạng con?",
+      "options": [
+        { "id": "A", "text": "62 địa chỉ IP khả dụng" },
+        { "id": "B", "text": "6 địa chỉ IP khả dụng" },
+        { "id": "C", "text": "14 địa chỉ IP khả dụng" },
+        { "id": "D", "text": "30 địa chỉ IP khả dụng" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl2_q14_1",
+      "type": "multiple-choice",
+      "text": "Địa chỉ IP 255.255.255.255 được sử dụng làm địa chỉ nào?",
+      "options": [
+        { "id": "A", "text": "Địa chỉ riêng tư" },
+        { "id": "B", "text": "Địa chỉ gateway" },
+        { "id": "C", "text": "Địa chỉ loopback" },
+        { "id": "D", "text": "Địa chỉ broadcast" }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl2_q14_2",
+      "type": "multiple-choice",
+      "text": "Địa chỉ IP nào sau đây có thể được gán cho một host trong mạng 192.168.1.0/24?",
+      "options": [
+        { "id": "A", "text": "192.168.0.100" },
+        { "id": "B", "text": "192.168.1.0" },
+        { "id": "C", "text": "192.168.1.255" },
+        { "id": "D", "text": "192.168.1.100" }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "ktsl2_q15",
+      "type": "multiple-choice",
+      "text": "Trong mạng Token Ring, việc truyền dữ liệu dựa trên:",
+      "options": [
+        { "id": "A", "text": "Truyền đồng thời giữa tất cả các nút" },
+        { "id": "B", "text": "Sở hữu token và truyền tuần tự theo vòng" },
+        { "id": "C", "text": "Truyền không cần token" },
+        { "id": "D", "text": "Định tuyến gói tin thông minh" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ktsl2_q15_1",
+      "type": "multiple-select",
+      "text": "Modem có vai trò gì? (Chọn 2 đáp án)",
+      "options": [
+        { "id": "A", "text": "Biến đổi tín hiệu số - analog để truyền trên đường dây điện thoại" },
+        { "id": "B", "text": "Định tuyến dữ liệu trong mạng LAN" },
+        { "id": "C", "text": "Kết nối trực tiếp giữa hai máy tính mà không cần mạng" },
+        { "id": "D", "text": "Chuyển đổi tín hiệu analog - số tại đầu nhận" }
+      ],
+      "correctAnswers": ["A", "D"]
+    }
   ]
 };
 

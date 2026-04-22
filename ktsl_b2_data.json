@@ -1,0 +1,344 @@
+[
+  {
+    "id": "ktsl2_q1",
+    "type": "multiple-choice",
+    "text": "Token Bus (IEEE 802.4) kết hợp các đặc tính của?",
+    "options": [
+      { "id": "A", "text": "Ethernet và MAN" },
+      { "id": "B", "text": "Ethernet và Token Ring" },
+      { "id": "C", "text": "Ethernet và phần cứng" },
+      { "id": "D", "text": "Ethernet và LAN" }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl2_q1_1",
+    "type": "multiple-choice",
+    "text": "Token Ring dùng địa chỉ bao nhiêu byte trong NIC tương tự như địa chỉ của Ethernet?",
+    "options": [
+      { "id": "A", "text": "7 bytes" },
+      { "id": "B", "text": "5 bytes" },
+      { "id": "C", "text": "6 bytes" },
+      { "id": "D", "text": "8 bytes" }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ktsl2_q2",
+    "type": "multiple-choice",
+    "text": "Hình vẽ dưới đây mô tả cấu trúc khung của?",
+    "image": "/images/ktsl_b2/ktsl_b2_img3.png",
+    "options": [
+      { "id": "A", "text": "Token Bus" },
+      { "id": "B", "text": "Token SD" },
+      { "id": "C", "text": "Token Data" },
+      { "id": "D", "text": "Token Ring" }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl2_q2_1",
+    "type": "multiple-choice",
+    "text": "Trường SD trong khung Data/Command có nhiệm vụ gì?",
+    "options": [
+      { "id": "A", "text": "Thông báo bộ thu biết có khung đến và giúp đồng bộ" },
+      { "id": "B", "text": "Thông báo trường địa chỉ biết có khung đến và giúp đồng bộ" },
+      { "id": "C", "text": "Thông báo bộ nhận biết có khung đến và giúp đồng bộ" },
+      { "id": "D", "text": "Thông báo trường điều khiển biết có khung đến và giúp đồng bộ" }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl2_q3",
+    "type": "multiple-choice",
+    "text": "Công nghệ mạng cục bộ Token Ring là giao thức truyền thông cho mạng nào?",
+    "options": [
+      { "id": "A", "text": "Mạng diện rộng" },
+      { "id": "B", "text": "Mạng cục bộ" },
+      { "id": "C", "text": "Mạng vệ tinh" },
+      { "id": "D", "text": "Mạng viba" }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl2_q3_1",
+    "type": "multiple-choice",
+    "text": "Trường Data trong khung Data/Command chứa dữ liệu và có thể dài tối đa bao nhiêu byte?",
+    "options": [
+      { "id": "A", "text": "3500 byte" },
+      { "id": "B", "text": "4500 byte" },
+      { "id": "C", "text": "5500 byte" },
+      { "id": "D", "text": "6500 byte" }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl2_q4",
+    "type": "multiple-choice",
+    "text": "Trong khung Data/Command, trường địa chỉ vật lý đích đến có độ dài từ bao nhiêu byte đến bao nhiêu byte?",
+    "image": "/images/ktsl_b2/ktsl_b2_img4.png",
+    "options": [
+      { "id": "A", "text": "3 byte đến 5 byte" },
+      { "id": "B", "text": "2 byte đến 4 byte" },
+      { "id": "C", "text": "1 byte đến 3 byte" },
+      { "id": "D", "text": "2 byte đến 6 byte" }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl2_q4_1",
+    "type": "multiple-choice",
+    "text": "Trường CRC trong khung Data/Command dùng để làm gì?",
+    "image": "/images/ktsl_b2/ktsl_b2_img4.png",
+    "options": [
+      { "id": "A", "text": "Phát hiện sai CRC-32" },
+      { "id": "B", "text": "Phát hiện sai CRC-02" },
+      { "id": "C", "text": "Phát hiện sai CRC-12" },
+      { "id": "D", "text": "Phát hiện sai CRC-22" }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl2_q4_2",
+    "type": "multiple-choice",
+    "text": "Trong mô hình MAU như hình dưới, một MAU có thể trợ giúp bao nhiêu trạm?",
+    "image": "/images/ktsl_b2/ktsl_b2_img2.png",
+    "options": [
+      { "id": "A", "text": "12" },
+      { "id": "B", "text": "8" },
+      { "id": "C", "text": "10" },
+      { "id": "D", "text": "6" }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl2_q5",
+    "type": "multiple-choice",
+    "text": "Mục đích chính của IP là gì?",
+    "options": [
+      { "id": "A", "text": "Sử dụng trong các mạng thế hệ mới" },
+      { "id": "B", "text": "Sử dụng trong các mạng không có sự liên hệ với Internet" },
+      { "id": "C", "text": "Sử dụng trong các mạng di động nâng cao" },
+      { "id": "D", "text": "Cung cấp khả năng kết nối các mạng con thành liên mạng để truyền dữ liệu" }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl2_q5_1",
+    "type": "multiple-choice",
+    "text": "Vai trò của IP tương tự vai trò của giao thức tầng nào trong mô hình OSI?",
+    "options": [
+      { "id": "A", "text": "Tầng mạng" },
+      { "id": "B", "text": "Tầng vận chuyển" },
+      { "id": "C", "text": "Tầng trình bày" },
+      { "id": "D", "text": "Tầng phiên" }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl2_q6",
+    "type": "multiple-choice",
+    "text": "Đơn vị dữ liệu dùng trong giao thức IP là?",
+    "options": [
+      { "id": "A", "text": "mm" },
+      { "id": "B", "text": "cm" },
+      { "id": "C", "text": "m/s" },
+      { "id": "D", "text": "Datagram" }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl2_q6_1",
+    "type": "multiple-select",
+    "text": "Một Datagram trong giao thức IP được chia làm những phần nào sau đây? (Chọn 2 đáp án)",
+    "options": [
+      { "id": "A", "text": "Phần tiêu đề (Header)" },
+      { "id": "B", "text": "Phần chứa dữ liệu cần truyền (Data)" },
+      { "id": "C", "text": "Phần điều khiển (Control)" },
+      { "id": "D", "text": "Phần địa chỉ (Address)" }
+    ],
+    "correctAnswers": ["A", "B"]
+  },
+  {
+    "id": "ktsl2_q7",
+    "type": "multiple-choice",
+    "text": "Địa chỉ mạng IP 10.0.0.0/8 có bao nhiêu subnet con khi chia thành các subnet có subnet mask /16?",
+    "options": [
+      { "id": "A", "text": "256" },
+      { "id": "B", "text": "64" },
+      { "id": "C", "text": "128" },
+      { "id": "D", "text": "2" }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl2_q7_1",
+    "type": "multiple-choice",
+    "text": "Từ hình vẽ cấu trúc phân lớp địa chỉ IP dưới đây, địa chỉ lớp A có giá trị?",
+    "image": "/images/ktsl_b2/ktsl_b2_img1.png",
+    "options": [
+      { "id": "A", "text": "Nhỏ hơn 129" },
+      { "id": "B", "text": "Nhỏ hơn 130" },
+      { "id": "C", "text": "Nhỏ hơn 128" },
+      { "id": "D", "text": "Nhỏ hơn 135" }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ktsl2_q8",
+    "type": "multiple-choice",
+    "text": "Địa chỉ IPv4 có bao nhiêu bit?",
+    "options": [
+      { "id": "A", "text": "128 bit" },
+      { "id": "B", "text": "32 bit" },
+      { "id": "C", "text": "16 bit" },
+      { "id": "D", "text": "64 bit" }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl2_q8_1",
+    "type": "multiple-choice",
+    "text": "Từ hình vẽ cấu trúc phân lớp địa chỉ IP dưới đây, địa chỉ lớp C có giá trị?",
+    "image": "/images/ktsl_b2/ktsl_b2_img1.png",
+    "options": [
+      { "id": "A", "text": "Từ 195 đến 226" },
+      { "id": "B", "text": "Từ 192 đến 223" },
+      { "id": "C", "text": "Từ 193 đến 224" },
+      { "id": "D", "text": "Từ 194 đến 225" }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl2_q9",
+    "type": "multiple-choice",
+    "text": "Địa chỉ IPv6 có bao nhiêu bit?",
+    "options": [
+      { "id": "A", "text": "128 bit" },
+      { "id": "B", "text": "32 bit" },
+      { "id": "C", "text": "256 bit" },
+      { "id": "D", "text": "64 bit" }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl2_q10",
+    "type": "multiple-choice",
+    "text": "Trong các địa chỉ IP dưới đây, địa chỉ nào thuộc lớp A?",
+    "options": [
+      { "id": "A", "text": "224.0.0.1" },
+      { "id": "B", "text": "192.168.1.1" },
+      { "id": "C", "text": "172.16.0.1" },
+      { "id": "D", "text": "10.0.0.1" }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl2_q11",
+    "type": "multiple-choice",
+    "text": "Trong các địa chỉ IP dưới đây, địa chỉ nào thuộc lớp C?",
+    "options": [
+      { "id": "A", "text": "224.0.0.1" },
+      { "id": "B", "text": "128.0.0.1" },
+      { "id": "C", "text": "192.168.0.1" },
+      { "id": "D", "text": "10.0.0.1" }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ktsl2_q11_1",
+    "type": "multiple-choice",
+    "text": "Trong các địa chỉ IP dưới đây, địa chỉ nào thuộc lớp B?",
+    "options": [
+      { "id": "A", "text": "172.16.0.1" },
+      { "id": "B", "text": "192.168.1.1" },
+      { "id": "C", "text": "10.10.10.10" },
+      { "id": "D", "text": "224.0.0.1" }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl2_q12",
+    "type": "multiple-choice",
+    "text": "Địa chỉ IP nào sau đây là địa chỉ gateway mặc định trong mạng lớp C (subnet mask 255.255.255.0)?",
+    "options": [
+      { "id": "A", "text": "192.168.1.1" },
+      { "id": "B", "text": "192.168.1.255" },
+      { "id": "C", "text": "192.168.1.128" },
+      { "id": "D", "text": "192.168.1.0" }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ktsl2_q13",
+    "type": "multiple-choice",
+    "text": "Địa chỉ IP 192.168.1.0/24 có thể chia thành bao nhiêu mạng con nếu chia theo mặt nạ 255.255.255.192?",
+    "options": [
+      { "id": "A", "text": "4 mạng con, mỗi mạng có 30 địa chỉ" },
+      { "id": "B", "text": "2 mạng con, mỗi mạng có 62 địa chỉ" },
+      { "id": "C", "text": "4 mạng con, mỗi mạng có 62 địa chỉ" },
+      { "id": "D", "text": "8 mạng con, mỗi mạng có 30 địa chỉ" }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ktsl2_q14",
+    "type": "multiple-choice",
+    "text": "Mặt nạ mạng 255.255.255.248 có thể cung cấp bao nhiêu địa chỉ IP khả dụng cho các thiết bị trong mỗi mạng con?",
+    "options": [
+      { "id": "A", "text": "62 địa chỉ IP khả dụng" },
+      { "id": "B", "text": "6 địa chỉ IP khả dụng" },
+      { "id": "C", "text": "14 địa chỉ IP khả dụng" },
+      { "id": "D", "text": "30 địa chỉ IP khả dụng" }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl2_q14_1",
+    "type": "multiple-choice",
+    "text": "Địa chỉ IP 255.255.255.255 được sử dụng làm địa chỉ nào?",
+    "options": [
+      { "id": "A", "text": "Địa chỉ riêng tư" },
+      { "id": "B", "text": "Địa chỉ gateway" },
+      { "id": "C", "text": "Địa chỉ loopback" },
+      { "id": "D", "text": "Địa chỉ broadcast" }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl2_q14_2",
+    "type": "multiple-choice",
+    "text": "Địa chỉ IP nào sau đây có thể được gán cho một host trong mạng 192.168.1.0/24?",
+    "options": [
+      { "id": "A", "text": "192.168.0.100" },
+      { "id": "B", "text": "192.168.1.0" },
+      { "id": "C", "text": "192.168.1.255" },
+      { "id": "D", "text": "192.168.1.100" }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "ktsl2_q15",
+    "type": "multiple-choice",
+    "text": "Trong mạng Token Ring, việc truyền dữ liệu dựa trên:",
+    "options": [
+      { "id": "A", "text": "Truyền đồng thời giữa tất cả các nút" },
+      { "id": "B", "text": "Sở hữu token và truyền tuần tự theo vòng" },
+      { "id": "C", "text": "Truyền không cần token" },
+      { "id": "D", "text": "Định tuyến gói tin thông minh" }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ktsl2_q15_1",
+    "type": "multiple-select",
+    "text": "Modem có vai trò gì? (Chọn 2 đáp án)",
+    "options": [
+      { "id": "A", "text": "Biến đổi tín hiệu số - analog để truyền trên đường dây điện thoại" },
+      { "id": "B", "text": "Định tuyến dữ liệu trong mạng LAN" },
+      { "id": "C", "text": "Kết nối trực tiếp giữa hai máy tính mà không cần mạng" },
+      { "id": "D", "text": "Chuyển đổi tín hiệu analog - số tại đầu nhận" }
+    ],
+    "correctAnswers": ["A", "D"]
+  }
+]

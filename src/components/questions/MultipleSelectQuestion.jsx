@@ -6,6 +6,11 @@ const MultipleSelectQuestion = ({ data, index, selectedValues = [], onChange, re
   <div className="mb-8 bg-white p-6 rounded-lg shadow-sm border border-gray-100">
     <h3 className="font-bold text-gray-800 mb-2 text-lg">Câu {index + 1}:</h3>
     <p className="text-gray-800 font-medium text-lg mb-2">{data.text}</p>
+    {data.image && (
+      <div className="my-4 flex justify-center">
+        <img src={data.image} alt="Hình minh họa" className="max-w-full h-auto rounded-lg border border-gray-200 shadow-sm" style={{ maxHeight: '400px' }} />
+      </div>
+    )}
     <Divider />
     <div className="flex flex-col space-y-1 mt-4">
       {data.options.map((opt, optIndex) => {

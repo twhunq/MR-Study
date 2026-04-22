@@ -1,13 +1,55 @@
 import React, { useState } from 'react';
 import { prepareQuizData } from './utils/shuffle';
 import LESSONS_DATA from './data/lessonsData';
+import SUBJECTS_DATA from './data/subjectsData';
 import MultipleChoiceQuestion from './components/questions/MultipleChoiceQuestion';
 import MultipleSelectQuestion from './components/questions/MultipleSelectQuestion';
 import TrueFalseGroupQuestion from './components/questions/TrueFalseGroupQuestion';
 import DragDropFillQuestion from './components/questions/DragDropFillQuestion';
 import DragDropCategoryQuestion from './components/questions/DragDropCategoryQuestion';
 
+// Color map for Tailwind classes (dynamic class names need to be listed explicitly)
+const COLOR_CLASSES = {
+  blue: {
+    bg: 'bg-blue-50', bgDark: 'bg-blue-600', bgDarkHover: 'hover:bg-blue-700',
+    text: 'text-blue-600', textDark: 'text-blue-800',
+    border: 'border-blue-100', borderActive: 'border-blue-200',
+    shadow: 'hover:shadow-blue-100',
+    iconBg: 'bg-gradient-to-br from-blue-500 to-blue-700',
+    cardBorder: 'border-l-blue-500',
+    badge: 'bg-blue-100 text-blue-700',
+  },
+  emerald: {
+    bg: 'bg-emerald-50', bgDark: 'bg-emerald-600', bgDarkHover: 'hover:bg-emerald-700',
+    text: 'text-emerald-600', textDark: 'text-emerald-800',
+    border: 'border-emerald-100', borderActive: 'border-emerald-200',
+    shadow: 'hover:shadow-emerald-100',
+    iconBg: 'bg-gradient-to-br from-emerald-500 to-emerald-700',
+    cardBorder: 'border-l-emerald-500',
+    badge: 'bg-emerald-100 text-emerald-700',
+  },
+  violet: {
+    bg: 'bg-violet-50', bgDark: 'bg-violet-600', bgDarkHover: 'hover:bg-violet-700',
+    text: 'text-violet-600', textDark: 'text-violet-800',
+    border: 'border-violet-100', borderActive: 'border-violet-200',
+    shadow: 'hover:shadow-violet-100',
+    iconBg: 'bg-gradient-to-br from-violet-500 to-violet-700',
+    cardBorder: 'border-l-violet-500',
+    badge: 'bg-violet-100 text-violet-700',
+  },
+  amber: {
+    bg: 'bg-amber-50', bgDark: 'bg-amber-600', bgDarkHover: 'hover:bg-amber-700',
+    text: 'text-amber-600', textDark: 'text-amber-800',
+    border: 'border-amber-100', borderActive: 'border-amber-200',
+    shadow: 'hover:shadow-amber-100',
+    iconBg: 'bg-gradient-to-br from-amber-500 to-amber-700',
+    cardBorder: 'border-l-amber-500',
+    badge: 'bg-amber-100 text-amber-700',
+  },
+};
+
 export default function App() {
+  const [currentSubject, setCurrentSubject] = useState(null);
   const [currentLesson, setCurrentLesson] = useState(null);
   const [quizData, setQuizData] = useState([]);
 
@@ -45,6 +87,15 @@ export default function App() {
 
   const goHome = () => {
     setCurrentLesson(null);
+    setCurrentSubject(null);
+  };
+
+  const goToSubjectLessons = (subjectId) => {
+    setCurrentSubject(subjectId);
+  };
+
+  const goBackToSubjects = () => {
+    setCurrentSubject(null);
   };
 
   const handleOptionChange = (questionId, optionId) => {
@@ -114,33 +165,173 @@ export default function App() {
   };
 
   // ----------------------------------------------------
-  // GIAO DIỆN TRANG CHỦ (Hiển thị 6 bài)
+  // TRANG CHỦ - CHỌN MÔN HỌC
   // ----------------------------------------------------
-  if (currentLesson === null) {
+  if (currentLesson === null && currentSubject === null) {
     return (
-      <div className="min-h-screen bg-[#f4f6f8] py-12 px-4 font-sans text-gray-800 flex items-center justify-center">
-        <div className="max-w-4xl mx-auto w-full">
-          <div className="text-center mb-10">
-            <h1 className="text-4xl font-extrabold text-blue-800 mb-3 tracking-tight">Hệ Thống Kiểm Tra Trực Tuyến</h1>
-            <p className="text-gray-500 text-lg">Vui lòng chọn bài học bên dưới để bắt đầu ôn tập</p>
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-slate-100 py-12 px-4 font-sans text-gray-800">
+        <div className="max-w-5xl mx-auto w-full">
+          {/* Header */}
+          <div className="text-center mb-14">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-700 text-white text-2xl mb-5 shadow-lg shadow-blue-200/50">
+              📚
+            </div>
+            <h1 className="text-4xl font-extrabold bg-gradient-to-r from-blue-700 via-indigo-600 to-blue-800 bg-clip-text text-transparent mb-3 tracking-tight">
+              MR Study
+            </h1>
+            <p className="text-gray-500 text-lg max-w-md mx-auto">
+              Hệ thống ôn tập trực tuyến — Chọn môn học để bắt đầu
+            </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[1, 2, 3, 4, 5, 6].map(lessonId => {
-              const isAvailable = !!LESSONS_DATA[lessonId];
+          {/* Subject Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            {Object.values(SUBJECTS_DATA).map(subject => {
+              const colors = COLOR_CLASSES[subject.color] || COLOR_CLASSES.blue;
+              const hasLessons = subject.lessons.length > 0;
+              const lessonCount = subject.lessons.length;
+              const availableCount = subject.lessons.filter(id => !!LESSONS_DATA[id]).length;
+
               return (
-                <div key={lessonId} className={`bg-white rounded-2xl shadow-sm border p-6 flex flex-col transition-all duration-300 ${isAvailable ? 'border-blue-100 hover:shadow-lg hover:-translate-y-1' : 'border-gray-100 opacity-70'}`}>
-                  <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-5 text-xl font-bold shadow-sm ${isAvailable ? 'bg-blue-50 text-blue-600 border border-blue-100' : 'bg-gray-50 text-gray-400 border border-gray-100'}`}>
+                <button
+                  key={subject.id}
+                  onClick={() => hasLessons && goToSubjectLessons(subject.id)}
+                  disabled={!hasLessons}
+                  className={`group relative bg-white rounded-3xl border-2 p-8 text-left transition-all duration-300 
+                    ${hasLessons 
+                      ? `${colors.border} hover:shadow-xl ${colors.shadow} hover:-translate-y-1 cursor-pointer` 
+                      : 'border-gray-100 opacity-60 cursor-not-allowed'
+                    }`}
+                >
+                  {/* Icon */}
+                  <div className={`w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-md
+                    ${hasLessons ? `${colors.iconBg} text-white` : 'bg-gray-200 text-gray-400'}`}
+                  >
+                    {subject.icon}
+                  </div>
+
+                  {/* Title + Description */}
+                  <h2 className={`text-2xl font-bold mb-2 ${hasLessons ? 'text-gray-800' : 'text-gray-400'}`}>
+                    {subject.name}
+                  </h2>
+                  <p className={`text-sm mb-6 ${hasLessons ? 'text-gray-500' : 'text-gray-400'}`}>
+                    {subject.description}
+                  </p>
+
+                  {/* Stats */}
+                  <div className="flex items-center gap-3">
+                    <span className={`inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full 
+                      ${hasLessons ? colors.badge : 'bg-gray-100 text-gray-400'}`}
+                    >
+                      {hasLessons ? `${availableCount} bài học` : 'Sắp ra mắt'}
+                    </span>
+                    {hasLessons && (
+                      <span className="text-xs text-gray-400">
+                        {availableCount * 25}+ câu hỏi
+                      </span>
+                    )}
+                  </div>
+
+                  {/* Arrow indicator */}
+                  {hasLessons && (
+                    <div className={`absolute top-8 right-8 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 
+                      ${colors.bg} group-hover:scale-110`}
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={colors.text}>
+                        <path d="m9 18 6-6-6-6"/>
+                      </svg>
+                    </div>
+                  )}
+
+                  {/* "Coming soon" badge */}
+                  {!hasLessons && (
+                    <div className="absolute top-6 right-6 px-3 py-1 bg-gray-100 text-gray-400 text-xs font-bold rounded-full">
+                      Chưa có dữ liệu
+                    </div>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ----------------------------------------------------
+  // TRANG CHỌN BÀI HỌC TRONG MÔN
+  // ----------------------------------------------------
+  if (currentLesson === null && currentSubject !== null) {
+    const subject = SUBJECTS_DATA[currentSubject];
+    const colors = COLOR_CLASSES[subject.color] || COLOR_CLASSES.blue;
+
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-slate-100 py-10 px-4 font-sans text-gray-800">
+        <div className="max-w-4xl mx-auto w-full">
+          {/* Back + Header */}
+          <div className="mb-10">
+            <button 
+              onClick={goBackToSubjects} 
+              className="inline-flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-gray-800 mb-6 transition-colors group"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="group-hover:-translate-x-0.5 transition-transform">
+                <path d="m15 18-6-6 6-6"/>
+              </svg>
+              Tất cả môn học
+            </button>
+
+            <div className="flex items-center gap-5">
+              <div className={`w-14 h-14 rounded-2xl flex items-center justify-center text-2xl shadow-md ${colors.iconBg} text-white`}>
+                {subject.icon}
+              </div>
+              <div>
+                <h1 className={`text-3xl font-extrabold ${colors.textDark} tracking-tight`}>{subject.name}</h1>
+                <p className="text-gray-500 mt-1">{subject.description}</p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Lessons Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {subject.lessons.map(lessonId => {
+              const isAvailable = !!LESSONS_DATA[lessonId];
+              const lessonName = subject.lessonNames[lessonId];
+              const questionCount = isAvailable ? LESSONS_DATA[lessonId].length : 0;
+
+              return (
+                <div 
+                  key={lessonId} 
+                  className={`bg-white rounded-2xl shadow-sm border-l-4 border p-6 flex flex-col transition-all duration-300 
+                    ${isAvailable 
+                      ? `${colors.cardBorder} border-gray-100 hover:shadow-lg hover:-translate-y-1` 
+                      : 'border-l-gray-200 border-gray-100 opacity-70'
+                    }`}
+                >
+                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 text-lg font-bold shadow-sm 
+                    ${isAvailable 
+                      ? `${colors.bg} ${colors.text} border ${colors.border}` 
+                      : 'bg-gray-50 text-gray-400 border border-gray-100'
+                    }`}
+                  >
                     {lessonId}
                   </div>
-                  <h3 className={`text-xl font-bold mb-2 ${isAvailable ? 'text-gray-800' : 'text-gray-400'}`}>Bài {lessonId}</h3>
-                  <p className="text-gray-500 text-sm mb-8 flex-1">
-                    {isAvailable ? `Bộ câu hỏi ôn tập tổng hợp cho nội dung Bài ${lessonId}.` : 'Nội dung đang được cập nhật.'}
+                  <h3 className={`text-lg font-bold mb-1.5 ${isAvailable ? 'text-gray-800' : 'text-gray-400'}`}>
+                    Bài {lessonId}
+                  </h3>
+                  <p className="text-gray-500 text-xs mb-5 flex-1 leading-relaxed">
+                    {lessonName || (isAvailable ? `Bộ câu hỏi ôn tập tổng hợp cho Bài ${lessonId}.` : 'Nội dung đang được cập nhật.')}
                   </p>
+                  {isAvailable && (
+                    <p className="text-xs text-gray-400 mb-4 font-medium">{questionCount} câu hỏi</p>
+                  )}
                   <button 
                     onClick={() => isAvailable && startLesson(lessonId)}
                     disabled={!isAvailable}
-                    className={`w-full py-3.5 rounded-xl font-bold transition-colors ${isAvailable ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-md hover:shadow-blue-200' : 'bg-gray-100 text-gray-400 cursor-not-allowed'}`}
+                    className={`w-full py-3 rounded-xl font-bold text-sm transition-all duration-200 
+                      ${isAvailable 
+                        ? `${colors.bgDark} ${colors.bgDarkHover} text-white shadow-md` 
+                        : 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                      }`}
                   >
                     {isAvailable ? 'Bắt Đầu Làm Bài' : 'Chưa Mở'}
                   </button>
