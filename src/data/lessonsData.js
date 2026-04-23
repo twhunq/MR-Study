@@ -7330,12 +7330,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl6_q1",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Với nguyên lý kiểm soát lỗi RQ liên tục sẽ cải thiện hệ số sử dụng đường truyền rất nhiều nhưng bù lại sẽ tốn nhiều bộ nhớ cho vùng nào?",
       "options": [
-        {
-          "id": "A",
-          "text": "Với nguyên lý kiểm soát lỗi RQ liên tục sẽ cải thiện hệ số sử dụng đường truyền rất nhiều nhưng bù lại sẽ tốn nhiều bộ nhớ cho vùng nào?"
-        },
         {
           "id": "A",
           "text": "Vùng đệm"
@@ -7359,12 +7355,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl6_q2",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Nghi thức RQ liên tục có đặc điểm gì nổi bật?",
       "options": [
-        {
-          "id": "A",
-          "text": "Nghi thức RQ liên tục có đặc điểm gì nổi bật?"
-        },
         {
           "id": "A",
           "text": "Chỉ có phản hồi liên tục mà không có yêu cầu"
@@ -7388,12 +7380,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl6_q3",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Để duy trì nghi thức Request/Response liên tục, yêu cầu phản hồi phải như thế nào?",
       "options": [
-        {
-          "id": "A",
-          "text": "Để duy trì nghi thức Request/Response liên tục, yêu cầu phản hồi phải như thế nào?"
-        },
         {
           "id": "A",
           "text": "Phản hồi phải được gửi bất cứ lúc nào trong vòng 1 giây"
@@ -7442,12 +7430,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl6_q5",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Mỗi khung HDLC có thể chứa bao nhiêu trường?",
       "options": [
-        {
-          "id": "A",
-          "text": "Mỗi khung HDLC có thể chứa bao nhiêu trường?"
-        },
         {
           "id": "A",
           "text": "6"
@@ -7471,12 +7455,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl6_q6",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Trường điều khiển trong HDLC có thể dùng bao nhiêu byte cho quản lý luồng?",
       "options": [
-        {
-          "id": "A",
-          "text": "Trường điều khiển trong HDLC có thể dùng bao nhiêu byte cho quản lý luồng?"
-        },
         {
           "id": "A",
           "text": "Một hoặc hai byte"
@@ -7525,12 +7505,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl6_q8",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Để kiểm soát luồng các khung dọc trên đường truyền, một cơ chế được dùng là?",
       "options": [
-        {
-          "id": "A",
-          "text": "Để kiểm soát luồng các khung dọc trên đường truyền, một cơ chế được dùng là?"
-        },
         {
           "id": "A",
           "text": "Cửa sổ trượt"
@@ -7554,12 +7530,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl6_q9",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Theo nguyên lý đánh số. Với go-back-n một cửa sổ gửi là K, thì việc đánh số ít nhất đến?",
       "options": [
-        {
-          "id": "A",
-          "text": "Theo nguyên lý đánh số. Với go-back-n một cửa sổ gửi là K, thì việc đánh số ít nhất đến?"
-        },
         {
           "id": "A",
           "text": "K + 3"
@@ -7580,180 +7552,7 @@ const LESSONS_DATA = {
       "image": null,
       "correctAnswer": "C"
     },
-    {
-      "id": "ktsl6_q10",
-      "type": "multiple-choice",
-      "text": "",
-      "options": [
-        {
-          "id": "A",
-          "text": "Một chuỗi các khung có chiều dài 1000 bits được phát dùng nghi thức RQ liên tục. Vận tốc truyền sóng là 2.108 m/s và tỷ lệ bit lỗi đường truyền thấp có thể bỏ qua. Đường truyền dài 1 km, tốc độ 1 Mbps và cửa sổ gửi là K = 2. Xác định Tix?"
-        },
-        {
-          "id": "A",
-          "text": "10-5 s"
-        },
-        {
-          "id": "B",
-          "text": "10-6 s"
-        },
-        {
-          "id": "C",
-          "text": "10-4 s"
-        },
-        {
-          "id": "D",
-          "text": "10-3 s"
-        }
-      ],
-      "image": null,
-      "correctAnswer": "D"
-    },
-    {
-      "id": "ktsl6_q11",
-      "type": "multiple-choice",
-      "text": "",
-      "options": [
-        {
-          "id": "A",
-          "text": "Một chuỗi các khung có chiều dài 1000 bits được phát dùng nghi thức RQ liên tục. Vận tốc truyền sóng là 2.108 m/s và tỷ lệ bit lỗi đường truyền thấp có thể bỏ qua. Đường truyền vệ tinh xa 50000 km, tốc độ 2 Mbps và cửa sổ gửi K = 127. Xác định Tix?"
-        },
-        {
-          "id": "A",
-          "text": "5.10-5 s"
-        },
-        {
-          "id": "B",
-          "text": "5.10-6 s"
-        },
-        {
-          "id": "C",
-          "text": "5.10-3 s"
-        },
-        {
-          "id": "D",
-          "text": "5.10-4 s"
-        }
-      ],
-      "image": null,
-      "correctAnswer": "D"
-    },
-    {
-      "id": "ktsl6_q12",
-      "type": "multiple-choice",
-      "text": "",
-      "options": [
-        {
-          "id": "A",
-          "text": "Một chuỗi các khung có chiều dài 1000 bits được phát dùng nghi thức RQ liên tục. Vận tốc truyền sóng là 2.108 m/s và tỷ lệ bit lỗi đường truyền thấp có thể bỏ qua. Đường truyền dài 10 km, tốc độ 200 Mbps và cửa sổ gửi là K = 7. Xác định hệ số sử dụng đường truyền?"
-        },
-        {
-          "id": "A",
-          "text": "U = 0.5"
-        },
-        {
-          "id": "B",
-          "text": "U = 0.55"
-        },
-        {
-          "id": "C",
-          "text": "U = 1.55"
-        },
-        {
-          "id": "D",
-          "text": "U = 0.33"
-        }
-      ],
-      "image": null,
-      "correctAnswer": "D"
-    },
-    {
-      "id": "ktsl6_q13",
-      "type": "multiple-choice",
-      "text": "",
-      "options": [
-        {
-          "id": "A",
-          "text": "Một chuỗi các khung có chiều dài 1000 bits được phát dùng nghi thức RQ liên tục. Vận tốc truyền sóng là 2.108 m/s và tỷ lệ bit lỗi đường truyền thấp có thể bỏ qua. Đường truyền vệ tinh xa 50000 km, tốc độ 2 Mbps và cửa sổ gửi K = 127. Xác định hệ số sử dụng đường truyền U?"
-        },
-        {
-          "id": "A",
-          "text": "U = 0.35"
-        },
-        {
-          "id": "B",
-          "text": "U = 0.5"
-        },
-        {
-          "id": "C",
-          "text": "U = 0.127"
-        },
-        {
-          "id": "D",
-          "text": "U = 0.55"
-        }
-      ],
-      "image": null,
-      "correctAnswer": "C"
-    },
-    {
-      "id": "ktsl6_q14",
-      "type": "multiple-choice",
-      "text": "",
-      "options": [
-        {
-          "id": "A",
-          "text": "Một chuỗi các khung với 1000 bits mỗi khung được truyền dọc một tuyến dài 100 km tại tốc độ 20 Mbps. Nếu vận tốc truyền là 2.108 m/s và tỷ lệ lỗi bit là 4.10-5, xác định Tp?"
-        },
-        {
-          "id": "A",
-          "text": "5.10-3 s"
-        },
-        {
-          "id": "B",
-          "text": "5.10-2 s"
-        },
-        {
-          "id": "C",
-          "text": "5.10-4 s"
-        },
-        {
-          "id": "D",
-          "text": "5.10-1 s"
-        }
-      ],
-      "image": null,
-      "correctAnswer": "C"
-    },
-    {
-      "id": "ktsl6_q15",
-      "type": "multiple-choice",
-      "text": "",
-      "options": [
-        {
-          "id": "A",
-          "text": "Một chuỗi các khung với 1000 bits mỗi khung được truyền dọc một tuyến dài 100 km tại tốc độ 20 Mbps. Nếu vận tốc truyền là 2.108 m/s và tỷ lệ lỗi bit là 4.10-5, xác định Tix?"
-        },
-        {
-          "id": "A",
-          "text": "5.10-5 s"
-        },
-        {
-          "id": "B",
-          "text": "5.10-3 s"
-        },
-        {
-          "id": "C",
-          "text": "5.10-2 s"
-        },
-        {
-          "id": "D",
-          "text": "5.10-4 s"
-        }
-      ],
-      "image": null,
-      "correctAnswer": "A"
-    },
+
     {
       "id": "ktsl6_q16",
       "type": "multiple-choice",
@@ -7929,89 +7728,7 @@ const LESSONS_DATA = {
       "image": "/images/ktsl_b6/image4.png",
       "correctAnswer": "A"
     },
-    {
-      "id": "ktsl6_q23",
-      "type": "multiple-choice",
-      "text": "",
-      "options": [
-        {
-          "id": "A",
-          "text": "Một chuỗi các khung có chiều dài 1000 bits được phát dùng nghi thức RQ liên tục. Vận tốc truyền sóng là 2.108 m/s và tỷ lệ bit lỗi đường truyền thấp có thể bỏ qua. Đường truyền dài 10 km, tốc độ 200 Mbps và cửa sổ gửi là K = 7. Xác định Tp?"
-        },
-        {
-          "id": "A",
-          "text": "4.10-5 s"
-        },
-        {
-          "id": "B",
-          "text": "10-5 s"
-        },
-        {
-          "id": "C",
-          "text": "3.10-5 s"
-        },
-        {
-          "id": "D",
-          "text": "5.10-5 s"
-        }
-      ],
-      "image": null,
-      "correctAnswer": "D"
-    },
-    {
-      "id": "ktsl6_q24",
-      "type": "multiple-choice",
-      "text": "",
-      "options": [
-        {
-          "id": "A",
-          "text": "Một chuỗi các khung có chiều dài 1000 bits được phát dùng nghi thức RQ liên tục. Vận tốc truyền sóng là 2.108 m/s và tỷ lệ bit lỗi đường truyền thấp có thể bỏ qua. Đường truyền vệ tinh xa 50000 km, tốc độ 2Mbps và cửa sổ gửi là K = 127. Xác định Tp?"
-        },
-        {
-          "id": "A",
-          "text": "0.55s"
-        },
-        {
-          "id": "B",
-          "text": "0.45s"
-        },
-        {
-          "id": "C",
-          "text": "0.35s"
-        },
-        {
-          "id": "D",
-          "text": "0.25s"
-        }
-      ],
-      "image": null,
-      "correctAnswer": "D"
-    },
-    {
-      "id": "ktsl6_q25",
-      "type": "multiple-choice",
-      "text": "Một chuỗi các khung có chiều dài 1000 bits được phát dùng nghi thức RQ liên tục. Vận tốc truyền sóng là 2.108 m/s và tỷ lệ bit lỗi đường truyền thấp có thể bỏ qua. Đường truyền dài 1 km, tốc độ 1 Mbps và cửa sổ gửi là K = 2. Xác định hệ số sử dụng đường truyền U?",
-      "options": [
-        {
-          "id": "A",
-          "text": "U = 2"
-        },
-        {
-          "id": "B",
-          "text": "U = 1.75"
-        },
-        {
-          "id": "C",
-          "text": "U = 1.5"
-        },
-        {
-          "id": "D",
-          "text": "U = 1"
-        }
-      ],
-      "image": null,
-      "correctAnswer": "D"
-    },
+
     {
       "id": "ktsl6_q26",
       "type": "multiple-select",
@@ -8093,47 +7810,14 @@ const LESSONS_DATA = {
         "B",
         "D"
       ]
-    },
-    {
-      "id": "ktsl6_q29",
-      "type": "multiple-choice",
-      "text": "",
-      "options": [
-        {
-          "id": "A",
-          "text": "Một chuỗi các khung có chiều dài 1000 bits được phát dùng nghi thức RQ liên tục. Vận tốc truyền sóng là 2.108 m/s và tỷ lệ bit lỗi đường truyền thấp có thể bỏ qua. Đường truyền dài 1 km, tốc độ 1 Mbps và cửa sổ gửi là K = 2. Xác định Tp?"
-        },
-        {
-          "id": "A",
-          "text": "4.10-6 s"
-        },
-        {
-          "id": "B",
-          "text": "2.10-6 s"
-        },
-        {
-          "id": "C",
-          "text": "3.10-6 s"
-        },
-        {
-          "id": "D",
-          "text": "5.10-6 s"
-        }
-      ],
-      "image": null,
-      "correctAnswer": "D"
     }
   ],
   "ktsl_7": [
     {
       "id": "ktsl7_q1",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Lớp vỏ ngoài của cáp đồng trục có chức năng gì? (",
       "options": [
-        {
-          "id": "A",
-          "text": "Lớp vỏ ngoài của cáp đồng trục có chức năng gì? ("
-        },
         {
           "id": "A",
           "text": "Cách điện và bảo vệ cáp khỏi tác động cơ học"
@@ -8157,12 +7841,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl7_q2",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Cáp đồng trục thường được sử dụng trong mạng nào?",
       "options": [
-        {
-          "id": "A",
-          "text": "Cáp đồng trục thường được sử dụng trong mạng nào?"
-        },
         {
           "id": "A",
           "text": "Mạng cáp quang"
@@ -8186,12 +7866,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl7_q3",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Dải tần 3.7 đến 4.2 GHz (rộng 500MHz) dành cho truyền thông nào. Nhận định nào sau đây là đúng nhất?",
       "options": [
-        {
-          "id": "A",
-          "text": "Dải tần 3.7 đến 4.2 GHz (rộng 500MHz) dành cho truyền thông nào. Nhận định nào sau đây là đúng nhất?"
-        },
         {
           "id": "A",
           "text": "Từ vệ tinh xuống tới khu vực xa xôi, hẻo lánh"
@@ -8215,12 +7891,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl7_q4",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Dải tần 5.925 đến 6.425 GHz (rộng 500MHz) dành cho truyền thông từ?",
       "options": [
-        {
-          "id": "A",
-          "text": "Dải tần 5.925 đến 6.425 GHz (rộng 500MHz) dành cho truyền thông từ?"
-        },
         {
           "id": "A",
           "text": "Mặt đất lên vệ tinh"
@@ -8269,12 +7941,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl7_q6",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Để giảm thiểu nhiễu và đảm bảo tín hiệu vi ba mạnh và rõ ràng, các trạm phát và thu thường phải:",
       "options": [
-        {
-          "id": "A",
-          "text": "Để giảm thiểu nhiễu và đảm bảo tín hiệu vi ba mạnh và rõ ràng, các trạm phát và thu thường phải:"
-        },
         {
           "id": "A",
           "text": "Đặt tại vị trí cao và thoáng để giảm cản trở"
@@ -8298,12 +7966,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl7_q7",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Vận dụng kiến thức đã học về truyền dẫn số liệu. Em hãy cho biết trên vệ tinh có gắn một số thiết bị gì mà nó sẽ thu sóng điện từ trong một phổ tần số nhất định (thường là 36MHz), khuếch đại lên rồi phát lại ở dải tần số khác hướng xuống trái đất.",
       "options": [
-        {
-          "id": "A",
-          "text": "Vận dụng kiến thức đã học về truyền dẫn số liệu. Em hãy cho biết trên vệ tinh có gắn một số thiết bị gì mà nó sẽ thu sóng điện từ trong một phổ tần số nhất định (thường là 36MHz), khuếch đại lên rồi phát lại ở dải tần số khác hướng xuống trái đất."
-        },
         {
           "id": "A",
           "text": "Bộ phân kênh"
@@ -8327,12 +7991,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl7_q8",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Thiết bị đầu cuối dữ liệu (DTE) chủ yếu được sử dụng để làm gì?",
       "options": [
-        {
-          "id": "A",
-          "text": "Thiết bị đầu cuối dữ liệu (DTE) chủ yếu được sử dụng để làm gì?"
-        },
         {
           "id": "A",
           "text": "Xử lý và truyền tải dữ liệu giữa người dùng và mạng"
@@ -8356,12 +8016,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl7_q9",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Thiết bị đầu cuối dữ liệu (DTE) trong một mạng thường là:",
       "options": [
-        {
-          "id": "A",
-          "text": "Thiết bị đầu cuối dữ liệu (DTE) trong một mạng thường là:"
-        },
         {
           "id": "A",
           "text": "Bộ định tuyến (Router)"
@@ -8385,12 +8041,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl7_q10",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Thiết bị nào dưới đây không phải là một ví dụ điển hình của DTE?",
       "options": [
-        {
-          "id": "A",
-          "text": "Thiết bị nào dưới đây không phải là một ví dụ điển hình của DTE?"
-        },
         {
           "id": "A",
           "text": "Modem"
@@ -8414,12 +8066,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl7_q11",
       "type": "multiple-choice",
-      "text": "",
+      "text": "DCE (Data Circuit-Terminating Equipment) có vai trò chính nào trong hệ thống truyền thông dữ liệu?",
       "options": [
-        {
-          "id": "A",
-          "text": "DCE (Data Circuit-Terminating Equipment) có vai trò chính nào trong hệ thống truyền thông dữ liệu?"
-        },
         {
           "id": "A",
           "text": "Kết nối thiết bị đầu cuối dữ liệu (DTE) với mạng viễn thông"
@@ -8443,12 +8091,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl7_q12",
       "type": "multiple-choice",
-      "text": "",
+      "text": "DCE và DTE giao tiếp với nhau bằng cách sử dụng:",
       "options": [
-        {
-          "id": "A",
-          "text": "DCE và DTE giao tiếp với nhau bằng cách sử dụng:"
-        },
         {
           "id": "A",
           "text": "Tín hiệu radio"
@@ -8472,12 +8116,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl7_q13",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Trong kết nối mạng, DCE thường được sử dụng để:",
       "options": [
-        {
-          "id": "A",
-          "text": "Trong kết nối mạng, DCE thường được sử dụng để:"
-        },
         {
           "id": "A",
           "text": "Cung cấp băng thông cao cho dữ liệu"
@@ -8501,12 +8141,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl7_q14",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Thiết bị nào dưới đây là thiết bị DCE trong hệ thống truyền thông qua modem?",
       "options": [
-        {
-          "id": "A",
-          "text": "Thiết bị nào dưới đây là thiết bị DCE trong hệ thống truyền thông qua modem?"
-        },
         {
           "id": "A",
           "text": "Máy chủ"
@@ -8530,12 +8166,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl7_q15",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Mạch Transmitted Data (BA) hướng từ DTE sang DCE có chức năng?",
       "options": [
-        {
-          "id": "A",
-          "text": "Mạch Transmitted Data (BA) hướng từ DTE sang DCE có chức năng?"
-        },
         {
           "id": "A",
           "text": "Dữ liệu được nhận bởi DCE"
@@ -8584,12 +8216,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl7_q17",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Đường truyền vi ba chủ yếu được ứng dụng trong lĩnh vực nào?",
       "options": [
-        {
-          "id": "A",
-          "text": "Đường truyền vi ba chủ yếu được ứng dụng trong lĩnh vực nào?"
-        },
         {
           "id": "A",
           "text": "Mạng lưới điện quốc gia"
@@ -8613,12 +8241,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl7_q18",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Trong mô hình mạng, thiết bị đầu cuối dữ liệu (DTE) thường kết nối với thiết bị nào để truyền tải dữ liệu?",
       "options": [
-        {
-          "id": "A",
-          "text": "Trong mô hình mạng, thiết bị đầu cuối dữ liệu (DTE) thường kết nối với thiết bị nào để truyền tải dữ liệu?"
-        },
         {
           "id": "A",
           "text": "Bộ chuyển đổi quang (Optical Transceiver)"
@@ -8642,12 +8266,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl7_q19",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Thiết bị cuối kênh dữ liệu (DCE) là thiết bị nào trong hệ thống mạng?",
       "options": [
-        {
-          "id": "A",
-          "text": "Thiết bị cuối kênh dữ liệu (DCE) là thiết bị nào trong hệ thống mạng?"
-        },
         {
           "id": "A",
           "text": "Thiết bị xử lý tín hiệu số"
@@ -8671,12 +8291,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl7_q20",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Thiết bị nào dưới đây là ví dụ điển hình của DCE?",
       "options": [
-        {
-          "id": "A",
-          "text": "Thiết bị nào dưới đây là ví dụ điển hình của DCE?"
-        },
         {
           "id": "A",
           "text": "Switch"
@@ -8700,12 +8316,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl7_q21",
       "type": "multiple-choice",
-      "text": "",
+      "text": "DCE thường kết nối với DTE qua giao diện nào?",
       "options": [
-        {
-          "id": "A",
-          "text": "DCE thường kết nối với DTE qua giao diện nào?"
-        },
         {
           "id": "A",
           "text": "Giao diện USB"
@@ -8729,12 +8341,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl7_q22",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Mạch Data set relay (CC) trong chuẩn RS-232-C/V24 hướng DCE => DTE có chức năng gì?",
       "options": [
-        {
-          "id": "A",
-          "text": "Mạch Data set relay (CC) trong chuẩn RS-232-C/V24 hướng DCE => DTE có chức năng gì?"
-        },
         {
           "id": "A",
           "text": "DCE sẵn sàng làm việc"
@@ -8941,12 +8549,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl8_q1",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Mã nhị phân NRZ (Non-Return-to-Zero) là gì?",
       "options": [
-        {
-          "id": "A",
-          "text": "Mã nhị phân NRZ (Non-Return-to-Zero) là gì?"
-        },
         {
           "id": "A",
           "text": "Là dạng mã mà mức tín hiệu luôn ở mức không đổi"
@@ -8970,12 +8574,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl8_q2",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Đặc điểm nào sau đây đúng về mã NRZ-L (Non-Return-to-Zero-Level)?",
       "options": [
-        {
-          "id": "A",
-          "text": "Đặc điểm nào sau đây đúng về mã NRZ-L (Non-Return-to-Zero-Level)?"
-        },
         {
           "id": "A",
           "text": "Mã NRZ-L sử dụng mức tín hiệu cao cho bit 1 và mức tín hiệu thấp cho bit 0"
@@ -8999,12 +8599,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl8_q3",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Đáp án nào dưới đây là nhược điểm của mã NRZ là:",
       "options": [
-        {
-          "id": "A",
-          "text": "Đáp án nào dưới đây là nhược điểm của mã NRZ là:"
-        },
         {
           "id": "A",
           "text": "Khó đồng bộ khi có chuỗi dài các bit giống nhau (1 hoặc 0)"
@@ -9053,12 +8649,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl8_q5",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Mã 6B4T biến đổi 6 số nhị phân thành bao nhiêu số tam phân?",
       "options": [
-        {
-          "id": "A",
-          "text": "Mã 6B4T biến đổi 6 số nhị phân thành bao nhiêu số tam phân?"
-        },
         {
           "id": "A",
           "text": "4"
@@ -9082,12 +8674,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl8_q6",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Mã HDB3 là gì?",
       "options": [
-        {
-          "id": "A",
-          "text": "Mã HDB3 là gì?"
-        },
         {
           "id": "A",
           "text": "Là mã nhị phân có chuỗi dài các bit 0 thay đổi thành các chuỗi dài bit 1"
@@ -9111,12 +8699,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl8_q7",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Trong mã HDB3, ba bit 0 liên tiếp sẽ được thay thế bằng chuỗi nào?",
       "options": [
-        {
-          "id": "A",
-          "text": "Trong mã HDB3, ba bit 0 liên tiếp sẽ được thay thế bằng chuỗi nào?"
-        },
         {
           "id": "A",
           "text": "1100 hoặc 1110"
@@ -9140,12 +8724,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl8_q8",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Trong phương pháp điều chế biên độ ASK, nếu bit 1 được mã hóa, thì biên độ của tín hiệu mang sẽ:",
       "options": [
-        {
-          "id": "A",
-          "text": "Trong phương pháp điều chế biên độ ASK, nếu bit 1 được mã hóa, thì biên độ của tín hiệu mang sẽ:"
-        },
         {
           "id": "A",
           "text": "Bằng không"
@@ -9169,12 +8749,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl8_q9",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Trong quá trình giải điều chế ASK, máy thu sẽ:",
       "options": [
-        {
-          "id": "A",
-          "text": "Trong quá trình giải điều chế ASK, máy thu sẽ:"
-        },
         {
           "id": "A",
           "text": "Thay đổi biên độ của tín hiệu mang theo tín hiệu thông tin"
@@ -9223,12 +8799,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl8_q11",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Khi thực hiện giải điều chế FSK, máy thu sẽ:",
       "options": [
-        {
-          "id": "A",
-          "text": "Khi thực hiện giải điều chế FSK, máy thu sẽ:"
-        },
         {
           "id": "A",
           "text": "So sánh tần số của tín hiệu thu được với ngưỡng để xác định giá trị của bit"
@@ -9252,12 +8824,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl8_q12",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Điều chế PSK (Phase Shift Keying) là gì?",
       "options": [
-        {
-          "id": "A",
-          "text": "Điều chế PSK (Phase Shift Keying) là gì?"
-        },
         {
           "id": "A",
           "text": "Là phương pháp thay đổi độ dài xung của tín hiệu mang"
@@ -9306,12 +8874,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl8_q14",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Trong điều chế QAM, tín hiệu được điều chế bằng cách thay đổi:",
       "options": [
-        {
-          "id": "A",
-          "text": "Trong điều chế QAM, tín hiệu được điều chế bằng cách thay đổi:"
-        },
         {
           "id": "A",
           "text": "Cả biên độ và pha của tín hiệu mang"
@@ -9413,12 +8977,8 @@ const LESSONS_DATA = {
     {
       "id": "ktsl8_q18",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Điều chế FSK (Frequency Shift Keying) là gì?",
       "options": [
-        {
-          "id": "A",
-          "text": "Điều chế FSK (Frequency Shift Keying) là gì?"
-        },
         {
           "id": "A",
           "text": "Là phương pháp thay đổi độ dài xung của tín hiệu mang"
@@ -9542,15 +9102,15 @@ const LESSONS_DATA = {
     {
       "id": "ktsl8_q23",
       "type": "multiple-choice",
-      "text": "",
+      "text": "Trong mã nhị phân RZ, đặc điểm nào đúng khi mã hóa bit 0 ?",
       "options": [
         {
           "id": "A",
-          "text": "Trong mã nhị phân RZ, đặc điểm nào đúng khi mã hóa bit 0 ?A. Mức tín hiệu cao trong nửa thời gian của bit, sau đó chuyển về mức thấp"
+          "text": "Mức tín hiệu cao trong nửa thời gian của bit, sau đó chuyển về mức thấp"
         },
         {
           "id": "B",
-          "text": "mức tín hiệu cao tỏng suốt thời gian của bit 0"
+          "text": "mức tín hiệu cao trong suốt thời gian của bit 0"
         },
         {
           "id": "C",
